@@ -18,9 +18,13 @@
 (function copyright() {
     var cc = document.getElementById('cc');
     function over() {
-        if (cc.innerText.indexOf('150104400108') < 0) return;
+        //if (cc.innerText.indexOf('150104400108') < 0) return;
+        cc.innerText = cc.innerText.replace('150102300103', '\u9648\u6d01');
+        cc.innerText = cc.innerText.replace('150104400102', '\u9648\u8c26');
         cc.innerText = cc.innerText.replace('150104400108', '\u674e\u5929\u9633');
         var itv = setInterval(function () {
+            cc.innerText = cc.innerText.replace('\u9648\u6d01', '150102300103');
+            cc.innerText = cc.innerText.replace('\u9648\u8c26', '150104400102');
             cc.innerText = cc.innerText.replace('\u674e\u5929\u9633', '150104400108');
             clearInterval(itv);
         }, 3000);
