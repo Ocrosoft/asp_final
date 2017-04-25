@@ -88,8 +88,8 @@
             <nav class="navbar navbar-default" role="navigation" style="border-radius: 0px; bottom: 0px; margin: 20px 0px 0px 0px;">
                 <p class="text-muted credit" style="padding: 10px; text-align: center;">
                     <span id="copyright">&copy;2017 ocrosoft.com<br />
-                        浙ICP备16010729号<!-- 因为发外网，备案号不能删 -->
-                    <span id='cc'>学号写这里</span><!-- 添加学号 -->
+                        浙ICP备16010729号<br/><!-- 因为发外网，备案号不能删 -->
+                    <span id='cc'>150102300103 150104400102 150104400108</span><!-- 添加学号 -->
                     </span>
                 </p>
             </nav>
