@@ -1,3 +1,7 @@
 # ASP_FINAL
 
-ASP.NET 团队期末作业
+ASP.NET group final exam
+
+Jie Chen,
+Qian Chen,
+Tianyang Li;
