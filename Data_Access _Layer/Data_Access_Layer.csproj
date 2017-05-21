@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Data_Access__Layer</RootNamespace>
-    <AssemblyName>Data_Access _Layer</AssemblyName>
+    <RootNamespace>Data_Access_Layer</RootNamespace>
+    <AssemblyName>Data_Access_Layer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -80,8 +80,16 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_Customer.cs" />
     <Compile Include="DAL_MysqlHelper.cs" />
+    <Compile Include="DAL_Safety.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entitys\Entitys.csproj">
+      <Project>{4f3a50d1-66ce-415f-afd4-eaa7d2998a87}</Project>
+      <Name>Entitys</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

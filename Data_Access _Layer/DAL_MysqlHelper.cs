@@ -2,13 +2,16 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Text.RegularExpressions;
+using System.Web;
 
 namespace Data_Access_Layer
 {
     public class DAL_MysqlHelper
     {
-        public static string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["Connection_MYSQL"].ConnectionString.ToString();
+        public static string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["Connection"].ConnectionString.ToString();
+        //public static string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["Connection_AQI"].ConnectionString.ToString();
         public DAL_MysqlHelper() { }
         #region ExecuteNonQuery
         /// <summary> 
@@ -214,11 +217,11 @@ namespace Data_Access_Layer
         #endregion
         #region ExecuteDataTable
         /// <summary> 
-        /// 执行查询语句，返回DataTable 
+        /// 执行查询语句，返回DataSet
         /// </summary> 
         /// <param name="SQLString">查询语句</param> 
-        /// <returns>DataTable</returns> 
-        public static DataTable ExecuteDataTable(string SQLString)
+        /// <returns>DataSet</returns> 
+        public static DataSet ExecuteDataSet(string SQLString)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -233,15 +236,15 @@ namespace Data_Access_Layer
                 {
                     throw new Exception(ex.Message);
                 }
-                return ds.Tables[0];
+                return ds;
             }
         }
         /// <summary> 
         /// 执行查询语句，返回DataSet 
         /// </summary> 
         /// <param name="SQLString">查询语句</param> 
-        /// <returns>DataTable</returns> 
-        public static DataTable ExecuteDataTable(string SQLString, params MySqlParameter[] cmdParms)
+        /// <returns>DataSet</returns> 
+        public static DataSet ExecuteDataSet(string SQLString, params MySqlParameter[] cmdParms)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -259,12 +262,12 @@ namespace Data_Access_Layer
                     {
                         throw new Exception(ex.Message);
                     }
-                    return ds.Tables[0];
+                    return ds;
                 }
             }
         }
         //获取起始页码和结束页码 
-        public static DataTable ExecuteDataTable(string cmdText, int startResord, int maxRecord)
+        public static DataSet ExecuteDataSet(string cmdText, int startResord, int maxRecord)
         {
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -279,7 +282,7 @@ namespace Data_Access_Layer
                 {
                     throw new Exception(ex.Message);
                 }
-                return ds.Tables[0];
+                return ds;
             }
         }
         #endregion
@@ -303,7 +306,7 @@ namespace Data_Access_Layer
             if (!string.IsNullOrEmpty(orderExpression)) { sqlStr += string.Format(" Order by {0}", orderExpression); }
             if (matchs.Count > 0) //含有top的时候 
             {
-                DataTable dtTemp = ExecuteDataTable(sqlStr);
+                DataTable dtTemp = ExecuteDataSet(sqlStr).Tables[0];
                 rows = dtTemp.Rows.Count;
             }
             else //不含有top的时候 
@@ -316,7 +319,7 @@ namespace Data_Access_Layer
                     rows = Convert.ToInt32(obj);
                 }
             }
-            dt = ExecuteDataTable(sqlStr, (pageIdex - 1) * pageSize, pageSize);
+            dt = ExecuteDataSet(sqlStr, (pageIdex - 1) * pageSize, pageSize).Tables[0];
             recordCount = rows;
             return dt;
         }
