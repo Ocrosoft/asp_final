@@ -4,12 +4,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business_Logic_Layer", "Business_Logic_Layer\Business_Logic_Layer.csproj", "{0F155BD5-F935-4210-B5B6-AF9C158CA6E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4F3A50D1-66CE-415F-AFD4-EAA7D2998A87} = {4F3A50D1-66CE-415F-AFD4-EAA7D2998A87}
+		{315919E3-C940-4181-89C6-7CBBA3A476AF} = {315919E3-C940-4181-89C6-7CBBA3A476AF}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data_Access_Layer", "Data_Access _Layer\Data_Access_Layer.csproj", "{315919E3-C940-4181-89C6-7CBBA3A476AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entitys", "Entitys\Entitys.csproj", "{4F3A50D1-66CE-415F-AFD4-EAA7D2998A87}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User_Interface_Layer", "User_Interface_Layer\User_Interface_Layer.csproj", "{359040BA-DC7A-4373-9CC9-37BA718FD1B0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4F3A50D1-66CE-415F-AFD4-EAA7D2998A87} = {4F3A50D1-66CE-415F-AFD4-EAA7D2998A87}
+		{0F155BD5-F935-4210-B5B6-AF9C158CA6E9} = {0F155BD5-F935-4210-B5B6-AF9C158CA6E9}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
