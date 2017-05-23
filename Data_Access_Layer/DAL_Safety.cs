@@ -23,7 +23,7 @@ namespace Data_Access_Layer
                 byte[] output = md5.ComputeHash(result);
                 return BitConverter.ToString(output).Replace("-", "").ToUpper();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -34,7 +34,7 @@ namespace Data_Access_Layer
         /// <param name="encode">编码</param>
         /// <param name="source">要加密的字符串</param>
         /// <returns></returns>
-        public static string EncodeBase64(Encoding encode,string source)
+        public static string EncodeBase64(Encoding encode, string source)
         {
             try
             {
@@ -77,7 +77,7 @@ namespace Data_Access_Layer
                 result = encode.GetString(bytes);
                 return result;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -93,7 +93,7 @@ namespace Data_Access_Layer
             {
                 return DecodeBase64(Encoding.UTF8, result);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }

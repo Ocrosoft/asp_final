@@ -139,7 +139,7 @@ namespace Data_Access_Layer
                 if (ret == 1) return true;
                 return false;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -193,7 +193,7 @@ namespace Data_Access_Layer
                 type.TypeName = dt.Rows[0]["goodsTypeName"].ToString();
                 return type;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -204,7 +204,7 @@ namespace Data_Access_Layer
         /// <param name="level">类别等级（1,2,3）</param>
         /// <param name="typeName">TypeName</param>
         /// <returns>List<GoodsType></returns>
-        public static List<GoodsType> QueryTypeID(int level,string typeName)
+        public static List<GoodsType> QueryTypeID(int level, string typeName)
         {
             try
             {
@@ -215,7 +215,7 @@ namespace Data_Access_Layer
                 MySqlParameter para = new MySqlParameter("?typeName", typeName);
                 DataTable dt = DAL_MysqlHelper.ExecuteDataSet(sql, para).Tables[0];
                 List<GoodsType> list = new List<GoodsType>();
-                for(int i=0;i<dt.Rows.Count;i++)
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     GoodsType type = new GoodsType();
                     type.TypeID = dt.Rows[i]["goodsTypeID"].ToString();
@@ -235,7 +235,7 @@ namespace Data_Access_Layer
         /// <param name="level">类别等级（1,2）</param>
         /// <param name="typeID">TypeID</param>
         /// <returns>List<GoodsType></returns>
-        public static List<GoodsType> QueryTypesChild(int level,string typeID)
+        public static List<GoodsType> QueryTypesChild(int level, string typeID)
         {
             try
             {

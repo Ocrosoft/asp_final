@@ -15,7 +15,7 @@ namespace Data_Access_Layer
         /// <param name="question">Question</param>
         /// <param name="answer">Answer</param>
         /// <returns>bool</returns>
-        public static bool AddCustomer(string name,string pass,string question,string answer)
+        public static bool AddCustomer(string name, string pass, string question, string answer)
         {
             try
             {
@@ -29,7 +29,7 @@ namespace Data_Access_Layer
                 if (ret == 1) return true;
                 else return false;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -49,7 +49,7 @@ namespace Data_Access_Layer
                 if (ret == 1) return true;
                 else return false;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -60,7 +60,7 @@ namespace Data_Access_Layer
         /// <param name="name">Name</param>
         /// <param name="pass">Pass（新）</param>
         /// <returns>bool</returns>
-        public static bool UpdatePassword(string name,string pass)
+        public static bool UpdatePassword(string name, string pass)
         {
             try
             {
@@ -72,7 +72,7 @@ namespace Data_Access_Layer
                 if (ret == 1) return true;
                 else return false;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -85,7 +85,7 @@ namespace Data_Access_Layer
         /// <param name="address">Address</param>
         /// <param name="postCode">PostCode</param>
         /// <returns>bool</returns>
-        public static bool UpdatePostInfo(string name,string trueName,string address,string postCode)
+        public static bool UpdatePostInfo(string name, string trueName, string address, string postCode)
         {
             try
             {
@@ -99,7 +99,7 @@ namespace Data_Access_Layer
                 if (ret == 1) return true;
                 else return false;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -112,7 +112,7 @@ namespace Data_Access_Layer
         /// <param name="phone">Phone</param>
         /// <param name="email">Email</param>
         /// <returns>bool</returns>
-        public static bool UpdatePersonalInfo(string name,string birthday,string phone,string email)
+        public static bool UpdatePersonalInfo(string name, string birthday, string phone, string email)
         {
             try
             {
@@ -138,7 +138,7 @@ namespace Data_Access_Layer
         /// <param name="question">Question</param>
         /// <param name="answer">Answer</param>
         /// <returns>bool</returns>
-        public static bool UpdateQuestion(string name,string question,string answer)
+        public static bool UpdateQuestion(string name, string question, string answer)
         {
             try
             {
@@ -162,7 +162,7 @@ namespace Data_Access_Layer
         /// <param name="name">Name</param>
         /// <param name="pass">Pass</param>
         /// <returns>bool</returns>
-        public static bool QueryCustomerExists(string name,string pass)
+        public static bool QueryCustomerExists(string name, string pass)
         {
             try
             {
@@ -174,7 +174,7 @@ namespace Data_Access_Layer
                 if (Equals(obj, null)) return false;
                 else return true;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
@@ -253,7 +253,7 @@ namespace Data_Access_Layer
         /// <param name="name">Name</param>
         /// <param name="answer">Answer（输入的答案）</param>
         /// <returns>bool</returns>
-        public static bool QueryCustomerQuestionAnswerMathch(string name,string answer)
+        public static bool QueryCustomerQuestionAnswerMathch(string name, string answer)
         {
             try
             {
@@ -282,7 +282,7 @@ namespace Data_Access_Layer
                 DataSet ds = DAL_MysqlHelper.ExecuteDataSet(sql);
                 return ds;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw e;
             }
