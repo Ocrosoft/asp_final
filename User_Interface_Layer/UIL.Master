@@ -62,9 +62,7 @@
     <asp:ContentPlaceHolder ID="stdContentMoudle" runat="server">
         <div class="container">
             <div class="row clearfix">
-                <div class="col-md-1 column">
-                </div>
-                <div class="col-md-6 column">
+                <div class="col-md-8 column">
                     <!-- 使用基本框架，重载cusContent -->
                     <asp:ContentPlaceHolder ID="cusContent" runat="server">
                     </asp:ContentPlaceHolder>

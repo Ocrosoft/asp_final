@@ -22,9 +22,9 @@ namespace Data_Access_Layer
                 string sql = "insert into tb_customer(customerName,customerPass,customerRegDate,customerQuestion,customerAnswer) valuse(?name,?pass,getdate(),?question,?answer);";
                 MySqlParameter[] para = new MySqlParameter[4];
                 para[0] = new MySqlParameter("?name", name);
-                para[1] = new MySqlParameter("?pass", pass);
+                para[1] = new MySqlParameter("?pass", DAL_Safety.GetMD5(pass));
                 para[2] = new MySqlParameter("?question", question);
-                para[3] = new MySqlParameter("?answer", answer);
+                para[3] = new MySqlParameter("?answer", DAL_Safety.EncodeBase64(answer));
                 int ret = DAL_MysqlHelper.ExecuteNonQuery(sql, para);
                 if (ret == 1) return true;
                 else return false;
@@ -66,7 +66,7 @@ namespace Data_Access_Layer
             {
                 string sql = "update tb_customer set(customerPass,?pass) where customerName=?name;";
                 MySqlParameter[] para = new MySqlParameter[2];
-                para[0] = new MySqlParameter("?pass", pass);
+                para[0] = new MySqlParameter("?pass", DAL_Safety.GetMD5(pass));
                 para[1] = new MySqlParameter("?name", name);
                 int ret = DAL_MysqlHelper.ExecuteNonQuery(sql, para);
                 if (ret == 1) return true;
@@ -145,7 +145,7 @@ namespace Data_Access_Layer
                 string sql = "update tb_customer set(customerQuestion ?question,customerAnswer ?answer) where customerName=?name;";
                 MySqlParameter[] para = new MySqlParameter[3];
                 para[0] = new MySqlParameter("?question", question);
-                para[1] = new MySqlParameter("?answer", answer);
+                para[1] = new MySqlParameter("?answer", DAL_Safety.EncodeBase64(answer));
                 para[2] = new MySqlParameter("?name", name);
                 int ret = DAL_MysqlHelper.ExecuteNonQuery(sql, para);
                 if (ret == 1) return true;
@@ -169,7 +169,7 @@ namespace Data_Access_Layer
                 string sql = "select tb_customer from tb_customer where customerName=?name and customerPass=?pass;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?name", name);
-                para[1] = new MySqlParameter("?pass", pass);
+                para[1] = new MySqlParameter("?pass", DAL_Safety.GetMD5(pass));
                 Object obj = DAL_MysqlHelper.ExecuteScalar(sql, para);
                 if (Equals(obj, null)) return false;
                 else return true;
@@ -260,7 +260,7 @@ namespace Data_Access_Layer
                 string sql = "select tb_customer from tb_customer where customerName=?name and customerAnswer=?answer;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?name", name);
-                para[1] = new MySqlParameter("?answer", answer);
+                para[1] = new MySqlParameter("?answer", DAL_Safety.EncodeBase64(answer));
                 Object obj = DAL_MysqlHelper.ExecuteScalar(sql, para);
                 if (Equals(obj, null)) return false;
                 else return true;
