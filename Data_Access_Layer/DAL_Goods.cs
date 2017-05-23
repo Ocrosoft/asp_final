@@ -22,7 +22,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "insert into tb_goods(goodsName,goodsTypeID,goodsUnitPrice,goodsDescript,goodsImageName,goodsDate) valuse(?name,?typeID,?unitPrice,?descript,?imageName,getdate());";
+                string sql = "insert into tb_goods(goodsName,goodsTypeID,goodsUnitPrice,goodsDescript,goodsImageName,goodsDate) values(?name,?typeID,?unitPrice,?descript,?imageName,now());";
                 MySqlParameter[] para = new MySqlParameter[5];
                 para[0] = new MySqlParameter("?name", name);
                 para[1] = new MySqlParameter("?typeID", typeID);
@@ -113,7 +113,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_goods set(goodsName=?name,goodsTypeID=?typeID,goodsDescript=?descript,goodsUnitPrice=?unitPrice,goodsImageName=?imageName) where goodsID=?id;";
+                string sql = "update tb_goods set goodsName=?name,goodsTypeID=?typeID,goodsDescript=?descript,goodsUnitPrice=?unitPrice,goodsImageName=?imageName where goodsID=?id;";
                 MySqlParameter[] para = new MySqlParameter[6];
                 para[0] = new MySqlParameter("?name", goods.Name);
                 para[1] = new MySqlParameter("?typeID", goods.TypeID);
@@ -140,7 +140,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_goods set(goodsName=?name) where goodsID=?id;";
+                string sql = "update tb_goods set goodsName=?name where goodsID=?id;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?name", name);
                 para[1] = new MySqlParameter("?id", id);
@@ -163,7 +163,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_goods set(goodsTypeID=?typeID) where goodsID=?id;";
+                string sql = "update tb_goods set goodsTypeID=?typeID where goodsID=?id;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?typeID", typeID);
                 para[1] = new MySqlParameter("?id", id);
@@ -186,7 +186,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_goods set(goodsDescript=?descript) where goodsID=?id;";
+                string sql = "update tb_goods set goodsDescript=?descript where goodsID=?id;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?descript", descript);
                 para[1] = new MySqlParameter("?id", id);
@@ -209,7 +209,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_goods set(goodsUnitPrice=?price) where goodsID=?id;";
+                string sql = "update tb_goods set goodsUnitPrice=?price where goodsID=?id;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?price", price);
                 para[1] = new MySqlParameter("?id", id);
@@ -232,7 +232,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_goods set(goodsImageName=?imageName) where goodsID=?id;";
+                string sql = "update tb_goods set goodsImageName=?imageName where goodsID=?id;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?imageName", imageName);
                 para[1] = new MySqlParameter("?id", id);
