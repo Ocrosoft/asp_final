@@ -19,7 +19,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "insert into tb_customer(customerName,customerPass,customerRegDate,customerQuestion,customerAnswer) valuse(?name,?pass,getdate(),?question,?answer);";
+                string sql = "insert into tb_customer(customerName,customerPass,customerRegDate,customerQuestion,customerAnswer) values(?name,?pass,now(),?question,?answer);";
                 MySqlParameter[] para = new MySqlParameter[4];
                 para[0] = new MySqlParameter("?name", name);
                 para[1] = new MySqlParameter("?pass", DAL_Safety.GetMD5(pass));
@@ -64,7 +64,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_customer set(customerPass,?pass) where customerName=?name;";
+                string sql = "update tb_customer set customerPass=?pass where customerName=?name;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?pass", DAL_Safety.GetMD5(pass));
                 para[1] = new MySqlParameter("?name", name);
@@ -89,7 +89,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_customer set(customerTrueName ?trueName,customerAddress ?address,customerPostCode ?postCode) where customerName=?name;";
+                string sql = "update tb_customer set customerTrueName=?trueName,customerAddress=?address,customerPostCode=?postCode where customerName=?name;";
                 MySqlParameter[] para = new MySqlParameter[4];
                 para[0] = new MySqlParameter("?trueName", trueName);
                 para[1] = new MySqlParameter("?address", address);
@@ -116,7 +116,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_customer set(customerBirthday ?birthday,customerPhone ?phone,customerEmail ?email) where customerName=?name;";
+                string sql = "update tb_customer set customerBirthday=?birthday,customerPhone=?phone,customerEmail=?email) where customerName=?name;";
                 MySqlParameter[] para = new MySqlParameter[4];
                 para[0] = new MySqlParameter("?trueName", birthday);
                 para[1] = new MySqlParameter("?address", phone);
@@ -142,7 +142,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_customer set(customerQuestion ?question,customerAnswer ?answer) where customerName=?name;";
+                string sql = "update tb_customer set customerQuestion=?question,customerAnswer=?answer where customerName=?name;";
                 MySqlParameter[] para = new MySqlParameter[3];
                 para[0] = new MySqlParameter("?question", question);
                 para[1] = new MySqlParameter("?answer", DAL_Safety.EncodeBase64(answer));
@@ -166,7 +166,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "select tb_customer from tb_customer where customerName=?name and customerPass=?pass;";
+                string sql = "select customerName from tb_customer where customerName=?name and customerPass=?pass;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?name", name);
                 para[1] = new MySqlParameter("?pass", DAL_Safety.GetMD5(pass));
@@ -188,7 +188,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "select tb_customer from tb_customer where customerName=?name;";
+                string sql = "select customerName from tb_customer where customerName=?name;";
                 MySqlParameter para = new MySqlParameter("?name", name);
                 Object obj = DAL_MysqlHelper.ExecuteScalar(sql, para);
                 if (Equals(obj, null)) return false;
@@ -257,7 +257,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "select tb_customer from tb_customer where customerName=?name and customerAnswer=?answer;";
+                string sql = "select customerName from tb_customer where customerName=?name and customerAnswer=?answer;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?name", name);
                 para[1] = new MySqlParameter("?answer", DAL_Safety.EncodeBase64(answer));

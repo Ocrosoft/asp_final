@@ -100,6 +100,44 @@ namespace Data_Access_Layer
                 }
             }
         }
+        /// <summary>
+        /// 执行多条带Parameter的SQL语句
+        /// </summary>
+        /// <param name="SQLStringList"></param>
+        /// <param name="SQLParaList"></param>
+        /// <returns></returns>
+        public static bool ExecuteNoQueryTran(List<String> SQLStringList,List<MySqlParameter[]> SQLParaList)
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                MySqlTransaction tx = conn.BeginTransaction();
+                cmd.Transaction = tx;
+                try
+                {
+                    for (int n = 0; n < SQLStringList.Count; n++)
+                    {
+                        string strsql = SQLStringList[n];
+                        if (strsql.Trim().Length > 1)
+                        {
+                            cmd.CommandText = strsql;
+                            PrepareCommand(cmd, conn, tx, strsql, SQLParaList[n]);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                    cmd.ExecuteNonQuery();
+                    tx.Commit();
+                    return true;
+                }
+                catch
+                {
+                    tx.Rollback();
+                    return false;
+                }
+            }
+        }
         #endregion
         #region ExecuteScalar
         /// <summary> 
