@@ -83,6 +83,7 @@
     <Compile Include="DAL_Customer.cs" />
     <Compile Include="DAL_Goods.cs" />
     <Compile Include="DAL_GoodsType.cs" />
+    <Compile Include="DAL_Manage.cs" />
     <Compile Include="DAL_MysqlHelper.cs" />
     <Compile Include="DAL_Safety.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
