@@ -22,7 +22,7 @@ namespace Data_Access_Layer
             try
             {
                 string typeLevel = level == 2 ? "tb_goodstype_second" : "tb_goodstype_third";
-                string sql = "insert into " + typeLevel + "(goodsTypeName,goodsParentTypeID) value(?name,?parentTypeID);";
+                string sql = "insert into " + typeLevel + "(goodsTypeName,goodsParentTypeID) values(?name,?parentTypeID);";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?name", typeName);
                 para[1] = new MySqlParameter("?parentTypeID", parentTypeID);
@@ -44,7 +44,7 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "insert into tb_goorestype(goodsTypeName) value(?name);";
+                string sql = "insert into tb_goodstype(goodsTypeName) values(?name);";
                 MySqlParameter para = new MySqlParameter("?name", typeName);
                 int ret = DAL_MysqlHelper.ExecuteNonQuery(sql, para);
                 if (ret == 1) return true;
@@ -97,7 +97,7 @@ namespace Data_Access_Layer
             }
         }
         /// <summary>
-        /// 删除二/三级中福类别为指定父类别的所有类别（删除二级类别时，需要先删除这些二级类别对应的所有三级类别）
+        /// 删除二/三级中父类别为指定父类别的所有类别（删除二级类别时，需要先删除这些二级类别对应的所有三级类别）
         /// </summary>
         /// <param name="level">类别等级（2或3）</param>
         /// <param name="parentTypeID">ParentTypeID</param>
@@ -131,7 +131,7 @@ namespace Data_Access_Layer
                 string tb_name = "tb_goodstype";
                 if (level == 2) tb_name += "_second";
                 else if (level == 3) tb_name += "_third";
-                string sql = "update " + tb_name + " set(goodsTypeName ?typeName) where goodsTypeID=?typeID;";
+                string sql = "update " + tb_name + " set goodsTypeName=?typeName where goodsTypeID=?typeID;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?typeName", typeName);
                 para[1] = new MySqlParameter("?typeID", typeID);
@@ -158,7 +158,7 @@ namespace Data_Access_Layer
                 string tb_name = "tb_goodstype";
                 if (level == 2) tb_name += "_second";
                 else if (level == 3) tb_name += "_third";
-                string sql = "update " + tb_name + " set(goodsParentTypeID ?parentTypeID) where goodsTypeID=?typeID;";
+                string sql = "update " + tb_name + " set goodsParentTypeID=?parentTypeID where goodsTypeID=?typeID;";
                 MySqlParameter[] para = new MySqlParameter[2];
                 para[0] = new MySqlParameter("?parentTypeID", parentTypeID);
                 para[1] = new MySqlParameter("?typeID", typeID);
@@ -184,13 +184,14 @@ namespace Data_Access_Layer
                 string tb_name = "tb_goodstype";
                 if (level == 2) tb_name += "_second";
                 else if (level == 3) tb_name += "_third";
-                string sql = "select goodsTypeName where goodsTypeID=?typeID;";
+                string sql = "select goodsTypeName from " + tb_name + " where goodsTypeID=?typeID;";
                 MySqlParameter para = new MySqlParameter("?typeID", typeID);
                 DataTable dt = DAL_MysqlHelper.ExecuteDataSet(sql, para).Tables[0];
                 GoodsType type = new GoodsType();
                 type.TypeID = typeID;
                 type.TypeLevel = level;
                 type.TypeName = dt.Rows[0]["goodsTypeName"].ToString();
+                if (level != 1) type.ParentTypeID = dt.Rows[0]["goodsParentTypeID"].ToString();
                 return type;
             }
             catch (Exception e)
@@ -211,7 +212,7 @@ namespace Data_Access_Layer
                 string tb_name = "tb_goodstype";
                 if (level == 2) tb_name += "_second";
                 else if (level == 3) tb_name += "_third";
-                string sql = "select goodsTypeName where goodsTypeName=?typeName;";
+                string sql = "select goodsTypeName from " + tb_name + " where goodsTypeName=?typeName;";
                 MySqlParameter para = new MySqlParameter("?typeName", typeName);
                 DataTable dt = DAL_MysqlHelper.ExecuteDataSet(sql, para).Tables[0];
                 List<GoodsType> list = new List<GoodsType>();
@@ -221,6 +222,8 @@ namespace Data_Access_Layer
                     type.TypeID = dt.Rows[i]["goodsTypeID"].ToString();
                     type.TypeLevel = level;
                     type.TypeName = typeName;
+                    if (level != 1) type.ParentTypeID = dt.Rows[i]["goodsParentTypeID"].ToString();
+                    list.Add(type);
                 }
                 return list;
             }
@@ -243,7 +246,7 @@ namespace Data_Access_Layer
                 string tb_name = "tb_goodstype";
                 if (level == 2) tb_name += "_second";
                 else if (level == 3) tb_name += "_third";
-                string sql = "select goodsTypeName where goodsTypeID=?typeID;";
+                string sql = "select goodsTypeName from " + tb_name + " where goodsParentTypeID=?typeID;";
                 MySqlParameter para = new MySqlParameter("?typeID", typeID);
                 DataTable dt = DAL_MysqlHelper.ExecuteDataSet(sql, para).Tables[0];
                 List<GoodsType> list = new List<GoodsType>();

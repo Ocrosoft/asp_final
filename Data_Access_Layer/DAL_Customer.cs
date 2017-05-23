@@ -184,7 +184,7 @@ namespace Data_Access_Layer
         /// </summary>
         /// <param name="name">Name</param>
         /// <returns>bool</returns>
-        public static bool QueryCustomerExits(string name)
+        public static bool QueryCustomerExists(string name)
         {
             try
             {
