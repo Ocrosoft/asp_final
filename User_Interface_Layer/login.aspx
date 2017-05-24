@@ -183,7 +183,7 @@
             var btn = this.nextElementSibling;
             if (text.length > 0) btn.style.display = 'block';
             else btn.style.display = 'none';
-
+            // 大小写
             if (this.id == 'nloginpwd') {
                 var keyCode = e.keyCode || e.which;
                 if (keyCode == 20) capslock = !capslock;
@@ -198,6 +198,13 @@
                 if (capslock) this.nextElementSibling.nextElementSibling.style.display = 'inline';
                 else this.nextElementSibling.nextElementSibling.style.display = 'none';
             }
+        });
+        $('#nloginpwd').focusout(function () {
+            this.nextElementSibling.nextElementSibling.style.display = 'none';
+        });
+        $('#nloginpwd').focusin(function () {
+            if (capslock) this.nextElementSibling.nextElementSibling.style.display = 'inline';
+            else this.nextElementSibling.nextElementSibling.style.display = 'none';
         });
         // 清除按钮
         $('.clear-btn').click(function () {

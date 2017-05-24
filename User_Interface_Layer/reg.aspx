@@ -9,23 +9,18 @@
     <meta http-equiv="Cache-Control" content="no-cache,must-revalidate" />
     <title>个人注册</title>
     <link type="text/css" rel="stylesheet" href="/css/reg-base.css" />
-    <script type="text/javascript" src="//misc.360buyimg.com/jdf/1.0.0/unit/??base/1.0.0/base.js"></script>
-    <!--<script type="text/javascript" src="/js/reg-base.js"></script>-->
     <script src="/js/jquery-2.1.4.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/css/reg.css" />
 </head>
 <body>
-
     <div id="form-header" class="header">
         <div class="logo-con w clearfix">
             <a href="//www.jd.com" class="logo"></a>
             <div class="logo-title">欢迎注册</div>
             <div class="have-account">已有账号？ <a href="/login.aspx">请登录</a></div>
         </div>
-
     </div>
     <div class="container w">
-
         <div class="main clearfix" id="form-main">
             <div class="reg-form fl">
                 <form action="#" id="register-form" method="post">
@@ -46,6 +41,7 @@
                         <input style="display: none" type="password" name="pwd" class="fakeinput" />
                         <input type="password" name="pwd" id="form-pwd" class="field" maxlength="20"  placeholder="建议至少使用两种字符组合" default="<i class=i-def></i>建议使用字母、数字和符号两种及以上的组合，6-20个字符" />
                         <i class="i-status"></i>
+                        <div class="capslock-tip tips" style="display: none;z-index: 7;">大写已开启<b class="arrow"></b><b class="arrow-inner"></b></div>
                     </div>
                     <div class="input-tip">
                         <span></span>
@@ -55,6 +51,7 @@
                         <input style="display: none" type="password" name="pwdRepeat" class="fakeinput" />
                         <input type="password" name="pwdRepeat" id="form-equalTopwd" class="field" placeholder="请再次输入密码" maxlength="20" default='<i class="i-def"></i>请再次输入密码' />
                         <i class="i-status"></i>
+                        <div class="capslock-tip tips" style="display: none;z-index: 7;">大写已开启<b class="arrow"></b><b class="arrow-inner"></b></div>
                     </div>
                     <div class="input-tip">
                         <span></span>
@@ -73,7 +70,7 @@
                         <label>验　证　码</label>
                         <input type="text" autocomplete="off" name="authCode" id="authCode" maxlength="6" class="field form-authcode"
                             placeholder="请输入验证码" default='<i class="i-def"></i>看不清？点击图片更换验证码' />
-                        <img class="img-code" title="换一换" id="imgAuthCode" onclick="" src="#"/>
+                        <img class="img-code" title="换一换" id="imgAuthCode"  src="/CheckCode.aspx"/>
                     </div>
                     <div class="input-tip">
                         <span></span>
@@ -607,23 +604,54 @@
             Copyright&copy;2004-2016&nbsp;&nbsp;京东JD.com&nbsp;版权所有
         </div>
     </div>
+    <script>
+        var capslock = false;
+        // 输入框提示
+        $('.field').focusin(function () {
+            var p = this.parentNode.nextElementSibling;
+            var html = this.outerHTML;
+            html = html.substring(html.indexOf('default'));
+            html = html.substring(html.indexOf('\"') + 1);
+            html = html.substring(0, html.length - 2);
+            p.innerHTML += html;
 
+            if (this.id == 'form-pwd' || this.id == 'form-equalTopwd') {
+                if (capslock) this.nextElementSibling.nextElementSibling.style.display = 'block';
+                else this.nextElementSibling.nextElementSibling.style.display = 'none';
+            }
+        });
+        $('.field').focusout(function () {
+            var p = this.parentNode.nextElementSibling;
+            p.innerHTML = '';
 
-    <script type="text/javascript">
-        // 灰色提示
-        var localmisc = $("#localmisc");
-        if (1 == localmisc.val()) {
-            seajs.use('../misc2016/js/localRegister', function (reg) {
-                reg.init();
-            })
-        } else {
-            seajs.use('//misc.360buyimg.com/user/reg/1.0.0/js/register.1130', function (reg) {
-                reg.init();
-            })
-        }
+            if (this.id == 'form-account') {
+                // 检查是否已被注册
+            }
+            else if (this.id == 'form-pwd' || this.id == 'form-equalTopwd') {
+                this.nextElementSibling.nextElementSibling.style.display = 'none';
+            }
+        });
+
+        $('#form-pwd,#form-equalTopwd').keyup(function (e) {
+            var keyCode = e.keyCode || e.which;
+            if (keyCode == 20) capslock = !capslock;
+            var isShift = e.shiftKey;
+            if (keyCode >= 65 && keyCode <= 90) {
+                var c = text[text.length - 1];
+                if (c >= 'a' && c <= 'z' && isShift) capslock = true;
+                else if (c >= 'a' && c <= 'z' && !isShift) capslock = false;
+                else if (c >= 'A' && c <= 'Z' && isShift) capslock = false;
+                else if (c >= 'A' && c <= 'Z' && !isShift) capslock = true;
+            }
+            if (capslock) this.nextElementSibling.nextElementSibling.style.display = 'block';
+            else this.nextElementSibling.nextElementSibling.style.display = 'none';
+        });
     </script>
-
+    <script>
+        $('#imgAuthCode').click(function () {
+            this.src = '/CheckCode.aspx?' + Date.parse(new Date());
+            this.previousElementSibling.focus();
+        });
+    </script>
 </body>
 </html>
-
-

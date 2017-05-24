@@ -419,7 +419,7 @@ body {
 }
 
 .form-item-account {
-    z-index: 13
+    z-index: 0
 }
 
 .form-item-phone .select-country {
