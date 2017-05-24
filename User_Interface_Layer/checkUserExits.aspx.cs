@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using Business_Logic_Layer;
 using System.Web.UI.WebControls;
 
 namespace User_Interface_Layer
@@ -12,7 +13,17 @@ namespace User_Interface_Layer
         protected void Page_Load(object sender, EventArgs e)
         {
             Response.Clear();
-            Response.Write("False");
+            string name = Request.QueryString["name"];
+            try
+            {
+                bool ret = BLL_Customer.queryCustomerExits(name);
+                if (ret) Response.Write("True");
+                else Response.Write("False");
+            }
+            catch
+            {
+                Response.Write("True");
+            }
         }
     }
 }

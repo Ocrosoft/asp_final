@@ -16,7 +16,7 @@
 <body>
     <div id="form-header" class="header">
         <div class="logo-con w clearfix">
-            <a href="//www.jd.com" class="logo"></a>
+            <a href="#" class="logo"></a>
             <div class="logo-title">欢迎注册</div>
             <div class="have-account">已有账号？ <a href="/login.aspx">请登录</a></div>
         </div>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="form-agreen">
                         <div>
-                            <input type="checkbox" name="agreen" checked="" />阅读并同意<a href="javascript:;" id="protocol">《京东用户注册协议》</a>
+                            <input type="checkbox" name="agreen" checked="" />阅读并同意<a href="javascript:;" id="protocol">《东京用户注册协议》</a>
                             <a href="javascript:;" class="blue" id="privacyProtocolTrigger">《隐私政策》</a>
                         </div>
                         <div class="input-tip">
@@ -103,25 +103,25 @@
         </div>
         <div id="protocoldiv" style="display: none">
             <div class="protocol-con">
-                <h4>京东用户注册协议</h4>
+                <h4>东京用户注册协议</h4>
 
                 <p>
-                    本协议是您与京东网站（简称;本站;，网址：www.jd.com）所有者（以下简称为;京东;）之间就京东网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议，您点击;同意并继续;按钮后，本协议即构成对双方有约束力的法律文件。
+                    本协议是您与东京网站（简称;本站;，网址：www.jd.com）所有者（以下简称为;东京;）之间就东京网站服务等相关事宜所订立的契约，请您仔细阅读本注册协议，您点击;同意并继续;按钮后，本协议即构成对双方有约束力的法律文件。
                 </p>
                 <h5>第1条 本站服务条款的确认和接纳</h5>
 
                 <p>
-                    <strong>1.1</strong>本站的各项电子服务的所有权和运作权归京东所有。用户同意所有注册协议条款并完成注册程序，才能成为本站的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。
+                    <strong>1.1</strong>本站的各项电子服务的所有权和运作权归东京所有。用户同意所有注册协议条款并完成注册程序，才能成为本站的正式用户。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有强制性规定或双方另有特别约定的，依其规定。
                 </p>
 
                 <p><strong>1.2</strong>用户点击同意本协议的，即视为用户确认自己具有享受本站服务、下单购物等相应的权利能力和行为能力，能够独立承担法律责任。</p>
 
                 <p><strong>1.3</strong>如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本站。</p>
 
-                <p><strong>1.4</strong>京东保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。</p>
+                <p><strong>1.4</strong>东京保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭用户账户、清除或编辑内容或取消订单的权利。</p>
                 <h5>第2条 本站服务</h5>
 
-                <p><strong>2.1</strong>京东通过互联网依法为用户提供互联网信息等服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。</p>
+                <p><strong>2.1</strong>东京通过互联网依法为用户提供互联网信息等服务，用户在完全同意本协议及本站规定的情况下，方有权使用本站的相关服务。</p>
 
                 <p>
                     <strong>2.2</strong>用户必须自行准备如下设备和承担如下开支：（1）上网设备，包括并不限于电脑或者其他上网终端、调制解调器及其他必备的上网装置；（2）上网开支，包括并不限于网络接入费、上网设备租用费、手机流量费等。
@@ -129,7 +129,7 @@
                 <h5>第3条 用户信息</h5>
 
                 <p>
-                    <strong>3.1</strong>用户应自行诚信向本站提供注册资料，用户同意其提供的注册资料真实、准确、完整、合法有效，用户注册资料如有变动的，应及时更新其注册资料。如果用户提供的注册资料不合法、不真实、不准确、不详尽的，用户需承担因此引起的相应责任及后果，并且京东保留终止用户使用京东各项服务的权利。
+                    <strong>3.1</strong>用户应自行诚信向本站提供注册资料，用户同意其提供的注册资料真实、准确、完整、合法有效，用户注册资料如有变动的，应及时更新其注册资料。如果用户提供的注册资料不合法、不真实、不准确、不详尽的，用户需承担因此引起的相应责任及后果，并且东京保留终止用户使用东京各项服务的权利。
                 </p>
 
                 <p>
@@ -140,11 +140,11 @@
                     <strong>3.3</strong>用户注册成功后，将产生用户名和密码等账户信息，您可以根据本站规定改变您的密码。用户应谨慎合理的保存、使用其用户名和密码。用户若发现任何非法使用用户账号或存在安全漏洞的情况，请立即通知本站并向公安机关报案。
                 </p>
 
-                <p><strong>3.4</strong><strong>用户同意，京东拥有通过邮件、短信电话等形式，向在本站注册、购物用户、收货人发送订单信息、促销活动等告知信息的权利。</strong></p>
+                <p><strong>3.4</strong><strong>用户同意，东京拥有通过邮件、短信电话等形式，向在本站注册、购物用户、收货人发送订单信息、促销活动等告知信息的权利。</strong></p>
 
                 <p><strong>3.5</strong><strong>用户不得将在本站注册获得的账户借给他人使用，否则用户应承担由此产生的全部责任，并与实际使用人承担连带责任。</strong></p>
 
-                <p><strong>3.6</strong><strong>用户同意，京东有权使用用户的注册信息、用户名、密码等信息，登录进入用户的注册账户，进行证据保全，包括但不限于公证、见证等。</strong></p>
+                <p><strong>3.6</strong><strong>用户同意，东京有权使用用户的注册信息、用户名、密码等信息，登录进入用户的注册账户，进行证据保全，包括但不限于公证、见证等。</strong></p>
                 <h5>第4条 用户依法言行义务</h5>
 
                 <p>本协议依据国家相关法律法规规章制定，用户同意严格遵守以下义务：</p>
@@ -177,7 +177,7 @@
                 <h5>第5条 商品信息</h5>
 
                 <p>
-                    本站上的商品价格、数量、是否有货等商品信息随时都有可能发生变动，本站不作特别通知。由于网站上商品信息的数量极其庞大，虽然本站会尽最大努力保证您所浏览商品信息的准确性，但由于众所周知的互联网技术因素等客观原因存在，本站网页显示的信息可能会有一定的滞后性或差错，对此情形您知悉并理解；京东欢迎纠错，并会视情况给予纠错者一定的奖励。
+                    本站上的商品价格、数量、是否有货等商品信息随时都有可能发生变动，本站不作特别通知。由于网站上商品信息的数量极其庞大，虽然本站会尽最大努力保证您所浏览商品信息的准确性，但由于众所周知的互联网技术因素等客观原因存在，本站网页显示的信息可能会有一定的滞后性或差错，对此情形您知悉并理解；东京欢迎纠错，并会视情况给予纠错者一定的奖励。
                 </p>
 
                 <p>为表述便利，商品和服务简称为;商品;或;货物;。</p>
@@ -213,11 +213,11 @@
                 <h5>第8条 所有权及知识产权条款</h5>
 
                 <p>
-                    <strong>8.1</strong><strong>用户一旦接受本协议，即表明该用户主动将其在任何时间段在本站发表的任何形式的信息内容（包括但不限于客户评价、客户咨询、各类话题文章等信息内容）的财产性权利等任何可转让的权利，如著作权财产权（包括并不限于：复制权、发行权、出租权、展览权、表演权、放映权、广播权、信息网络传播权、摄制权、改编权、翻译权、汇编权以及应当由著作权人享有的其他可转让权利），全部独家且不可撤销地转让给京东所有，用户同意京东有权就任何主体侵权而单独提起诉讼。</strong>
+                    <strong>8.1</strong><strong>用户一旦接受本协议，即表明该用户主动将其在任何时间段在本站发表的任何形式的信息内容（包括但不限于客户评价、客户咨询、各类话题文章等信息内容）的财产性权利等任何可转让的权利，如著作权财产权（包括并不限于：复制权、发行权、出租权、展览权、表演权、放映权、广播权、信息网络传播权、摄制权、改编权、翻译权、汇编权以及应当由著作权人享有的其他可转让权利），全部独家且不可撤销地转让给东京所有，用户同意东京有权就任何主体侵权而单独提起诉讼。</strong>
                 </p>
 
                 <p>
-                    <strong>8.2</strong><strong>本协议已经构成《中华人民共和国著作权法》第二十五条（条文序号依照2011年版著作权法确定）及相关法律规定的著作财产权等权利转让书面协议，其效力及于用户在京东网站上发布的任何受著作权法保护的作品内容，无论该等内容形成于本协议订立前还是本协议订立后。</strong>
+                    <strong>8.2</strong><strong>本协议已经构成《中华人民共和国著作权法》第二十五条（条文序号依照2011年版著作权法确定）及相关法律规定的著作财产权等权利转让书面协议，其效力及于用户在东京网站上发布的任何受著作权法保护的作品内容，无论该等内容形成于本协议订立前还是本协议订立后。</strong>
                 </p>
 
                 <p>
@@ -225,15 +225,15 @@
                 </p>
 
                 <p>
-                    <strong>8.4</strong><strong>京东是本站的制作者,拥有此网站内容及资源的著作权等合法权利,受国家法律保护,有权不时地对本协议及本站的内容进行修改，并在本站张贴，无须另行通知用户。在法律允许的最大限度范围内，京东对本协议及本站内容拥有解释权。</strong>
+                    <strong>8.4</strong><strong>东京是本站的制作者,拥有此网站内容及资源的著作权等合法权利,受国家法律保护,有权不时地对本协议及本站的内容进行修改，并在本站张贴，无须另行通知用户。在法律允许的最大限度范围内，东京对本协议及本站内容拥有解释权。</strong>
                 </p>
 
                 <p>
-                    <strong>8.5</strong><strong>除法律另有强制性规定外，未经京东明确的特别书面许可,任何单位或个人不得以任何方式非法地全部或部分复制、转载、引用、链接、抓取或以其他方式使用本站的信息内容，否则，京东有权追究其法律责任。</strong>
+                    <strong>8.5</strong><strong>除法律另有强制性规定外，未经东京明确的特别书面许可,任何单位或个人不得以任何方式非法地全部或部分复制、转载、引用、链接、抓取或以其他方式使用本站的信息内容，否则，东京有权追究其法律责任。</strong>
                 </p>
 
                 <p>
-                    <strong>8.6</strong>本站所刊登的资料信息（诸如文字、图表、标识、按钮图标、图像、声音文件片段、数字下载、数据编辑和软件），均是京东或其内容提供者的财产，受中国和国际版权法的保护。本站上所有内容的汇编是京东的排他财产，受中国和国际版权法的保护。本站上所有软件都是京东或其关联公司或其软件供应商的财产，受中国和国际版权法的保护。
+                    <strong>8.6</strong>本站所刊登的资料信息（诸如文字、图表、标识、按钮图标、图像、声音文件片段、数字下载、数据编辑和软件），均是东京或其内容提供者的财产，受中国和国际版权法的保护。本站上所有内容的汇编是东京的排他财产，受中国和国际版权法的保护。本站上所有软件都是东京或其关联公司或其软件供应商的财产，受中国和国际版权法的保护。
                 </p>
                 <h5>第9条 责任限制及不承诺担保</h5>
 
@@ -242,15 +242,15 @@
                 </p>
 
                 <p>
-                    <strong>除非另有明确的书面说明,京东不对本站的运营及其包含在本网站上的信息、内容、材料、产品（包括软件）或服务作任何形式的、明示或默示的声明或担保（根据中华人民共和国法律另有规定的以外）。</strong>
+                    <strong>除非另有明确的书面说明,东京不对本站的运营及其包含在本网站上的信息、内容、材料、产品（包括软件）或服务作任何形式的、明示或默示的声明或担保（根据中华人民共和国法律另有规定的以外）。</strong>
                 </p>
 
-                <p><strong>京东不担保本站所包含的或以其它方式通过本站提供给您的全部信息、内容、材料、产品（包括软件）和服务、其服务器或从本站发出的电子信件、信息没有病毒或其他有害成分。</strong></p>
+                <p><strong>东京不担保本站所包含的或以其它方式通过本站提供给您的全部信息、内容、材料、产品（包括软件）和服务、其服务器或从本站发出的电子信件、信息没有病毒或其他有害成分。</strong></p>
 
-                <p><strong>如因不可抗力或其它本站无法控制的原因使本站销售系统崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等，京东会合理地尽力协助处理善后事宜。</strong></p>
+                <p><strong>如因不可抗力或其它本站无法控制的原因使本站销售系统崩溃或无法正常使用导致网上交易无法完成或丢失有关的信息、记录等，东京会合理地尽力协助处理善后事宜。</strong></p>
                 <h5>第10条 协议更新及用户关注义务</h5>
-                根据国家法律法规变化及网站运营需要，京东有权对本协议条款不时地进行修改，修改后的协议一旦被张贴在本站上即生效，并代替原来的协议。用户可随时登录查阅最新协议；
-            <strong><em>用户有义务不时关注并阅读最新版的协议及网站公告。如用户不同意更新后的协议，可以且应立即停止接受京东网站依据本协议提供的服务；如用户继续使用本网站提供的服务的，即视为同意更新后的协议。京东建议您在使用本站之前阅读本协议及本站的公告。</em></strong>
+                根据国家法律法规变化及网站运营需要，东京有权对本协议条款不时地进行修改，修改后的协议一旦被张贴在本站上即生效，并代替原来的协议。用户可随时登录查阅最新协议；
+            <strong><em>用户有义务不时关注并阅读最新版的协议及网站公告。如用户不同意更新后的协议，可以且应立即停止接受东京网站依据本协议提供的服务；如用户继续使用本网站提供的服务的，即视为同意更新后的协议。东京建议您在使用本站之前阅读本协议及本站的公告。</em></strong>
                 如果本协议中任何一条被视为废止、无效或因任何理由不可执行，该条应视为可分的且并不影响任何其余条款的有效性和可执行性。
             <h5>第11条 法律管辖和适用</h5>
                 本协议的订立、执行和解释及争议的解决均应适用在中华人民共和国大陆地区适用之有效法律（但不包括其冲突法规则）。
@@ -258,10 +258,10 @@
             如缔约方就本协议内容或其执行发生任何争议，双方应尽力友好协商解决；协商不成时，任何一方均可向有管辖权的中华人民共和国大陆地区法院提起诉讼。
             <h5>第12条 其他 </h5>
 
-                <p><strong>12.1</strong>京东网站所有者是指在政府部门依法许可或备案的京东网站经营主体。</p>
+                <p><strong>12.1</strong>东京网站所有者是指在政府部门依法许可或备案的东京网站经营主体。</p>
 
                 <p>
-                    <strong>12.2</strong>京东尊重用户和消费者的合法权利，本协议及本网站上发布的各类规则、声明等其他内容，均是为了更好的、更加便利的为用户和消费者提供服务。本站欢迎用户和社会各界提出意见和建议，京东将虚心接受并适时修改本协议及本站上的各类规则。
+                    <strong>12.2</strong>东京尊重用户和消费者的合法权利，本协议及本网站上发布的各类规则、声明等其他内容，均是为了更好的、更加便利的为用户和消费者提供服务。本站欢迎用户和社会各界提出意见和建议，东京将虚心接受并适时修改本协议及本站上的各类规则。
                 </p>
 
                 <p><strong>12.3</strong><span>本协议内容中以黑体、加粗、下划线、斜体等方式显著标识的条款，请用户着重阅读。</span></p>
@@ -290,7 +290,7 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">京东（以下或称“我们”）注重保护用户个人信息及个人隐私。本隐私政策解释了用户（“您”）个人信息收集（以下或称“信息”）和使用的有关情况，本隐私政策适用于京东向您提供的所有相关服务（包括但不限于电子商务、网络资讯、网络社交、互联网金融服务等，以下称“京东服务”或“服务”）。<b>如果您不同意本隐私政策的任何内容，您应立即停止使用京东服务。当您使用京东提供的任一服务时，即表示您已同意我们按照本隐私政策来合法使用和保护您的个人信息。</b><span></span></span>
+                    <span style="line-height: 150%;">东京（以下或称“我们”）注重保护用户个人信息及个人隐私。本隐私政策解释了用户（“您”）个人信息收集（以下或称“信息”）和使用的有关情况，本隐私政策适用于东京向您提供的所有相关服务（包括但不限于电子商务、网络资讯、网络社交、互联网金融服务等，以下称“东京服务”或“服务”）。<b>如果您不同意本隐私政策的任何内容，您应立即停止使用东京服务。当您使用东京提供的任一服务时，即表示您已同意我们按照本隐私政策来合法使用和保护您的个人信息。</b><span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -317,7 +317,7 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">当您注册京东账户及您在使用相关京东服务时填写、提交及<span>/</span>或其他任何方式提供的信息，包括您的姓名、性别、出生年月日、身份证号码、护照姓、护照名、护照号码、电话号码、电子邮箱、收货地址、京东钱包或网银在线账号、银行卡信息及相关附加信息（如您地址中的所在的省份和城市、邮政编码等）。<b>您可以选择不提供某一或某些信息，但是这样可能使您无法使用京东的许多特色服务。</b>请您理解，我们使用您提供的信息是为了回应您的要求，为您在京东购物或享受服务提供便利，完善京东网站以及与您进行信息沟通。另外，我们可能会将您所提供的信息与您的京东账户关联，用以识别您的身份。<span></span></span>
+                    <span style="line-height: 150%;">当您注册东京账户及您在使用相关东京服务时填写、提交及<span>/</span>或其他任何方式提供的信息，包括您的姓名、性别、出生年月日、身份证号码、护照姓、护照名、护照号码、电话号码、电子邮箱、收货地址、东京钱包或网银在线账号、银行卡信息及相关附加信息（如您地址中的所在的省份和城市、邮政编码等）。<b>您可以选择不提供某一或某些信息，但是这样可能使您无法使用东京的许多特色服务。</b>请您理解，我们使用您提供的信息是为了回应您的要求，为您在东京购物或享受服务提供便利，完善东京网站以及与您进行信息沟通。另外，我们可能会将您所提供的信息与您的东京账户关联，用以识别您的身份。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -332,28 +332,28 @@
 
                 <p class="MsoNormal" style="line-height: 150%">
                     <b><span style="line-height: 150%;">（<span>1</span>）您的浏览器和计算机上的信息。</span></b><span
-                        style="line-height: 150%;">在您访问京东网站或使用京东服务时，京东系统自动接收并记录的您的浏览器和计算机上的信息（包括但不限于您的<span>IP</span>地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息及您需求的网页记录等数据）。<span></span></span>
+                        style="line-height: 150%;">在您访问东京网站或使用东京服务时，东京系统自动接收并记录的您的浏览器和计算机上的信息（包括但不限于您的<span>IP</span>地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息及您需求的网页记录等数据）。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <b><span style="line-height: 150%;">（<span>2</span>）您的位置信息。</span></b><span style="line-height: 150%;">当您下载或使用京东、其关联方及合作伙伴开发的应用程序（例如京东<span>APP</span>），或访问移动网页使用京东服务时，京东可能会读取您的位置（大多数移动设备将允许您关闭定位服务，具体建议您联系您的移动设备的服务商或生产商）。<span></span></span>
+                    <b><span style="line-height: 150%;">（<span>2</span>）您的位置信息。</span></b><span style="line-height: 150%;">当您下载或使用东京、其关联方及合作伙伴开发的应用程序（例如东京<span>APP</span>），或访问移动网页使用东京服务时，东京可能会读取您的位置（大多数移动设备将允许您关闭定位服务，具体建议您联系您的移动设备的服务商或生产商）。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <b><span style="line-height: 150%;">（<span>3</span>）您的设备信息。</span></b><span style="line-height: 150%;">京东可能会读取您访问京东或使用京东服务时所使用的终端设备的信息，包括但不限于设备型号、设备识别码、操作系统、分辨率、电信运营商等。<span lang=" EN-US">
+                    <b><span style="line-height: 150%;">（<span>3</span>）您的设备信息。</span></b><span style="line-height: 150%;">东京可能会读取您访问东京或使用东京服务时所使用的终端设备的信息，包括但不限于设备型号、设备识别码、操作系统、分辨率、电信运营商等。<span lang=" EN-US">
                     </span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <b><span style="line-height: 150%;">（<span>4</span>）您的行为或交易信息。</span></b><span style="line-height: 150%;">京东可能会记录您访问京东或使用京东服务时所进行的操作以及您在京东网站上进行交易的相关信息。<span></span></span>
+                    <b><span style="line-height: 150%;">（<span>4</span>）您的行为或交易信息。</span></b><span style="line-height: 150%;">东京可能会记录您访问东京或使用东京服务时所进行的操作以及您在东京网站上进行交易的相关信息。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">除上述信息外，我们还可能为了提供服务及改进服务质量的合理需要而获得的您的其他信息，包括您与我们的客服团队联系时您提供的相关信息，您参与问卷调查时向我们发送的问卷答复信息，以及您与京东的关联方、京东合作伙伴之间互动时我们获得的相关信息。<span></span></span>
+                    <span style="line-height: 150%;">除上述信息外，我们还可能为了提供服务及改进服务质量的合理需要而获得的您的其他信息，包括您与我们的客服团队联系时您提供的相关信息，您参与问卷调查时向我们发送的问卷答复信息，以及您与东京的关联方、东京合作伙伴之间互动时我们获得的相关信息。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">同时，为提高您使用京东提供的服务的安全性，更准确地预防钓鱼网站欺诈和木马病毒，我们可能会通过了解一些您的网络使用习惯、您常用的软件信息等手段来判断您账户的风险，并可能会记录一些我们认为有风险的链接（“<span>URL</span>”）。<span></span></span>
+                    <span style="line-height: 150%;">同时，为提高您使用东京提供的服务的安全性，更准确地预防钓鱼网站欺诈和木马病毒，我们可能会通过了解一些您的网络使用习惯、您常用的软件信息等手段来判断您账户的风险，并可能会记录一些我们认为有风险的链接（“<span>URL</span>”）。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -364,7 +364,7 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">指在您注册京东账户和使用服务过程中，您授权的京东可向京东的关联方、合作伙伴所收集的相关信息，以及您授权的京东的关联方、合作伙伴可向京东分享相关的信息。这些信息包括但不限于您的身份信息、行为信息、交易信息、设备信息等，京东会将此类信息汇总，用于帮助京东向您提供更好以及更加个性化的服务或更好的预防互联网欺诈。<span></span></span>
+                    <span style="line-height: 150%;">指在您注册东京账户和使用服务过程中，您授权的东京可向东京的关联方、合作伙伴所收集的相关信息，以及您授权的东京的关联方、合作伙伴可向东京分享相关的信息。这些信息包括但不限于您的身份信息、行为信息、交易信息、设备信息等，东京会将此类信息汇总，用于帮助东京向您提供更好以及更加个性化的服务或更好的预防互联网欺诈。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -372,11 +372,11 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">（<span>1</span>）您在使用京东提供的搜索服务时输入的关键字信息；<span></span></span>
+                    <span style="line-height: 150%;">（<span>1</span>）您在使用东京提供的搜索服务时输入的关键字信息；<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">（<span>2</span>）信用评价、违反法律法规规定或违反京东平台规则行为及京东已对您采取的措施；<span></span></span>
+                    <span style="line-height: 150%;">（<span>2</span>）信用评价、违反法律法规规定或违反东京平台规则行为及东京已对您采取的措施；<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -384,7 +384,7 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">（<span>4</span>）其他您与京东或京东的关联方所签署的协议（包括在线签署的电子协议，例如《京东用户注册协议》）以及京东平台规则中明确约定或提示您不适用本隐私政策的与您有关的信息。<span></span></span>
+                    <span style="line-height: 150%;">（<span>4</span>）其他您与东京或东京的关联方所签署的协议（包括在线签署的电子协议，例如《东京用户注册协议》）以及东京平台规则中明确约定或提示您不适用本隐私政策的与您有关的信息。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -409,11 +409,11 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="font-size: 12.0pt; line-height: 150%;">2</span><span style="line-height: 150%;">、向您推荐您可能感兴趣的内容，包括但不限于向您发出产品和服务信息，或通过系统向您展示个性化的第三方推广信息，或在征得您同意的情况下与京东的合作伙伴共享信息以便他们向您发送有关其产品和服务的信息。如您不希望接收上述信息，可通过相应的退订功能进行退订。<span></span></span>
+                    <span style="font-size: 12.0pt; line-height: 150%;">2</span><span style="line-height: 150%;">、向您推荐您可能感兴趣的内容，包括但不限于向您发出产品和服务信息，或通过系统向您展示个性化的第三方推广信息，或在征得您同意的情况下与东京的合作伙伴共享信息以便他们向您发送有关其产品和服务的信息。如您不希望接收上述信息，可通过相应的退订功能进行退订。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="font-size: 12.0pt; line-height: 150%;">3</span><span style="line-height: 150%;">、我们可能使用您的个人信息以验证身份、预防、发现、调查欺诈、危害安全、非法或违反与我们或其关联方协议、政策或规则的行为，以保护您、其他京东用户，或我们或其关联方的合法权益。<span></span></span>
+                    <span style="font-size: 12.0pt; line-height: 150%;">3</span><span style="line-height: 150%;">、我们可能使用您的个人信息以验证身份、预防、发现、调查欺诈、危害安全、非法或违反与我们或其关联方协议、政策或规则的行为，以保护您、其他东京用户，或我们或其关联方的合法权益。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -455,7 +455,7 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="font-size: 12.0pt; line-height: 150%;">3</span><span style="line-height: 150%;">、出于实现“我们对您个人信息的管理和使用”部分所述目的，或为履行我们在《京东用户注册协议》或本隐私政策中的义务和行使我们的权利，向京东的关联方、合作伙伴或代表京东履行某项职能的第三方（例如代表我们发出推送通知的通讯服务商、处理银行卡的支付机构等）分享您的个人信息。<span></span></span>
+                    <span style="font-size: 12.0pt; line-height: 150%;">3</span><span style="line-height: 150%;">、出于实现“我们对您个人信息的管理和使用”部分所述目的，或为履行我们在《东京用户注册协议》或本隐私政策中的义务和行使我们的权利，向东京的关联方、合作伙伴或代表东京履行某项职能的第三方（例如代表我们发出推送通知的通讯服务商、处理银行卡的支付机构等）分享您的个人信息。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -468,11 +468,11 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="font-size: 12.0pt; line-height: 150%;">6</span><span style="line-height: 150%;">、您出现违反中国有关法律、法规规定或者违反您与京东签署的相关协议（包括在线签署的电子协议）或违反相关京东平台规则时需要向第三方披露的情形。<span></span></span>
+                    <span style="font-size: 12.0pt; line-height: 150%;">6</span><span style="line-height: 150%;">、您出现违反中国有关法律、法规规定或者违反您与东京签署的相关协议（包括在线签署的电子协议）或违反相关东京平台规则时需要向第三方披露的情形。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="font-size: 12.0pt; line-height: 150%;">7</span><span style="line-height: 150%;">、为维护京东及其关联方或其他京东用户的合法权益。<span></span></span>
+                    <span style="font-size: 12.0pt; line-height: 150%;">7</span><span style="line-height: 150%;">、为维护东京及其关联方或其他东京用户的合法权益。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -493,11 +493,11 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">京东严格保护您的个人信息安全。我们使用各种制度、安全技术和程序等措施来保护您的个人信息不被未经授权的访问、篡改、披露或破坏。如果您对我们的个人信息保护有任何疑问，请联系我们的客服。<span></span></span>
+                    <span style="line-height: 150%;">东京严格保护您的个人信息安全。我们使用各种制度、安全技术和程序等措施来保护您的个人信息不被未经授权的访问、篡改、披露或破坏。如果您对我们的个人信息保护有任何疑问，请联系我们的客服。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">在通过京东网站与第三方进行网上商品或服务的交易时，您不可避免的要向交易对方或潜在的交易对方披露自己的个人信息，如联络方式或者邮政地址等。请您妥善保护自己的个人信息，仅在必要的情形下向他人提供。如您发现自己的个人信息泄密，尤其是你的账户及密码发生泄露，请您立即联络我们的客服，以便我们采取相应措施。<span></span></span>
+                    <span style="line-height: 150%;">在通过东京网站与第三方进行网上商品或服务的交易时，您不可避免的要向交易对方或潜在的交易对方披露自己的个人信息，如联络方式或者邮政地址等。请您妥善保护自己的个人信息，仅在必要的情形下向他人提供。如您发现自己的个人信息泄密，尤其是你的账户及密码发生泄露，请您立即联络我们的客服，以便我们采取相应措施。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -513,7 +513,7 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">您可以在“我的京东”页面的“账户设置”菜单中查阅您提交给京东的所有个人信息，你也可通过上述途径更新除实名认证信息之外的其他个人信息（您的实名认证信息是您通过实名认证时使用的姓名和身份证信息），如您需要变更您的实名认证信息，您可拨打95118 服务热线申请变更。<span></span></span>
+                    <span style="line-height: 150%;">您可以在“我的东京”页面的“账户设置”菜单中查阅您提交给东京的所有个人信息，你也可通过上述途径更新除实名认证信息之外的其他个人信息（您的实名认证信息是您通过实名认证时使用的姓名和身份证信息），如您需要变更您的实名认证信息，您可拨打95118 服务热线申请变更。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -539,11 +539,11 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">京东使用<span> Cookie </span>来帮助您实现您的联机体验的个性化，使您在京东及其关联方获得更轻松的访问体验。例如，<span>Cookie </span>会帮助您在后续访问京东网站时调用您的信息，简化记录您填写个人信息（例如一键登录等）的流程；为您提供安全购物的偏好设置；帮助您优化对广告的选择与互动；保护您的数据安全等。<span></span></span>
+                    <span style="line-height: 150%;">东京使用<span> Cookie </span>来帮助您实现您的联机体验的个性化，使您在东京及其关联方获得更轻松的访问体验。例如，<span>Cookie </span>会帮助您在后续访问东京网站时调用您的信息，简化记录您填写个人信息（例如一键登录等）的流程；为您提供安全购物的偏好设置；帮助您优化对广告的选择与互动；保护您的数据安全等。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">您有权接受或拒绝<span>Cookie</span>。大多数浏览器会自动接受<span>Cookie</span>，但您通常可根据自己的需要来修改浏览器的设置以拒绝<span> Cookie</span>。如果选择拒绝 <span>Cookie</span>，那么您可能无法完全体验所访问的京东网站或某些服务的全部功能。<span></span></span>
+                    <span style="line-height: 150%;">您有权接受或拒绝<span>Cookie</span>。大多数浏览器会自动接受<span>Cookie</span>，但您通常可根据自己的需要来修改浏览器的设置以拒绝<span> Cookie</span>。如果选择拒绝 <span>Cookie</span>，那么您可能无法完全体验所访问的东京网站或某些服务的全部功能。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -551,15 +551,15 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">京东网页上常会包含一些电子图象（称为<span>"</span>单像素<span>" GIF </span>文件或<span> "</span>网络<span> beacon"</span>），它们可以帮助网站计算浏览网页的用户或访问某些<span>cookie</span>。京东使用网络<span>beacon</span>的方式有：<span></span></span>
+                    <span style="line-height: 150%;">东京网页上常会包含一些电子图象（称为<span>"</span>单像素<span>" GIF </span>文件或<span> "</span>网络<span> beacon"</span>），它们可以帮助网站计算浏览网页的用户或访问某些<span>cookie</span>。东京使用网络<span>beacon</span>的方式有：<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">（<span>1</span>）京东通过在京东网站上使用网络<span>beacon</span>，计算用户访问数量，并通过访问<span> cookie </span>辨认注册用户。 <span></span></span>
+                    <span style="line-height: 150%;">（<span>1</span>）东京通过在东京网站上使用网络<span>beacon</span>，计算用户访问数量，并通过访问<span> cookie </span>辨认注册用户。 <span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">（<span>2</span>）京东通过得到的<span>cookie</span>信息，可以在京东网站提供个性化服务。<span></span></span>
+                    <span style="line-height: 150%;">（<span>2</span>）东京通过得到的<span>cookie</span>信息，可以在东京网站提供个性化服务。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -575,7 +575,7 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">京东非常重视对未成年人个人信息的保护。若您是<span>18</span>周岁以下的未成年人，在使用京东服务前，应事先取得您家长或法定监护人的书面同意。京东根据国家相关法律法规的规定保护未成年人的个人信息。<span></span></span>
+                    <span style="line-height: 150%;">东京非常重视对未成年人个人信息的保护。若您是<span>18</span>周岁以下的未成年人，在使用东京服务前，应事先取得您家长或法定监护人的书面同意。东京根据国家相关法律法规的规定保护未成年人的个人信息。<span></span></span>
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
@@ -589,7 +589,7 @@
                 </p>
 
                 <p class="MsoNormal" style="line-height: 150%">
-                    <span style="line-height: 150%;">为给你提供更好的服务，京东的业务将不时变化，本隐私政策也将随之调整。京东会通过在京东网站、移动端上发出更新版本并提醒您相关内容的更新，也请您访问京东以便及时了解最新的隐私政策。如果您对于本隐私政策或在使用京东服务时对于您的个人信息或隐私情况有任何问题，请联系京东客服并作充分描述，京东将尽力解决。</span>
+                    <span style="line-height: 150%;">为给你提供更好的服务，东京的业务将不时变化，本隐私政策也将随之调整。东京会通过在东京网站、移动端上发出更新版本并提醒您相关内容的更新，也请您访问东京以便及时了解最新的隐私政策。如果您对于本隐私政策或在使用东京服务时对于您的个人信息或隐私情况有任何问题，请联系东京客服并作充分描述，东京将尽力解决。</span>
                 </p>
             </div>
             <div class="protocol-button">
@@ -604,14 +604,14 @@
         <a rel="nofollow" target="_blank" href="//zhaopin.jd.com/">人才招聘</a>|
         <a rel="nofollow" target="_blank" href="//www.jd.com/contact/joinin.aspx">商家入驻</a>|
         <a rel="nofollow" target="_blank" href="//www.jd.com/intro/service.aspx">广告服务</a>|
-        <a rel="nofollow" target="_blank" href="//app.jd.com/">手机京东</a>|
+        <a rel="nofollow" target="_blank" href="//app.jd.com/">手机东京</a>|
         <a target="_blank" href="//club.jd.com/links.aspx">友情链接</a>|
         <a target="_blank" href="//media.jd.com">销售联盟</a>|
-        <a href="//club.jd.com/" target="_blank">京东社区</a>|
-        <a href="//gongyi.jd.com" target="_blank">京东公益</a>|
+        <a href="//club.jd.com/" target="_blank">东京社区</a>|
+        <a href="//gongyi.jd.com" target="_blank">东京公益</a>|
         </div>
         <div class="copyright">
-            Copyright&copy;2004-2016&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+            Copyright&copy;2004-2016&nbsp;&nbsp;东京JD.com&nbsp;版权所有
         </div>
     </div>
     <script>
@@ -639,23 +639,38 @@
                 // 检查是否已被注册
                 var text = this.value;
                 if (text.length == 0) return;
+                if (text.length < 4 || text.length > 20) {
+                    var statu = this.parentNode.nextElementSibling;
+                    if (this.parentNode.className.indexOf('form-item-error') == -1)
+                        this.parentNode.className = this.parentNode.className + ' form-item-error';
+                    statu.innerHTML = '<span id="form-pwd-error" class="error"><i class="i-error"></i>长度只能在4-20个字符之间</span>';
+                    statu.style.display = 'block';
+                    return;
+                }
+                $(this.nextElementSibling).css('background', 'url("/Images/loading.gif")');
                 var xmlhttp = new XMLHttpRequest();
-                xmlhttp.open("GET", "/checkUserExits.aspx?" + text, true);
+                xmlhttp.open("GET", "/checkUserExits.aspx?name=" + text, true);
                 xmlhttp.send();
                 xmlhttp.onreadystatechange = function () {
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                         var res = xmlhttp.responseText.split("\n")[0].trim();
+                        $($('#form-account')[0].nextElementSibling).css('background', '');
                         if (res == 'False') {
                             if ($('#form-account')[0].parentNode.className.indexOf('form-item-valid') == -1)
                                 $('#form-account')[0].parentNode.className += ' form-item-valid';
-                        }
-                        else {
+                        } else {
                             $('#form-account')[0].parentNode.className = $('#form-account')[0].parentNode.className.replace('form-item-valid', '');
+                            if ($('#form-account')[0].parentNode.className.indexOf('form-item-error') == -1)
+                                $('#form-account')[0].parentNode.className += ' form-item-error';
+                            var statu = $('#form-account')[0].parentNode.nextElementSibling;
+                            if ($('#form-account')[0].parentNode.className.indexOf('form-item-error') == -1)
+                                $('#form-account')[0].parentNode.className = $('#form-account')[0].parentNode.className + ' form-item-error';
+                            statu.innerHTML = '<span id="form-pwd-error" class="error"><i class="i-error"></i>该用户名已被注册</span>';
+                            statu.style.display = 'block';
                         }
                     }
                 }
-            }
-            else if (this.id == 'form-pwd') {
+            } else if (this.id == 'form-pwd') {
                 this.nextElementSibling.nextElementSibling.style.display = 'none';
                 var text = this.value;
                 if (text.length > 0 && (text.length < 6 || text.length > 20)) {
@@ -668,7 +683,7 @@
                 var ele = this.parentNode.nextElementSibling.nextElementSibling.children[2];
                 var textne = ele.value;
                 var text = this.value;
-                if (text.length != 0) {
+                if (text.length != 0 && textne.length != 0) {
                     if (textne != text) {
                         var statu = ele.parentNode.nextElementSibling;
                         if (ele.parentNode.className.indexOf('form-item-error') == -1)
@@ -787,7 +802,7 @@
         }
         $('.ui-dialog-close,.ui-mask').click(closeDialog);
         $('#protocol').click(function () {
-            $('#dialog-title')[0].innerHTML = '京东用户注册协议';
+            $('#dialog-title')[0].innerHTML = '东京用户注册协议';
             $('#dialog-content')[0].innerHTML = $('#protocoldiv')[0].innerHTML;
             $('.protocol-button button').click(closeDialog);
             $('.ui-dialog,.ui-mask').css('display', 'block');
@@ -801,5 +816,19 @@
             document.documentElement.style.overflow = 'hidden';
         });
     </script>
+    <script>
+        /*
+        // 错误处理
+        $('#form-account')[0].value = '${name}';
+        var ele = $('#${errorID}')[0];
+        if (ele != null) {
+            var statu = ele.parentNode.nextElementSibling;
+            if (ele.parentNode.className.indexOf('form-item-error') == -1)
+                ele.parentNode.className = ele.parentNode.className + ' form-item-error';
+            statu.innerHTML = '<span id="form-pwd-error" class="error"><i class="i-error"></i>${errorMsg}</span>';
+            statu.style.display = 'block';
+        }
+        */
+	</script>
 </body>
 </html>

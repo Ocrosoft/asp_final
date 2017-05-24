@@ -76,10 +76,12 @@
     <Content Include="Images\headbg.jpg" />
     <Content Include="Images\icon.png" />
     <Content Include="Images\l-icon.png" />
+    <Content Include="Images\loading.gif" />
     <Content Include="Images\logo-201305-b.png" />
     <Content Include="Images\pwd-icons.png" />
     <Content Include="Images\q-icon.png" />
     <Content Include="Images\vip.png" />
+    <Content Include="js\jbase64.js" />
     <Content Include="login.aspx" />
     <Content Include="packages.config" />
     <Content Include="css\bootstrap-theme.css.map" />

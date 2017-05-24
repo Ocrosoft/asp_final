@@ -1,18 +1,21 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="User_Interface_Layer.login" %>
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="GBK" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>蹭蹭-欢迎登录</title>
+    <title>东京-欢迎登录</title>
     <link rel="icon" href="#" />
     <link type="text/css" rel="stylesheet" href="/css/login.css" />
     <script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="/js/jbase64.js"></script>
 </head>
 <body>
     <div class="w">
         <div id="logo">
             <a href="#">
-                <img src="/Images/logo-201305-b.png" alt="蹭蹭" width="170" height="60">
+                <img src="/Images/logo-201305-b.png" alt="东京" width="170" height="60">
             </a>
             <b></b>
         </div>
@@ -32,7 +35,7 @@
                         </div>
                         <div class="mc">
                             <div class="form">
-                                <form id="formlogin" method="post" onsubmit="return false;">
+                                <form id="formlogin" method="post">
                                     <div class="item item-fore1">
                                         <label for="loginname" class="login-label name-label"></label>
                                         <input id="loginname" type="text" class="itxt" name="loginname" tabindex="1"
@@ -100,39 +103,39 @@
     <div class="w">
         <div id="footer-2013">
             <div class="links">
-                <a rel="nofollow" target="_blank" href="//www.jd.com/intro/about.aspx">关于我们
+                <a rel="nofollow" target="_blank" href="#">关于我们
                 </a>
                 |
-            <a rel="nofollow" target="_blank" href="//www.jd.com/contact/">联系我们
+            <a rel="nofollow" target="_blank" href="#">联系我们
             </a>
                 |
-            <a rel="nofollow" target="_blank" href="//zhaopin.jd.com/">人才招聘
+            <a rel="nofollow" target="_blank" href="#">人才招聘
             </a>
                 |
-            <a rel="nofollow" target="_blank" href="//www.jd.com/contact/joinin.aspx">商家入驻
+            <a rel="nofollow" target="_blank" href="#">商家入驻
             </a>
                 |
-            <a rel="nofollow" target="_blank" href="//www.jd.com/intro/service.aspx">广告服务
+            <a rel="nofollow" target="_blank" href="#">广告服务
             </a>
                 |
-            <a rel="nofollow" target="_blank" href="//app.jd.com/">手机京东
+            <a rel="nofollow" target="_blank" href="#">手机东京
             </a>
                 |
-            <a target="_blank" href="//club.jd.com/links.aspx">友情链接
+            <a target="_blank" href="#">友情链接
             </a>
                 |
-            <a target="_blank" href="//media.jd.com/">销售联盟
+            <a target="_blank" href="#">销售联盟
             </a>
                 |
-            <a href="//club.jd.com/" target="_blank">京东社区
+            <a href="#" target="_blank">东京社区
             </a>
                 |
-            <a href="//gongyi.jd.com" target="_blank">京东公益
+            <a href="#" target="_blank">东京公益
             </a>
                 |
             </div>
             <div class="copyright">
-                Copyright&nbsp;&copy;&nbsp;2004-2017&nbsp;&nbsp;京东JD.com&nbsp;版权所有
+                Copyright&nbsp;&copy;&nbsp;2016-2017&nbsp;&nbsp;东京DJ.com&nbsp;版权所有
             </div>
         </div>
     </div>
@@ -212,7 +215,28 @@
             this.style.display = 'none';
         });
     </script>
+    <script>
+        $('#loginsubmit').click(function () {
+            $('#formlogin').submit();
+        });
+        $('#formlogin').submit(function () {
+            var name = $('#loginname')[0].value;
+            var pass = $('#nloginpwd')[0].value;
+            var pass_encode = BASE64.encoder(pass);
+            $('#nloginpwd')[0].value = pass_encode;
+            return true;
+        });
+	</script>
+    <script>
+        /*
+        $('#loginname')[0].value = '${name}';
+        var msg = '${errorMsg}';
+        if (msg.length != 0) {
+            $('.msg-error')[0].innerHTML = '<b></b>${errorMsg}';
+            $('.msg-error').css('display', 'block');
+            $('#${errorID}').addClass('item-error');
+        }
+        */
+	</script>
 </body>
 </html>
-
-
