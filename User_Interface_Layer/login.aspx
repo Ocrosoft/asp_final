@@ -4,23 +4,15 @@
     <meta charset="GBK" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>蹭蹭-欢迎登录</title>
-    <link rel="icon" href="//www.jd.com/favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="/css/login.css"/>
+    <link rel="icon" href="#" />
+    <link type="text/css" rel="stylesheet" href="/css/login.css" />
     <script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            window.SysConfig = {
-                encryptInfo: true,
-                rememberMeShowEnable: false
-            };
-        });
-    </script>
 </head>
 <body>
     <div class="w">
         <div id="logo">
-            <a href="//www.jd.com/">
-                <img src="//misc.360buyimg.com/lib/img/e/logo-201305-b.png" alt="蹭蹭" width="170" height="60">
+            <a href="#">
+                <img src="/Images/logo-201305-b.png" alt="蹭蹭" width="170" height="60">
             </a>
             <b></b>
         </div>
@@ -30,9 +22,6 @@
             <div class="w">
                 <div class="login-form">
                     <div class="login-tab login-tab-l">
-                        <a href="javascript:void(0)">扫码登录</a>
-                    </div>
-                    <div class="login-tab login-tab-r">
                         <a href="javascript:void(0)">账户登录</a>
                     </div>
                     <div class="login-box">
@@ -71,7 +60,7 @@
                                         <div class="safe">
                                             <span></span>
                                             <span class="forget-pw-safe">
-                                                <a href="/uc/links?tag=safe" class="" target="_blank">忘记密码</a>
+                                                <a href="#" class="" target="_blank">忘记密码</a>
                                             </span>
                                         </div>
                                     </div>
@@ -92,7 +81,7 @@
                                 <div>
                                     <div class="regist-link">
                                         <a
-                                            href="//reg.jd.com/reg/person?ReturnUrl=http%3A%2F%2Fwww.jd.com" target="_blank"><b></b>立即注册</a>
+                                            href="reg.aspx" target="_blank"><b></b>立即注册</a>
                                     </div>
                                 </div>
                             </li>
@@ -148,38 +137,20 @@
         </div>
     </div>
     <script>
-        // 切换到账号密码登录
-        $(this).hasClass("login-tab-l") ? (-1 != window.location.href.indexOf("/popupLogin2013") && $(".no-reg-buy").hide(), $(".login-box").hide(), $(".qrcode-login").show().css("visibility", "visible"), $("#country_code_layer").hide(), t(), l ? (s(), q(!1, !1, !0)) : (n(), q(!0, !1))) : (-1 != window.location.href.indexOf("/popupLogin2013") && $(".no-reg-buy").show(), $(".login-box").show().css("visibility", "visible"), $("#entry").css("visibility", "visible"), $.browser.msie && /msie 8\.0/i.test(window.navigator.userAgent.toLowerCase()) && ($(".item").each(function () {
-            if (0 != $(this).css("margin-bottom")) {
-                if ($(this).next().is(".marginBottom"))
-                    return;
-                $(this).after('<div class="marginBottom" style="height:' + $(this).css("margin-bottom") + '"></div>'),
-                    $(this).css("margin-bottom", "0px")
-            }
-        }), $(".msg-wrap").after('<div class="marginBottom" style="height:' + $(".msg-wrap").css("margin-bottom") + '"></div>'), $(".msg-wrap").css("margin-bottom", "0px")), $(".qrcode-login").hide()),
-            $(".login-tab a").removeClass("checked"),
-            $(this).find("a").addClass("checked")
-    </script>
-    <script>
         //随机生成广告
         var data = [{
-            src: "//img30.360buyimg.com/da/jfs/t5740/34/1111642231/149958/7aae47e2/5923a768Nfb878b9e.jpg",
+            src: "/Images/5923a768Nfb878b9e.jpg",
             bgColor: "#4890fc",
             weight: "#4890fc"
         }, {
-            src: "//img14.360buyimg.com/da/jfs/t5650/74/324968046/136852/fb8981c2/591eae9fN2041b3b7.jpg",
+            src: "/Images/591eae9fN2041b3b7.jpg",
             bgColor: "#2d7cf1",
             weight: "4"
         }, {
-            src: "//img30.360buyimg.com/da/jfs/t5677/172/940128419/134452/40710eea/5922b035N0b46060a.jpg",
+            src: "/Images/5922b035N0b46060a.jpg",
             bgColor: "#0c8afa",
             weight: "4"
-        }, {
-            src: "//img13.360buyimg.com/da/jfs/t5281/239/1862456648/43957/26091b6c/59155bf2N6d1c0f04.jpg",
-            bgColor: "#E93854",
-            weight: ""
-        }
-        ];
+        }];
         var getRandom = function (arr) {
             var _temp = 0,
                 _random = 0,
@@ -203,6 +174,43 @@
         var bgData = getRandom(data);
         var bannerHtml = tpl.replace(/{bgColor}/g, bgData.bgColor).replace(/{imgURI}/g, bgData.src);
         $('.login-banner').replaceWith(bannerHtml);
+    </script>
+    <script>
+        var capslock = false;
+        // 输入显示清除按钮
+        $('#loginname,#nloginpwd').keyup(function (e) {
+            var text = this.value;
+            var btn = this.nextElementSibling;
+            if (text.length > 0) btn.style.display = 'block';
+            else btn.style.display = 'none';
+            // 大小写
+            if (this.id == 'nloginpwd') {
+                var keyCode = e.keyCode || e.which;
+                if (keyCode == 20) capslock = !capslock;
+                var isShift = e.shiftKey;
+                if (keyCode >= 65 && keyCode <= 90) {
+                    var c = text[text.length - 1];
+                    if (c >= 'a' && c <= 'z' && isShift) capslock = true;
+                    else if (c >= 'a' && c <= 'z' && !isShift) capslock = false;
+                    else if (c >= 'A' && c <= 'Z' && isShift) capslock = false;
+                    else if (c >= 'A' && c <= 'Z' && !isShift) capslock = true;
+                }
+                if (capslock) this.nextElementSibling.nextElementSibling.style.display = 'inline';
+                else this.nextElementSibling.nextElementSibling.style.display = 'none';
+            }
+        });
+        $('#nloginpwd').focusout(function () {
+            this.nextElementSibling.nextElementSibling.style.display = 'none';
+        });
+        $('#nloginpwd').focusin(function () {
+            if (capslock) this.nextElementSibling.nextElementSibling.style.display = 'inline';
+            else this.nextElementSibling.nextElementSibling.style.display = 'none';
+        });
+        // 清除按钮
+        $('.clear-btn').click(function () {
+            this.previousElementSibling.value = '';
+            this.style.display = 'none';
+        });
     </script>
 </body>
 </html>
