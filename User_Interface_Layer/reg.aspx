@@ -11,6 +11,7 @@
     <link type="text/css" rel="stylesheet" href="/css/reg-base.css" />
     <script src="/js/jquery-2.1.4.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/css/reg.css" />
+    <link type="text/css" rel="stylesheet" href="/css/reg-dialog.css" />
 </head>
 <body>
     <div id="form-header" class="header">
@@ -20,6 +21,16 @@
             <div class="have-account">已有账号？ <a href="/login.aspx">请登录</a></div>
         </div>
     </div>
+
+    <div class="ui-dialog" style="width: 947px; position: fixed; z-index: 10000; display: block; overflow: hidden; top: 146px; left: 474px; display:none;">
+        <div class="ui-dialog-title" style="width: 927px;">
+            <span id="dialog-title"></span>
+        </div>
+        <div id="dialog-content" class="ui-dialog-content" style="height: 545px; width: 927px; overflow: hidden;"></div>
+        <a class="ui-dialog-close" title="关闭"><span class="ui-icon ui-icon-delete"></span></a>
+    </div>
+    <div class="ui-mask" style="position: absolute; left: 0px; top: 0px; opacity: 0.15; z-index: 9998; width: 1903px; height: 1020px; background-color: rgb(0, 0, 0); display:none;"></div>
+    
     <div class="container w">
         <div class="main clearfix" id="form-main">
             <div class="reg-form fl">
@@ -27,7 +38,6 @@
                     <!--chrome autocomplete off bug hack-->
                     <input style="display: none" name="hack" />
                     <input type="password" style="display: none" name="hack1" />
-
                     <div class="form-item form-item-account" id="form-item-account">
                         <label>用　户　名</label>
                         <input type="text" id="form-account" name="regName" class="field" autocomplete="off" maxlength="20" placeholder="您的账户名和登录名" default='<i class="i-def"></i>支持中文、字母、数字、“-”“_”的组合，4-20个字符' />
@@ -651,6 +661,27 @@
         $('#imgAuthCode').click(function () {
             this.src = '/CheckCode.aspx?' + Date.parse(new Date());
             this.previousElementSibling.focus();
+        });
+    </script>
+    <script>
+        function closeDialog() {
+            $('.ui-dialog,.ui-mask').css('display', 'none');
+            document.documentElement.style.overflow = 'scroll';
+        }
+        $('.ui-dialog-close,.ui-mask').click(closeDialog);
+        $('#protocol').click(function () {
+            $('#dialog-title')[0].innerHTML = '京东用户注册协议';
+            $('#dialog-content')[0].innerHTML = $('#protocoldiv')[0].innerHTML;
+            $('.protocol-button button').click(closeDialog);
+            $('.ui-dialog,.ui-mask').css('display', 'block');
+            document.documentElement.style.overflow = 'hidden';
+        });
+        $('#privacyProtocolTrigger').click(function () {
+            $('#dialog-title')[0].innerHTML = '隐私政策';
+            $('#dialog-content')[0].innerHTML = $('#privacyProtocol')[0].innerHTML;
+            $('.protocol-button button').click(closeDialog);
+            $('.ui-dialog,.ui-mask').css('display', 'block');
+            document.documentElement.style.overflow = 'hidden';
         });
     </script>
 </body>

@@ -68,6 +68,7 @@
     <Content Include="CheckCode.aspx" />
     <Content Include="css\login.css" />
     <Content Include="css\reg-base.css" />
+    <Content Include="css\reg-dialog.css" />
     <Content Include="css\reg.css" />
     <Content Include="Images\capslock.png" />
     <Content Include="Images\error-jd.gif" />
