@@ -468,7 +468,7 @@ a {
     width: 52px;
     height: 40px;
     padding: 12px 0 0;
-    background-image: url(//misc.360buyimg.com/product/skin/2013/i/20130330C.png);
+    background-image: url(/Images/20130330C.png);
     background-repeat: no-repeat;
     font-family: "microsoft yahei";
     color: #fff;
@@ -506,17 +506,17 @@ a {
 }
 
 img.err-poster, img.err-product {
-    background: url(//misc.360buyimg.com/lib/skin/e/i/error-jd.gif) no-repeat 50% 50%
+    background: url(/Images/error-jd.gif) no-repeat 50% 50%
 }
 
 img.err-price {
     width: 81px;
     height: 22px;
-    background: url(//misc.360buyimg.com/lib/skin/e/i/error-3.gif) no-repeat 50% 50%
+    background: url(/Images/error-3.gif) no-repeat 50% 50%
 }
 
 .loading-style1 b, .loading-style2 {
-    background: url(//misc.360buyimg.com/lib/skin/e/i/loading-jd.gif) no-repeat 50% 50%
+    background: url(/Images/loading-jd.gif) no-repeat 50% 50%
 }
 
 .loading-style1 {
@@ -535,7 +535,7 @@ img.err-price {
 
 .slide {
     position: relative;
-    background: url(//misc.360buyimg.com/lib/skin/e/i/loading-jd.gif) no-repeat center center
+    background: url(/Images/loading-jd.gif) no-repeat center center
 }
 
     .slide .slide-itemswrap {
@@ -584,7 +584,7 @@ img.err-price {
 }
 
     #sidepanel a, #sidepanel b {
-        background-image: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+        background-image: url(/Images/20130330A_2.png);
         background-repeat: no-repeat
     }
 
@@ -691,7 +691,7 @@ img.err-price {
     top: 9px;
     width: 5px;
     height: 9px;
-    background-image: url(//misc.360buyimg.com/201007/skin/df/i/bg_hotsale.gif);
+    background-image: url(/Images/bg_hotsale.gif);
     background-repeat: no-repeat;
     overflow: hidden
 }
@@ -809,7 +809,7 @@ img.err-price {
     overflow: hidden;
     width: 13px;
     height: 13px;
-    background: url(//misc.360buyimg.com/jdf/1.0.0/ui/dialog/1.0.0/dialog.png) no-repeat;
+    background: url(/Images/dialog.png) no-repeat;
     font-size: 0
 }
 
@@ -828,7 +828,7 @@ img.err-price {
 }
 
 .thickloading {
-    background: url(//misc.360buyimg.com/lib/skin/e/i/loading-jd.gif) #fff no-repeat center center
+    background: url(/Images/loading-jd.gif) #fff no-repeat center center
 }
 
 .thickcountdown {
@@ -872,7 +872,7 @@ img.err-price {
         margin-top: 2px;
         width: 13px;
         height: 13px;
-        background: url(//misc.360buyimg.com/201007/skin/df/i/bg_hotsale.gif) no-repeat -51px -632px;
+        background: url(/Images/bg_hotsale.gif) no-repeat -51px -632px;
         cursor: pointer
     }
 
@@ -924,7 +924,7 @@ img.err-price {
     width: 140px;
     height: 30px;
     padding-left: 22px;
-    background: url(//misc.360buyimg.com/201007/skin/df/i/loading.gif) no-repeat 0 center;
+    background: url(/Images/loading.gif) no-repeat 0 center;
     margin: 0 auto;
     line-height: 30px;
     color: #999
@@ -941,7 +941,7 @@ img.err-price {
 
     .model-prompt .con b {
         position: absolute;
-        background-image: url(//misc.360buyimg.com/201007/skin/df/i/bg_prompt.gif);
+        background-image: url(/Images/bg_prompt.gif);
         background-repeat: no-repeat
     }
 
@@ -1033,7 +1033,7 @@ img.err-price {
 }
 
 #shortcut-2013 .fl b, #shortcut-2013 .fr b {
-    background-image: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+    background-image: url(/Images/20130330A_2.png);
     background-repeat: no-repeat
 }
 
@@ -1081,7 +1081,7 @@ img.err-price {
             left: 0;
             width: 13px;
             height: 13px;
-            background: url(//misc.360buyimg.com/lib/skin/2013/i/20130725.png) no-repeat 0 0;
+            background: url(/Images/20130725.png) no-repeat 0 0;
             cursor: pointer
         }
 
@@ -1232,7 +1232,7 @@ img.err-price {
 
     #logo-2013 a:active b, #logo-2013 a:hover b {
         display: none;
-        background: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png) #fff no-repeat 0 -312px
+        background: url(/Images/20130330A_2.png) #fff no-repeat 0 -312px
     }
 
 .root61 #logo {
@@ -1512,7 +1512,7 @@ img.err-price {
         }
 
         #shelper-2013 .list-text .resultful {
-            background-image: url(//misc.360buyimg.com/lib/skin/2012/i/8.png);
+            background-image: url(/Images/8.png);
             background-repeat: no-repeat;
             background-position: 302px 8px
         }
@@ -1599,7 +1599,7 @@ img.err-price {
     }
 
 #my360buy-2013 dl.hover dt, #my360buy-2013 dt {
-    background-image: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+    background-image: url(/Images/20130330A_2.png);
     background-repeat: no-repeat
 }
 
@@ -1754,7 +1754,7 @@ img.err-price {
         #my360buy-2013 .orderlist .more {
             width: 50px;
             height: 50px;
-            background: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png) no-repeat 0 -250px;
+            background: url(/Images/20130330A_2.png) no-repeat 0 -250px;
             overflow: hidden;
             line-height: 150px;
             margin-right: 0
@@ -1820,7 +1820,7 @@ img.err-price {
     }
 
 #settleup-2013 .nogoods b, #settleup-2013 dl.hover dt, #settleup-2013 dt {
-    background-image: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+    background-image: url(/Images/20130330A_2.png);
     background-repeat: no-repeat
 }
 
@@ -1850,7 +1850,7 @@ img.err-price {
             position: absolute;
             top: -13px;
             left: 20px;
-            background-image: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+            background-image: url(/Images/20130330A_2.png);
             background-position: -133px -279px;
             padding-left: 6px;
             color: #fff
@@ -1861,7 +1861,7 @@ img.err-price {
                 display: block;
                 height: 20px;
                 padding-right: 6px;
-                background-image: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+                background-image: url(/Images/20130330A_2.png);
                 background-position: 100% -250px
             }
 
@@ -2184,7 +2184,7 @@ img.err-price {
 }
 
 #categorys-2013 .mt b, #categorys-2013 h3, #categorys-2013 s, #categorys-2013.hover .mt b {
-    background-image: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+    background-image: url(/Images/20130330A_2.png);
     background-repeat: no-repeat
 }
 
@@ -2482,7 +2482,7 @@ img.err-price {
             display: block;
             width: 194px;
             height: 30px;
-            background-image: url(//misc.360buyimg.com/lib/skin/2013/i/28.png);
+            background-image: url(/Images/28.png);
             background-repeat: no-repeat;
             line-height: 80px;
             overflow: hidden
@@ -2537,7 +2537,7 @@ img.err-price {
         height: 28px;
         line-height: 28px;
         margin-right: 20px;
-        background-image: url(//misc.360buyimg.com/lib/skin/2013/i/virtuals-cat-ico20140826.png);
+        background-image: url(/Images/virtuals-cat-ico20140826.png);
         background-repeat: no-repeat
     }
 
@@ -2570,7 +2570,7 @@ img.err-price {
 }
 
 #service-2013 dl b {
-    background-image: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+    background-image: url(/Images/20130330A_2.png);
     background-repeat: no-repeat
 }
 
@@ -2707,7 +2707,7 @@ img.err-price {
         width: 16px;
         height: 16px;
         margin-right: 5px;
-        background: url(//misc.360buyimg.com/product/skin/2012/i/update.png) no-repeat
+        background: url(/Images/update.png) no-repeat
     }
 
 .footmark .may-like .mc {
@@ -2798,7 +2798,7 @@ img.err-price {
     top: 5px;
     width: 13px;
     height: 22px;
-    background-image: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+    background-image: url(/Images/20130330A_2.png);
     background-repeat: no-repeat;
     background-position: -128px -360px;
     -webkit-transition: all .2s ease;
@@ -2825,7 +2825,7 @@ img.err-price {
             display: block;
             width: 49px;
             height: 23px;
-            background: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png) no-repeat 0 -438px;
+            background: url(/Images/20130330A_2.png) no-repeat 0 -438px;
             left: 88px;
             top: 5px
         }
@@ -2860,7 +2860,7 @@ img.err-price {
     height: 29px;
     display: inline-block;
     line-height: 29px;
-    background-image: url(//misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+    background-image: url(/Images/20130330A_2.png);
     background-repeat: no-repeat
 }
 
@@ -2942,7 +2942,7 @@ img.err-price {
     width: 24px;
     height: 11px;
     overflow: hidden;
-    background: url(//misc.360buyimg.com/lib/skin/2013/i/vip.png)
+    background: url(/Images/vip.png)
 }
 
 #shortcut-2013 #jd-dakehu {
@@ -2956,7 +2956,7 @@ img.err-price {
         width: 21px;
         height: 11px;
         display: block;
-        background: url(//img14.360buyimg.com/da/jfs/t580/111/484703678/1790/f7b8269f/546bfdd4N00e36964.jpg) 0 0 no-repeat
+        background: url(/Images/546bfdd4N00e36964.jpg) 0 0 no-repeat
     }
 /* user-passport/1.0.0 common-2016-1124.css Date:2016-11-29 14:47:55 */
 .mt-1 {
@@ -3191,7 +3191,7 @@ img.err-price {
         position: absolute;
         right: 0;
         top: 10px;
-        background: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/l-icon.png) no-repeat
+        background: url(/Images/l-icon.png) no-repeat
     }
 
 div#login-dialog .ui-dialog-title {
@@ -3211,7 +3211,7 @@ div#login-dialog .ui-dialog-close {
     height: 14px;
     line-height: 14px;
     top: 13px;
-    background: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/pwd-icons.png) 0 -143px
+    background: url(/Images/pwd-icons.png) 0 -143px
 }
 
 .tip-box {
@@ -3279,7 +3279,7 @@ div#login-dialog .ui-dialog-close {
         left: 0;
         width: 48px;
         height: 48px;
-        background: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/icon48.png) no-repeat
+        background: url(/Images/icon48.png) no-repeat
     }
 
     .icon-box .succ-icon {
@@ -3332,7 +3332,7 @@ input:-webkit-autofill {
         width: 18px;
         height: 14px;
         margin: 0 5px;
-        background: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/q-icon.png) no-repeat;
+        background: url(/Images/q-icon.png) no-repeat;
         overflow: hidden;
         vertical-align: middle
     }
@@ -3370,7 +3370,7 @@ input:-webkit-autofill {
         width: 38px;
         height: 38px;
         border-right: 1px solid #bdbdbd;
-        background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png) no-repeat
+        background: url(/Images/pwd-icons.png) no-repeat
     }
 
     .form .item .name-label {
@@ -3403,7 +3403,7 @@ input:-webkit-autofill {
         top: 12px;
         width: 14px;
         height: 14px;
-        background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png) -25px -143px no-repeat;
+        background: url(/Images/pwd-icons.png) -25px -143px no-repeat;
         cursor: pointer;
         display: none
     }
@@ -3429,7 +3429,7 @@ input:-webkit-autofill {
         height: 26px;
         line-height: 28px;
         overflow: hidden;
-        background: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/capslock.png) no-repeat
+        background: url(/Images/capslock.png) no-repeat
     }
 
         .form .item-fore1 .capslock b, .form .item-fore2 .capslock b {
@@ -3440,7 +3440,7 @@ input:-webkit-autofill {
             width: 10px;
             height: 14px;
             overflow: hidden;
-            background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png) -104px -133px no-repeat
+            background: url(/Images/pwd-icons.png) -104px -133px no-repeat
         }
 
     .form .item-fore1 #sloginpwd, .form .item-fore2 #sloginpwd {
@@ -3605,7 +3605,7 @@ input:-webkit-autofill {
 
 .form .item-fore2 {
     height: 38px;
-    visibility: hidden
+    /*visibility: hidden*/
 }
 
 .form .item-fore3 {
@@ -3758,7 +3758,7 @@ input:-webkit-autofill {
             width: 16px;
             height: 16px;
             overflow: hidden;
-            background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png) -104px -49px no-repeat
+            background: url(/Images/pwd-icons.png) -104px -49px no-repeat
         }
 
     .login-form .msg-warn {
@@ -3780,13 +3780,13 @@ input:-webkit-autofill {
             width: 16px;
             height: 17px;
             overflow: hidden;
-            background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png) -104px -24px no-repeat
+            background: url(/Images/pwd-icons.png) -104px -24px no-repeat
         }
 
     .login-form .login-box {
         width: 306px;
         padding: 20px;
-        visibility: hidden
+        /*visibility: hidden*/
     }
 
         .login-form .login-box .mt {
@@ -3802,7 +3802,7 @@ input:-webkit-autofill {
                 display: block;
                 height: 0;
                 clear: both;
-                visibility: hidden
+                /*visibility: hidden*/
             }
 
         * html .login-form .login-box .mt {
@@ -3882,365 +3882,6 @@ input:-webkit-autofill {
                     text-decoration: none
                 }
 
-    .login-form .btn-2login, .login-form .btn-2qrcode {
-        display: block;
-        width: 60px;
-        height: 60px;
-        line-height: 99em;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        overflow: hidden;
-        background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/login-qricon-01.png) no-repeat;
-        -webkit-transition: background-position .2s cubic-bezier(0.25,.5,.5,.9);
-        -moz-transition: background-position .2s cubic-bezier(0.25,.5,.5,.9);
-        transition: background-position .2s cubic-bezier(0.25,.5,.5,.9)
-    }
-
-    .login-form .btn-2qrcode {
-        background-position: -60px 0
-    }
-
-    .login-form .btn-2login {
-        background-position: 0 -60px
-    }
-
-    .login-form .qrcode-login {
-        display: none;
-        visibility: hidden;
-        width: 306px;
-        padding: 20px 18px 20px 20px;
-        text-align: center
-    }
-
-        .login-form .qrcode-login .mc {
-            overflow: visible
-        }
-
-        .login-form .qrcode-login .qrcode-desc {
-            margin-top: 53px
-        }
-
-            .login-form .qrcode-login .qrcode-desc h2 {
-                font-size: 16px;
-                color: #999;
-                font-family: "microsoft yahei";
-                font-weight: 400
-            }
-
-        .login-form .qrcode-login .qrcode-main {
-            position: relative;
-            height: 168px;
-            margin-top: 55px
-        }
-
-        .login-form .qrcode-login .qrcode-img {
-            border: 1px solid #f4f4f4;
-            padding: 8px;
-            width: 155px;
-            position: absolute;
-            left: 64px
-        }
-
-            .login-form .qrcode-login .qrcode-img .qrcode-error02 {
-                padding: 30px 0
-            }
-
-                .login-form .qrcode-login .qrcode-img .qrcode-error02 .error-icon {
-                    display: inline-block;
-                    margin-bottom: 25px;
-                    width: 50px;
-                    height: 50px;
-                    background: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/qr-error-icon.png) no-repeat
-                }
-
-            .login-form .qrcode-login .qrcode-img img {
-                width: 147px;
-                height: 147px
-            }
-
-        .login-form .qrcode-login .qrcode-help {
-            position: absolute;
-            right: -18px;
-            top: -2px;
-            width: 141px;
-            height: 168px;
-            background: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/phone-orange.png) no-repeat;
-            z-index: 99
-        }
-
-        .login-form .qrcode-login .qrcode-error {
-            display: none;
-            position: relative;
-            background: #ffebeb;
-            color: #e4393c;
-            border: 1px solid #e4393c;
-            padding: 3px 10px 3px 100px;
-            text-align: left
-        }
-
-            .login-form .qrcode-login .qrcode-error b {
-                position: absolute;
-                top: 50%;
-                left: 70px;
-                display: block;
-                margin-top: -8px;
-                width: 16px;
-                height: 16px;
-                overflow: hidden;
-                background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png) -104px -49px no-repeat
-            }
-
-        .login-form .qrcode-login .qrcode-error-2016 {
-            display: none;
-            font-size: 14px;
-            color: #fbfbfb;
-            margin-top: 65px;
-            position: relative;
-            z-index: 1
-        }
-
-            .login-form .qrcode-login .qrcode-error-2016 .qrcode-error-mask {
-                display: block;
-                position: absolute;
-                width: 170px;
-                background: #000;
-                filter: alpha(opacity=60);
-                -moz-opacity: .6;
-                opacity: .6;
-                height: 163px;
-                left: 66px;
-                z-index: 9;
-                top: 0;
-                text-align: center;
-                line-height: 100px
-            }
-
-            .login-form .qrcode-login .qrcode-error-2016 .err-cont {
-                position: absolute;
-                left: 0;
-                top: 55px;
-                width: 100%;
-                z-index: 19;
-                font-weight: 700
-            }
-
-            .login-form .qrcode-login .qrcode-error-2016 .refresh-btn {
-                display: block;
-                background: #e4393c;
-                width: 80px;
-                height: 30px;
-                position: absolute;
-                top: 95px;
-                left: 113px;
-                line-height: 30px;
-                opacity: 1;
-                z-index: 19;
-                color: #fbfbfb;
-                text-decoration: none
-            }
-
-        .login-form .qrcode-login .qrcode-succ {
-            width: 306px;
-            margin: 106px auto 65px;
-            height: 146px
-        }
-
-            .login-form .qrcode-login .qrcode-succ h3 {
-                color: #333;
-                font-weight: 400;
-                line-height: 1;
-                font-family: "microsoft yahei"
-            }
-
-            .login-form .qrcode-login .qrcode-succ .ftx-03 {
-                padding-top: 14px
-            }
-
-            .login-form .qrcode-login .qrcode-succ .tip-box {
-                width: 306px
-            }
-
-                .login-form .qrcode-login .qrcode-succ .tip-box .item-fore {
-                    text-align: center;
-                    margin: 0;
-                    padding-top: 30px
-                }
-
-            .login-form .qrcode-login .qrcode-succ .succ-icon {
-                display: block;
-                width: 71px;
-                height: 71px;
-                margin: 0 auto;
-                background: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/qrcode-succ-2016.png) no-repeat
-            }
-
-            .login-form .qrcode-login .qrcode-succ .qrcode-back {
-                margin-top: 5px
-            }
-
-                .login-form .qrcode-login .qrcode-succ .qrcode-back a {
-                    text-decoration: underline
-                }
-
-        .login-form .qrcode-login .qrcode-panel {
-            width: 257px;
-            margin: 18px auto 14px;
-            text-align: center
-        }
-
-            .login-form .qrcode-login .qrcode-panel .red {
-                color: #e4393c
-            }
-
-            .login-form .qrcode-login .qrcode-panel ul {
-                display: inline-block;
-                display: block
-            }
-
-                .login-form .qrcode-login .qrcode-panel ul:after {
-                    content: ".";
-                    display: block;
-                    height: 0;
-                    clear: both;
-                    visibility: hidden
-                }
-
-            * html .login-form .qrcode-login .qrcode-panel ul {
-                height: 1%
-            }
-
-            * + html .login-form .qrcode-login .qrcode-panel ul {
-                min-height: 1%
-            }
-
-            .login-form .qrcode-login .qrcode-panel li {
-                display: inline-block;
-                *display: inline;
-                padding: 0 0 0 5px;
-                margin: 0 5px 0 0
-            }
-
-                .login-form .qrcode-login .qrcode-panel li.fore1 {
-                    border: 0
-                }
-
-            .login-form .qrcode-login .qrcode-panel .panel-line {
-                border-left: 1px solid #ccc;
-                height: 12px;
-                padding: 0;
-                margin: 3px 0
-            }
-
-            .login-form .qrcode-login .qrcode-panel a {
-                color: #333;
-                text-decoration: none;
-                margin-left: -3px
-            }
-
-            .login-form .qrcode-login .qrcode-panel .qrcode-tips {
-                position: relative;
-                background: #F6DCDF;
-                color: #999;
-                margin-top: 10px
-            }
-
-                .login-form .qrcode-login .qrcode-panel .qrcode-tips .triangle-border {
-                    position: absolute;
-                    right: 30px;
-                    overflow: hidden;
-                    width: 0;
-                    height: 0;
-                    border-width: 5px;
-                    border-style: dashed dashed solid
-                }
-
-                .login-form .qrcode-login .qrcode-panel .qrcode-tips .tb-border {
-                    top: -10px;
-                    border-color: transparent transparent #F6DCDF
-                }
-
-                .login-form .qrcode-login .qrcode-panel .qrcode-tips .qrcode-tips-info {
-                    height: 20px;
-                    line-height: 20px;
-                    overflow: hidden
-                }
-
-                    .login-form .qrcode-login .qrcode-panel .qrcode-tips .qrcode-tips-info .qrcode-tips1 {
-                        transition: margin-top .5s;
-                        -moz-transition: margin-top .5s;
-                        -webkit-transition: margin-top .5s;
-                        -o-transition: margin-top .5s
-                    }
-
-                        .login-form .qrcode-login .qrcode-panel .qrcode-tips .qrcode-tips-info .qrcode-tips1:hover {
-                            margin-top: -20px
-                        }
-
-                    .login-form .qrcode-login .qrcode-panel .qrcode-tips .qrcode-tips-info .qrcode-tips2 {
-                        color: #763A42
-                    }
-
-    .login-form .qlogin-main .qlogin-tit {
-        text-align: center;
-        font-size: 14px;
-        margin-top: 20px
-    }
-
-        .login-form .qlogin-main .qlogin-tit span {
-            font-family: arial
-        }
-
-        .login-form .qlogin-main .qlogin-tit .qq-icon {
-            display: inline-block;
-            *display: inline;
-            *zoom: 1;
-            width: 16px;
-            height: 16px;
-            overflow: hidden;
-            vertical-align: middle;
-            background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png) -104px -157px;
-            margin-right: 10px
-        }
-
-    .login-form .qlogin-main .u-pic {
-        position: relative;
-        width: 104px;
-        height: 104px;
-        margin: 10px auto
-    }
-
-        .login-form .qlogin-main .u-pic .mask {
-            position: absolute;
-            width: 104px;
-            height: 104px;
-            left: 0;
-            top: 0;
-            z-index: 2;
-            background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/upic-bg.png) no-repeat
-        }
-
-    .login-form .qlogin-main .u-name {
-        font-size: 18px;
-        font-family: "microsoft yahei";
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 20px
-    }
-
-    .login-form .qlogin-main .coagent {
-        margin-top: 20px
-    }
-
-div.safetips {
-    border: 1px solid #E3E3E3;
-    background: #fff;
-    padding: 5px 10px;
-    margin: -10px 0 0 40px;
-    -webkit-box-shadow: 0 0 10px rgba(221,221,221,.7);
-    -moz-box-shadow: 0 0 10px rgba(221,221,221,.7);
-    box-shadow: 0 0 10px rgba(221,221,221,.7)
-}
 
 .coagent {
     padding-left: 20px;
@@ -4334,7 +3975,7 @@ div.safetips {
                 margin-left: 10px;
                 overflow: hidden;
                 vertical-align: middle;
-                background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png) -104px -100px no-repeat
+                background: url(/Images/pwd-icons.png) -104px -100px no-repeat
             }
 
         .coagent .more-slide dd {
@@ -4406,49 +4047,9 @@ div.safetips {
             width: 16px;
             height: 16px;
             overflow: hidden;
-            background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png) -104px -75px no-repeat;
+            background: url(/Images/pwd-icons.png) -104px -75px no-repeat;
             vertical-align: middle;
             margin-right: 5px
-        }
-
-.qr-coagent {
-    background-color: #fff;
-    font-family: "microsoft yahei";
-    color: #999;
-    border: none;
-    padding: 0;
-    line-height: 25px;
-    margin-left: 40px
-}
-
-    .qr-coagent li {
-        text-align: left;
-        position: relative;
-        margin-right: 18px
-    }
-
-        .qr-coagent li b {
-            width: 25px;
-            height: 25px;
-            display: block;
-            background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/qr-coagent.png) no-repeat;
-            margin: 0 auto;
-            position: absolute;
-            left: 0
-        }
-
-        .qr-coagent li .faster {
-            background-position: -27px
-        }
-
-        .qr-coagent li .more-safe {
-            background-position: -54px
-        }
-
-        .qr-coagent li em {
-            padding-left: 32px;
-            *display: inline-block;
-            _display: inline
         }
 /* user-passport/1.0.0 login-banner.css Date:2016-04-15 13:37:34 */
 .login-wrap {
@@ -4476,233 +4077,4 @@ div.safetips {
     .login-wrap .login-form {
         float: right;
         top: 40px
-    }
-/* user-passport/1.0.0 safe-step.css Date:2016-04-15 13:37:33 */
-.step {
-    width: 350px;
-    margin: 0 auto
-}
-
-.stepflex {
-    display: inline-block;
-    display: block;
-    text-align: center;
-    margin: 30px 0 0
-}
-
-    .stepflex:after {
-        content: ".";
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden
-    }
-
-* html .stepflex {
-    height: 1%
-}
-
-* + html .stepflex {
-    min-height: 1%
-}
-
-    .stepflex dl {
-        float: left;
-        position: relative;
-        width: 110px;
-        top: -5px;
-        border-top: 5px solid #ccc
-    }
-
-        .stepflex dl.doing {
-            border-top-color: #7abd54
-        }
-
-            .stepflex dl.doing .s-num {
-                background-position: -23px 0
-            }
-
-            .stepflex dl.doing .s-text {
-                color: #7abd54
-            }
-
-        .stepflex dl.done {
-            border-top-color: #caecb6
-        }
-
-            .stepflex dl.done .s-num {
-                background-position: -46px 0
-            }
-
-            .stepflex dl.done .s-text {
-                color: #caecb6
-            }
-
-    .stepflex .doing b, .stepflex .doing s, .stepflex .first s, .stepflex .last b {
-        width: 5px;
-        height: 5px;
-        position: absolute;
-        line-height: 0;
-        font-size: 0;
-        top: -5px;
-        background-image: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/step2013.png);
-        overflow: hidden
-    }
-
-    .stepflex .s-num {
-        position: relative;
-        margin: -15px auto 0;
-        color: #fff;
-        font-weight: 700;
-        width: 23px;
-        height: 23px;
-        background-image: url(//misc.360buyimg.com/user/passport/1.0.0/css/i/step2013.png);
-        line-height: 23px
-    }
-
-    .stepflex .s-text {
-        color: #ccc
-    }
-
-    .stepflex s {
-        left: 0
-    }
-
-    .stepflex b {
-        right: 0
-    }
-
-    .stepflex .first s {
-        background-position: 0 -24px;
-        background-color: #fff
-    }
-
-    .stepflex .last b {
-        background-position: -5px -24px;
-        background-color: #fff
-    }
-
-    .stepflex .doing s {
-        background-position: -23px -24px
-    }
-
-    .stepflex .doing b {
-        background-position: -28px -24px;
-        background-color: #ccc
-    }
-
-    .stepflex .doing.last s, .stepflex .doing.normal s {
-        background-color: #caecb6
-    }
-
-    .stepflex .doing.last b {
-        background-color: #fff
-    }
-
-    .stepflex .done s {
-        background-position: -46px -24px
-    }
-
-    .stepflex .done b {
-        background-position: -51px -24px
-    }
-
-    .stepflex .doing.last .s-num {
-        background-position: -91px 0
-    }
-
-#sflex01 {
-    width: 110px
-}
-
-#sflex02 {
-    width: 220px
-}
-
-#sflex03 {
-    width: 3300px
-}
-/* user-passport/1.0.0 foreign-number-layer-1130.css Date:2017-05-17 17:25:59 */
-#country_code_layer {
-    font-family: "Microsoft YaHei";
-    display: none;
-    background-color: #fff;
-    text-align: center;
-    height: 180px;
-    width: 350px;
-    position: absolute;
-    cursor: default;
-    z-index: 110;
-    box-shadow: 0 0 2px 2px #eee;
-    border: 1px solid #eee;
-    padding-top: 4px
-}
-
-    #country_code_layer a {
-        text-decoration: none
-    }
-
-    #country_code_layer .close-button {
-        right: 4px;
-        top: 5px;
-        position: absolute;
-        background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/foreign-number-layer-1130/i/close-button.png) no-repeat;
-        width: 17px;
-        height: 17px
-    }
-
-    #country_code_layer .arrow {
-        display: block;
-        position: absolute;
-        background-image: url(//misc.360buyimg.com/user/passport/1.0.0/widget/foreign-number-layer-1130/i/tips.gif);
-        background-repeat: no-repeat;
-        width: 16px;
-        height: 9px;
-        background-position: 0 0;
-        overflow: hidden;
-        top: -9px;
-        right: 122px
-    }
-
-    #country_code_layer .switchbar .ui-switchable-item {
-        width: 50px;
-        display: inline-block;
-        margin-right: -5px;
-        border-bottom: 2px solid #eee;
-        height: 38px;
-        line-height: 38px;
-        color: #000
-    }
-
-        #country_code_layer .switchbar .ui-switchable-item:hover {
-            border-color: #e4393c
-        }
-
-    #country_code_layer .switchbar .ui-switchable-selected {
-        color: #C81623;
-        border-color: #e4393c
-    }
-
-    #country_code_layer .ui-switchable-panel-main {
-        height: 124px;
-        padding-left: 25px;
-        padding-top: 10px;
-        padding-right: 10px;
-        color: #666;
-        font-size: 12px
-    }
-
-        #country_code_layer .ui-switchable-panel-main .ui-switchable-panel ul {
-            text-align: left
-        }
-
-            #country_code_layer .ui-switchable-panel-main .ui-switchable-panel ul li {
-                float: left;
-                width: 105px;
-                height: 22px;
-                display: inline-block
-            }
-
-    #country_code_layer a:hover {
-        color: #C81623
     }

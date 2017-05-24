@@ -66,13 +66,44 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\login.css" />
+    <Content Include="css\reg-base.css" />
+    <Content Include="css\reg.css" />
+    <Content Include="Images\20130330A_2.png" />
+    <Content Include="Images\20130330C.png" />
+    <Content Include="Images\20130725.png" />
+    <Content Include="Images\28.png" />
+    <Content Include="Images\546bfdd4N00e36964.jpg" />
+    <Content Include="Images\8.png" />
+    <Content Include="Images\bg_hotsale.gif" />
+    <Content Include="Images\bg_prompt.gif" />
+    <Content Include="Images\capslock.png" />
+    <Content Include="Images\close-button.png" />
+    <Content Include="Images\dialog.png" />
+    <Content Include="Images\error-3.gif" />
+    <Content Include="Images\error-jd.gif" />
+    <Content Include="Images\headbg.jpg" />
+    <Content Include="Images\icon.png" />
+    <Content Include="Images\icon48.png" />
+    <Content Include="Images\l-icon.png" />
+    <Content Include="Images\loading-jd.gif" />
+    <Content Include="Images\logo-201305-b.png" />
+    <Content Include="Images\pwd-icons.png" />
+    <Content Include="Images\q-icon.png" />
+    <Content Include="Images\qr-coagent.png" />
+    <Content Include="Images\tips.gif" />
+    <Content Include="Images\update.png" />
+    <Content Include="Images\vip.png" />
+    <Content Include="Images\virtuals-cat-ico20140826.png" />
+    <Content Include="js\reg-base.js" />
     <Content Include="login.aspx" />
     <Content Include="packages.config" />
     <Content Include="css\bootstrap-theme.css.map" />
     <Content Include="css\bootstrap-theme.min.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="reg.aspx" />
     <Content Include="UIL.Master" />
+    <Content Include="js\register.1130.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -123,6 +154,13 @@
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reg.aspx.cs">
+      <DependentUpon>reg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reg.aspx.designer.cs">
+      <DependentUpon>reg.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UIL.Master.cs">
       <DependentUpon>UIL.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -131,9 +169,7 @@
       <DependentUpon>UIL.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Business_Logic_Layer\Business_Logic_Layer.csproj">
       <Project>{280695d0-976c-4ca6-9a5e-a0b4afb90495}</Project>
