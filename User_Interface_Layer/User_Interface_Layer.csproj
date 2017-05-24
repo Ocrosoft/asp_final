@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CheckCode.aspx" />
+    <Content Include="checkUserExits.aspx" />
     <Content Include="css\login.css" />
     <Content Include="css\reg-base.css" />
     <Content Include="css\reg-dialog.css" />
@@ -135,6 +136,13 @@
     </Compile>
     <Compile Include="CheckCode.aspx.designer.cs">
       <DependentUpon>CheckCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkUserExits.aspx.cs">
+      <DependentUpon>checkUserExits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkUserExits.aspx.designer.cs">
+      <DependentUpon>checkUserExits.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>

@@ -637,6 +637,23 @@
 
             if (this.id == 'form-account') {
                 // 检查是否已被注册
+                var text = this.value;
+                if (text.length == 0) return;
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", "/checkUserExits.aspx?" + text, true);
+                xmlhttp.send();
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        var res = xmlhttp.responseText.split("\n")[0].trim();
+                        if (res == 'False') {
+                            if ($('#form-account')[0].parentNode.className.indexOf('form-item-valid') == -1)
+                                $('#form-account')[0].parentNode.className += ' form-item-valid';
+                        }
+                        else {
+                            $('#form-account')[0].parentNode.className = $('#form-account')[0].parentNode.className.replace('form-item-valid', '');
+                        }
+                    }
+                }
             }
             else if (this.id == 'form-pwd') {
                 this.nextElementSibling.nextElementSibling.style.display = 'none';
