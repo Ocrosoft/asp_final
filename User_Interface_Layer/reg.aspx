@@ -618,12 +618,13 @@
         var capslock = false;
         // 输入框提示
         $('.field').focusin(function () {
+            if (this.parentNode.className.indexOf('form-item-error')!=-1) return;
             var p = this.parentNode.nextElementSibling;
             var html = this.outerHTML;
             html = html.substring(html.indexOf('default'));
             html = html.substring(html.indexOf('\"') + 1);
             html = html.substring(0, html.length - 2);
-            p.innerHTML += html;
+            p.innerHTML = html;
 
             if (this.id == 'form-pwd' || this.id == 'form-equalTopwd') {
                 if (capslock) this.nextElementSibling.nextElementSibling.style.display = 'block';
@@ -637,15 +638,98 @@
             if (this.id == 'form-account') {
                 // 检查是否已被注册
             }
-            else if (this.id == 'form-pwd' || this.id == 'form-equalTopwd') {
+            else if (this.id == 'form-pwd') {
                 this.nextElementSibling.nextElementSibling.style.display = 'none';
+                var text = this.value;
+                if (text.length > 0 && (text.length < 6 || text.length > 20)) {
+                    var statu = this.parentNode.nextElementSibling;
+                    if (this.parentNode.className.indexOf('form-item-error') == -1)
+                        this.parentNode.className = this.parentNode.className + ' form-item-error';
+                    statu.innerHTML = '<span id="form-pwd-error" class="error"><i class="i-error"></i>长度只能在6-20个字符之间</span>';
+                    statu.style.display = 'block';
+                }
+                var ele = this.parentNode.nextElementSibling.nextElementSibling.children[2];
+                var textne = ele.value;
+                var text = this.value;
+                if (text.length != 0) {
+                    if (textne != text) {
+                        var statu = ele.parentNode.nextElementSibling;
+                        if (ele.parentNode.className.indexOf('form-item-error') == -1)
+                            ele.parentNode.className = ele.parentNode.className + ' form-item-error';
+                        statu.innerHTML = '<span id="form-pwd-error" class="error"><i class="i-error"></i>两次密码输入不一致</span>';
+                        statu.style.display = 'block';
+                    }
+                    else {
+                        if (ele.parentNode.className.indexOf('form-item-error') != -1) {
+                            ele.parentNode.className = ele.parentNode.className.replace('form-item-error', '');
+                            var statu = ele.parentNode.nextElementSibling;
+                            statu.innerHTML = '';
+                            var p = ele.parentNode.nextElementSibling;
+                            var html = ele.outerHTML;
+                            html = html.substring(html.indexOf('default'));
+                            html = html.substring(html.indexOf('\"') + 1);
+                            html = html.substring(0, html.length - 2);
+                            p.innerHTML = html;
+                        }
+                    }
+                }
+                if (text.length != 0) {
+                    if (text == textne) {
+                        if (ele.parentNode.className.indexOf('form-item-valid') == -1) ele.parentNode.className += ' form-item-valid';
+                    } else ele.parentNode.className = ele.parentNode.className.replace('form-item-valid', '');
+                }
+            }
+            else if (this.id == 'form-equalTopwd') {
+                this.nextElementSibling.nextElementSibling.style.display = 'none';
+                var text = this.value;
+                var textpr = this.parentNode.previousElementSibling.previousElementSibling.children[2].value;
+                if (textpr.length != 0) {
+                    if (text != textpr) {
+                        var statu = this.parentNode.nextElementSibling;
+                        if (this.parentNode.className.indexOf('form-item-error') == -1)
+                            this.parentNode.className = this.parentNode.className + ' form-item-error';
+                        statu.innerHTML = '<span id="form-pwd-error" class="error"><i class="i-error"></i>两次密码输入不一致</span>';
+                        statu.style.display = 'block';
+                    }
+                    else {
+                        if (this.parentNode.className.indexOf('form-item-error') != -1) {
+                            this.parentNode.className = this.parentNode.className.replace('form-item-error', '');
+                            var statu = this.parentNode.nextElementSibling;
+                            statu.innerHTML = '';
+                            var p = this.parentNode.nextElementSibling;
+                            var html = this.outerHTML;
+                            html = html.substring(html.indexOf('default'));
+                            html = html.substring(html.indexOf('\"') + 1);
+                            html = html.substring(0, html.length - 2);
+                            p.innerHTML = html;
+                        }
+                    }
+                }
+                if (textpr.length != 0) {
+                    if (text == textpr) {
+                        if (this.parentNode.className.indexOf('form-item-valid') == -1) this.parentNode.className += ' form-item-valid';
+                    } else this.parentNode.className = this.parentNode.className.replace('form-item-valid', '');
+                }
             }
         });
-
+        $('.field').keyup(function () {
+            if (this.parentNode.className.indexOf('form-item-error') != -1) {
+                this.parentNode.className = this.parentNode.className.replace('form-item-error', '');
+                var statu = this.parentNode.nextElementSibling;
+                statu.innerHTML = '';
+                var p = this.parentNode.nextElementSibling;
+                var html = this.outerHTML;
+                html = html.substring(html.indexOf('default'));
+                html = html.substring(html.indexOf('\"') + 1);
+                html = html.substring(0, html.length - 2);
+                p.innerHTML = html;
+            }
+        });
         $('#form-pwd,#form-equalTopwd').keyup(function (e) {
             var keyCode = e.keyCode || e.which;
             if (keyCode == 20) capslock = !capslock;
             var isShift = e.shiftKey;
+            var text = this.value;
             if (keyCode >= 65 && keyCode <= 90) {
                 var c = text[text.length - 1];
                 if (c >= 'a' && c <= 'z' && isShift) capslock = true;
@@ -655,6 +739,22 @@
             }
             if (capslock) this.nextElementSibling.nextElementSibling.style.display = 'block';
             else this.nextElementSibling.nextElementSibling.style.display = 'none';
+
+            if (this.id == 'form-pwd') {
+                var text = this.value;
+                if (text.length >= 6 && text.length <= 20) {
+                    if (this.parentNode.className.indexOf('form-item-valid') == -1) this.parentNode.className += ' form-item-valid';
+                } else this.parentNode.className = this.parentNode.className.replace('form-item-valid', '');
+            }
+            else if (this.id == 'form-equalTopwd') {
+                var text = this.value;
+                var textpr = this.parentNode.previousElementSibling.previousElementSibling.children[2].value;
+                if (text.length != 0) {
+                    if (text == textpr) {
+                        if (this.parentNode.className.indexOf('form-item-valid') == -1) this.parentNode.className += ' form-item-valid';
+                    } else this.parentNode.className = this.parentNode.className.replace('form-item-valid', '');
+                }
+            }
         });
     </script>
     <script>
