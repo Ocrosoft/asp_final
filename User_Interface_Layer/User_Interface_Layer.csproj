@@ -65,6 +65,9 @@
   <ItemGroup>
     <Content Include="CheckCode.aspx" />
     <Content Include="checkUserExits.aspx" />
+    <Content Include="css\index-tpl.css" />
+    <Content Include="css\index-common.css" />
+    <Content Include="css\index.css" />
     <Content Include="css\login.css" />
     <Content Include="css\reg-base.css" />
     <Content Include="css\reg-dialog.css" />
@@ -79,9 +82,13 @@
     <Content Include="Images\pwd-icons.png" />
     <Content Include="Images\q-icon.png" />
     <Content Include="Images\vip.png" />
+    <Content Include="index.aspx" />
+    <Content Include="js\index.js" />
     <Content Include="js\jbase64.js" />
     <Content Include="js\login.js" />
     <Content Include="js\reg.js" />
+    <Content Include="js\sea.js" />
+    <Content Include="js\toolbar.js" />
     <Content Include="login.aspx" />
     <Content Include="packages.config" />
     <Content Include="css\bootstrap-theme.css.map" />
@@ -145,6 +152,13 @@
     </Compile>
     <Compile Include="checkUserExits.aspx.designer.cs">
       <DependentUpon>checkUserExits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
