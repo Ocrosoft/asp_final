@@ -80,6 +80,8 @@
     <Content Include="Images\q-icon.png" />
     <Content Include="Images\vip.png" />
     <Content Include="js\jbase64.js" />
+    <Content Include="js\login.js" />
+    <Content Include="js\reg.js" />
     <Content Include="login.aspx" />
     <Content Include="packages.config" />
     <Content Include="css\bootstrap-theme.css.map" />
