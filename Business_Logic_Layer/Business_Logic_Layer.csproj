@@ -81,6 +81,7 @@
     <Compile Include="BLL_Goods.cs" />
     <Compile Include="BLL_GoodsType.cs" />
     <Compile Include="BLL_Manage.cs" />
+    <Compile Include="BLL_Safety.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
