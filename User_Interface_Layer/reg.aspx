@@ -618,7 +618,7 @@
         var capslock = false;
         function showTips(ele) {
             var p = ele.parentNode.nextElementSibling;
-            if ($(p).hasClass('form-item-error')) return; // 错误不显示提示
+            if ($(ele.parentNode).hasClass('form-item-error')) return; // 错误不显示提示
             var html = ele.outerHTML;
             html = html.substring(html.indexOf('default'));
             html = html.substring(html.indexOf('\"') + 1);
@@ -626,72 +626,79 @@
             p.innerHTML = html;
         }
         function showError(ele, msg) {
+            if ($(ele.parentNode).hasClass('form-item-valid')) $(ele.parentNode).removeClass('form-item-valid');
             var statu = ele.parentNode.nextElementSibling;
             if (!$(ele.parentNode).hasClass('form-item-error')) $(ele.parentNode).addClass('form-item-error');
-            statu.innerHTML = '<span id="form-pwd-error" class="error"><i class="i-error"></i>长度只能在4-20个字符之间</span>'; // 添加提示
+            statu.innerHTML = '<span id="form-pwd-error" class="error"><i class="i-error"></i>' + msg + '</span>'; // 添加提示
             statu.style.display = 'block'; // 显示提示
         }
         function checkAccount(ele) {
             var text = ele.value;
-            if (text.length == 0) return; // 未填写
+            if (text.length == 0) {
+                if ($(ele.parentNode).hasClass('form-item-valid')) $(ele.parentNode).removeClass('form-item-valid');
+                hideError(ele);
+                return;
+            }
             if (text.length < 4 || text.length > 20) showError(ele, '长度只能在4-20个字符之间');
-            $(ele.nextElementSibling).css('background', 'url("/Images/loading.gif")'); // 显示加载图片
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("GET", "/checkUserExits.aspx?name=" + text, true);
-            xmlhttp.send(); // 检查是否已被注册
-            xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    var res = xmlhttp.responseText.split("\n")[0].trim();
-                    $($('#form-account')[0].nextElementSibling).css('background', '');
-                    if (res == 'False') {
-                        if (!$($('#form-account')[0].parentNode).hasClass('form-item-valid'))$($('#form-account')[0].parentNode).addClass('form-item-valid');
-                    }
-                    else {
-                        var p=$($('#form-account')[0].parentNode);
-                        if (p.hasClass('form-item-valid')) p.removeClass('form-item-valid');
-                        showError($('#form-account')[0], '该用户名已被注册');
+            else {
+                $(ele.nextElementSibling).css('background', 'url("/Images/loading.gif")'); // 显示加载图片
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", "/checkUserExits.aspx?name=" + text, true);
+                xmlhttp.send(); // 检查是否已被注册
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        var res = xmlhttp.responseText.split("\n")[0].trim();
+                        $($('#form-account')[0].nextElementSibling).css('background', '');
+                        if (res == 'False') {
+                            if (!$($('#form-account')[0].parentNode).hasClass('form-item-valid'))
+                                $($('#form-account')[0].parentNode).addClass('form-item-valid');
+                        }
+                        else {
+                            var p = $($('#form-account')[0].parentNode);
+                            if (p.hasClass('form-item-valid')) p.removeClass('form-item-valid');
+                            showError($('#form-account')[0], '该用户名已被注册');
+                        }
                     }
                 }
             }
         }
         function hideTips(ele) {
-            ele.parentNode.nextElementSibling.nextElementSibling.innerHTML = '';
+            if ($(ele.parentNode).hasClass('form-item-error')) return; // 错误不显示提示
+            ele.parentNode.nextElementSibling.innerHTML = '';
+        }
+        function hideError(ele) {
+            if ($(ele.parentNode).hasClass('form-item-error')) $(ele.parentNode).removeClass('form-item-error');
+            ele.parentNode.nextElementSibling.innerHTML = '';
         }
         function checkPass(ele) {
             var text = ele.value;
-            if (text.length != 0 && (text.length < 6 || text.length > 20)) showError(ele, '长度只能在6-20个字符之间');
-            var pnnc = ele.parentNode.nextElementSibling.nextElementSibling.children[2];
-            var textne = pnnc.value;
-            var text = ele.value;
-            if (text.length != 0 && textne.length != 0) {
-                if (textne != text) showError(pnnc, '两次密码输入不一致');
-                else {
-                    if ($(pnnc).hasClass('form-item-error')) $(pnnc).removeClass('form-item-error');
-                    showTips(pnnc);
-                }
+            if (text.length == 0) {
+                if ($(ele.parentNode).hasClass('form-item-valid')) $(ele.parentNode).removeClass('form-item-valid');
+                hideError(ele);
+                return;
             }
-            if (text.length != 0) {
-                if (text == textne) {
-                    if (ele.parentNode.className.indexOf('form-item-valid') == -1) ele.parentNode.className += ' form-item-valid';
-                } else ele.parentNode.className = ele.parentNode.className.replace('form-item-valid', '');
+            if (text.length < 6 || text.length > 20) showError(ele, '长度只能在6-20个字符之间');
+            else {
+                if (!$(ele.parentNode).hasClass('form-item-valid')) $(ele.parentNode).addClass('form-item-valid');
             }
         }
         function checkRePass(ele) {
-            var text = this.value;
-            var textpr = this.parentNode.previousElementSibling.previousElementSibling.children[2].value;
-            if (textpr.length != 0) {
-                if (text != textpr) showError(ele, '两次密码输入不一致');
+            var text = ele.value;
+            var textpr = ele.parentNode.previousElementSibling.previousElementSibling.children[2].value;
+            if (text.length == 0) {
+                if ($(ele.parentNode).hasClass('form-item-valid')) $(ele.parentNode).removeClass('form-item-valid');
+                hideError(ele);
+                return;
+            }
+            if (text.length != 0 && textpr.length != 0) { // 密码，重复密码都不为空，且两者不等
+                if (text != textpr) {
+                    showError(ele, '两次密码输入不一致');
+                }
                 else {
+                    if (!$(ele.parentNode).hasClass('form-item-valid')) $(ele.parentNode).addClass('form-item-valid');
                     if ($(ele.parentNode).hasClass('form-item-error')) $(ele.parentNode).removeClass('form-item-error');
-                    showTips(ele);
                 }
             }
-            if (textpr.length != 0) {
-                if (text == textpr) {
-                    if (this.parentNode.className.indexOf('form-item-valid') == -1) this.parentNode.className += ' form-item-valid';
-                } else this.parentNode.className = this.parentNode.className.replace('form-item-valid', '');
-            }
-            if ((text.length == 0 || textpr.length == 0) && $(this.parentNode).hasClass('form-item-error')) $(this.parentNode).removeClass('form-item-error');
         }
         // 输入框提示
         $('.field').focusin(function () {
@@ -713,35 +720,30 @@
             }
         });
         $('.field').focusout(function () {
-            // 隐藏提示
-            var p = this.parentNode.nextElementSibling;
-            p.innerHTML = '';
-
             if (this.id == 'form-account') { // 账号
                 hideTips(this);
+                checkAccount(this);
             } else if (this.id == 'form-pwd') { // 密码
                 hideTips(this);
                 checkPass(this);
+                checkRePass(this.parentNode.nextElementSibling.nextElementSibling.children[2]);
+                this.nextElementSibling.nextElementSibling.style.display = 'none';
             }
             else if (this.id == 'form-equalTopwd') {
                 hideTips(this);
                 checkRePass(this);
+                this.nextElementSibling.nextElementSibling.style.display = 'none';
+            }
+            else if (this.id = 'authCode') {
+                //
             }
         });
         $('.field').keyup(function () {
-            if (this.parentNode.className.indexOf('form-item-error') != -1) {
-                this.parentNode.className = this.parentNode.className.replace('form-item-error', '');
-                var statu = this.parentNode.nextElementSibling;
-                statu.innerHTML = '';
-                var p = this.parentNode.nextElementSibling;
-                var html = this.outerHTML;
-                html = html.substring(html.indexOf('default'));
-                html = html.substring(html.indexOf('\"') + 1);
-                html = html.substring(0, html.length - 2);
-                p.innerHTML = html;
-            }
+            hideError(this);
+            showTips(this);
         });
         $('#form-pwd,#form-equalTopwd').keyup(function (e) {
+            // 检查大小写
             var keyCode = e.keyCode || e.which;
             if (keyCode == 20) capslock = !capslock;
             var isShift = e.shiftKey;
@@ -755,25 +757,27 @@
             }
             if (capslock) this.nextElementSibling.nextElementSibling.style.display = 'block';
             else this.nextElementSibling.nextElementSibling.style.display = 'none';
-
-            if (this.id == 'form-pwd') {
-                var text = this.value;
-                if (text.length >= 6 && text.length <= 20) {
-                    if (this.parentNode.className.indexOf('form-item-valid') == -1) this.parentNode.className += ' form-item-valid';
-                } else this.parentNode.className = this.parentNode.className.replace('form-item-valid', '');
-            }
-            else if (this.id == 'form-equalTopwd') {
-                var text = this.value;
-                var textpr = this.parentNode.previousElementSibling.previousElementSibling.children[2].value;
-                if (text.length != 0) {
-                    if (text == textpr) {
-                        if (this.parentNode.className.indexOf('form-item-valid') == -1) this.parentNode.className += ' form-item-valid';
-                    } else this.parentNode.className = this.parentNode.className.replace('form-item-valid', '');
-                }
-            }
+        });
+        $('#register-form').submit(function () {
+            var a = $('#form-account')[0], b = $('#form-pwd')[0], c = $('#form-equalTopwd')[0], d = $('#authCode')[0];
+            checkAccount(a);
+            if (a.value.length == 0) showError(a, '用户名不能为空');
+            checkPass(b);
+            if (b.value.length == 0) showError(b, '密码不能为空');
+            checkRePass(c);
+            if (c.value.length == 0) showError(c, '两次密码输入不一致');
+            if (d.value.length == 0) showError(d, '验证码不能为空');
+            else $(d.parentNode).addClass('form-item-valid');
+            if ($(a.parentNode).hasClass('form-item-valid') &&
+                $(b.parentNode).hasClass('form-item-valid') &&
+                $(c.parentNode).hasClass('form-item-valid') &&
+                $(d.parentNode).hasClass('form-item-valid'))
+                return true;
+            return false;
         });
     </script>
     <script>
+        // 刷新验证码
         $('#imgAuthCode').click(function () {
             this.src = '/CheckCode.aspx?' + Date.parse(new Date());
             this.previousElementSibling.focus();
@@ -795,6 +799,7 @@
             $('#dialog-title')[0].innerHTML = '隐私政策';
             $('#dialog-content')[0].innerHTML = $('#privacyProtocol')[0].innerHTML;
             $('.protocol-button button').click(closeDialog);
+            $('.ui-dialog').css('left', (document.body.clientWidth - 947) / 2 + 'px');
             $('.ui-dialog,.ui-mask').css('display', 'block');
         });
     </script>
