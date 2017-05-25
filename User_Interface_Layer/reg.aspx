@@ -720,17 +720,15 @@
             }
         });
         $('.field').focusout(function () {
+            hideTips(this);
             if (this.id == 'form-account') { // ’À∫≈
-                hideTips(this);
                 checkAccount(this);
             } else if (this.id == 'form-pwd') { // √‹¬Î
-                hideTips(this);
                 checkPass(this);
                 checkRePass(this.parentNode.nextElementSibling.nextElementSibling.children[2]);
                 this.nextElementSibling.nextElementSibling.style.display = 'none';
             }
             else if (this.id == 'form-equalTopwd') {
-                hideTips(this);
                 checkRePass(this);
                 this.nextElementSibling.nextElementSibling.style.display = 'none';
             }
