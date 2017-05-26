@@ -79,6 +79,7 @@
     <Content Include="Images\pwd-icons.png" />
     <Content Include="Images\q-icon.png" />
     <Content Include="Images\vip.png" />
+    <Content Include="Index.aspx" />
     <Content Include="js\jbase64.js" />
     <Content Include="login.aspx" />
     <Content Include="packages.config" />
@@ -143,6 +144,13 @@
     </Compile>
     <Compile Include="checkUserExits.aspx.designer.cs">
       <DependentUpon>checkUserExits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
