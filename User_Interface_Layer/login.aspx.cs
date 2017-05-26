@@ -13,8 +13,5 @@ namespace User_Interface_Layer
         {
 
         }
-        protected void loginsubmit_Click(object sender,EventArgs e)
-        {
-        }
     }
 }

@@ -70,7 +70,7 @@
 
                                     <div class="item item-fore5">
                                         <div class="login-btn">
-                                            <a href="javascript:;" class="btn-img btn-entry" id="loginsubmit" OnClick="loginsubmit_Click" tabindex="6">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+                                            <a href="javascript:;" class="btn-img btn-entry" id="loginsubmit" tabindex="6">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
                                         </div>
                                     </div>
                                 </form>

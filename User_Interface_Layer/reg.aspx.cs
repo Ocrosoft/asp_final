@@ -13,10 +13,5 @@ namespace User_Interface_Layer
         {
 
         }
-
-        protected void registerbtn_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
