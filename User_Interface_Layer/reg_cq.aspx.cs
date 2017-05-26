@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Entitys;
 using Business_Logic_Layer;
+using System.Text.RegularExpressions;
 
 namespace User_Interface_Layer
 {
@@ -13,45 +14,43 @@ namespace User_Interface_Layer
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string name = Request.QueryString["regName"];
-            string pwd = Request.QueryString["pwd"];
-            string pwdRe = Request.QueryString["pwdRepeat"];
-            string authCode = Request.QueryString["authCode"];
+            string name = Request.Form["regName"];
+            string pwd = Request.Form["pwd"].Substring(1);
+            string pwdRe = Request.Form["pwdRepeat"].Substring(1);
+            string authCode = Request.Form["authCode"];
             string checkcode_correct = Session["CheckCode"].ToString();
 
+            if (name.Length < 4 || name.Length > 20) { Response.Redirect("reg.aspx"); return; }
+            if (pwd.Length < 6 || pwd.Length > 20) { Response.Redirect("reg.aspx"); return; }
+            //Regex reg = new Regex("^[\\w\\d-_]{ 4, 20 }$");
+            //if (!reg.IsMatch(name)) { Response.Redirect("reg.aspx"); return; }
+
+            if (!pwd.Equals(pwdRe))
+            {
+                Response.Redirect("reg.aspx?name=" + name +
+                    "&errorID=authCode&errorMsg=两次密码输入不一致");
+                return;
+            }
             if (!checkcode_correct.Equals(authCode))
             {
-                string errorMsg = "验证码错误";
-                string errorID = "authCode";
-                Response.Redirect("login.aspx?name=" + name + "&errorID=" + errorID + "&errorMsg=" + errorMsg);
-                //Session["regErrorusername"] = name;
-                //Session["regErrorID"] = "";
-                //Session["regError"] = "验证码错误！";
-
+                Response.Redirect("reg.aspx?name=" + name +
+                    "&errorID=authCode&errorMsg=验证码错误");
                 return;
             }
 
             Customer customer = new Customer();
             customer.Name = name;
             customer.Pass = pwd;
+            customer.Question = customer.Answer = "";
             if (BLL_Customer.register(customer))
             {
                 string regSuccessname = name;
                 Response.Redirect("login.aspx?name=" + name);
-                //Session["regSuccessname"] = customer.Name;
-
             }
             else
             {
-                string errorID = "register - form";
-                string regError = "注册失败！";
-                Response.Redirect("reg.aspx?name=" + name + "&errorID=" + errorID + "&errorMsg=" + regError);
-                //Session["regErrorusername"] = customer.Name;
-                //Session["regErrorID"] = "";
-                //Session["regError"] = "注册失败！";
-
+                Response.Redirect("reg.aspx?name=" + name + "&errorMsg=服务器错误");
             }
-
         }
     }
 }

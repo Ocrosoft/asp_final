@@ -20,6 +20,11 @@
             <b></b>
         </div>
     </div>
+    <form runat="server">
+        <asp:HiddenField runat="server" ID="hide_name" />
+        <asp:HiddenField runat="server" ID="hide_errorID" />
+        <asp:HiddenField runat="server" ID="hide_errorMsg" />
+    </form>
     <div id="content">
         <div class="login-wrap">
             <div class="w">
@@ -35,7 +40,7 @@
                         </div>
                         <div class="mc">
                             <div class="form">
-                                <form id="formlogin" method="post">
+                                <form id="formlogin" action="login_cj.aspx" method="post">
                                     <div class="item item-fore1">
                                         <label for="loginname" class="login-label name-label"></label>
                                         <input id="loginname" type="text" class="itxt" name="loginname" tabindex="1"
