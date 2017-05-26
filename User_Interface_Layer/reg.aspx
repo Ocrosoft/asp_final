@@ -34,7 +34,7 @@
     <div class="container w">
         <div class="main clearfix" id="form-main">
             <div class="reg-form fl">
-                <form action="#" id="register-form" method="post">
+                <form action="reg_cq.aspx" id="register-form" method="post">
                     <!--chrome autocomplete off bug hack-->
                     <input style="display: none" name="hack" />
                     <input type="password" style="display: none" name="hack1" />
