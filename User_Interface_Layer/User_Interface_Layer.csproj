@@ -96,6 +96,7 @@
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="reg.aspx" />
+    <Content Include="reg_cq.aspx" />
     <Content Include="UIL.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -174,6 +175,13 @@
     </Compile>
     <Compile Include="reg.aspx.designer.cs">
       <DependentUpon>reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reg_cq.aspx.cs">
+      <DependentUpon>reg_cq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reg_cq.aspx.designer.cs">
+      <DependentUpon>reg_cq.aspx</DependentUpon>
     </Compile>
     <Compile Include="UIL.Master.cs">
       <DependentUpon>UIL.Master</DependentUpon>
