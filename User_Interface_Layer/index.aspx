@@ -5,11 +5,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
-    <meta name="description" content="京东JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
-    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,京东" />
+    <title>东京(JD.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+    <meta name="description" content="东京JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,东京" />
     <link rel="icon" href="//www.jd.com/favicon.ico" type="image/x-icon" />
-    <link rel="search" title="京东JD.com" href="//misc.360buyimg.com/mtd/pc/common/conf/search.xml" type="application/opensearchdescription+xml" />
+    <link rel="search" title="东京JD.com" href="//misc.360buyimg.com/mtd/pc/common/conf/search.xml" type="application/opensearchdescription+xml" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit" />
     <link type="text/css" rel="stylesheet" href="/css/index.css" />
@@ -38,12 +38,12 @@
                 </li>
                 <li class="spacer"></li>
                 <li class="fore3 dorpdown" id="ttbar-myjd">
-                    <div class="dt cw-icon"><a target="_blank" href="//home.jd.com/">我的京东</a><i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
+                    <div class="dt cw-icon"><a target="_blank" href="//home.jd.com/">我的东京</a><i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
                     <div class="dd dorpdown-layer"></div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore4">
-                    <div class="dt"><a target="_blank" href="//vip.jd.com/">京东会员</a></div>
+                    <div class="dt"><a target="_blank" href="//vip.jd.com/">东京会员</a></div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore5">
@@ -61,7 +61,7 @@
                 </li>
                 <li class="spacer"></li>
                 <li class="fore10 mobile" id="J_mobile">
-                    <div class="dt mobile_txt">手机京东</div>
+                    <div class="dt mobile_txt">手机东京</div>
                     <div class="mobile_static">
                         <div class="mobile_static_qrcode"></div>
                     </div>
@@ -77,14 +77,14 @@
     <div id="header">
         <div class="w">
             <div id="logo" class="logo">
-                <h1 class="logo_tit"><a href="//www.jd.com" class="logo_tit_lk">京东</a></h1>
-                <h2 class="logo_subtit">京东,多快好省</h2>
+                <h1 class="logo_tit"><a href="//www.jd.com" class="logo_tit_lk">东京</a></h1>
+                <h2 class="logo_subtit">东京,多快好省</h2>
                 <div class="logo_extend"></div>
             </div>
             <div id="search">
                 <div class="search-m">
                     <div class="search_logo">
-                        <a href="//www.jd.com" class="search_logo_lk">京东，多快好省</a>
+                        <a href="//www.jd.com" class="search_logo_lk">东京，多快好省</a>
                     </div>
                     <ul id="shelper" style="display: none"></ul>
                     <div class="form">
@@ -129,7 +129,7 @@
                         <a target="_blank" href="https://channel.jd.com/fashion.html ">服装城</a>
                     </li>
                     <li class="fore2">
-                        <a target="_blank" href="//chaoshi.jd.com/">京东超市</a>
+                        <a target="_blank" href="//chaoshi.jd.com/">东京超市</a>
                     </li>
                     <li class="fore3">
                         <a target="_blank" href="//fresh.jd.com/">生鲜</a>
@@ -141,7 +141,7 @@
                 <div class="spacer"></div>
                 <ul id="navitems-group3">
                     <li class="fore1">
-                        <a target="_blank" href="//jr.jd.com/">京东金融</a>
+                        <a target="_blank" href="//jr.jd.com/">东京金融</a>
                     </li>
                 </ul>
             </div>
