@@ -14,9 +14,9 @@ namespace User_Interface_Layer
         {
             string name = Request.Form["loginname"];
             string pwd = Request.Form["nloginpwd"];
-            pwd = BLL_Safety.decodeBase64(pwd);
+            pwd = BLL_Safety.DecodeBase64(pwd);
 
-            if (BLL_Customer.login(name, pwd))
+            if (BLL_Customer.Login(name, pwd))
             {
                 Session["name"] = name;
                 Response.Redirect("index.aspx");

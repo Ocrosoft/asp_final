@@ -16,7 +16,7 @@ namespace User_Interface_Layer
             string name = Request.QueryString["name"];
             try
             {
-                bool ret = BLL_Customer.queryCustomerExits(name);
+                bool ret = BLL_Customer.QueryCustomerExits(name);
                 if (ret) Response.Write("True");
                 else Response.Write("False");
             }

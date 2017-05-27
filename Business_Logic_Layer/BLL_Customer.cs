@@ -18,7 +18,7 @@ namespace Business_Logic_Layer
         /// <param name="question">Question</param>
         /// <param name="answer">Answer</param>
         /// <returns>bool</returns>
-        public static bool register(Customer customer)
+        public static bool Register(Customer customer)
         {
             return DAL_Customer.AddCustomer(customer.Name, customer.Pass, customer.Question, customer.Answer);
         }
@@ -28,7 +28,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="name">Name</param>
         /// <returns>bool</returns>
-        public static bool queryCustomerExits(string name)
+        public static bool QueryCustomerExits(string name)
         {
             return DAL_Customer.QueryCustomerExists(name);
         }
@@ -39,7 +39,7 @@ namespace Business_Logic_Layer
         /// <param name="username">用户名</param>
         /// <param name="password">密码</param>
         /// <returns></returns>
-        public static bool login(String username, String password)
+        public static bool Login(String username, String password)
         {
             return DAL_Customer.QueryCustomerExists(username, password);
         }
@@ -49,7 +49,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="name">用户姓名</param>
         /// <returns></returns>
-        public static bool deleteByName(String name)
+        public static bool DeleteByName(String name)
         {
             return DAL_Customer.DeleteCustomer(name);
         }
@@ -60,7 +60,7 @@ namespace Business_Logic_Layer
         /// <param name="username">用户姓名</param>
         /// <param name="password">用户密码</param>
         /// <returns></returns>
-        public static bool modifyPassword(String username, String password)
+        public static bool ModifyPassword(String username, String password)
         {
             return DAL_Customer.UpdatePassword(username, password);
         }
@@ -73,7 +73,7 @@ namespace Business_Logic_Layer
         /// <param name="address">Address</param>
         /// <param name="postCode">PostCode</param>
         /// <returns>bool</returns>
-        public static bool modifyPostInfo(string name, string trueName, string address, string postCode)
+        public static bool ModifyPostInfo(string name, string trueName, string address, string postCode)
         {
             return DAL_Customer.UpdatePostInfo(name, trueName, address, postCode);
         }
@@ -86,7 +86,7 @@ namespace Business_Logic_Layer
         /// <param name="phone">Phone</param>
         /// <param name="email">Email</param>
         /// <returns>bool</returns>
-        public static bool modifyPersonalInfo(string name, string birthday, string phone, string email)
+        public static bool ModifyPersonalInfo(string name, string birthday, string phone, string email)
         {
             return DAL_Customer.UpdatePersonalInfo(name, birthday, phone, email);
         }
@@ -98,7 +98,7 @@ namespace Business_Logic_Layer
         /// <param name="question">Question</param>
         /// <param name="answer">Answer</param>
         /// <returns>bool</returns>
-        public static bool modifyQuestion(string name, string question, string answer)
+        public static bool ModifyQuestion(string name, string question, string answer)
         {
             return DAL_Customer.UpdateQuestion(name, question, answer);
         }
@@ -108,7 +108,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="name">Name</param>
         /// <returns>Customer 或 null</returns>
-        public static Customer queryCustomerPostInfo(string name)
+        public static Customer QueryCustomerPostInfo(string name)
         {
             return DAL_Customer.QueryCustomerPostInfo(name);
         }
@@ -118,7 +118,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="name">Name</param>
         /// <returns>Customer 或 null</returns>
-        public static Customer queryCustomerPersonalInfo(string name)
+        public static Customer QueryCustomerPersonalInfo(string name)
         {
             return DAL_Customer.QueryCustomerPersonalInfo(name);
         }
@@ -127,7 +127,7 @@ namespace Business_Logic_Layer
         /// 查询所有用户收货信息与个人信息（管理功能）
         /// </summary>
         /// <returns>DataSet 或 null</returns>
-        public static DataSet queryAllCustomer()
+        public static DataSet QueryAllCustomer()
         {
             return DAL_Customer.QueryAllCustomer();
         }

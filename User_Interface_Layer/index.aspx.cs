@@ -22,7 +22,7 @@ namespace User_Interface_Layer
             for(int i=0;i<cate_first.Count;i++)
             {
                 text += "<div class=\"cate_part clearfix\" id=\"cate_item" + (i+1).ToString() + "\" data-id=\"" + (char)((int)'a' + i) + "\" data-inlazuqueue=\"true\" style=\"display: none;\">\n";
-                var cate_pop = BLL_GoodsType.queryTypesChild(1, cate_first.ElementAt(i).TypeID);
+                var cate_pop = BLL_GoodsType.QueryTypesChild(1, cate_first.ElementAt(i).TypeID);
                 text += "<div class=\"cate_part_col1\">\n<div class=\"cate_detail\">\n";
                 for(int j=0;j<cate_pop.Count;j++)
                 {
@@ -31,7 +31,7 @@ namespace User_Interface_Layer
                     text += "<a href=\"#\" class=\"cate_detail_tit_lk\" target=\"_blank\">\n";
                     text += cate_pop.ElementAt(j).TypeName + "\n";
                     text += "<i class=\"iconfont cate_detail_titi_arror\"></i>\n</a>\n</dt>\n";
-                    var cate_third = BLL_GoodsType.queryTypesChild(2, cate_pop.ElementAt(j).TypeID);
+                    var cate_third = BLL_GoodsType.QueryTypesChild(2, cate_pop.ElementAt(j).TypeID);
                     text += "<dd class=\"cate_detail_con\">\n";
                     for(int k=0;k<cate_third.Count;k++)
                     {

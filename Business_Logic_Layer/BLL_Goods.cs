@@ -18,7 +18,7 @@ namespace Business_Logic_Layer
         /// <param name="descript">Descript</param>
         /// <param name="imageName">ImageName</param>
         /// <returns>bool</returns>
-        public static bool  addGoods(string name, string typeID, decimal unitPrice, string descript = "", string imageName = "")
+        public static bool  AddGoods(string name, string typeID, decimal unitPrice, string descript = "", string imageName = "")
         {
             return DAL_Goods.AddGood(name, typeID, unitPrice, descript, imageName);
                 //string name, string typeID, decimal unitPrice, string descript = "", string imageName = ""
@@ -29,7 +29,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="id">ID</param>
         /// <returns>bool</returns>
-        public static bool deleteGood(string id)
+        public static bool DeleteGood(string id)
         {
             return DAL_Goods.DeleteGood(id);
         }
@@ -49,7 +49,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="goods"></param>
         /// <returns></returns>
-        public static bool modifyGood(Goods goods)
+        public static bool ModifyGood(Goods goods)
         {
             return DAL_Goods.UpdateGood(goods);
         }
@@ -60,7 +60,7 @@ namespace Business_Logic_Layer
         /// <param name="id"></param>
         /// <param name="name"></param>
         /// <returns></returns>
-        public static bool modifyGoodsName(string id, string name)
+        public static bool ModifyGoodsName(string id, string name)
         {
             return DAL_Goods.UpdateGoodsName(id, name);
         }
@@ -71,7 +71,7 @@ namespace Business_Logic_Layer
         /// <param name="id"></param>
         /// <param name="typeID"></param>
         /// <returns></returns>
-        public static bool modifyGoodsType(string id, string typeID)
+        public static bool ModifyGoodsType(string id, string typeID)
         {
             return DAL_Goods.UpdateGoodsType(id, typeID);
         }
@@ -82,7 +82,7 @@ namespace Business_Logic_Layer
         /// <param name="id"></param>
         /// <param name="descript"></param>
         /// <returns></returns>
-        public static bool modifyGoodsDescript(string id, string descript)
+        public static bool ModifyGoodsDescript(string id, string descript)
         {
             return DAL_Goods.UpdateGoodsDescript(id, descript);
         }
@@ -93,7 +93,7 @@ namespace Business_Logic_Layer
         /// <param name="id"></param>
         /// <param name="price"></param>
         /// <returns></returns>
-        public static bool modifyGoodsUnitPrice(string id, decimal price)
+        public static bool ModifyGoodsUnitPrice(string id, decimal price)
         {
             return DAL_Goods.UpdateGoodsUnitPrice(id, price);
         }
@@ -104,10 +104,63 @@ namespace Business_Logic_Layer
         /// <param name="id"></param>
         /// <param name="imageName"></param>
         /// <returns></returns>
-        public static bool modifyGoodsImageName(string id, string imageName)
+        public static bool ModifyGoodsImageName(string id, string imageName)
         {
             return DAL_Goods.UpdateGoodsImageName(id, imageName);
         }
+
+        /// <summary>
+        /// 查询商品总数
+        /// </summary>
+        /// <returns></returns>
+        public static int QueryGoodsCount()
+        {
+            return DAL_Goods.QueryGoodsCount();
+        }
+
+        /// <summary>
+        /// 查询所有商品中的第pos到pos+length条记录
+        /// </summary>
+        /// <param name="pos">起始位置</param>
+        /// <param name="length">商品数量</param>
+        /// <returns>List<Entitys.Goods></returns>
+        public List<Goods> QueryGoodsAt(int pos, int length)
+        {
+            return DAL_Goods.QueryGoodsAt(pos, length);
+        }
+
+        /// <summary>
+        /// 根据ID查询商品信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public static Goods QueryGood(string id)
+        {
+            return DAL_Goods.QueryGood(id);
+        }
+
+        /// <summary>
+        /// 查询某类别所有商品
+        /// </summary>
+        /// <param name="typeID"></param>
+        /// <returns></returns>
+        public static List<Goods> QueryGoods(string typeID)
+        {
+            return DAL_Goods.QueryGoods(typeID);
+        }
+
+        /// <summary>
+        /// 查询某类别从pos开始length条商品记录
+        /// </summary>
+        /// <param name="typeID"></param>
+        /// <param name="pos"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static List<Goods> QueryGoods(string typeID, int pos, int length)
+        {
+            return DAL_Goods.QueryGoods(typeID, pos, length);
+        }
+
 
 
     }
