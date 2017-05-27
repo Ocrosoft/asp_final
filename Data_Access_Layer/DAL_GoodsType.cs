@@ -184,7 +184,7 @@ namespace Data_Access_Layer
                 string tb_name = "tb_goodstype";
                 if (level == 2) tb_name += "_second";
                 else if (level == 3) tb_name += "_third";
-                string sql = "select goodsTypeName from " + tb_name + " where goodsTypeID=?typeID;";
+                string sql = "select * from " + tb_name + " where goodsTypeID=?typeID;";
                 MySqlParameter para = new MySqlParameter("?typeID", typeID);
                 DataTable dt = DAL_MysqlHelper.ExecuteDataSet(sql, para).Tables[0];
                 GoodsType type = new GoodsType();
@@ -212,7 +212,7 @@ namespace Data_Access_Layer
                 string tb_name = "tb_goodstype";
                 if (level == 2) tb_name += "_second";
                 else if (level == 3) tb_name += "_third";
-                string sql = "select goodsTypeName from " + tb_name + " where goodsTypeName=?typeName;";
+                string sql = "select * from " + tb_name + " where goodsTypeName=?typeName;";
                 MySqlParameter para = new MySqlParameter("?typeName", typeName);
                 DataTable dt = DAL_MysqlHelper.ExecuteDataSet(sql, para).Tables[0];
                 List<GoodsType> list = new List<GoodsType>();
@@ -246,7 +246,7 @@ namespace Data_Access_Layer
                 string tb_name = "tb_goodstype";
                 if (level == 2) tb_name += "_second";
                 else if (level == 3) tb_name += "_third";
-                string sql = "select goodsTypeName from " + tb_name + " where goodsParentTypeID=?typeID;";
+                string sql = "select * from " + tb_name + " where goodsParentTypeID=?typeID;";
                 MySqlParameter para = new MySqlParameter("?typeID", typeID);
                 DataTable dt = DAL_MysqlHelper.ExecuteDataSet(sql, para).Tables[0];
                 List<GoodsType> list = new List<GoodsType>();
@@ -256,6 +256,38 @@ namespace Data_Access_Layer
                     type.TypeID = dt.Rows[i]["goodsTypeID"].ToString();
                     type.TypeLevel = level;
                     type.TypeName = dt.Rows[i]["goodsTypeName"].ToString();
+                    list.Add(type);
+                }
+                return list;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        /// <summary>
+        /// 查询某级类别的所有类别
+        /// </summary>
+        /// <param name="level">类别等级(1,2,3)</param>
+        /// <returns></returns>
+        public static List<GoodsType> QueryAlltypes(int level)
+        {
+             try
+            {
+                string tb_name = "tb_goodstype";
+                if (level == 2) tb_name += "_second";
+                else if (level == 3) tb_name += "_third";
+                string sql = "select * from " + tb_name + ";";
+                DataTable dt = DAL_MysqlHelper.ExecuteDataSet(sql).Tables[0];
+                List<GoodsType> list = new List<GoodsType>();
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    GoodsType type = new GoodsType();
+                    type.TypeID = dt.Rows[i]["goodsTypeID"].ToString();
+                    type.TypeLevel = level;
+                    type.TypeName = dt.Rows[i]["goodsTypeName"].ToString();
+                    if (level != 1) type.ParentTypeID = dt.Rows[i]["goodsParentTypeID"].ToString();
+                    list.Add(type);
                 }
                 return list;
             }

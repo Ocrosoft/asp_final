@@ -103,7 +103,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="level">类别等级（1,2,3）</param>
         /// <param name="typeName">TypeName</param>
-        /// <returns>List<GoodsType></returns>
+        /// <returns>List</returns>
         public static List<GoodsType> queryTypeID(int level, string typeName)
         {
             return DAL_GoodsType.QueryTypeID(level, typeName);
@@ -118,6 +118,15 @@ namespace Business_Logic_Layer
         public static List<GoodsType> queryTypesChild(int level, string typeID)
         {
             return DAL_GoodsType.QueryTypesChild(level, typeID);
+        }
+        /// <summary>
+        /// 查询某级类别的所有类别
+        /// </summary>
+        /// <param name="level">类别等级(1,2,3)</param>
+        /// <returns></returns>
+        public static List<GoodsType> QueryAllTypes(int level)
+        {
+            return DAL_GoodsType.QueryAlltypes(level);
         }
     }
 }

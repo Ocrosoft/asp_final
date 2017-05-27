@@ -83,6 +83,7 @@
     <Content Include="Images\q-icon.png" />
     <Content Include="Images\vip.png" />
     <Content Include="index.aspx" />
+    <Content Include="js\index-head.js" />
     <Content Include="js\index.js" />
     <Content Include="js\jbase64.js" />
     <Content Include="js\login.js" />

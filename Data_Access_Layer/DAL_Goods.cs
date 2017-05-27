@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data;
 
 namespace Data_Access_Layer
 {
@@ -239,6 +240,157 @@ namespace Data_Access_Layer
                 int ret = DAL_MysqlHelper.ExecuteNonQuery(sql, para);
                 if (ret == 1) return true;
                 else return false;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        /// <summary>
+        /// 查询商品总数
+        /// </summary>
+        /// <returns></returns>
+        public static int QueryGoodsCount()
+        {
+            try
+            {
+                string sql = "select count(*) from tb_goods;";
+                int ret = (int)DAL_MysqlHelper.ExecuteScalar(sql);
+                return ret;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        /// <summary>
+        /// 查询所有商品中的第pos到pos+length条记录
+        /// </summary>
+        /// <param name="pos">起始位置</param>
+        /// <param name="length">商品数量</param>
+        /// <returns>List<Entitys.Goods></returns>
+        public static List<Entitys.Goods> QueryGoodsAt(int pos, int length)
+        {
+            try
+            {
+                string sql = "select * from tb_goods limit ?st,?ed;";
+                MySqlParameter[] para = new MySqlParameter[2];
+                para[0] = new MySqlParameter("?st", pos);
+                para[1] = new MySqlParameter("?ed", length);
+                DataSet ds= DAL_MysqlHelper.ExecuteDataSet(sql,para);
+                List<Entitys.Goods> list = new List<Goods>();
+                for(int i=0;i<length;i++)
+                {
+                    Entitys.Goods good = new Goods();
+                    good.Id=ds.Tables[0].Rows[i][0].ToString();
+                    good.Name = ds.Tables[0].Rows[i][1].ToString();
+                    good.TypeID = ds.Tables[0].Rows[i][2].ToString();
+                    good.Desctipt = ds.Tables[0].Rows[i][3].ToString();
+                    good.UnitPrice = decimal.Parse(ds.Tables[0].Rows[i][4].ToString());
+                    good.ImageName = ds.Tables[0].Rows[i][5].ToString();
+                    good.SellCount = ds.Tables[0].Rows[i][6].ToString();
+                    good.Date = ds.Tables[0].Rows[i][7].ToString();
+                    list.Add(good);
+                }
+                return list;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        /// <summary>
+        /// 根据ID查询商品信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public static Entitys.Goods QueryGood(string id)
+        {
+            try
+            {
+                string sql = "select * from tb_goods where goodsID=?id;";
+                MySqlParameter para =  new MySqlParameter("?id", id);
+                DataSet ds = DAL_MysqlHelper.ExecuteDataSet(sql, para);
+                Entitys.Goods good = new Goods();
+                good.Id = ds.Tables[0].Rows[0][0].ToString();
+                good.Name = ds.Tables[0].Rows[0][1].ToString();
+                good.TypeID = ds.Tables[0].Rows[0][2].ToString();
+                good.Desctipt = ds.Tables[0].Rows[0][3].ToString();
+                good.UnitPrice = decimal.Parse(ds.Tables[0].Rows[0][4].ToString());
+                good.ImageName = ds.Tables[0].Rows[0][5].ToString();
+                good.SellCount = ds.Tables[0].Rows[0][6].ToString();
+                good.Date = ds.Tables[0].Rows[0][7].ToString();
+                return good;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        /// <summary>
+        /// 查询某类别所有商品
+        /// </summary>
+        /// <param name="typeID"></param>
+        /// <returns></returns>
+        public static List<Entitys.Goods> QueryGoods(string typeID)
+        {
+            try
+            {
+                string sql = "select * from tb_goods where goodsTypeID=?typeID;";
+                MySqlParameter para = new MySqlParameter("?typeID", typeID);
+                DataSet ds = DAL_MysqlHelper.ExecuteDataSet(sql, para);
+                List<Entitys.Goods> list = new List<Goods>();
+                for(int i=0;i<ds.Tables[0].Rows.Count;i++)
+                {
+                    Entitys.Goods good = new Goods();
+                    good.Id = ds.Tables[0].Rows[i][0].ToString();
+                    good.Name = ds.Tables[0].Rows[i][1].ToString();
+                    good.TypeID = ds.Tables[0].Rows[i][2].ToString();
+                    good.Desctipt = ds.Tables[0].Rows[i][3].ToString();
+                    good.UnitPrice = decimal.Parse(ds.Tables[0].Rows[i][4].ToString());
+                    good.ImageName = ds.Tables[0].Rows[i][5].ToString();
+                    good.SellCount = ds.Tables[0].Rows[i][6].ToString();
+                    good.Date = ds.Tables[0].Rows[i][7].ToString();
+                    list.Add(good);
+                }
+                return list;
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+        }
+        /// <summary>
+        /// 查询某类别从pos开始length条商品记录
+        /// </summary>
+        /// <param name="typeID"></param>
+        /// <param name="pos"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static List<Entitys.Goods> QueryGoods(string typeID,int pos,int length)
+        {
+            try
+            {
+                string sql = "select * from tb_goods limit ?st,?ed;";
+                MySqlParameter[] para = new MySqlParameter[2];
+                para[0] = new MySqlParameter("?st", pos);
+                para[1] = new MySqlParameter("?ed", length);
+                List<Entitys.Goods> list = new List<Goods>();
+                DataSet ds = DAL_MysqlHelper.ExecuteDataSet(sql, para);
+                for(int i=0;i<length;i++)
+                {
+                    Entitys.Goods good = new Goods();
+                    good.Id = ds.Tables[0].Rows[i][0].ToString();
+                    good.Name = ds.Tables[0].Rows[i][1].ToString();
+                    good.TypeID = ds.Tables[0].Rows[i][2].ToString();
+                    good.Desctipt = ds.Tables[0].Rows[i][3].ToString();
+                    good.UnitPrice = decimal.Parse(ds.Tables[0].Rows[i][4].ToString());
+                    good.ImageName = ds.Tables[0].Rows[i][5].ToString();
+                    good.SellCount = ds.Tables[0].Rows[i][6].ToString();
+                    good.Date = ds.Tables[0].Rows[i][7].ToString();
+                    list.Add(good);
+                }
+                return list;
             }
             catch (Exception e)
             {
