@@ -23,7 +23,7 @@ namespace User_Interface_Layer
             for(int i=0;i<cate_first.Count;i++)
             {
                 text += "<div class=\"cate_part clearfix\" id=\"cate_item" + (i+1).ToString() + "\" data-id=\"" + (char)((int)'a' + i) + "\" data-inlazuqueue=\"true\" style=\"display: none;padding-top: 10px;\">\n";
-                var cate_pop = BLL_GoodsType.queryTypesChild(1, cate_first.ElementAt(i).TypeID);
+                var cate_pop = BLL_GoodsType.QueryTypesChild(1, cate_first.ElementAt(i).TypeID);
                 text += "<div class=\"cate_part_col1\">\n<div class=\"cate_detail\">\n";
                 for(int j=0;j<cate_pop.Count;j++)
                 {
