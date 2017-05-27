@@ -158,7 +158,10 @@
                             <li class="cate_menu_item" data-index="1"><a target="_blank" class="cate_menu_lk" href="#">家用电器</a></li>
                         </asp:Label>
                     </ul>
-                    <div style="display: none;"></div><!--class="JS_popCtn cate_pop mod_loading"-->
+                    <div id="popCtn" style="display: none;" class="cate_pop">
+                        <asp:Label ID="server_cate_pop" runat="server">
+                        </asp:Label>
+                    </div><!--class="cate_pop"-->
                 </div>
             </div>
             <div class="fs_col2">
@@ -469,6 +472,7 @@
     </div>
     <div class="J_f J_lazyload J_lift mod_lazyload lift" id="lift" data-tpl="elevator_tpl" data-forcerender="true">
         </div-->
-    <script src="/js/index.js"></script>
+    <!--<script src="/js/index.js"></script>-->
+    <script src="/js/index-cate.js"></script>
 </body>
 </html>

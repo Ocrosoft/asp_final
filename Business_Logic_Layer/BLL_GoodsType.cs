@@ -114,7 +114,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="level">类别等级（1,2）</param>
         /// <param name="typeID">TypeID</param>
-        /// <returns>List<GoodsType></returns>
+        /// <returns>List</returns>
         public static List<GoodsType> queryTypesChild(int level, string typeID)
         {
             return DAL_GoodsType.QueryTypesChild(level, typeID);
