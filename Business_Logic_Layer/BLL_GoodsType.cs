@@ -16,7 +16,7 @@ namespace Business_Logic_Layer
         /// <param name="level">级别（2或3）</param>
         /// <param name="parentTypeID">ParentTypeID</param>
         /// <returns>bool</returns>
-        public static bool addType(string typeName, int level, string parentTypeID)
+        public static bool AddType(string typeName, int level, string parentTypeID)
         {
             return DAL_GoodsType.AddType(typeName, level, parentTypeID);
         }
@@ -26,7 +26,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="typeName">TypeName</param>
         /// <returns>bool</returns>
-        public static bool addType(string typeName)
+        public static bool AddType(string typeName)
         {
             return DAL_GoodsType.AddType(typeName);
         }
@@ -36,7 +36,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="typeID">TypeID</param>
         /// <returns>bool</returns>
-        public static bool deleteType(string typeID)
+        public static bool DeleteType(string typeID)
         {
             return DAL_GoodsType.DeleteType(typeID);
         }
@@ -47,7 +47,7 @@ namespace Business_Logic_Layer
         /// <param name="typeID">TypeID</param>
         /// <param name="level">类别等级（2或3）</param>
         /// <returns>bool</returns>
-        public static bool deleteType(string typeID, int level)
+        public static bool DeleteType(string typeID, int level)
         {
             return DAL_GoodsType.DeleteType(typeID, level);
         }
@@ -58,7 +58,7 @@ namespace Business_Logic_Layer
         /// <param name="level">类别等级（2或3）</param>
         /// <param name="parentTypeID">ParentTypeID</param>
         /// <returns>bool</returns>
-        public static bool deleteType(int level, string parentTypeID)
+        public static bool DeleteType(int level, string parentTypeID)
         {
             return DAL_GoodsType.DeleteType(level, parentTypeID);
         }
@@ -70,7 +70,7 @@ namespace Business_Logic_Layer
         /// <param name="typeID">TypeID</param>
         /// <param name="typeName">TypeName</param>
         /// <returns>bool</returns>
-        public static bool modifyTypeName(int level, string typeID, string typeName)
+        public static bool ModifyTypeName(int level, string typeID, string typeName)
         {
             return DAL_GoodsType.UpdateTypeName(level, typeID, typeName);
         }
@@ -82,7 +82,7 @@ namespace Business_Logic_Layer
         /// <param name="typeID">TypeID</param>
         /// <param name="parentTypeID">ParentTypeID</param>
         /// <returns>bool</returns>
-        public static bool modifyParentTypeID(int level, string typeID, string parentTypeID)
+        public static bool ModifyParentTypeID(int level, string typeID, string parentTypeID)
         {
             return DAL_GoodsType.UpdateParentTypeID(level, typeID, parentTypeID);
         }
@@ -93,7 +93,7 @@ namespace Business_Logic_Layer
         /// <param name="level">类别等级（1,2,3）</param>
         /// <param name="typeID">TypeID</param>
         /// <returns>GoodsType</returns>
-        public static GoodsType queryTypeName(int level, string typeID)
+        public static GoodsType QueryTypeName(int level, string typeID)
         {
             return DAL_GoodsType.QueryTypeName(level, typeID);
         }
@@ -104,7 +104,7 @@ namespace Business_Logic_Layer
         /// <param name="level">类别等级（1,2,3）</param>
         /// <param name="typeName">TypeName</param>
         /// <returns>List</returns>
-        public static List<GoodsType> queryTypeID(int level, string typeName)
+        public static List<GoodsType> QueryTypeID(int level, string typeName)
         {
             return DAL_GoodsType.QueryTypeID(level, typeName);
         }
@@ -115,7 +115,7 @@ namespace Business_Logic_Layer
         /// <param name="level">类别等级（1,2）</param>
         /// <param name="typeID">TypeID</param>
         /// <returns>List</returns>
-        public static List<GoodsType> queryTypesChild(int level, string typeID)
+        public static List<GoodsType> QueryTypesChild(int level, string typeID)
         {
             return DAL_GoodsType.QueryTypesChild(level, typeID);
         }

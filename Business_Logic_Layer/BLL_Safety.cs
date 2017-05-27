@@ -15,7 +15,7 @@ namespace Business_Logic_Layer
         /// </summary>
         /// <param name="result">要解密的字符串</param>
         /// <returns></returns>
-        public static string decodeBase64(string result)
+        public static string DecodeBase64(string result)
         {
             return DAL_Safety.DecodeBase64(result);
         }

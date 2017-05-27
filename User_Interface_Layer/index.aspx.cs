@@ -32,7 +32,7 @@ namespace User_Interface_Layer
                     text += "<a href=\"#\" class=\"cate_detail_tit_lk\" target=\"_blank\">\n";
                     text += cate_pop.ElementAt(j).TypeName + "\n";
                     text += "<i class=\"iconfont cate_detail_titi_arror\"></i>\n</a>\n</dt>\n";
-                    var cate_third = BLL_GoodsType.queryTypesChild(2, cate_pop.ElementAt(j).TypeID);
+                    var cate_third = BLL_GoodsType.QueryTypesChild(2, cate_pop.ElementAt(j).TypeID);
                     text += "<dd class=\"cate_detail_con\">\n";
                     for(int k=0;k<cate_third.Count;k++)
                     {
