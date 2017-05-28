@@ -432,5 +432,27 @@ namespace Data_Access_Layer
                 throw e;
             }
         }
+        /// <summary>
+        /// 查询销量降序排列的第pos条记录开始的连续length条记录
+        /// </summary>
+        /// <param name="pos"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static DataSet QueryGoodsSellCountDesc(int pos, int length)
+        {
+            try
+            {
+                string sql = "select * from tb_goods order by sellCount limit ?st,?ed;";
+                MySqlParameter[] para = new MySqlParameter[2];
+                para[0] = new MySqlParameter("?st", pos);
+                para[1] = new MySqlParameter("?ed", length);
+                DataSet ds = DAL_MysqlHelper.ExecuteDataSet(sql, para);
+                return ds;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }

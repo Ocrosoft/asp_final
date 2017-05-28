@@ -18,7 +18,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool AddType(string typeName, int level, string parentTypeID)
         {
-            return DAL_GoodsType.AddType(typeName, level, parentTypeID);
+            try
+            {
+                return DAL_GoodsType.AddType(typeName, level, parentTypeID);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -28,7 +35,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool AddType(string typeName)
         {
-            return DAL_GoodsType.AddType(typeName);
+            try
+            {
+                return DAL_GoodsType.AddType(typeName);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -38,7 +52,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool DeleteType(string typeID)
         {
-            return DAL_GoodsType.DeleteType(typeID);
+            try
+            {
+                return DAL_GoodsType.DeleteType(typeID);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -49,7 +70,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool DeleteType(string typeID, int level)
         {
-            return DAL_GoodsType.DeleteType(typeID, level);
+            try
+            {
+                return DAL_GoodsType.DeleteType(typeID, level);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -60,7 +88,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool DeleteType(int level, string parentTypeID)
         {
-            return DAL_GoodsType.DeleteType(level, parentTypeID);
+            try
+            {
+                return DAL_GoodsType.DeleteType(level, parentTypeID);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -72,7 +107,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool ModifyTypeName(int level, string typeID, string typeName)
         {
-            return DAL_GoodsType.UpdateTypeName(level, typeID, typeName);
+            try
+            {
+                return DAL_GoodsType.UpdateTypeName(level, typeID, typeName);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -84,7 +126,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool ModifyParentTypeID(int level, string typeID, string parentTypeID)
         {
-            return DAL_GoodsType.UpdateParentTypeID(level, typeID, parentTypeID);
+            try
+            {
+                return DAL_GoodsType.UpdateParentTypeID(level, typeID, parentTypeID);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -95,7 +144,14 @@ namespace Business_Logic_Layer
         /// <returns>GoodsType</returns>
         public static GoodsType QueryTypeName(int level, string typeID)
         {
-            return DAL_GoodsType.QueryTypeName(level, typeID);
+            try
+            {
+                return DAL_GoodsType.QueryTypeName(level, typeID);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -106,7 +162,14 @@ namespace Business_Logic_Layer
         /// <returns>List</returns>
         public static List<GoodsType> QueryTypeID(int level, string typeName)
         {
-            return DAL_GoodsType.QueryTypeID(level, typeName);
+            try
+            {
+                return DAL_GoodsType.QueryTypeID(level, typeName);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -117,7 +180,14 @@ namespace Business_Logic_Layer
         /// <returns>List</returns>
         public static List<GoodsType> QueryTypesChild(int level, string typeID)
         {
-            return DAL_GoodsType.QueryTypesChild(level, typeID);
+            try
+            {
+                return DAL_GoodsType.QueryTypesChild(level, typeID);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
         /// <summary>
         /// 查询某级类别的所有类别
@@ -126,7 +196,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static List<GoodsType> QueryAllTypes(int level)
         {
-            return DAL_GoodsType.QueryAlltypes(level);
+            try
+            {
+                return DAL_GoodsType.QueryAlltypes(level);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
     }
 }

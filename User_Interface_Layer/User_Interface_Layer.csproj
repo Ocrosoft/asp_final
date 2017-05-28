@@ -83,8 +83,11 @@
     <Content Include="Images\l-icon.png" />
     <Content Include="Images\loading.gif" />
     <Content Include="Images\logo-201305-b.png" />
+    <Content Include="Images\logo.v2.png" />
+    <Content Include="Images\no_login.jpg" />
     <Content Include="Images\pwd-icons.png" />
     <Content Include="Images\q-icon.png" />
+    <Content Include="Images\sprite_userinfo%401x.png" />
     <Content Include="Images\vip.png" />
     <Content Include="index.aspx" />
     <Content Include="js\index-cate.js" />

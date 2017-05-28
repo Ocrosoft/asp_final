@@ -165,13 +165,52 @@
             </div>
             <div class="fs_col2">
                 <div class="J_slider slider">
-                    <div class="J_slider_main slider_main"></div>
-                    <div class="J_slider_extend slider_extend clearfix"></div>
+                    <div class="J_slider_main slider_main">
+                        <ul class="slider_list J_slider_list">
+                            <li class="J_slider_item slider_item" style="opacity: 0; z-index: 0; position: absolute;"><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm7ANcd8TaakkD/zIYWRZc7VvtfY423rJcb/SOFjh+YellrTTN+dIJkhYShiPZLNe/pbYlDIVAI9+vIVneYgYjfF4fLWlvRBkxoM4QrINBB7LfBHMuSWX3K8VM2spQ6HW49E3tn7RaWoRtM6aGNuRvDZPcADfOydEgb3r/t/IOD6jebwKAFQoJNlTkPYqRWHa7QpodVXpEL15gIhF7tS9XGTIH/3PVpFk1yWjCKplUWsYiZkUIzjmhlPlHv4wTLvUHI6PS3e2iAxIftN/cIOoqdkLMz+Zwh2Sv2uEPtOqU+3QA==&amp;cv=2.0&amp;url=//sale.jd.com/act/dqmXrfTnpbw.html" class="slider_item_lk J_slider_item_lk" target="_blank">
+                                <img alt="" src="//img14.360buyimg.com/da/jfs/t5878/318/1423881758/133705/9c8203bc/5926a3aaN1095f049.jpg" class="J_slider_item_img slider_item_img">
+                                <i class="mod_actmark mod_actmark_focus"></i></a></li>
+                            <li class="J_slider_item slider_item" style="opacity: 0; z-index: 0; position: absolute;"><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm6Hhrdl9QGCkoPs/Fo2eZuXeS7BtXY7x+N+roqgIKjE04WNnoVRnCS7jc2yBBL+gsVEN6D1UcOWBuFtSIXy7/JE4fLWlvRBkxoM4QrINBB7LStjgEElUqilYvuaAI0cIZGL+V1bZxwJnlv2EJuiDdwUv/7SSe9q7ZBCXWwxjFHP/r6uO37CY0Gpq2F6VJodSxa+LcM/29HoFWRR+IS3JwzGX9Bp73GHZ79P1hYK54ixq3JUyYon4u6OguV+SYB+YpNilRuhHxyLJHkfid7fVu5mhiN6+Mc28apMMzd+icNrBA==&amp;cv=2.0&amp;url=//sale.jd.com/act/Rm0HGgKv2wnbIY4.html" class="slider_item_lk J_slider_item_lk" target="_blank">
+                                <img alt="" src="//img1.360buyimg.com/da/jfs/t5698/63/180199642/164836/86a3054f/591daf31N26a3d381.jpg" class="J_slider_item_img slider_item_img"><i class="mod_actmark mod_actmark_focus"></i></a>            </li>
+                            <li class="J_slider_item slider_item" style="opacity: 0; z-index: 0; position: absolute;"><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm55k+xzSmdsZK1bWF8JfLYa9UYUcnhW0FFTHUubItqXK5jEcX9FCh5V+535bKbisqxHWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sj6eNlM0GiumTgMmfXHtKdzdVQpfGXvdx6aLHTcVNRbhCQod+KYxCPcjDhX1RouGJvWWX8sgBMRRsCf+zfYrDghP7Yf0/1mWhQd/EwOPW33yN6Y76pEUjnWhXnKNVdZJvVXCZyfP4uMqYgQ3v+5kk/jcO2L9Q0Zc72tSD7laS1JfwqCGCSkwWB0UZE/clm1+XfA==&amp;cv=2.0&amp;url=//sale.jd.com/act/60NWaC1YKX.html" class="slider_item_lk J_slider_item_lk" target="_blank">
+                                <img alt="" src="//img10.360buyimg.com/da/jfs/t4324/317/860219935/78514/96c6e177/58ba3360N7d709700.jpg" class="J_slider_item_img slider_item_img"><i class="mod_actmark mod_actmark_focus"></i></a>            </li>
+                            <li class="J_slider_item slider_item" style="opacity: 0; z-index: 0; position: absolute;"><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm47vj5+CkXlwPF90YrTKWEyCUP/PPzU8I/GNofylm0jAVuGuln5FsrFw41cxGYIkmWbOd0J5mOxuQ5m2k2S4AW4dErwU+9B2rqhu+mEbUvhPI4UYVFsg6KgrX3pOrT6zGltZ+dZbB1l3nerbkmqm41LOZclZQy8tD8SmJfRl65s2HRNPXO1OlOnpjSdsgyn3tv6IKGIVG5f8/1M7NcIo0ve8lA8M70Lq8BMrlEVc8b+NjlXCtVJy736rNTlDFJujSIZ0bHb+XoB0DH51Ye094LFe10Ui55Dmr3ucUl7esusJg==&amp;cv=2.0&amp;url=//sale.jd.com/act/WH6AuLr4eP7wV5.html" class="slider_item_lk J_slider_item_lk" target="_blank">
+                                <img alt="" src="//img13.360buyimg.com/da/jfs/t5791/211/1339665612/190891/b3169e39/59255b2bN59290ca0.jpg" class="J_slider_item_img slider_item_img"><i class="mod_actmark mod_actmark_focus"></i></a>            </li>
+                            <li class="J_slider_item slider_item" style="opacity: 0; z-index: 0; position: absolute;"><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm4qd+W12IX13fCjb0ab6SexbTk4VOSL3II11lyBNuno6FowMxxjSsklF+FX/h3roDZHWmoByPeXmwN+vPPmAue8nPRVaxDTMvb4FGTgPthaktn8gPOpqe+7/VxjbRwcMt3bLwU0UDTaLz6VMhnMX54zQBm0Myq73ZmTaMYtfetTW8ZG+bOJzueASAX30AkC+BJM7KhKAzacsw4AdWt8CpsTWGOQzs6c6SvsrASo0uZP0+sMmgEhkY9EeMVx6X1nDXuTWk+LdBAe6AGHS3ze5vGalrw0VRUczI/aZKUbzeydkA==&amp;cv=2.0&amp;url=//sale.jd.com/act/jPbZs6QhNV.html" class="slider_item_lk J_slider_item_lk" target="_blank">
+                                <img alt="" src="//img14.360buyimg.com/da/jfs/t3889/320/1663573324/106061/9f4225e/5885d7e9N0cefb065.jpg" class="J_slider_item_img slider_item_img"><i class="mod_actmark mod_actmark_focus"></i></a>            </li>
+                            <li class="J_slider_item slider_item" style="opacity: 0; z-index: 0; position: absolute;"><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm5negws9Nr657HKBfKMPWBCQ6eMwLTz+cqLRgJj0OCzavzI/CcoORi3Xk0r89vrrKy24s0QKHWs70QTi+QBr4T74fLWlvRBkxoM4QrINBB7LdgwNwwjxQmtXScQ+wV75caf6NL7sW0LMl34Bf8YZN32jnSIFtrxkX4xkYbQvHViCGKnFtB6rhrxWO1MpkcMG5SoRUSOdb56zrttLfl8vNBFcptr0poJNKZrfeMvuWRplv4bRbtDQshzWfMXyqdyQxyNrmP1wRDLNloYOL46zk6YpGgD9f7DD80JI2OBqrgiZA==&amp;cv=2.0&amp;url=//sale.jd.com/act/MilSjr34UQRJgL.html" class="slider_item_lk J_slider_item_lk" target="_blank">
+                                <img alt="" src="//img30.360buyimg.com/da/jfs/t5779/208/1676495879/204515/9f08f99/5928ddb5Nef882285.jpg" class="J_slider_item_img slider_item_img"><i class="mod_actmark mod_actmark_focus"></i></a>            </li>
+                            <li class="J_slider_item slider_item" style="opacity: 0; z-index: 0; position: absolute;"><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm5/+Q6kSQOF21lpm773NgeAF7GqQf4A7IheNcAyMGXSj0Ov+k2PlGYJ8Olug2r6PhP1zCtXNl/2E+eJeZQgDRf94fLWlvRBkxoM4QrINBB7LT6PPhlr9nMSFRJQnebblEGvpxObF+kiaZJTDmRa7RfcPg/5lcwJ9ODRALR4zzW6KndBYMCVFxlbZRUKij7Z92358nvVR6ukal9j8UOUAB7XX2eOVm6BWJgL+STwEf7TGxhRUJO1SzbN9ghEGFXB7f90eAcCcxt4/aYpXclWi6Ay4kZYtET9oANOMTk0wDstKw==&amp;cv=2.0&amp;url=//sale.jd.com/act/ozShAYDPe0qNQu5g.html" class="slider_item_lk J_slider_item_lk" target="_blank">
+                                <img alt="" src="//img12.360buyimg.com/da/jfs/t5827/324/1405451098/69439/576a038e/59268472N4067702f.jpg" class="J_slider_item_img slider_item_img"><i class="mod_actmark mod_actmark_focus"></i></a>            </li>
+                            <li class="J_slider_item slider_item slider_item_active" style="opacity: 1; z-index: 1; position: absolute;"><a href="//ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9zYWxlLmpkLmNvbS9hY3QveUlyenhxQlNSdVdWNi5odG1s&amp;log=AnX_sm-j4IonThFxzJc5nyakxWyjOqgyznI9JUhFY99xUeLm8RxPo9Q4kHLo7SmBjVXMDXiBwVwYXaVNVFpHWYbl50f2bA5BF_luGtwQAzNCzblKUoayqxAqClwNzQcmP9v3RC12pu9mIbMDa_mwpOkC_S8U7y_is9GgL-Utzif_chZGHDCRWxqr0yZ22PIhKt87i4g3svQYG1D2dxVhu4s52dcpifY_7dhHsOWu9s1Wdff1NFsP2nye6VP6P0nwo2d8n57UzvymbPTMB5vMVb0liY-YdRRmVjSKa8xkJjxadnrvuuXcb-OkT3evCA0hX-cJzgeCS0acykNXUmZaA2JiCbXXICbWGQcpBxzefLbFpswbaeYv8XQXqVhdxmjxQ4anoN3IAObSMSJklqZkOg&amp;v=404" class="slider_item_lk J_slider_item_lk" target="_blank">
+                                <img alt="" src="//img13.360buyimg.com/da/jfs/t5641/143/1688255544/107064/ad42949d/5928d48dN6314076b.jpg" class="J_slider_item_img slider_item_img"><i class="mod_actmark mod_actmark_focus"></i></a>            </li>
+                        </ul>
+                        <div class="J_slider_indicator slider_indicator" style="margin-left: -91px; display: block;"><i class="slider_indicator_btn"></i><i class="slider_indicator_btn"></i><i class="slider_indicator_btn"></i><i class="slider_indicator_btn"></i><i class="slider_indicator_btn"></i><i class="slider_indicator_btn"></i><i class="slider_indicator_btn"></i><i class="slider_indicator_btn slider_indicator_btn_last slider_indicator_btn_active"></i></div>
+                        <a href="javascript:void(0)" class="J_slider_control_prev slider_control_item slider_control_prev"><i class="iconfont"></i></a><a href="javascript:void(0)" class="J_slider_control_next slider_control_item slider_control_next"><i class="iconfont"></i></a>
+                    </div>
+                    <div class="J_slider_extend slider_extend clearfix">
+                        <div class="J_slider_bi slider_bi"><a href="//b.jd.com/" class="slider_bi_lk" target="_blank">
+                            <img class="J_slider_bi_img slider_bi_img" title="" alt="" src="//img13.360buyimg.com/cms/s390x130_jfs/t4645/129/2740486696/14756/f19de56f/591e473dNb44ada30.jpg!q90">
+                        </a></div>
+                        <div class="J_slider_bi slider_bi"><a href="#" class="slider_bi_lk" target="_blank">
+                            <img class="J_slider_bi_img slider_bi_img" title="" alt="" src="//img11.360buyimg.com/cms/s390x130_jfs/t5641/319/1193421447/16038/3aac4b49/592409a9N93970c27.jpg!q90">
+                        </a></div>
+                    </div>
                 </div>
             </div>
             <div class="fs_col3">
                 <!-- 用户信息 -->
-                <div class="J_user user mod_loading">
+                <div class="J_user user">
+                    <div class="user_info user_info_level user_info_plus0">
+                        <div class="J_user_info_avatar user_info_avatar">
+                            <img class="J_user_info_avatar_img" src="/Images/no_login.jpg">
+                            <a class="user_info_avatar_lk" href="#" target="_blank"></a></div>
+                        <div class="user_info_show">
+                            <p class="user_info_tip">Hi，欢迎来到京东！</p>
+                            <p><a href="javascript:login();" class="user_info_login">登录</a><a href="javascript:regist();" class="user_info_reg">注册</a></p>
+                        </div>
+                    </div>
+                    <div class="user_profit"><a class="user_profit_lk" href="#" target="_blank">新人福利</a><a class="user_profit_lk" href="//plus.jd.com" target="_blank">PLUS会员</a></div>
                 </div>
                 <!-- 促销和公告 -->
                 <div class="news J_news">
@@ -310,19 +349,47 @@
                 </div>
                 <div class="box_bd sup_tab J_sup_tab">
                     <div class="sup_page J_sup_page active" style="opacity: 1; z-index: 1; position: absolute;">
-                        <a class="sup_page_lk" href="//ypzj.jd.com/#452850" target="_blank">
-                            <p class="sup_desc">不花冤枉钱，端午节送父母千元机正合适</p>
-                            <img class="sup_img J_sup_img" src="//img12.360buyimg.com/mobilecms/s110x110_jfs/t5020/139/1417548519/236758/1e1f5405/58f09a36N39a9fd9a.jpg" data-lazy-src="//img12.360buyimg.com/mobilecms/s110x110_jfs/t5020/139/1417548519/236758/1e1f5405/58f09a36N39a9fd9a.jpg">
-                            <img class="sup_img J_sup_img" src="//img13.360buyimg.com/mobilecms/s110x110_jfs/t5305/21/467548198/211117/19a0aec6/59004ba9N05faa926.jpg" data-lazy-src="//img13.360buyimg.com/mobilecms/s110x110_jfs/t5305/21/467548198/211117/19a0aec6/59004ba9N05faa926.jpg">
-                            <img class="sup_img J_sup_img" src="//img14.360buyimg.com/mobilecms/s110x110_jfs/t4699/46/416468667/286668/d418f3df/58cf4c36Ncebeef9d.jpg" data-lazy-src="//img14.360buyimg.com/mobilecms/s110x110_jfs/t4699/46/416468667/286668/d418f3df/58cf4c36Ncebeef9d.jpg">
+                        <a class="sup_page_lk" href="#" target="_blank">
+                            <script>
+                                (function () {
+                                    var xmlhttp = new XMLHttpRequest();
+                                    xmlhttp.open("GET", "/ajax/Index-ypzj.aspx?key=手机壳", true);
+                                    xmlhttp.send();
+                                    xmlhttp.onreadystatechange = function () {
+                                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                                            var res = xmlhttp.responseText;
+                                            res = '<p class="sup_desc">优秀的手机壳，可以让你不可描述</p>' + res;
+                                            $('.sup_page_lk')[0].innerHTML = res;
+                                            $($('.sup_page_lk')[0]).attr('href', '/search?key=&type=&typeName=手机壳');
+                                        }
+                                        else if (xmlhttp.status == 500) {
+                                            console.log('优品专辑加载失败:' + xmlhttp.responseText);
+                                        }
+                                    }
+                                })()
+                            </script>
                         </a>
                         <div class="sup_sep"></div>
-                        <a class="sup_page_lk" href="//ypzj.jd.com/#451591" target="_blank">
-                            <p class="sup_desc">大容量装更多，轻奢变频对开门冰箱</p>
-                            <img class="sup_img J_sup_img" src="//img10.360buyimg.com/mobilecms/s110x110_jfs/t5338/30/896940513/435408/4a750829/59093038Nb06eeeca.jpg" data-lazy-src="//img10.360buyimg.com/mobilecms/s110x110_jfs/t5338/30/896940513/435408/4a750829/59093038Nb06eeeca.jpg">
-                            <img class="sup_img J_sup_img" src="//img11.360buyimg.com/mobilecms/s110x110_jfs/t2971/141/948667645/189678/fbaf8c36/57709c10N1110f07e.jpg" data-lazy-src="//img11.360buyimg.com/mobilecms/s110x110_jfs/t2971/141/948667645/189678/fbaf8c36/57709c10N1110f07e.jpg">
-                            <img class="sup_img J_sup_img" src="//img12.360buyimg.com/mobilecms/s110x110_jfs/t5338/46/150164446/145761/125ff7aa/58f9c1c7N071c716d.jpg" data-lazy-src="//img12.360buyimg.com/mobilecms/s110x110_jfs/t5338/46/150164446/145761/125ff7aa/58f9c1c7N071c716d.jpg">
-                        </a>
+                        <a class="sup_page_lk" href="#" target="_blank">
+                            <script>
+                                (function () {
+                                    var xmlhttp = new XMLHttpRequest();
+                                    xmlhttp.open("GET", "/ajax/Index-ypzj.aspx?key=进口电器", true);
+                                    xmlhttp.send();
+                                    xmlhttp.onreadystatechange = function () {
+                                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                                            var res = xmlhttp.responseText;
+                                            res = '<p class="sup_desc">进口电器，是不是感觉老贵了</p>' + res;
+                                            $('.sup_page_lk')[1].innerHTML = res;
+                                            $($('.sup_page_lk')[1]).attr('href', '/search?key=&type=86&typeName=进口电器');
+                                        }
+                                        else if (xmlhttp.status == 500) {
+                                            console.log('优品专辑加载失败:' + xmlhttp.responseText);
+                                        }
+                                    }
+                                })();
+                            </script>
+                         </a>
                     </div>
                     <ul class="sup_ind">
                     </ul>
@@ -337,28 +404,6 @@
                     <div class="top_tab_content J_tab_content">
                         <div class="J_tab_content_item top_tab_content_item top_tab_content_item_on" data-inlazyqueue="true" style="display: block;">
                             <ul class="top_list clearfix">
-                                <li class="top_item top_item_1"><a href="//top.jd.com?cateId=653&amp;itemId=3133821" target="_blank" class="top_lk">
-                                    <div class="top_rank top_rank_1">1</div>
-                                    <div class="top_pic">
-                                        <img src="//img11.360buyimg.com/mobilecms/s100x100_jfs/t3193/308/1586388837/134147/92414e51/57d0c55bNa8230260.jpg!q90.webp" data-lazy-img="done" alt="Apple iPhone 7 (A1660) 128G 金色 移动联通电信4G手机" title="Apple iPhone 7 (A1660) 128G 金色 移动联通电信4G手机" class="top_img">
-                                    </div>
-                                    <p class="top_name">Apple iPhone 7 (A1660) 128G 金色 移动联通电信4G手机</p>
-                                </a></li>
-                                <li class="top_item top_item_2"><a href="//top.jd.com?cateId=653&amp;itemId=4586850" target="_blank" class="top_lk">
-                                    <div class="top_rank top_rank_2">2</div>
-                                </a></li>
-                                <li class="top_item top_item_3"><a href="//top.jd.com?cateId=653&amp;itemId=3867555" target="_blank" class="top_lk">
-                                    <div class="top_rank top_rank_3">3</div>
-                                </a></li>
-                                <li class="top_item top_item_4"><a href="//top.jd.com?cateId=653&amp;itemId=3726830" target="_blank" class="top_lk">
-                                    <div class="top_rank top_rank_4">4</div>
-                                </a></li>
-                                <li class="top_item top_item_5"><a href="//top.jd.com?cateId=653&amp;itemId=3370136" target="_blank" class="top_lk">
-                                    <div class="top_rank top_rank_5">5</div>
-                                </a></li>
-                                <li class="top_item top_item_6"><a href="//top.jd.com?cateId=653&amp;itemId=3719293" target="_blank" class="top_lk">
-                                    <div class="top_rank top_rank_6">6</div>
-                                </a></li>
                             </ul>
                         </div>
                     </div>

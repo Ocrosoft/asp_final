@@ -17,7 +17,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool AddManage(string name, string pass)
         {
-            return DAL_Manage.AddManage(name, pass);
+            try
+            {
+                return DAL_Manage.AddManage(name, pass);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -27,7 +34,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool DeleteManage(string name)
         {
-            return DAL_Manage.DeleteManage(name);
+            try
+            {
+                return DAL_Manage.DeleteManage(name);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
 
         }
 
@@ -40,7 +54,14 @@ namespace Business_Logic_Layer
 
         public static bool ModifyPassword(string name, string pass)
         {
-            return DAL_Manage.UpdatePassword(name, pass);
+            try
+            {
+                return DAL_Manage.UpdatePassword(name, pass);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -51,7 +72,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool QueryManagerExits(string name, string pass)
         {
-            return DAL_Manage.QueryManagerExits(name, pass);
+            try
+            {
+                return DAL_Manage.QueryManagerExits(name, pass);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
     }

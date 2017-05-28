@@ -42,14 +42,21 @@ namespace User_Interface_Layer
             customer.Name = name;
             customer.Pass = pwd;
             customer.Question = customer.Answer = "";
-            if (BLL_Customer.Register(customer))
+            try
             {
-                string regSuccessname = name;
-                Response.Redirect("login.aspx?name=" + name);
+                if (BLL_Customer.Register(customer))
+                {
+                    string regSuccessname = name;
+                    Response.Redirect("login.aspx?name=" + name);
+                }
+                else
+                {
+                    Response.Redirect("reg.aspx?name=" + name + "&errorMsg=服务器错误");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Response.Redirect("reg.aspx?name=" + name + "&errorMsg=服务器错误");
+                throw ex;
             }
         }
     }

@@ -15,15 +15,21 @@ namespace User_Interface_Layer
             string name = Request.Form["loginname"];
             string pwd = Request.Form["nloginpwd"];
             pwd = BLL_Safety.DecodeBase64(pwd);
-
-            if (BLL_Customer.Login(name, pwd))
+            try
             {
-                Session["name"] = name;
-                Response.Redirect("index.aspx");
+                if (BLL_Customer.Login(name, pwd))
+                {
+                    Session["name"] = name;
+                    Response.Redirect("index.aspx");
+                }
+                else
+                {
+                    Response.Redirect("login.aspx?name=" + name + "&errorID=entry&errorMsg=账户名与密码不匹配，请重新输入");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Response.Redirect("login.aspx?name=" + name + "&errorID=entry&errorMsg=账户名与密码不匹配，请重新输入");
+                throw ex;
             }
         }
     }
