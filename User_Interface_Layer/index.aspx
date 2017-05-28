@@ -29,8 +29,8 @@
             <ul class="fr">
                 <li class="fore1" id="ttbar-login">
                     <asp:Label ID="ttbar_login_server" runat="server">
-                        <a href="javascript:location.href='login.aspx?reutnURL='+location.href;" class="link-login">你好，请登录</a>&nbsp;&nbsp;
-                        <a href="javascript:location.href='reg.aspx?reutnURL='+location.href;" class="link-regist style-red">免费注册</a>
+                        <a href="javascript:location.href='login.aspx?returnUrl='+location.href;" class="link-login">你好，请登录</a>&nbsp;&nbsp;
+                        <a href="javascript:location.href='reg.aspx?returnUrl='+location.href;" class="link-regist style-red">免费注册</a>
                     </asp:Label>
                 </li>
                 <li class="spacer"></li>

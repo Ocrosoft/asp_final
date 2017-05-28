@@ -14,7 +14,7 @@
 <body>
     <div class="w">
         <div id="logo">
-            <a href="#">
+            <a href="/index.aspx">
                 <img src="/Images/logo-201305-b.png" alt="东京" width="170" height="60">
             </a>
             <b></b>

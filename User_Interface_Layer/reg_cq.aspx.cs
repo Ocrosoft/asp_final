@@ -19,6 +19,7 @@ namespace User_Interface_Layer
             string pwdRe = Request.Form["pwdRepeat"].Substring(1);
             string authCode = Request.Form["authCode"];
             string checkcode_correct = Session["CheckCodef"].ToString();
+            string returnUrl = Request.QueryString["returnUrl"];
 
             if (name.Length < 4 || name.Length > 20) { Response.Redirect("reg.aspx"); return; }
             if (pwd.Length < 6 || pwd.Length > 20) { Response.Redirect("reg.aspx"); return; }
@@ -47,7 +48,8 @@ namespace User_Interface_Layer
                 if (BLL_Customer.Register(customer))
                 {
                     string regSuccessname = name;
-                    Response.Redirect("login.aspx?name=" + name);
+                    if (returnUrl != null && returnUrl != "") Response.Redirect(returnUrl);
+                    else Response.Redirect("login.aspx?name=" + name);
                 }
                 else
                 {

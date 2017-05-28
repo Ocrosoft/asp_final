@@ -14,13 +14,15 @@ namespace User_Interface_Layer
         {
             string name = Request.Form["loginname"];
             string pwd = Request.Form["nloginpwd"];
+            string returnUrl = Request.QueryString["returnUrl"];
             pwd = BLL_Safety.DecodeBase64(pwd);
             try
             {
                 if (BLL_Customer.Login(name, pwd))
                 {
                     Session["name"] = name;
-                    Response.Redirect("index.aspx");
+                    if (returnUrl != null && returnUrl != "") Response.Redirect(returnUrl);
+                    else Response.Redirect("index.aspx");
                 }
                 else
                 {

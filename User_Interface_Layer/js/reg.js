@@ -139,6 +139,11 @@ $('#form-pwd,#form-equalTopwd').keyup(function (e) {
     if (capslock) this.nextElementSibling.nextElementSibling.style.display = 'block';
     else this.nextElementSibling.nextElementSibling.style.display = 'none';
 });
+function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+}
 $('#register-form').submit(function () {
     var a = $('#form-account')[0], b = $('#form-pwd')[0], c = $('#form-equalTopwd')[0], d = $('#authCode')[0];
     checkAccount(a);
@@ -152,8 +157,13 @@ $('#register-form').submit(function () {
     if ($(a.parentNode).hasClass('form-item-valid') &&
         $(b.parentNode).hasClass('form-item-valid') &&
         $(c.parentNode).hasClass('form-item-valid') &&
-        $(d.parentNode).hasClass('form-item-valid'))
+        $(d.parentNode).hasClass('form-item-valid')) {
+        var ret = GetQueryString('returnUrl');
+        if (ret != null) {
+            $('#register-form').attr('Action', $('#register-form').attr('Action') + '?returnUrl=' + ret);
+        }
         return true;
+    }
     return false;
 });
 // 刷新验证码

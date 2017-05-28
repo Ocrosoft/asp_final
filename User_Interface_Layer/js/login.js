@@ -70,14 +70,24 @@ $('.clear-btn').click(function () {
     this.previousElementSibling.value = '';
     this.style.display = 'none';
 });
+// 登录按钮
+function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+}
 $('#loginsubmit').click(function () {
     $('#formlogin').submit();
 });
 $('#formlogin').submit(function () {
+    var ret = GetQueryString('returnUrl');
     var name = $('#loginname')[0].value;
     var pass = $('#nloginpwd')[0].value;
     var pass_encode = BASE64.encoder(pass);
     $('#nloginpwd')[0].value = pass_encode;
+    if (ret != null) {
+        $('#formlogin').attr('Action', $('#formlogin').attr('Action') + '?returnUrl=' + ret);
+    }
     return true;
 });
 try {
