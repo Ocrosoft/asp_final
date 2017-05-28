@@ -5,11 +5,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>东京(JD.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
-    <meta name="description" content="东京JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+    <title>东京(DJ.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+    <meta name="description" content="东京DJ.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
     <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,东京" />
-    <link rel="icon" href="//www.jd.com/favicon.ico" type="image/x-icon" />
-    <link rel="search" title="东京JD.com" href="//misc.360buyimg.com/mtd/pc/common/conf/search.xml" type="application/opensearchdescription+xml" />
+    <link rel="icon" href="#" type="image/x-icon" />
+    <link rel="search" title="东京DJ.com" href="//misc.360buyimg.com/mtd/pc/common/conf/search.xml" type="application/opensearchdescription+xml" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit" />
     <link type="text/css" rel="stylesheet" href="/css/index.css" />
@@ -20,6 +20,7 @@
 </head>
 
 <body class="index">
+    <!-- 顶部导航 -->
     <div id="shortcut">
         <div class="w">
             <ul class="fl">
@@ -34,39 +35,39 @@
                 </li>
                 <li class="spacer"></li>
                 <li class="fore2">
-                    <div class="dt"><a target="_blank" href="//order.jd.com/center/list.action">我的订单</a></div>
+                    <div class="dt"><a target="_blank" href="#">我的订单</a></div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore3 dorpdown" id="ttbar-myjd">
-                    <div class="dt cw-icon"><a target="_blank" href="//home.jd.com/">我的东京</a><i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
+                    <div class="dt cw-icon"><a target="_blank" href="#">我的东京</a><i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
                     <div class="dd dorpdown-layer"></div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore4">
-                    <div class="dt"><a target="_blank" href="//vip.jd.com/">东京会员</a></div>
+                    <div class="dt"><a target="_blank" href="#">东京会员</a></div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore5">
-                    <div class="dt"><a target="_blank" href="//b.jd.com/">企业采购</a></div>
+                    <div class="dt"><a target="_blank" href="#">企业采购</a></div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore8 dorpdown" id="ttbar-serv">
                     <div class="dt cw-icon">客户服务<i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
-                    <div class="dd dorpdown-layer"></div>
+                    <div class="dd dorpdown-layer"><p style="text-align:center;">客户都没有，哪来的服务</p></div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore9 dorpdown" id="ttbar-navs">
                     <div class="dt cw-icon">网站导航<i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
-                    <div class="dd dorpdown-layer"></div>
+                    <div class="dd dorpdown-layer"><p style="text-align:center;">域名都没有，哪来的导航</p></div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore10 mobile" id="J_mobile">
                     <div class="dt mobile_txt">手机东京</div>
-                    <div class="mobile_static">
+                    <!--<div class="mobile_static">
                         <div class="mobile_static_qrcode"></div>
                     </div>
                     <div id='J_mobile_pop' class='mod_loading mobile_pop'>
-                    </div>
+                    </div>-->
                 </li>
             </ul>
         </div>
@@ -77,18 +78,18 @@
     <div id="header">
         <div class="w">
             <div id="logo" class="logo">
-                <h1 class="logo_tit"><a href="//www.jd.com" class="logo_tit_lk">东京</a></h1>
+                <h1 class="logo_tit"><a href="#" class="logo_tit_lk">东京</a></h1>
                 <h2 class="logo_subtit">东京,多快好省</h2>
                 <div class="logo_extend"></div>
             </div>
             <div id="search">
                 <div class="search-m">
                     <div class="search_logo">
-                        <a href="//www.jd.com" class="search_logo_lk">东京，多快好省</a>
+                        <a href="#" class="search_logo_lk">东京，多快好省</a>
                     </div>
                     <ul id="shelper" style="display: none"></ul>
                     <div class="form">
-                        <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text" />
+                        <input placeholder="并不知道你想搜什么" type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text" />
                         <button onclick="search('key');return false;" class="button"><i class="iconfont">&#xe603;</i></button>
                     </div>
                 </div>
@@ -107,7 +108,7 @@
                     </div>
                 </div>
             </div>
-            <div id="hotwords"></div>
+            <div id="hotwords">无热词 没有热词 不会有热词 不存在的热词 怎么可能有热词 从来没有什么热词</div>
             <div id="navitems">
                 <ul id="navitems-group1">
                     <li class="fore1">
@@ -158,10 +159,8 @@
                             <li class="cate_menu_item" data-index="1"><a target="_blank" class="cate_menu_lk" href="#">家用电器</a></li>
                         </asp:Label>
                     </ul>
-                    <div id="popCtn" style="display: none;" class="cate_pop">
-                        <asp:Label ID="server_cate_pop" runat="server">
-                        </asp:Label>
-                    </div><!--class="cate_pop"-->
+                    <div id="popCtn" style="display: none;" class="cate_pop mod_loading">
+                    </div>
                 </div>
             </div>
             <div class="fs_col2">
@@ -190,7 +189,8 @@
                             </div>
                             <div class="mod_tab_content_item">
                                 <ul class="news_list">
-                                    <li class="news_item"><a href="//www.jd.com/news.aspx?id=34079" target="_blank" class="news_link">陈伟峰入驻东京</a></li>
+                                    <li class="news_item"><a href="#" target="_blank" class="news_link">陈伟峰入驻东京</a></li>
+                                    <li class="news_item"><a href="#" target="_blank" class="news_link">金晓彤入驻东京</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -201,73 +201,73 @@
                     <div class="service_entry">
                         <ul class="J_tab_head service_list">
                             <li class="service_item service_frame mod_tab_head_item">
-                                <a target="_blank" href="//chongzhi.jd.com/" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_huafei"></i>
                                     <span class="service_txt">话费</span>
                                 </a>
                             </li>
                             <li class="service_item service_frame mod_tab_head_item">
-                                <a target="_blank" href="//jipiao.jd.com/" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_jipiao"></i>
                                     <span class="service_txt">机票</span>
                                 </a>
                             </li>
                             <li class="service_item service_frame mod_tab_head_item">
-                                <a target="_blank" href="//hotel.jd.com/" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_jiudian"></i>
                                     <span class="service_txt">酒店</span>
                                 </a>
                             </li>
                             <li class="service_item service_frame mod_tab_head_item">
-                                <a target="_blank" href="//game.jd.com/" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_youxi"></i>
                                     <span class="service_txt">游戏</span>
                                 </a>
                             </li>
                             <li class="service_item ">
-                                <a target="_blank" href="//b.jd.com/" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_qyg"></i>
                                     <span class="service_txt">企业购</span>
                                 </a>
                             </li>
                             <li class="service_item ">
-                                <a target="_blank" href="//jiayouka.jd.com/" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_jiayou"></i>
                                     <span class="service_txt">加油卡</span>
                                 </a>
                             </li>
                             <li class="service_item ">
-                                <a target="_blank" href="//movie.jd.com/index.html" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_dianying"></i>
                                     <span class="service_txt">电影票</span>
                                 </a>
                             </li>
                             <li class="service_item ">
-                                <a target="_blank" href="//train.jd.com/" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_huoche"></i>
                                     <span class="service_txt">火车票</span>
                                 </a>
                             </li>
                             <li class="service_item ">
-                                <a target="_blank" href="//z.jd.com/sceneIndex.html?from=jrscyn_20162" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_zhongchou"></i>
                                     <span class="service_txt">众筹</span>
                                 </a>
                             </li>
                             <li class="service_item ">
-                                <a target="_blank" href="//licai.jd.com/?from=jrscyn_20161" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_licai"></i>
                                     <span class="service_txt">理财</span>
                                 </a>
                             </li>
                             <li class="service_item ">
-                                <a target="_blank" href="//o.jd.com/market/index.action" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_lipin"></i>
                                     <span class="service_txt">礼品卡</span>
                                 </a>
                             </li>
                             <li class="service_item ">
-                                <a target="_blank" href="//baitiao.jd.com/?from=jrscyn_20160" class="service_lk">
+                                <a target="_blank" href="#" class="service_lk">
                                     <i class="service_ico service_ico_baitiao"></i>
                                     <span class="service_txt">白条</span>
                                 </a>
@@ -286,6 +286,7 @@
         </div>
         <div id="J_fs_act" class="fs_act"></div>
     </div>
+    <!-- 推荐内容 -->
     <div class="J_f J_fbt need_ani fbt" id="fbt" data-tpl="fbt_tpl" data-custom="true" data-inlazyqueue="true">
         <div class="grid_c1 fbt_inner clearfix">
             <div class="box find fbt_col1 J_find">
@@ -397,8 +398,12 @@
                                                     <img src="//img13.360buyimg.com/cms/s100x100_jfs/t5602/153/1315574365/47724/8aeee3df/59252f4aNe8c47528.png!q90.webp" data-lazy-img="done" alt="PLUS会员" title="PLUS会员" class="pt_bi_img"></a>
                                 </div>
                                 <div class="pt_more">
-                                    <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm4U8h5u7piHBpDE3sCn0Cwu02eFgy4adH5nPwjjizH4fzdwCDsuftl3z0WdHdCoAuR5E7dcnurpPSWFXSiMMeSS4fLWlvRBkxoM4QrINBB7LfrWQDrwCXKb8AYtABhwxk1FFq0KsGldBoQSZy0+kaP7Pg/5lcwJ9ODRALR4zzW6KndBYMCVFxlbZRUKij7Z92358nvVR6ukal9j8UOUAB7XX2eOVm6BWJgL+STwEf7TGxhRUJO1SzbN9ghEGFXB7f90eAcCcxt4/aYpXclWi6Ay4kZYtET9oANOMTk0wDstKw==&amp;cv=2.0&amp;url=//sale.jd.com/act/afeSkDZy1in60BEO.html" class="pt_more_item" target="_blank" clstag="h|keycount|2016|22e01" fclog="16613.111018.382415.1.571_1792_8552">
-                                        <img src="//img11.360buyimg.com/da/s193x130_jfs/t5743/295/1321273424/27765/77d5bd12/59252f6cN84bb6f6a.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm6haJ4p3BNBARg3ax11hXAMemGqdzyqQCrCDah8dFbeaKo/UyNbkWI6APaCD0pQ/a9HWmoByPeXmwN+vPPmAue8sHXHOiZpi/DsCT0QQvZf+XM8S9XfpOHswn906TWu53Nsu5n0wC4ckcx894yhrY7lYz8ddh/GbNfIuDAiJ4gYKt4X/q+Z8U55m5KtuyGo30ndx+esPeiui5d2e7/61yXMEGCZSv23KzLEJ7iIcELU9Hh3ogyOSAmBubHByDZy7kg=&amp;cv=2.0&amp;url=//jdd.jd.com/" class="pt_more_item" target="_blank" clstag="h|keycount|2016|22e02" fclog="0.111019.319335.1.571_1792_8553"><img src="//img20.360buyimg.com/da/s193x130_jfs/t3901/245/497456384/60571/b002635e/5850158dNecf39355.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm4Jv1qtA9LDIwr1Gka46VKlWAnRzzylm8DbyP48mKPpRuAthx8clfve5ag27RQ90O5HWmoByPeXmwN+vPPmAue88vbCjJwzgisfHGxcwS/sj5xVjS3SwgLqbDyIAysYHdPRTJsTIxEzUWvc8qV23bIeAkuOIdHLRtkW/q4CIdzM/gKe2acHG0Ajuj9L8JXxidE+hmSpgLz9xmR1xEiObDPEY2cXhMASnNvmSUyLnxgFsxMv49nQdfWafuMVCtVmz8qXOlcppL6VE6XAjxQTKJJ8WOo1bdnPYgppNB+nDWfC8A==&amp;cv=2.0&amp;url=//sale.jd.com/act/z0VyocApfkbCue.html" class="pt_more_item" target="_blank" clstag="h|keycount|2016|22e03" fclog="0.111021.317646.1.571_1792_8554"><img src="//img14.360buyimg.com/da/s193x130_jfs/t5803/234/854247135/22746/58c7ed13/59223e64Nf7e872ba.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a>
+                                    <a href="#" class="pt_more_item" target="_blank">
+                                        <img src="//img11.360buyimg.com/da/s193x130_jfs/t5743/295/1321273424/27765/77d5bd12/59252f6cN84bb6f6a.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a>
+                                    <a href="#" class="pt_more_item" target="_blank">
+                                        <img src="//img20.360buyimg.com/da/s193x130_jfs/t3901/245/497456384/60571/b002635e/5850158dNecf39355.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a>
+                                    <a href="#" class="pt_more_item" target="_blank">
+                                        <img src="//img20.360buyimg.com/da/s193x130_jfs/t3901/245/497456384/60571/b002635e/5850158dNecf39355.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a>
                                 </div>
                             </div>
                             <div class="pt_bd_hide"></div>
@@ -415,7 +420,7 @@
                         <div class="pt_bd pt_bd_col1">
                             <div class="pt_bd_inner">
                                 <div class="pt_cover">
-                                    <a href="//channel.jd.com/beauty.html" class="pt_cover_lk" target="_blank" clstag="h|keycount|2016|23c01">
+                                    <a href="//channel.jd.com/beauty.html" class="pt_cover_lk" target="_blank">
                                         <img src="//img12.360buyimg.com/cms/s193x260_jfs/t5830/153/265547024/51386/b5f7912/591e5da6Nbd28f443.jpg!q90" data-lazy-img="done" alt="美妆商城" title="美妆商城" class="pt_cover_img" data-webp="no"><i class="mod_actmark mod_actmark_portal"></i></a>
                                 </div>
                                 <div class="pt_bi pt_bi_4">
@@ -439,8 +444,12 @@
                                         <img src="//img13.360buyimg.com/cms/s100x100_jfs/t5674/187/254913436/23414/51fcc92c/591e5d31N85268154.jpg!q90.webp" data-lazy-img="done" alt="个护馆" title="个护馆" class="pt_bi_img"></a>
                                 </div>
                                 <div class="pt_more">
-                                    <a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm6ry+JipfVh+0rkjAjSvxR7GXjdABAf8TJaBcFUD2Dk4lfrSm8q2rHiycFR5dQtZmUMfQjwWrjvL0Cdp7FWTKH34fLWlvRBkxoM4QrINBB7LaSz2Ao6X6HlvANjUH5vsKZo9xOf7LPRTPnYT7v5ClP9qg7lBKMNaPUH7HUwVbi2CBd0Hr7Fi8hVunvZC4tPYiigwBDdtxSPU3z8cp50sfgiF1pAhcXBWv+zgtdSUzgYBEGXVSM3evs0GIN7W0oIHYZuynqN4iTv4/b1f66WBNE0YyuRuUC5Ueuy0w4BtYM9ig==&amp;cv=2.0&amp;url=//sale.jd.com/act/ITXqm8Gn6DMy.html" class="pt_more_item" target="_blank" clstag="h|keycount|2016|23e01" fclog="16932.111024.382371.1.571_1792_8555">
-                                        <img src="//img13.360buyimg.com/da/s193x130_jfs/t5635/135/1313641261/31052/a8ed5ee0/5925220fN334e6771.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm5CtKtocznSWzsQuAy2+j8yoYgBYKgRfaOER3zoc/t4+1bWdkFCvI59CGm609s5j8VHWmoByPeXmwN+vPPmAue8voHHlU5rMnLEPNn9WazGg2Ws2J0Be3FqXvsfsXQaxUkDKPWBMbcljOF04Ay5LXifzcHJ2ltM3Zj7gMXaNqWrNUHDHJOWgajMpcFLrQ7KrFLIxN0P8kYidLo8ATDXnhBNGsF79cSHbjZyaB7bQmyL/fo0trTgEVa5wyiRtYrPVJi4d/w23oTQBvdc76jXa2OO&amp;cv=2.0&amp;url=//channel.jd.com/1620-1625.html" class="pt_more_item" target="_blank" clstag="h|keycount|2016|23e02" fclog="0.111026.317662.1.571_1792_8556"><img src="//img14.360buyimg.com/da/s193x130_jfs/t5686/115/329796523/38313/f325d5e7/591eb625N63633a4a.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a><a href="//c-nfa.jd.com/adclick?keyStr=6PQwtwh0f06syGHwQVvROzh5ulIgMw7+jmnFGWIVTm4zhvotwjxsax0IcvGCZ/dibNiVVlK/YF689DNEwajS6n409RxtAjAmevkMiN3gjYp2nKCvv/rmVuhAXOLi2MaQ4fLWlvRBkxoM4QrINBB7LXPWmq1s4Fh9LGiuavkwYwlJP1MJu1O4HKKK6wz/bhesqg7lBKMNaPUH7HUwVbi2CBd0Hr7Fi8hVunvZC4tPYiigwBDdtxSPU3z8cp50sfgiF1pAhcXBWv+zgtdSUzgYBEGXVSM3evs0GIN7W0oIHYZuynqN4iTv4/b1f66WBNE0YyuRuUC5Ueuy0w4BtYM9ig==&amp;cv=2.0&amp;url=//sale.jd.com/act/k3uf5gMiZlCI.html" class="pt_more_item" target="_blank" clstag="h|keycount|2016|23e03" fclog="18685.111028.380317.1.571_1792_8557"><img src="//img1.360buyimg.com/da/s193x130_jfs/t5401/111/2565992746/17423/cf1f97e2/591c18f7N9d8a1f03.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a>
+                                    <a href="#" class="pt_more_item" target="_blank">
+                                        <img src="//img13.360buyimg.com/da/s193x130_jfs/t5635/135/1313641261/31052/a8ed5ee0/5925220fN334e6771.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a>
+                                    <a href="#" class="pt_more_item" target="_blank">
+                                        <img src="//img14.360buyimg.com/da/s193x130_jfs/t5686/115/329796523/38313/f325d5e7/591eb625N63633a4a.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a>
+                                    <a href="#" class="pt_more_item" target="_blank">
+                                        <img src="//img1.360buyimg.com/da/s193x130_jfs/t5401/111/2565992746/17423/cf1f97e2/591c18f7N9d8a1f03.jpg!q90" data-lazy-img="done" alt="" title="" class="pt_more_img" data-webp="no"></a>
                                 </div>
                             </div>
                             <div class="pt_bd_hide"></div>
@@ -471,8 +480,37 @@
     <div class="J_f J_lazyload mod_lazyload mod_footer" id="footer" data-tpl="mod_footer_tpl">
     </div>
     <div class="J_f J_lazyload J_lift mod_lazyload lift" id="lift" data-tpl="elevator_tpl" data-forcerender="true">
-        </div-->
-    <!--<script src="/js/index.js"></script>-->
-    <script src="/js/index-cate.js"></script>
+    </div>-->
+    <div id="J-global-toolbar">
+        <div class="jdm-toolbar-wrap J-wrap">
+            <div class="jdm-toolbar J-toolbar">
+                <div class="jdm-toolbar-tabs J-tab">
+                    <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-jdvip" data-name="jdvip" data-login="true" data-iframe="//vip.jd.com/sideBar/index.html">
+                        <i class="tab-ico"></i><em class="tab-text">京东会员</em><span class="tab-sub J-count hide">0</span>
+                    </div>
+                    <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-cart" data-name="cart">
+                        <i class="tab-ico"></i><em class="tab-text">购物车</em><span class="tab-sub J-count hide" style="display: none;">0</span>
+                        <div class="tabs-tip hide"><span class="ico"></span><span class="text">成功加入购物车!</span><b></b></div>
+                    </div>
+                    <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-follow" data-name="follow" data-login="true">
+                        <i class="tab-ico"></i><em class="tab-text">我的关注</em><span class="tab-sub J-count hide">0</span>
+                    </div>
+                    <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-history" data-name="history">
+                        <i class="tab-ico"></i><em class="tab-text">我的足迹</em><span class="tab-sub J-count hide">0</span>
+                    </div>
+                    <div class="J-trigger jdm-toolbar-tab jdm-tbar-tab-message" data-name="message">
+                        <a target="_blank" href="//joycenter.jd.com/msgCenter/queryHistoryMessage.action">
+                            <i class="tab-ico"></i><em class="tab-text">我的消息</em></a><span class="tab-sub J-count hide">0</span>
+                    </div>
+                </div>
+                <div class="jdm-toolbar-footer">
+                    <div data-type="link" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-top"><a href="#"><i class="tab-ico"></i><em class="tab-text">顶部</em>                                </a></div>
+                </div>
+                <div class="jdm-toolbar-mini"></div>
+            </div>
+            <div id="J-toolbar-load-hook"></div>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 using Entitys;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -161,7 +162,43 @@ namespace Business_Logic_Layer
             return DAL_Goods.QueryGoods(typeID, pos, length);
         }
 
-
-
+        public static DataSet QueryGoodsKeyDataSet(string key, bool part = true, int pos = 0, int length = 0)
+        {
+            try
+            {
+                return DAL_Goods.QueryGoodsKey(key, part, pos, length);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        public static List<Entitys.Goods> QueryGoodsKeyList(string key, bool part = true, int pos = 0, int length = 0)
+        {
+            try
+            {
+                DataSet ds = DAL_Goods.QueryGoodsKey(key, part, pos, length);
+                List<Goods> list = new List<Goods>();
+                for(int i=0;i<ds.Tables[0].Rows.Count;i++)
+                {
+                    var row = ds.Tables[0].Rows[i];
+                    Entitys.Goods good = new Goods();
+                    good.Id = row[0].ToString();
+                    good.Name = row[1].ToString();
+                    good.TypeID = row[2].ToString();
+                    good.Desctipt = row[3].ToString();
+                    good.UnitPrice = decimal.Parse(row[4].ToString());
+                    good.ImageName = row[5].ToString();
+                    good.SellCount = row[6].ToString();
+                    good.Date = row[7].ToString();
+                    list.Add(good);
+                }
+                return list;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }

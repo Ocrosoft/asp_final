@@ -26,7 +26,7 @@ function checkAccount(ele) {
     else {
         $(ele.nextElementSibling).css('background', 'url("/Images/loading.gif")'); // 显示加载图片
         var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", "/checkUserExits.aspx?name=" + text, true);
+        xmlhttp.open("GET", "/ajax/CheckUserExits.aspx?name=" + text, true);
         xmlhttp.send(); // 检查是否已被注册
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {

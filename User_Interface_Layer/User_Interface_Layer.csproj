@@ -63,8 +63,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ajax\GetCate.aspx" />
+    <Content Include="ajax\Index-phb.aspx" />
+    <Content Include="ajax\Index-ypzj.aspx" />
+    <Content Include="ajax\Index_fxhh.aspx" />
     <Content Include="CheckCode.aspx" />
-    <Content Include="checkUserExits.aspx" />
+    <Content Include="ajax\CheckUserExits.aspx" />
     <Content Include="css\index-tpl.css" />
     <Content Include="css\index-common.css" />
     <Content Include="css\index.css" />
@@ -143,6 +147,34 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ajax\GetCate.aspx.cs">
+      <DependentUpon>GetCate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\GetCate.aspx.designer.cs">
+      <DependentUpon>GetCate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\Index-phb.aspx.cs">
+      <DependentUpon>Index-phb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\Index-phb.aspx.designer.cs">
+      <DependentUpon>Index-phb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\Index-ypzj.aspx.cs">
+      <DependentUpon>Index-ypzj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\Index-ypzj.aspx.designer.cs">
+      <DependentUpon>Index-ypzj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\Index_fxhh.aspx.cs">
+      <DependentUpon>Index_fxhh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\Index_fxhh.aspx.designer.cs">
+      <DependentUpon>Index_fxhh.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CheckCode.aspx.cs">
       <DependentUpon>CheckCode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -150,12 +182,12 @@
     <Compile Include="CheckCode.aspx.designer.cs">
       <DependentUpon>CheckCode.aspx</DependentUpon>
     </Compile>
-    <Compile Include="checkUserExits.aspx.cs">
-      <DependentUpon>checkUserExits.aspx</DependentUpon>
+    <Compile Include="ajax\CheckUserExits.aspx.cs">
+      <DependentUpon>CheckUserExits.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="checkUserExits.aspx.designer.cs">
-      <DependentUpon>checkUserExits.aspx</DependentUpon>
+    <Compile Include="ajax\CheckUserExits.aspx.designer.cs">
+      <DependentUpon>CheckUserExits.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

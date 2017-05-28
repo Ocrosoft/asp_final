@@ -397,5 +397,40 @@ namespace Data_Access_Layer
                 throw e;
             }
         }
+        /// <summary>
+        /// 关键词查询
+        /// </summary>
+        /// <param name="key">关键词</param>
+        /// <param name="part">是否取部分内容（加快查询和传输速度）</param>
+        /// <param name="pos">起始位置</param>
+        /// <param name="length">记录条数</param>
+        /// <returns></returns>
+        public static DataSet QueryGoodsKey(string key,bool part=true,int pos=0,int length=0)
+        {
+            try
+            {
+                if (part)
+                {
+                    string sql = "select * from tb_goods where goodsName like ?key limit ?st, ?ed;";
+                    MySqlParameter[] para = new MySqlParameter[3];
+                    para[0] = new MySqlParameter("?key", "%" + key + "%");
+                    para[1] = new MySqlParameter("?st", pos);
+                    para[2] = new MySqlParameter("?ed", length);
+                    DataSet ds = DAL_MysqlHelper.ExecuteDataSet(sql, para);
+                    return ds;
+                }
+                else
+                {
+                    string sql = "select * from tb_goods where goodsName like ?key;";
+                    MySqlParameter para = new MySqlParameter("?key", "%" + key + "%");
+                    DataSet ds = DAL_MysqlHelper.ExecuteDataSet(sql, para);
+                    return ds;
+                }
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }
