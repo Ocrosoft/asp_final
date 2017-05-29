@@ -56,9 +56,9 @@ namespace User_Interface_Layer
                     Response.Redirect("reg.aspx?name=" + name + "&errorMsg=服务器错误");
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                throw ex;
+                Response.Redirect("reg.aspx?name=" + name + "&errorMsg=服务器错误");
             }
         }
     }

@@ -405,7 +405,7 @@ namespace Data_Access_Layer
         /// <param name="pos">起始位置</param>
         /// <param name="length">记录条数</param>
         /// <returns></returns>
-        public static DataSet QueryGoodsKey(string key,bool part=true,int pos=0,int length=0)
+        public static DataSet QueryGoodsKey(string key,bool part=false,int pos=0,int length=0)
         {
             try
             {
@@ -448,6 +448,52 @@ namespace Data_Access_Layer
                 para[1] = new MySqlParameter("?ed", length);
                 DataSet ds = DAL_MysqlHelper.ExecuteDataSet(sql, para);
                 return ds;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public static DataSet QueryGoodsKey(string key,bool part=false,int pos=0,int length=0,bool typed=false,string type="",int priceLimit=0,int price_u=0,int price_t=0)
+        {
+            try
+            {
+                List<MySqlParameter> para_list = new List<MySqlParameter>();
+                string sql = "select * from tb_goods where goodsName like ?key";
+                para_list.Add(new MySqlParameter("?key", "%" + key + "%"));
+                if (typed) { sql += " and goodsTypeID=?type"; para_list.Add(new MySqlParameter("?type", type)); }
+                if (priceLimit == 1) { sql += " and unitPrice>?price_u"; para_list.Add(new MySqlParameter("?price_u", price_u)); }
+                else if (priceLimit == 2) { sql += " and unitPrice<?price_t"; para_list.Add(new MySqlParameter("?price_t", price_t)); }
+                else if (priceLimit == 3) { sql += " and unitPrice>?price_u and unitPrice<?price_t"; para_list.Add(new MySqlParameter("?price_u", price_u)); para_list.Add(new MySqlParameter("?price_t", price_t)); }
+                if (part) { sql += " limit ?st,?ed"; para_list.Add(new MySqlParameter("?st", pos)); para_list.Add(new MySqlParameter("?ed", length)); }
+                sql += ";";
+
+                MySqlParameter[] para = para_list.ToArray();
+                DataSet ds = DAL_MysqlHelper.ExecuteDataSet(sql, para);
+                return ds;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        public static int QueryGoodsKeyCount(string key, bool typed = false, string type = "", int priceLimit = 0, int price_u = 0, int price_t = 0)
+        {
+            try
+            {
+                List<MySqlParameter> para_list = new List<MySqlParameter>();
+                string sql = "select count(*) from tb_goods where goodsName like ?key";
+                para_list.Add(new MySqlParameter("?key", "%" + key + "%"));
+                if (typed) { sql += " and goodsTypeID=?type"; para_list.Add(new MySqlParameter("?type", type)); }
+                if (priceLimit == 1) { sql += " and unitPrice>?price_u"; para_list.Add(new MySqlParameter("?price_u", price_u)); }
+                else if (priceLimit == 2) { sql += " and unitPrice<?price_t"; para_list.Add(new MySqlParameter("?price_t", price_t)); }
+                else if (priceLimit == 3) { sql += " and unitPrice>?price_u and unitPrice<?price_t"; para_list.Add(new MySqlParameter("?price_u", price_u)); para_list.Add(new MySqlParameter("?price_t", price_t)); }
+                sql += ";";
+
+                MySqlParameter[] para = para_list.ToArray();
+                int ret = Int32.Parse(DAL_MysqlHelper.ExecuteDataSet(sql, para).Tables[0].Rows[0][0].ToString());
+                return ret;
             }
             catch (Exception e)
             {

@@ -97,6 +97,7 @@
     <Content Include="js\login.js" />
     <Content Include="js\reg.js" />
     <Content Include="js\sea.js" />
+    <Content Include="js\search.js" />
     <Content Include="js\toolbar.js" />
     <Content Include="login.aspx" />
     <Content Include="login_cj.aspx" />
@@ -107,6 +108,7 @@
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="reg.aspx" />
     <Content Include="reg_cq.aspx" />
+    <Content Include="search.aspx" />
     <Content Include="UIL.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -227,6 +229,13 @@
     </Compile>
     <Compile Include="reg_cq.aspx.designer.cs">
       <DependentUpon>reg_cq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
     </Compile>
     <Compile Include="UIL.Master.cs">
       <DependentUpon>UIL.Master</DependentUpon>

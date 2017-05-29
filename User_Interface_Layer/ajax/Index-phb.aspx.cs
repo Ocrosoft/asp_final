@@ -29,11 +29,15 @@ namespace User_Interface_Layer.ajax
                     Response.Write("</li>");
                 }
                 Response.StatusCode = 200;
-                Response.End();
             }
             catch(Exception ex)
             {
-                //
+                Response.StatusCode = 500;
+                Response.Write(ex.Message);
+            }
+            finally
+            {
+                Response.End();
             }
         }
     }
