@@ -17,6 +17,11 @@
     <link type="text/css" rel="stylesheet" href="/css/index-tpl.css" />
     <script src="/js/jquery-2.1.4.min.js"></script>
     <script src="/js/index-head.js"></script>
+    <style type="text/css">
+        .auto-style1 {
+            width: 372px;
+        }
+    </style>
 </head>
 
 <body class="index">
@@ -294,12 +299,35 @@
                     <h3 class="box_tit">发现好货</h3>
                 </div>
                 <div class="box_bd clearfix">
-                    <ul class="find_list clearfix">
-                        <li class="find_item find_item_1"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                    <ul class="auto-style1">
+                        <li class="find_item find_item_1" style="float:left"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
+                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
+                        </li>                     
+                        <li class="find_item find_item_2" style="float:right"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
                             <p class="find_item_name">COACH撞色牛皮单肩包</p>
                             <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
                         </li>
+                        <li class="find_item find_item_1" style="float:left"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
+                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
+                        </li>                     
+                        <li class="find_item find_item_2" style="float:right"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
+                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
+                        </li>
+                        <li class="find_item find_item_5" style="float:left"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
+                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
+                        </li>                     
+                        <li class="find_item find_item_6" style="float:right"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
+                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
+                        </li>
+                       
                     </ul>
+                    
+
                 </div>
             </div>
             <div class="box sup fbt_col2 J_sup">
