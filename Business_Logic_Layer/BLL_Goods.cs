@@ -2,6 +2,7 @@
 using Entitys;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 
@@ -20,8 +21,15 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool  AddGoods(string name, string typeID, decimal unitPrice, string descript = "", string imageName = "")
         {
-            return DAL_Goods.AddGood(name, typeID, unitPrice, descript, imageName);
+            try
+            {
+                return DAL_Goods.AddGood(name, typeID, unitPrice, descript, imageName);
                 //string name, string typeID, decimal unitPrice, string descript = "", string imageName = ""
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -31,7 +39,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool DeleteGood(string id)
         {
-            return DAL_Goods.DeleteGood(id);
+            try
+            {
+                return DAL_Goods.DeleteGood(id);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -41,7 +56,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool deleteGoods(string typeID)
         {
-            return DAL_Goods.DeleteGoods(typeID);
+            try
+            {
+                return DAL_Goods.DeleteGoods(typeID);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -51,7 +73,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool ModifyGood(Goods goods)
         {
-            return DAL_Goods.UpdateGood(goods);
+            try
+            {
+                return DAL_Goods.UpdateGood(goods);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -62,7 +91,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool ModifyGoodsName(string id, string name)
         {
-            return DAL_Goods.UpdateGoodsName(id, name);
+            try
+            {
+                return DAL_Goods.UpdateGoodsName(id, name);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -73,7 +109,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool ModifyGoodsType(string id, string typeID)
         {
-            return DAL_Goods.UpdateGoodsType(id, typeID);
+            try
+            {
+                return DAL_Goods.UpdateGoodsType(id, typeID);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -84,7 +127,15 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool ModifyGoodsDescript(string id, string descript)
         {
-            return DAL_Goods.UpdateGoodsDescript(id, descript);
+            try
+            {
+                return DAL_Goods.UpdateGoodsDescript(id, descript);
+            }
+                        catch (Exception e)
+            {
+                throw e;
+            }
+
         }
 
         /// <summary>
@@ -95,7 +146,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool ModifyGoodsUnitPrice(string id, decimal price)
         {
-            return DAL_Goods.UpdateGoodsUnitPrice(id, price);
+            try
+            {
+                return DAL_Goods.UpdateGoodsUnitPrice(id, price);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -106,7 +164,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool ModifyGoodsImageName(string id, string imageName)
         {
-            return DAL_Goods.UpdateGoodsImageName(id, imageName);
+            try
+            {
+                return DAL_Goods.UpdateGoodsImageName(id, imageName);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -115,7 +180,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static int QueryGoodsCount()
         {
-            return DAL_Goods.QueryGoodsCount();
+            try
+            {
+                return DAL_Goods.QueryGoodsCount();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -126,7 +198,14 @@ namespace Business_Logic_Layer
         /// <returns>List<Entitys.Goods></returns>
         public List<Goods> QueryGoodsAt(int pos, int length)
         {
-            return DAL_Goods.QueryGoodsAt(pos, length);
+            try
+            {
+                return DAL_Goods.QueryGoodsAt(pos, length);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -136,7 +215,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static Goods QueryGood(string id)
         {
-            return DAL_Goods.QueryGood(id);
+            try
+            {
+                return DAL_Goods.QueryGood(id);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -146,7 +232,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static List<Goods> QueryGoods(string typeID)
         {
-            return DAL_Goods.QueryGoods(typeID);
+            try
+            {
+                return DAL_Goods.QueryGoods(typeID);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -158,10 +251,119 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static List<Goods> QueryGoods(string typeID, int pos, int length)
         {
-            return DAL_Goods.QueryGoods(typeID, pos, length);
+            try
+            {
+                return DAL_Goods.QueryGoods(typeID, pos, length);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        public static DataSet QueryGoodsKeyDataSet(string key, bool part = true, int pos = 0, int length = 0)
+        {
+            try
+            {
+                return DAL_Goods.QueryGoodsKey(key, part, pos, length);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        public static List<Entitys.Goods> QueryGoodsKeyList(string key, bool part = true, int pos = 0, int length = 0)
+        {
+            try
+            {
+                DataSet ds = DAL_Goods.QueryGoodsKey(key, part, pos, length);
+                List<Goods> list = new List<Goods>();
+                for(int i=0;i<ds.Tables[0].Rows.Count;i++)
+                {
+                    var row = ds.Tables[0].Rows[i];
+                    Entitys.Goods good = new Goods();
+                    good.Id = row[0].ToString();
+                    good.Name = row[1].ToString();
+                    good.TypeID = row[2].ToString();
+                    good.Desctipt = row[3].ToString();
+                    good.UnitPrice = decimal.Parse(row[4].ToString());
+                    good.ImageName = row[5].ToString();
+                    good.SellCount = row[6].ToString();
+                    good.Date = row[7].ToString();
+                    list.Add(good);
+                }
+                return list;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
+        public static List<Entitys.Goods> QueryGoodsSellCountDescList(int pos, int length)
+        {
+            try
+            {
+                DataSet ds = DAL_Goods.QueryGoodsSellCountDesc(pos, length);
+                List<Goods> list = new List<Goods>();
+                for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                {
+                    var row = ds.Tables[0].Rows[i];
+                    Entitys.Goods good = new Goods();
+                    good.Id = row[0].ToString();
+                    good.Name = row[1].ToString();
+                    good.TypeID = row[2].ToString();
+                    good.Desctipt = row[3].ToString();
+                    good.UnitPrice = decimal.Parse(row[4].ToString());
+                    good.ImageName = row[5].ToString();
+                    good.SellCount = row[6].ToString();
+                    good.Date = row[7].ToString();
+                    list.Add(good);
+                }
+                return list;
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+        }
 
-
+        public static List<Entitys.Goods> QueryGoodsKeyList(string key, bool part = false, int pos = 0, int length = 0, bool typed = false, string type = "", int priceLimit = 0, int price_u = 0, int price_t = 0)
+        {
+            try
+            {
+                DataSet ds = DAL_Goods.QueryGoodsKey(key, part, pos, length, typed, type, priceLimit, price_u, price_t);
+                List<Goods> list = new List<Goods>();
+                for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                {
+                    var row = ds.Tables[0].Rows[i];
+                    Entitys.Goods good = new Goods();
+                    good.Id = row[0].ToString();
+                    good.Name = row[1].ToString();
+                    good.TypeID = row[2].ToString();
+                    good.Desctipt = row[3].ToString();
+                    good.UnitPrice = decimal.Parse(row[4].ToString());
+                    good.ImageName = row[5].ToString();
+                    good.SellCount = row[6].ToString();
+                    good.Date = row[7].ToString();
+                    list.Add(good);
+                }
+                return list;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        public static int QueryGoodsKeyCount(string key, bool typed = false, string type = "", int priceLimit = 0, int price_u = 0, int price_t = 0)
+        {
+            try
+            {
+                return DAL_Goods.QueryGoodsKeyCount(key, typed, type, priceLimit, price_u, price_t);
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }

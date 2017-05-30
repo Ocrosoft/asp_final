@@ -24,7 +24,7 @@
 			jdvip: {
 				index: .3,
 				enabled: !0,
-				title: "京东会员",
+				title: "东京会员",
 				login: !0,
 				vip: "1",
 				iframe: "//vip.jd.com/sideBar/index.html"

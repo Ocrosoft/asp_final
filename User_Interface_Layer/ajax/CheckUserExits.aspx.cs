@@ -13,6 +13,7 @@ namespace User_Interface_Layer
         protected void Page_Load(object sender, EventArgs e)
         {
             Response.Clear();
+            Response.StatusCode = 200;
             string name = Request.QueryString["name"];
             try
             {
@@ -22,7 +23,12 @@ namespace User_Interface_Layer
             }
             catch
             {
+                Response.StatusCode = 500;
                 Response.Write("True");
+            }
+            finally
+            {
+                Response.End();
             }
         }
     }

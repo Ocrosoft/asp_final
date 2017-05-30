@@ -20,7 +20,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool Register(Customer customer)
         {
-            return DAL_Customer.AddCustomer(customer.Name, customer.Pass, customer.Question, customer.Answer);
+            try
+            {
+                return DAL_Customer.AddCustomer(customer.Name, customer.Pass, customer.Question, customer.Answer);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -30,7 +37,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool QueryCustomerExits(string name)
         {
-            return DAL_Customer.QueryCustomerExists(name);
+            try
+            {
+                return DAL_Customer.QueryCustomerExists(name);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -41,7 +55,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool Login(String username, String password)
         {
-            return DAL_Customer.QueryCustomerExists(username, password);
+            try
+            {
+                return DAL_Customer.QueryCustomerExists(username, password);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -51,7 +72,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool DeleteByName(String name)
         {
-            return DAL_Customer.DeleteCustomer(name);
+            try
+            {
+                return DAL_Customer.DeleteCustomer(name);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -62,7 +90,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static bool ModifyPassword(String username, String password)
         {
-            return DAL_Customer.UpdatePassword(username, password);
+            try
+            {
+                return DAL_Customer.UpdatePassword(username, password);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -75,7 +110,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool ModifyPostInfo(string name, string trueName, string address, string postCode)
         {
-            return DAL_Customer.UpdatePostInfo(name, trueName, address, postCode);
+            try
+            {
+                return DAL_Customer.UpdatePostInfo(name, trueName, address, postCode);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -88,7 +130,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool ModifyPersonalInfo(string name, string birthday, string phone, string email)
         {
-            return DAL_Customer.UpdatePersonalInfo(name, birthday, phone, email);
+            try
+            {
+                return DAL_Customer.UpdatePersonalInfo(name, birthday, phone, email);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -100,7 +149,14 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool ModifyQuestion(string name, string question, string answer)
         {
-            return DAL_Customer.UpdateQuestion(name, question, answer);
+            try
+            {
+                return DAL_Customer.UpdateQuestion(name, question, answer);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -110,7 +166,14 @@ namespace Business_Logic_Layer
         /// <returns>Customer 或 null</returns>
         public static Customer QueryCustomerPostInfo(string name)
         {
-            return DAL_Customer.QueryCustomerPostInfo(name);
+            try
+            {
+                return DAL_Customer.QueryCustomerPostInfo(name);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
 
         /// <summary>
@@ -120,7 +183,14 @@ namespace Business_Logic_Layer
         /// <returns>Customer 或 null</returns>
         public static Customer QueryCustomerPersonalInfo(string name)
         {
-            return DAL_Customer.QueryCustomerPersonalInfo(name);
+            try
+            {
+                return DAL_Customer.QueryCustomerPersonalInfo(name);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
         
         /// <summary>
@@ -129,7 +199,14 @@ namespace Business_Logic_Layer
         /// <returns>DataSet 或 null</returns>
         public static DataSet QueryAllCustomer()
         {
-            return DAL_Customer.QueryAllCustomer();
+            try
+            {
+                return DAL_Customer.QueryAllCustomer();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
     }
 }
