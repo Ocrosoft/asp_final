@@ -13,6 +13,7 @@ namespace User_Interface_Layer
         protected void Page_Load(object sender, EventArgs e)
         {
             string key = Request.QueryString["key"]; // 关键词
+            string typeLevel = Request.QueryString["level"]; // 类别等级
             string typeID = Request.QueryString["type"]; // 类别
             string typeName = Request.QueryString["typeName"]; // 类别名称
             string price_u = Request.QueryString["priceu"], price_t = Request.QueryString["pricet"]; // 价格区间
@@ -20,8 +21,11 @@ namespace User_Interface_Layer
 
             try
             {
-                server_qbjg.Text = key;
-                int pos = 0;
+                if (key != null && key != "") server_qbjg.Text = key;
+                else if (typeID != null && typeID != "")
+                    server_qbjg.Text = BLL_GoodsType.QueryTypeName(3, typeID).TypeName;
+                else if (typeName != null && typeName != "") server_qbjg.Text = typeName;
+                 int pos = 0;
                 if (page != null && page != "")
                 {
                     int _page = Convert.ToInt32(page);
@@ -56,7 +60,7 @@ namespace User_Interface_Layer
                     text += "</div>";
                     text += "<div class=\"p-name p-name-type-2\">";
                     text += "<a target=\"_blank\" title=\""+item.Name+"\" href=\"//item.jd.com/2457023.html\" onclick=\"searchlog(1,2457023,1,1,'','flagsClk=1614811784')\">";
-                    text += "<em>"+item.Name.Replace(key,"<font class=\"skcolor_ljg\">"+key+"</font>")+"<font class=\"skcolor_ljg\" /></em>";
+                    text += "<em>"+(key!=null&&key!=""?item.Name.Replace(key,"<font class=\"skcolor_ljg\">"+key+"</font>"):item.Name)+"<font class=\"skcolor_ljg\" /></em>";
                     text += "<i class=\"promo-words\" id=\"J_AD_2457023\"></i>";
                     text += "</a>";
                     text += "</div>";
@@ -71,9 +75,9 @@ namespace User_Interface_Layer
                 }
                 server_goods.Text = text;
             }
-            catch
+            catch (Exception ex)
             {
-                server_goods.Text = "ERROR";
+                server_goods.Text = "ERROR" + ex.Message;
             }
         }
     }

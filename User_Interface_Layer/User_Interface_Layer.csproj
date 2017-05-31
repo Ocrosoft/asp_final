@@ -67,6 +67,7 @@
     <Content Include="ajax\Index-phb.aspx" />
     <Content Include="ajax\Index-ypzj.aspx" />
     <Content Include="ajax\Index_fxhh.aspx" />
+    <Content Include="ajax\search-spjx.aspx" />
     <Content Include="CheckCode.aspx" />
     <Content Include="ajax\CheckUserExits.aspx" />
     <Content Include="css\index-tpl.css" />
@@ -90,7 +91,6 @@
     <Content Include="Images\sprite_userinfo%401x.png" />
     <Content Include="Images\vip.png" />
     <Content Include="index.aspx" />
-    <Content Include="js\index-cate.js" />
     <Content Include="js\index-head.js" />
     <Content Include="js\index.js" />
     <Content Include="js\jbase64.js" />
@@ -179,6 +179,13 @@
     </Compile>
     <Compile Include="ajax\Index_fxhh.aspx.designer.cs">
       <DependentUpon>Index_fxhh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\search-spjx.aspx.cs">
+      <DependentUpon>search-spjx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\search-spjx.aspx.designer.cs">
+      <DependentUpon>search-spjx.aspx</DependentUpon>
     </Compile>
     <Compile Include="CheckCode.aspx.cs">
       <DependentUpon>CheckCode.aspx</DependentUpon>

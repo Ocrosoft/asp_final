@@ -29,7 +29,7 @@ $('.cate_menu,.cate_pop').mouseleave(function (event) {
     $('.cate_pop').css('display', 'none');
     $('.cate_menu_item').removeClass('cate_menu_item_on');
 });
-function loadCate() {
+(function loadCate() {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", "/ajax/GetCate.aspx", true);
     xmlhttp.send();
@@ -40,7 +40,7 @@ function loadCate() {
             $('#popCtn').removeClass('mod_loading');
         }
     }
-}
+})();
 /* 右侧边栏 */
 $('.jdm-toolbar-tab').mouseover(function () {
     $(this).addClass('z-jdm-tbar-tab-hover');
@@ -124,3 +124,6 @@ setInterval(next_slider, 4000);
         }
     }
 })();
+function search(key) {
+    location.href = '/search.aspx?key=' + $('#key')[0].value;
+}

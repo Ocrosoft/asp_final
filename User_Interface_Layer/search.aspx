@@ -225,7 +225,7 @@
                                     </div>
                                 </div>
                                 <div class="f-search">
-                                    <input type="text" value="在结果中搜索" class="input-txt">
+                                    <input type="text" placeholder="在商品中搜索" class="input-txt">
                                     <a class="btn btn-default" href="javascript:;">确定</a>
                                 </div>
                                 <span class="clr"></span>
@@ -253,23 +253,8 @@
                             </div>
                             <div class="mc">
                                 <ul class="clearfix" data-x="ab">
-                                    <li onclick="searchlog(1,11243404989,0,81)">
-                                        <div class="p-img">
-                                            <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMTI0MzQwNDk4OS5odG1s&log=Eh7-U6GPiaLV5g8-DrWQSf2H12fxYZ6wXkr3uxNZpJb6Vs6rpai88ARs9p2kVdhVKuEJ6valsEGV-lMKusBETLfHbKN69-DrHDFXjbU0IROrfJgg7N-NzWp1sXWFCR8Va6ZbygVX9gkZwuHaJF-j1IbvAZkUIU7_K55tD_K9-MSoMi8PW-ig0YwNJu9kN_01opeUUaGh7O5fNIgL7fbtsV0SDBaK3069JeRpviaMJHHSz4cMcI8KbZsYfZbmJyCwySkBAeqjwKvW2yT3AHyTRi_nt_0rBonXwnzp7P1uEmxQB_TAZi6J5Z0oyUwjvwcE-dmwTUTL1kvAXCRPiweSepZySAqHwqlJBBE3amaL1uZcZgU8mlV6JVo7y8yMOFHnyEi74r3PFrtHPpfk_xB8h5JjNGrg3LWKLDMHza2ufjT42ZG5ATBsxL4U-rveXKKI&v=404">
-                                                <img width="160" height="160" data-img="1" src="//img14.360buyimg.com/n2/jfs/t3814/167/3157458700/297108/29903fb0/58744ad9Na20d395b.jpg" class="err-product">
-                                                <img src="https://im-x.jd.com/dsp/np?log=Eh7-U6GPiaLV5g8-DrWQSf2H12fxYZ6wXkr3uxNZpJb6Vs6rpai88ARs9p2kVdhVKuEJ6valsEGV-lMKusBETLfHbKN69-DrHDFXjbU0IROrfJgg7N-NzWp1sXWFCR8Va6ZbygVX9gkZwuHaJF-j1IbvAZkUIU7_K55tD_K9-MSoMi8PW-ig0YwNJu9kN_0179Vyv7pU5769l4ieIDl96BqDIL0eYyXvWt-GT1Fjwr2w1NtvDoviiXTjJfap0jYkjGY7tqojWEox-yoKfqhjOchfsEvQtNsm-TR7sxROeoWPRx7h3zTRgs0Iz2VVP90WbMjLtVSDRLzvvfVROW5M2yfbw2jV01DD7J0-4cIj9LORcCZbzlPwOV1q4Fk7OrXg75x8GeLq3GEJOFAZ7MsdE7ZVESxxcBWXsk1LDTjx_fs2kFzXvivn0fFAO_hw-q7h&v=404" class="J_adv_tuiguang_exposal" style="display: none;">
-                                            </a>
-                                        </div>
-                                        <div class="p-price">
-                                            <strong class="J_11243404989" data-adv="1"><em>¥</em><i>38.00</i></strong>
-                                        </div>
-                                        <div class="p-name">
-                                            <a target="_blank" href="https://ccc-x.jd.com/dsp/nc?ext=aHR0cHM6Ly9pdGVtLmpkLmNvbS8xMTI0MzQwNDk4OS5odG1s&log=Eh7-U6GPiaLV5g8-DrWQSf2H12fxYZ6wXkr3uxNZpJb6Vs6rpai88ARs9p2kVdhVKuEJ6valsEGV-lMKusBETLfHbKN69-DrHDFXjbU0IROrfJgg7N-NzWp1sXWFCR8Va6ZbygVX9gkZwuHaJF-j1IbvAZkUIU7_K55tD_K9-MSoMi8PW-ig0YwNJu9kN_01opeUUaGh7O5fNIgL7fbtsV0SDBaK3069JeRpviaMJHHSz4cMcI8KbZsYfZbmJyCwySkBAeqjwKvW2yT3AHyTRi_nt_0rBonXwnzp7P1uEmxQB_TAZi6J5Z0oyUwjvwcE-dmwTUTL1kvAXCRPiweSepZySAqHwqlJBBE3amaL1uZcZgU8mlV6JVo7y8yMOFHnyEi74r3PFrtHPpfk_xB8h5JjNGrg3LWKLDMHza2ufjT42ZG5ATBsxL4U-rveXKKI&v=404">
-                                                <em>漂流城午睡枕<font class="skcolor_ljg">抱枕</font>学生趴睡枕办公室趴枕睡觉靠枕午休枕睡眠小枕头午睡神器儿童靠垫 四季通用款-孔雀绿 羽丝绒升级版(40*33*22cm)</em>
-                                            </a>
-                                        </div>
-                                        <div class="p-comm" style="padding: 8px 10px 0">已有<span style="color: #005aa0">1756</span>人评价</div>
-                                    </li>
+                                    <asp:Label runat="server" ID="server_spjx">
+                                    </asp:Label>                                 
                                 </ul>
                             </div>
                         </div>

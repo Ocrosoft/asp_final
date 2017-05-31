@@ -460,8 +460,8 @@ namespace Data_Access_Layer
             try
             {
                 List<MySqlParameter> para_list = new List<MySqlParameter>();
-                string sql = "select * from tb_goods where goodsName like ?key";
-                para_list.Add(new MySqlParameter("?key", "%" + key + "%"));
+                string sql = "select * from tb_goods where 1=1";
+                if(key!=null && key != "") { sql += " and goodsName like ?key"; para_list.Add(new MySqlParameter("?key", "%" + key + "%")); }
                 if (typed) { sql += " and goodsTypeID=?type"; para_list.Add(new MySqlParameter("?type", type)); }
                 if (priceLimit == 1) { sql += " and unitPrice>?price_u"; para_list.Add(new MySqlParameter("?price_u", price_u)); }
                 else if (priceLimit == 2) { sql += " and unitPrice<?price_t"; para_list.Add(new MySqlParameter("?price_t", price_t)); }
@@ -483,8 +483,8 @@ namespace Data_Access_Layer
             try
             {
                 List<MySqlParameter> para_list = new List<MySqlParameter>();
-                string sql = "select count(*) from tb_goods where goodsName like ?key";
-                para_list.Add(new MySqlParameter("?key", "%" + key + "%"));
+                string sql = "select count(*) from tb_goods where 1=1";
+                if (key != null && key != "") { sql += " and goodsName like ?key"; para_list.Add(new MySqlParameter("?key", "%" + key + "%")); }
                 if (typed) { sql += " and goodsTypeID=?type"; para_list.Add(new MySqlParameter("?type", type)); }
                 if (priceLimit == 1) { sql += " and unitPrice>?price_u"; para_list.Add(new MySqlParameter("?price_u", price_u)); }
                 else if (priceLimit == 2) { sql += " and unitPrice<?price_t"; para_list.Add(new MySqlParameter("?price_t", price_t)); }

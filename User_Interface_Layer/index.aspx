@@ -94,8 +94,8 @@
                     </div>
                     <ul id="shelper" style="display: none"></ul>
                     <div class="form">
-                        <input placeholder="并不知道你想搜什么" type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text" />
-                        <button onclick="search('key');return false;" class="button"><i class="iconfont">&#xe603;</i></button>
+                        <input placeholder="并不知道你想搜什么" type="text" onkeydown="javascript:if(event.keyCode==13) search();" autocomplete="off" id="key" accesskey="s" class="text" />
+                        <button onclick="search();return false;" class="button"><i class="iconfont">&#xe603;</i></button>
                     </div>
                 </div>
             </div>

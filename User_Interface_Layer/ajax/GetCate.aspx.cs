@@ -26,14 +26,14 @@ namespace User_Interface_Layer.ajax
                     {
                         text += "<dl class=\"cate_detail_item cate_detail_item1\">\n";
                         text += "<dt class=\"cate_detail_tit\">\n";
-                        text += "<a href=\"#\" class=\"cate_detail_tit_lk\" target=\"_blank\">\n";
+                        text += "<a href=\"/search.aspx?level=2&type="+cate_pop.ElementAt(j).TypeID+"\" class=\"cate_detail_tit_lk\" target=\"_blank\">\n";
                         text += cate_pop.ElementAt(j).TypeName + "\n";
                         text += "<i class=\"iconfont cate_detail_titi_arror\"></i>\n</a>\n</dt>\n";
                         var cate_third = BLL_GoodsType.QueryTypesChild(2, cate_pop.ElementAt(j).TypeID);
                         text += "<dd class=\"cate_detail_con\">\n";
                         for (int k = 0; k < cate_third.Count; k++)
                         {
-                            text += "<a href=\"#\" class=\"cate_detail_con_lk\" target=\"_blank\">" + cate_third.ElementAt(k).TypeName + "</a>\n";
+                            text += "<a href=\"/search.aspx?type=" + cate_third.ElementAt(k).TypeID + "\" class=\"cate_detail_con_lk\" target=\"_blank\">" + cate_third.ElementAt(k).TypeName + "</a>\n";
                         }
                         text += "</dd>\n</dl>\n";
                     }
