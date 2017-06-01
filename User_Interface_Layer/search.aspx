@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="max-age=300" />
-    <title> - 商品搜索 - 京东</title>
+    <title>商品搜索 - 东京</title>
     <meta name="Keywords" content="#" />
     <meta name="description" content="#" />
-    <link type="text/css" rel="stylesheet" href="//misc.360buyimg.com/jdf/1.0.0/??unit/ui-base/1.0.0/ui-base.css,unit/shortcut/2.0.0/shortcut.css,unit/global-header/1.0.0/global-header.css,unit/myjd/2.0.0/myjd.css,unit/nav/2.0.0/nav.css,unit/shoppingcart/2.0.0/shoppingcart.css,unit/global-footer/1.0.0/global-footer.css,unit/service/1.0.0/service.css,unit/basePatch/1.0.0/basePatch.css,ui/area/1.0.0/area.css" />
+    <link type="text/css" rel="stylesheet" href="/css/search-area.css" />
     <link type="text/css" rel="stylesheet" href="/css/search.css" />
     <script src="/js/jquery-2.1.4.min.js"></script>
 </head>
@@ -22,26 +22,29 @@
             </ul>
             <ul class="fr">
                 <li class="fore1" id="ttbar-login">
-                    <a target="_blank" href="javascript:login();" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="javascript:regist();" class="link-regist style-red">免费注册</a>
+                    <asp:Label ID="ttbar_login_server" runat="server">
+                        <a href="javascript:location.href='login.aspx?returnUrl='+location.href;" class="link-login">你好，请登录</a>&nbsp;&nbsp;
+                        <a href="javascript:location.href='reg.aspx?returnUrl='+location.href;" class="link-regist style-red">免费注册</a>
+                    </asp:Label>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore2">
                     <div class="dt">
-                        <a target="_blank" href="//order.jd.com/center/list.action">我的订单</a>
+                        <a target="_blank" href="#">我的订单</a>
                     </div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore3 dorpdown" id="ttbar-myjd">
                     <div class="dt cw-icon">
                         <i class="ci-right"><s>◇</s></i>
-                        <a target="_blank" href="//home.jd.com/">我的京东</a>
+                        <a target="_blank" href="#">我的东京</a>
                     </div>
                     <div class="dd dorpdown-layer"></div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore4">
                     <div class="dt">
-                        <a target="_blank" href="//vip.jd.com/">京东会员</a>
+                        <a target="_blank" href="#">东京会员</a>
                     </div>
                 </li>
                 <li class="spacer"></li>
@@ -55,29 +58,111 @@
                     <div class="dt cw-icon">
                         <i class="ci-left"></i>
                         <i class="ci-right"><s>◇</s></i>
-                        <a target="_blank" href="//app.jd.com/">手机京东</a>
+                        <a target="_blank" href="//app.jd.com/">手机东京</a>
                     </div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore7 dorpdown" id="ttbar-atte">
                     <div class="dt cw-icon">
-                        <i class="ci-right"><s>◇</s></i>关注京东
+                        <i class="ci-right"><s>◇</s></i>关注东京
                     </div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore8 dorpdown" id="ttbar-serv">
-                    <div class="dt cw-icon">
-                        <i class="ci-right"><s>◇</s></i>客户服务
-                    </div>
-                    <div class="dd dorpdown-layer"></div>
+                    <div class="dt cw-icon">客户服务<i class="ci-right"><s>◇</s></i></div>
+                    <div class="dd dorpdown-layer"><div class="dd-spacer"></div><div class="item-client">客户</div><div class="item"><a href="#" target="_blank" >帮助中心</a></div><div class="item"><a href="#" target="_blank" >售后服务</a></div><div class="item"><a href="#" target="_blank" >在线客服</a></div><div class="item"><a href="#" target="_blank" >意见建议</a></div><div class="item"><a href="#" target="_blank" >电话客服</a></div><div class="item"><a href="#" target="_blank" >客服邮箱</a></div><div class="item"><a href="#" target="_blank" >金融咨询</a></div><div class="item"><a href="#" target="_blank" >售全球客服</a></div><div class="item-business">商户</div><div class="item"><a href="#" target="_blank" >合作招商</a></div><div class="item"><a href="#" target="_blank" >东京商学院</a></div><div class="item"><a href="#" target="_blank" >商家后台</a></div><div class="item"><a href="#" target="_blank" >京麦工作台</a></div><div class="item"><a href="#" target="_blank" >商家帮助</a></div><div class="item"><a href="#" target="_blank" >规则平台</a></div></div>
                 </li>
                 <li class="spacer"></li>
-                <li class="fore9 dorpdown" id="ttbar-navs">
-                    <div class="dt cw-icon">
-                        <i class="ci-right"><s>◇</s></i>网站导航
-                    </div>
-                    <div class="dd dorpdown-layer"></div>
-                </li>
+                                    <li class="fore9 dorpdown" id="ttbar-navs" data-load="1">
+                        <div class="dt cw-icon">网站导航<i class="ci-right"><s>◇</s></i></div>
+                        <div class="dd dorpdown-layer">
+                            <div class="dd-spacer"></div>
+                            <dl class="fore1">
+                                <dt>特色主题</dt>
+                                <dd>
+                                    <div class="item"><a href="#" target="_blank">品牌头条</a></div>
+                                    <div class="item"><a href="#" target="_blank">发现好货</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京预售</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京金融</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京试用</a></div>
+                                    <div class="item"><a href="#" target="_blank">优惠券</a></div>
+                                    <div class="item"><a href="#" target="_blank">闪购</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京会员</a></div>
+                                    <div class="item"><a href="#" target="_blank">秒杀</a></div>
+                                    <div class="item"><a href="#" target="_blank">定期送</a></div>
+                                    <div class="item"><a href="#" target="_blank">装机大师</a></div>
+                                    <div class="item"><a href="#" target="_blank">新奇特</a></div>
+                                    <div class="item"><a href="#" target="_blank">企业金融服务</a></div>
+                                    <div class="item"><a href="#" target="_blank">礼品购</a></div>
+                                    <div class="item"><a href="#" target="_blank">智能馆</a></div>
+                                    <div class="item"><a href="#" target="_blank">0元评测</a></div>
+                                    <div class="item"><a href="#" target="_blank">In货推荐</a></div>
+                                    <div class="item"><a href="#" target="_blank">北京老字号</a></div>
+                                    <div class="item"><a href="#" target="_blank">买什么</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore2">
+                                <dt>行业频道</dt>
+                                <dd>
+                                    <div class="item"><a href="#" target="_blank">服装城</a></div>
+                                    <div class="item"><a href="#" target="_blank">家用电器</a></div>
+                                    <div class="item"><a href="#" target="_blank">电脑办公</a></div>
+                                    <div class="item"><a href="#" target="_blank">手机</a></div>
+                                    <div class="item"><a href="#" target="_blank">美妆馆</a></div>
+                                    <div class="item"><a href="#" target="_blank">食品</a></div>
+                                    <div class="item"><a href="#" target="_blank">智能数码</a></div>
+                                    <div class="item"><a href="#" target="_blank">母婴</a></div>
+                                    <div class="item"><a href="#" target="_blank">家装城</a></div>
+                                    <div class="item"><a href="#" target="_blank">运动户外</a></div>
+                                    <div class="item"><a href="#" target="_blank">整车</a></div>
+                                    <div class="item"><a href="#" target="_blank">图书</a></div>
+                                    <div class="item"><a href="#" target="_blank">农资频道</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京智能</a></div>
+                                    <div class="item"><a href="#" target="_blank">玩3C</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore3">
+                                <dt>生活服务</dt>
+                                <dd>
+                                    <div class="item"><a href="#" target="_blank">东京众筹</a></div>
+                                    <div class="item"><a href="#" target="_blank">白条</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京金融App</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京小金库</a></div>
+                                    <div class="item"><a href="#" target="_blank">理财</a></div>
+                                    <div class="item"><a href="#" target="_blank">话费</a></div>
+                                    <div class="item"><a href="#" target="_blank">旅行</a></div>
+                                    <div class="item"><a href="#" target="_blank">彩票</a></div>
+                                    <div class="item"><a href="#" target="_blank">游戏</a></div>
+                                    <div class="item"><a href="#" target="_blank">机票酒店</a></div>
+                                    <div class="item"><a href="#" target="_blank">电影票</a></div>
+                                    <div class="item"><a href="#" target="_blank">水电煤</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京到家</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京微联</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京众测</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore4">
+                                <dt>更多精选</dt>
+                                <dd>
+                                    <div class="item"><a href="#" target="_blank">东京社区</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京通信</a></div>
+                                    <div class="item"><a href="#" target="_blank">在线读书</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京E卡</a></div>
+                                    <div class="item"><a href="#" target="_blank">智能社区</a></div>
+                                    <div class="item"><a href="#" target="_blank">游戏社区</a></div>
+                                    <div class="item"><a href="#" target="_blank">京友邦</a></div>
+                                    <div class="item"><a href="#" target="_blank">合作招商</a></div>
+                                    <div class="item"><a href="#" target="_blank">企业采购</a></div>
+                                    <div class="item"><a href="#" target="_blank">服务市场</a></div>
+                                    <div class="item"><a href="#" target="_blank">乡村招募</a></div>
+                                    <div class="item"><a href="#" target="_blank">校园加盟</a></div>
+                                    <div class="item"><a href="#" target="_blank">办公生活馆</a></div>
+                                    <div class="item"><a href="#" target="_blank">知识产权维权</a></div>
+                                    <div class="item"><a href="#" target="_blank">English Site</a></div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
             </ul>
             <span class="clr"></span>
         </div>
@@ -87,7 +172,7 @@
     </div>
     <div class="w">
         <div id="logo-2014">
-            <a href="//www.jd.com/" class="logo">京东</a>
+            <a href="/index.aspx" class="logo">东京</a>
         </div>
         <div id="search-2014">
             <ul id="shelper" class="hide"></ul>
@@ -100,7 +185,7 @@
             <div class="cw-icon">
                 <i class="ci-left"></i>
                 <i class="ci-right">&gt;</i>
-                <a target="_blank" href="//cart.jd.com/cart.action">我的购物车</a>
+                <a target="_blank" href="/cart.aspx">我的购物车</a>
             </div>
             <div class="dorpdown-layer">
                 <div class="spacer"></div>
@@ -117,40 +202,40 @@
             <div class="w-spacer"></div>
             <div id="categorys-2014" class="dorpdown" data-type="default">
                 <div class="dt">
-                    <a target="_blank" href="//www.jd.com/allSort.aspx">全部商品分类</a>
+                    <a target="_blank" href="#">全部商品分类</a>
                 </div>
             </div>
             <div id="navitems-2014">
                 <ul id="navitems-group1">
                     <li id="nav-home" class="fore1">
-                        <a target="_blank" href="//www.jd.com/">首页</a>
+                        <a target="_blank" href="#">首页</a>
                     </li>
                     <li id="nav-fashion" class="fore2">
-                        <a target="_blank" href="//channel.jd.com/fashion.html">服装城</a>
+                        <a target="_blank" href="#">服装城</a>
                     </li>
                     <li id="nav-beauty" class="fore3">
-                        <a target="_blank" href="//beauty.jd.com">美妆馆</a>
+                        <a target="_blank" href="#">美妆馆</a>
                     </li>
                     <li id="nav-chaoshi" class="fore4">
-                        <a target="_blank" href="//chaoshi.jd.com">京东超市</a>
+                        <a target="_blank" href="#">东京超市</a>
                     </li>
                     <li id="nav-fresh" class="fore5">
-                        <a target="_blank" href="//fresh.jd.com/">生鲜</a>
+                        <a target="_blank" href="#">生鲜</a>
                     </li>
                 </ul>
                 <div class="spacer"></div>
                 <ul id="navitems-group2">
                     <li id="nav-jdww" class="fore6">
-                        <a target="_blank" href="//www.jd.hk/">全球购</a>
+                        <a target="_blank" href="#">全球购</a>
                     </li>
                     <li id="nav-red" class="fore7">
-                        <a target="_blank" href="//red.jd.com/">闪购</a>
+                        <a target="_blank" href="#">闪购</a>
                     </li>
                     <li id="nav-auction" class="fore8">
-                        <a target="_blank" href="//paimai.jd.com/">拍卖</a>
+                        <a target="_blank" href="#">拍卖</a>
                     </li>
                     <li id="nav-jr" class="fore9">
-                        <a target="_blank" href="//jr.jd.com/">金融</a>
+                        <a target="_blank" href="#">金融</a>
                     </li>
                 </ul>
             </div>
@@ -163,7 +248,7 @@
             <div class="crumbs-nav">
                 <div class="crumbs-nav-main clearfix">
                     <div class="crumbs-nav-item">
-                        <div class="crumbs-first"><a href="search?keyword=%E6%8A%B1%E6%9E%95&enc=utf-8&qrst=1&rt=1&stop=1&vt=2&wq=%E6%8A%B1%E6%9E%95">全部结果</a></div>
+                        <div class="crumbs-first"><a>全部结果</a></div>
                     </div>
                     <i class="crumbs-arrow">&gt;</i>
                     <div class="crumbs-nav-item">
@@ -322,53 +407,53 @@
             <dl class="fore1">
                 <dt>购物指南</dt>
                 <dd>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-29.html">购物流程</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-151.html">会员介绍</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-297.html">生活旅行/团购</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue.html">常见问题</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-136.html">大家电</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/index.html">联系客服</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">购物流程</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">会员介绍</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">生活旅行/团购</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">常见问题</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">大家电</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">联系客服</a></div>
                 </dd>
             </dl>
             <dl class="fore2">
                 <dt>配送方式</dt>
                 <dd>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-81-100.html">上门自提</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-81.html">211限时达</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/103-983.html">配送服务查询</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/109-188.html">配送费收取标准</a></div>
-                    <div><a target="_blank" href="//en.jd.com/chinese.html">海外配送</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">上门自提</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">211限时达</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">配送服务查询</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">配送费收取标准</a></div>
+                    <div><a target="_blank" href="#">海外配送</a></div>
                 </dd>
             </dl>
             <dl class="fore3">
                 <dt>支付方式</dt>
                 <dd>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-172.html">货到付款</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-173.html">在线支付</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-176.html">分期付款</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-174.html">邮局汇款</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-175.html">公司转账</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">货到付款</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">在线支付</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">分期付款</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">邮局汇款</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">公司转账</a></div>
                 </dd>
             </dl>
             <dl class="fore4">
                 <dt>售后服务</dt>
                 <dd>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/321-981.html">售后政策</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-132.html">价格保护</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/130-978.html">退款说明</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//myjd.jd.com/repair/repairs.action">返修/退换货</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//help.jd.com/user/issue/list-50.html">取消订单</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">售后政策</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">价格保护</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">退款说明</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">返修/退换货</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">取消订单</a></div>
                 </dd>
             </dl>
             <dl class="fore5">
                 <dt>特色服务</dt>
                 <dd>
-                    <div><a target="_blank" href="//help.jd.com/user/issue/list-133.html">夺宝岛</a></div>
-                    <div><a target="_blank" href="//help.jd.com/user/issue/list-134.html">DIY装机</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//fuwu.jd.com/">延保服务</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//o.jd.com/market/index.action">京东E卡</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//mobile.jd.com/">京东通信</a></div>
-                    <div><a rel="nofollow" target="_blank" href="//s.jd.com/">京东JD+</a></div>
+                    <div><a target="_blank" href="#">夺宝岛</a></div>
+                    <div><a target="_blank" href="#">DIY装机</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">延保服务</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">东京E卡</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">东京通信</a></div>
+                    <div><a rel="nofollow" target="_blank" href="#">东京JD+</a></div>
                 </dd>
             </dl>
             <span class="clr"></span>

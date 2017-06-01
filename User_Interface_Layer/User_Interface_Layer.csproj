@@ -82,6 +82,7 @@
     <Content Include="css\reg-base.css" />
     <Content Include="css\reg-dialog.css" />
     <Content Include="css\reg.css" />
+    <Content Include="css\search-area.css" />
     <Content Include="css\search.css" />
     <Content Include="Images\capslock.png" />
     <Content Include="Images\error-jd.gif" />
@@ -118,6 +119,7 @@
     <Content Include="reg_cq.aspx" />
     <Content Include="search.aspx" />
     <Content Include="UIL.Master" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -91,8 +91,6 @@
                     <div class="dd dorpdown-layer"><div class="dd-spacer"></div><div class="item-client">客户</div><div class="item"><a href="#" target="_blank" >帮助中心</a></div><div class="item"><a href="#" target="_blank" >售后服务</a></div><div class="item"><a href="#" target="_blank" >在线客服</a></div><div class="item"><a href="#" target="_blank" >意见建议</a></div><div class="item"><a href="#" target="_blank" >电话客服</a></div><div class="item"><a href="#" target="_blank" >客服邮箱</a></div><div class="item"><a href="#" target="_blank" >金融咨询</a></div><div class="item"><a href="#" target="_blank" >售全球客服</a></div><div class="item-business">商户</div><div class="item"><a href="#" target="_blank" >合作招商</a></div><div class="item"><a href="#" target="_blank" >东京商学院</a></div><div class="item"><a href="#" target="_blank" >商家后台</a></div><div class="item"><a href="#" target="_blank" >京麦工作台</a></div><div class="item"><a href="#" target="_blank" >商家帮助</a></div><div class="item"><a href="#" target="_blank" >规则平台</a></div></div>
                 </li>
                 <li class="spacer"></li>
-                <li class="fore9 dorpdown">
-                    <div class="dt cw-icon">网站导航<i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
                     <li class="fore9 dorpdown" id="ttbar-navs" data-load="1">
                         <div class="dt cw-icon">网站导航<i class="iconfont"></i><i class="ci-right"><s>◇</s></i></div>
                         <div class="dd dorpdown-layer">
@@ -183,7 +181,6 @@
                             </dl>
                         </div>
                     </li>
-                </li>
                 <li class="spacer"></li>
                 <li class="fore10 mobile" id="J_mobile">
                     <div class="dt mobile_txt">手机东京</div>

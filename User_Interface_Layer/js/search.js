@@ -33,7 +33,7 @@ $('.fp-next').click(function () {
     $('.fp-prev,.fp-next').css('cursor', 'pointer');
 })();
 // 标题
-if ($('#server_qbjg')[0])document.title = $('#server_qbjg')[0].innerText + document.title;
+if ($('#server_qbjg')[0])document.title = $('#server_qbjg')[0].innerText+' - ' + document.title;
 // 商品精选
 (function load_spjx() {
     var xmlhttp = new XMLHttpRequest();

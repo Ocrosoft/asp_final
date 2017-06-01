@@ -13,6 +13,11 @@ namespace User_Interface_Layer
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["name"] != null)
+            {
+                ttbar_login_server.Text = "欢迎，<a style='color:red;'>" + Session["name"].ToString() + "</a>";
+            }
+
             if (Session["name"] == null) return; // 未登录
             var cartItems = Request.Cookies["cartItems" + Session["name"].ToString()];
             if (cartItems == null) return; // 无信息

@@ -80,12 +80,15 @@ $('#loginsubmit').click(function () {
     $('#formlogin').submit();
 });
 $('#formlogin').submit(function () {
-    var ret = GetQueryString('returnUrl');
+    var ret = '';
+    if (location.href.indexOf('returnUrl') != -1)
+        ret = location.href.split('returnUrl=')[1];
     var name = $('#loginname')[0].value;
     var pass = $('#nloginpwd')[0].value;
     var pass_encode = BASE64.encoder(pass);
     $('#nloginpwd')[0].value = pass_encode;
-    if (ret != null) {
+    if (ret != '') {
+        console.log(ret);
         $('#formlogin').attr('Action', $('#formlogin').attr('Action') + '?returnUrl=' + ret);
     }
     return true;

@@ -12,6 +12,11 @@ namespace User_Interface_Layer
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["name"] != null)
+            {
+                ttbar_login_server.Text = "欢迎，<a style='color:red;'>" + Session["name"].ToString() + "</a>";
+            }
+
             string key = Request.QueryString["key"]; // 关键词
             string typeLevel = Request.QueryString["level"]; // 类别等级
             string typeID = Request.QueryString["type"]; // 类别
