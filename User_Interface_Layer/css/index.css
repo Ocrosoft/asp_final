@@ -3617,3 +3617,12 @@ body {
         background-image: url('//img14.360buyimg.com/da/jfs/t5884/122/341875117/1296/762dac4a/591eb9d6N5526460b.png');
     }
 }
+.user_info_level0 .user_info_lvico, .user_info_level6 .user_info_lvico {
+    background-image: url(//misc.360buyimg.com/mtd/pc/index/home/images/sprite_userinfo@1x.png);
+    background-position: 0 -71px;
+    -moz-background-size: 156px 123px;
+    background-size: 156px 123px;
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+}

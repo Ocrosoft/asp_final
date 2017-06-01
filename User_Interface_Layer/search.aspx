@@ -158,7 +158,7 @@
             <span class="clr"></span>
         </div>
     </div>
-    <div id="J_searchWrap" class="w">
+    <div id="J_searchWrap" class="w" runat="server">
         <div id="J_crumbsBar" class="crumbs-bar">
             <div class="crumbs-nav">
                 <div class="crumbs-nav-main clearfix">
@@ -293,7 +293,7 @@
                 <div class="fg-line re-search">
                     <div class="fg-line-key"><b>重新搜索：</b></div>
                     <div class="fg-line-value">
-                        <input id="key-re-search" class="input-txt input-XL" type="text" placeholder="搜索" value="抱枕" onkeydown="javascript:if(event.keyCode==13){searchlog(1,0,0,60);search('key-re-search');}">
+                        <input id="key-re-search" class="input-txt input-XL" type="text" placeholder="搜索" value="" onkeydown="javascript:if(event.keyCode==13){searchlog(1,0,0,60);search('key-re-search');}">
                         <a class="btn btn-primary btn-XL" href="javascript:search('key-re-search')" onclick="searchlog(1,0,0,60)">搜索</a>
                     </div>
                 </div>

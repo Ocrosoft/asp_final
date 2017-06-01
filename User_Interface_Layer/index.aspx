@@ -9,7 +9,7 @@
     <meta name="description" content="东京DJ.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
     <meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,东京" />
     <link rel="icon" href="#" type="image/x-icon" />
-    <link rel="search" title="东京DJ.com" href="//misc.360buyimg.com/mtd/pc/common/conf/search.xml" type="application/opensearchdescription+xml" />
+    <link rel="search" title="东京DJ.com" href="#" type="application/opensearchdescription+xml" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit" />
     <link type="text/css" rel="stylesheet" href="/css/index.css" />
@@ -45,7 +45,37 @@
                 <li class="spacer"></li>
                 <li class="fore3 dorpdown" id="ttbar-myjd">
                     <div class="dt cw-icon"><a target="_blank" href="#">我的东京</a><i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
-                    <div class="dd dorpdown-layer"></div>
+                    <div class="dd dorpdown-layer">
+                        <div class="dd-spacer"></div>
+                        <div class="myjdlist">
+                            <div class="fore1">
+                                <div class="item"><a href="#" target="_blank">待处理订单<span id="num-unfinishedorder"></span></a></div>
+                                <div class="item"><a href="#" target="_blank">返修退换货</a></div>
+                                <div class="item"><a href="#" target="_blank">降价商品<span id="num-reduction"></span></a></div>
+                            </div>
+                            <div class="fore2">
+                                <div class="item"><a href="#" target="_blank">消息<span id="num-tip"><span runat="server" id="server_msg_num" class="num style-red">&nbsp;</span></span></a>						</div>
+                                <div class="item"><a href="#" target="_blank">我的问答<span id="num-consultation"></span></a></div>
+                                <div class="item"><a href="#" target="_blank">我的关注</a></div>
+                            </div>
+                        </div>
+                        <div class="myjdlist myjdlist_2">
+                            <div class="fore1">
+                                <div class="item"><a href="#" target="_blank">我的东豆</a></div>
+                                <div class="item baitiao"><a href="#" target="_blank">我的白条</a></div>
+                            </div>
+                            <div class="fore2">
+                                <div class="item"><a href="#" target="_blank">我的优惠券<span id="num-ticket"></span></a></div>
+                                <div class="item"><a href="#" target="_blank">我的理财</a></div>
+                            </div>
+                        </div>
+                        <div class="viewlist" style="display: none;">
+                            <div class="smt">
+                                <h4>我的足迹</h4>
+                                <span class="extra"><a target="_blank" href="//my.jd.com/history/list.html">更多&nbsp;&gt;</a></span></div>
+                            <div class="smc"></div>
+                        </div>
+                    </div>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore4">
@@ -58,12 +88,101 @@
                 <li class="spacer"></li>
                 <li class="fore8 dorpdown" id="ttbar-serv">
                     <div class="dt cw-icon">客户服务<i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
-                    <div class="dd dorpdown-layer"><p style="text-align:center;">客户都没有，哪来的服务</p></div>
+                    <div class="dd dorpdown-layer"><div class="dd-spacer"></div><div class="item-client">客户</div><div class="item"><a href="#" target="_blank" >帮助中心</a></div><div class="item"><a href="#" target="_blank" >售后服务</a></div><div class="item"><a href="#" target="_blank" >在线客服</a></div><div class="item"><a href="#" target="_blank" >意见建议</a></div><div class="item"><a href="#" target="_blank" >电话客服</a></div><div class="item"><a href="#" target="_blank" >客服邮箱</a></div><div class="item"><a href="#" target="_blank" >金融咨询</a></div><div class="item"><a href="#" target="_blank" >售全球客服</a></div><div class="item-business">商户</div><div class="item"><a href="#" target="_blank" >合作招商</a></div><div class="item"><a href="#" target="_blank" >东京商学院</a></div><div class="item"><a href="#" target="_blank" >商家后台</a></div><div class="item"><a href="#" target="_blank" >京麦工作台</a></div><div class="item"><a href="#" target="_blank" >商家帮助</a></div><div class="item"><a href="#" target="_blank" >规则平台</a></div></div>
                 </li>
                 <li class="spacer"></li>
-                <li class="fore9 dorpdown" id="ttbar-navs">
+                <li class="fore9 dorpdown">
                     <div class="dt cw-icon">网站导航<i class="iconfont">&#xe605;</i><i class="ci-right"><s>◇</s></i></div>
-                    <div class="dd dorpdown-layer"><p style="text-align:center;">域名都没有，哪来的导航</p></div>
+                    <li class="fore9 dorpdown" id="ttbar-navs" data-load="1">
+                        <div class="dt cw-icon">网站导航<i class="iconfont"></i><i class="ci-right"><s>◇</s></i></div>
+                        <div class="dd dorpdown-layer">
+                            <div class="dd-spacer"></div>
+                            <dl class="fore1">
+                                <dt>特色主题</dt>
+                                <dd>
+                                    <div class="item"><a href="#" target="_blank">品牌头条</a></div>
+                                    <div class="item"><a href="#" target="_blank">发现好货</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京预售</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京金融</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京试用</a></div>
+                                    <div class="item"><a href="#" target="_blank">优惠券</a></div>
+                                    <div class="item"><a href="#" target="_blank">闪购</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京会员</a></div>
+                                    <div class="item"><a href="#" target="_blank">秒杀</a></div>
+                                    <div class="item"><a href="#" target="_blank">定期送</a></div>
+                                    <div class="item"><a href="#" target="_blank">装机大师</a></div>
+                                    <div class="item"><a href="#" target="_blank">新奇特</a></div>
+                                    <div class="item"><a href="#" target="_blank">企业金融服务</a></div>
+                                    <div class="item"><a href="#" target="_blank">礼品购</a></div>
+                                    <div class="item"><a href="#" target="_blank">智能馆</a></div>
+                                    <div class="item"><a href="#" target="_blank">0元评测</a></div>
+                                    <div class="item"><a href="#" target="_blank">In货推荐</a></div>
+                                    <div class="item"><a href="#" target="_blank">北京老字号</a></div>
+                                    <div class="item"><a href="#" target="_blank">买什么</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore2">
+                                <dt>行业频道</dt>
+                                <dd>
+                                    <div class="item"><a href="#" target="_blank">服装城</a></div>
+                                    <div class="item"><a href="#" target="_blank">家用电器</a></div>
+                                    <div class="item"><a href="#" target="_blank">电脑办公</a></div>
+                                    <div class="item"><a href="#" target="_blank">手机</a></div>
+                                    <div class="item"><a href="#" target="_blank">美妆馆</a></div>
+                                    <div class="item"><a href="#" target="_blank">食品</a></div>
+                                    <div class="item"><a href="#" target="_blank">智能数码</a></div>
+                                    <div class="item"><a href="#" target="_blank">母婴</a></div>
+                                    <div class="item"><a href="#" target="_blank">家装城</a></div>
+                                    <div class="item"><a href="#" target="_blank">运动户外</a></div>
+                                    <div class="item"><a href="#" target="_blank">整车</a></div>
+                                    <div class="item"><a href="#" target="_blank">图书</a></div>
+                                    <div class="item"><a href="#" target="_blank">农资频道</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京智能</a></div>
+                                    <div class="item"><a href="#" target="_blank">玩3C</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore3">
+                                <dt>生活服务</dt>
+                                <dd>
+                                    <div class="item"><a href="#" target="_blank">东京众筹</a></div>
+                                    <div class="item"><a href="#" target="_blank">白条</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京金融App</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京小金库</a></div>
+                                    <div class="item"><a href="#" target="_blank">理财</a></div>
+                                    <div class="item"><a href="#" target="_blank">话费</a></div>
+                                    <div class="item"><a href="#" target="_blank">旅行</a></div>
+                                    <div class="item"><a href="#" target="_blank">彩票</a></div>
+                                    <div class="item"><a href="#" target="_blank">游戏</a></div>
+                                    <div class="item"><a href="#" target="_blank">机票酒店</a></div>
+                                    <div class="item"><a href="#" target="_blank">电影票</a></div>
+                                    <div class="item"><a href="#" target="_blank">水电煤</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京到家</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京微联</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京众测</a></div>
+                                </dd>
+                            </dl>
+                            <dl class="fore4">
+                                <dt>更多精选</dt>
+                                <dd>
+                                    <div class="item"><a href="#" target="_blank">东京社区</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京通信</a></div>
+                                    <div class="item"><a href="#" target="_blank">在线读书</a></div>
+                                    <div class="item"><a href="#" target="_blank">东京E卡</a></div>
+                                    <div class="item"><a href="#" target="_blank">智能社区</a></div>
+                                    <div class="item"><a href="#" target="_blank">游戏社区</a></div>
+                                    <div class="item"><a href="#" target="_blank">京友邦</a></div>
+                                    <div class="item"><a href="#" target="_blank">合作招商</a></div>
+                                    <div class="item"><a href="#" target="_blank">企业采购</a></div>
+                                    <div class="item"><a href="#" target="_blank">服务市场</a></div>
+                                    <div class="item"><a href="#" target="_blank">乡村招募</a></div>
+                                    <div class="item"><a href="#" target="_blank">校园加盟</a></div>
+                                    <div class="item"><a href="#" target="_blank">办公生活馆</a></div>
+                                    <div class="item"><a href="#" target="_blank">知识产权维权</a></div>
+                                    <div class="item"><a href="#" target="_blank">English Site</a></div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore10 mobile" id="J_mobile">
@@ -104,7 +223,7 @@
                     <i class="ci-left"></i>
                     <i class="ci-right"></i>
                     <i class="iconfont">&#xe607;</i>
-                    <a target="_blank" href="//cart.jd.com/cart.action">我的购物车</a>
+                    <a target="_blank" href="#">我的购物车</a>
                 </div>
                 <div class="dorpdown-layer">
                     <div class="spacer"></div>
@@ -117,37 +236,37 @@
             <div id="navitems">
                 <ul id="navitems-group1">
                     <li class="fore1">
-                        <a target="_blank" href="//miaosha.jd.com/">秒杀</a>
+                        <a target="_blank" href="#">秒杀</a>
                     </li>
                     <li class="fore2">
-                        <a target="_blank" href="https://a.jd.com/">优惠券</a>
+                        <a target="_blank" href="#">优惠券</a>
                     </li>
                     <li class="fore3">
-                        <a target="_blank" href="//red.jd.com/">闪购</a>
+                        <a target="_blank" href="#">闪购</a>
                     </li>
                     <li class="fore4">
-                        <a target="_blank" href="//paimai.jd.com/">拍卖</a>
+                        <a target="_blank" href="#">拍卖</a>
                     </li>
                 </ul>
                 <div class="spacer"></div>
                 <ul id="navitems-group2">
                     <li class="fore1">
-                        <a target="_blank" href="https://channel.jd.com/fashion.html ">服装城</a>
+                        <a target="_blank" href="#">服装城</a>
                     </li>
                     <li class="fore2">
-                        <a target="_blank" href="//chaoshi.jd.com/">东京超市</a>
+                        <a target="_blank" href="#">东京超市</a>
                     </li>
                     <li class="fore3">
-                        <a target="_blank" href="//fresh.jd.com/">生鲜</a>
+                        <a target="_blank" href="#">生鲜</a>
                     </li>
                     <li class="fore4">
-                        <a target="_blank" href="//www.jd.hk/">全球购</a>
+                        <a target="_blank" href="#">全球购</a>
                     </li>
                 </ul>
                 <div class="spacer"></div>
                 <ul id="navitems-group3">
                     <li class="fore1">
-                        <a target="_blank" href="//jr.jd.com/">东京金融</a>
+                        <a target="_blank" href="#">东京金融</a>
                     </li>
                 </ul>
             </div>
@@ -209,7 +328,7 @@
                         <a href="javascript:void(0)" class="J_slider_control_prev slider_control_item slider_control_prev"><i class="iconfont"></i></a><a href="javascript:void(0)" class="J_slider_control_next slider_control_item slider_control_next"><i class="iconfont"></i></a>
                     </div>
                     <div class="J_slider_extend slider_extend clearfix">
-                        <div class="J_slider_bi slider_bi"><a href="//b.jd.com/" class="slider_bi_lk" target="_blank">
+                        <div class="J_slider_bi slider_bi"><a href="#" class="slider_bi_lk" target="_blank">
                             <img class="J_slider_bi_img slider_bi_img" title="" alt="" src="//img13.360buyimg.com/cms/s390x130_jfs/t4645/129/2740486696/14756/f19de56f/591e473dNb44ada30.jpg!q90">
                         </a></div>
                         <div class="J_slider_bi slider_bi"><a href="#" class="slider_bi_lk" target="_blank">
@@ -225,12 +344,12 @@
                         <div class="J_user_info_avatar user_info_avatar">
                             <img class="J_user_info_avatar_img" src="/Images/no_login.jpg">
                             <a class="user_info_avatar_lk" href="#" target="_blank"></a></div>
-                        <div class="user_info_show">
-                            <p class="user_info_tip">Hi，欢迎来到京东！</p>
-                            <p><a href="javascript:login();" class="user_info_login">登录</a><a href="javascript:regist();" class="user_info_reg">注册</a></p>
+                        <div class="user_info_show" id="server_user">
+                            <p runat="server" id="server_user_hi" class="user_info_tip">Hi，欢迎来到东京！</p>
+                            <p runat="server" id="server_user_loginreg"><a href="javascript:location.href='login.aspx?returnUrl='+location.href;" class="user_info_login">登录</a> <a href="javascript:location.href='reg.aspx?returnUrl='+location.href;" class="user_info_reg">注册</a></p>
                         </div>
                     </div>
-                    <div class="user_profit"><a class="user_profit_lk" href="#" target="_blank">新人福利</a><a class="user_profit_lk" href="//plus.jd.com" target="_blank">PLUS会员</a></div>
+                    <div class="user_profit"><a class="user_profit_lk" href="javascript:alert('新人福利...啥');" target="_blank">新人福利</a><a class="user_profit_lk" href="javascript:alert('并没有PLUS会员服务');" target="_blank">PLUS会员</a></div>
                 </div>
                 <!-- 促销和公告 -->
                 <div class="news J_news">
@@ -243,7 +362,7 @@
                         <div class="mod_tab_content J_tab_content">
                             <div class="mod_tab_content_item mod_tab_content_item_on">
                                 <ul class="news_list">
-                                    <li class="news_item"><a href="https://sale.jd.com/act/foqXLEhMRNHu2jB.html" target="_blank" class="news_link">优惠怎么可能会有！</a></li>
+                                    <li class="news_item"><a href="#" target="_blank" class="news_link">优惠怎么可能会有！</a></li>
                                 </ul>
                             </div>
                             <div class="mod_tab_content_item">
@@ -355,27 +474,27 @@
                 </div>
                 <div class="box_bd clearfix">
                     <ul class="auto-style1">
-                        <li class="find_item find_item_1" style="float:left"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                        <li class="find_item find_item_1" style="float:left"><a href="#" target="_blank" class="find_item_lk">
                             <p class="find_item_name">COACH撞色牛皮单肩包</p>
                             <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
                         </li>                     
-                        <li class="find_item find_item_2" style="float:right"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                        <li class="find_item find_item_2" style="float:right"><a href="#" target="_blank" class="find_item_lk">
                             <p class="find_item_name">COACH撞色牛皮单肩包</p>
                             <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
                         </li>
-                        <li class="find_item find_item_1" style="float:left"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                        <li class="find_item find_item_1" style="float:left"><a href="#" target="_blank" class="find_item_lk">
                             <p class="find_item_name">COACH撞色牛皮单肩包</p>
                             <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
                         </li>                     
-                        <li class="find_item find_item_2" style="float:right"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                        <li class="find_item find_item_2" style="float:right"><a href="#" target="_blank" class="find_item_lk">
                             <p class="find_item_name">COACH撞色牛皮单肩包</p>
                             <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
                         </li>
-                        <li class="find_item find_item_5" style="float:left"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                        <li class="find_item find_item_5" style="float:left"><a href="#" target="_blank" class="find_item_lk">
                             <p class="find_item_name">COACH撞色牛皮单肩包</p>
                             <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
                         </li>                     
-                        <li class="find_item find_item_6" style="float:right"><a href="//fxhh.jd.com/#944643" target="_blank" class="find_item_lk">
+                        <li class="find_item find_item_6" style="float:right"><a href="#" target="_blank" class="find_item_lk">
                             <p class="find_item_name">COACH撞色牛皮单肩包</p>
                             <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
                         </li>
@@ -470,18 +589,18 @@
                         <div class="pt_bd pt_bd_col1">
                             <div class="pt_bd_inner">
                                 <div class="pt_cover">
-                                    <a href="//channel.jd.com/fashion.html" class="pt_cover_lk" target="_blank">
+                                    <a href="#" class="pt_cover_lk" target="_blank">
                                         <img src="//img13.360buyimg.com/cms/s193x260_jfs/t5215/21/2573618256/78993/4a5cbdfc/591c240bN8a85ace7.jpg!q90" data-lazy-img="done" alt="服装城" title="服装城" class="pt_cover_img" data-webp="no"><i class="mod_actmark mod_actmark_portal"></i></a>
                                 </div>
                                 <div class="pt_bi pt_bi_4">
-                                    <span class="pt_bi_split pt_bi_split_h"></span><span class="pt_bi_split pt_bi_split_v"></span><a href="//channel.jd.com/men.html" class="pt_bi_item" target="_blank">
+                                    <span class="pt_bi_split pt_bi_split_h"></span><span class="pt_bi_split pt_bi_split_v"></span><a href="#" class="pt_bi_item" target="_blank">
                                         <p class="pt_bi_tit">格调男装</p>
                                         <p class="pt_bi_promo">不止5折</p>
-                                        <img src="//img12.360buyimg.com/cms/s100x100_jfs/t5458/83/2632095237/15006/95fa4346/591c2443Nc5452c28.jpg!q90.webp" data-lazy-img="done" alt="格调男装" title="格调男装" class="pt_bi_img"></a><a href="//channel.jd.com/women.html" class="pt_bi_item" target="_blank"><p class="pt_bi_tit">太平鸟集团</p>
+                                        <img src="//img12.360buyimg.com/cms/s100x100_jfs/t5458/83/2632095237/15006/95fa4346/591c2443Nc5452c28.jpg!q90.webp" data-lazy-img="done" alt="格调男装" title="格调男装" class="pt_bi_img"></a><a href="#" class="pt_bi_item" target="_blank"><p class="pt_bi_tit">太平鸟集团</p>
                                             <p class="pt_bi_promo">低至59元</p>
-                                            <img src="//img10.360buyimg.com/cms/s100x100_jfs/t5233/181/2582109153/20813/860c7f5a/591c2490Nf91ade31.jpg!q90.webp" data-lazy-img="done" alt="太平鸟集团" title="太平鸟集团" class="pt_bi_img"></a><a href="//channel.jd.com/underwear.html" class="pt_bi_item" target="_blank" ><p class="pt_bi_tit">舒适内衣</p>
+                                            <img src="//img10.360buyimg.com/cms/s100x100_jfs/t5233/181/2582109153/20813/860c7f5a/591c2490Nf91ade31.jpg!q90.webp" data-lazy-img="done" alt="太平鸟集团" title="太平鸟集团" class="pt_bi_img"></a><a href="#" class="pt_bi_item" target="_blank" ><p class="pt_bi_tit">舒适内衣</p>
                                                 <p class="pt_bi_promo">满99减20</p>
-                                                <img src="//img13.360buyimg.com/cms/s100x100_jfs/t5566/101/2542731565/28193/1ca3b15c/591c252aN58c278f3.jpg!q90.webp" data-lazy-img="done" alt="舒适内衣" title="舒适内衣" class="pt_bi_img"></a><a href="//sale.jd.com/act/uwZDqEzY6WRp1kMm.html" class="pt_bi_item" target="_blank"><p class="pt_bi_tit">PLUS会员</p>
+                                                <img src="//img13.360buyimg.com/cms/s100x100_jfs/t5566/101/2542731565/28193/1ca3b15c/591c252aN58c278f3.jpg!q90.webp" data-lazy-img="done" alt="舒适内衣" title="舒适内衣" class="pt_bi_img"></a><a href="#" class="pt_bi_item" target="_blank"><p class="pt_bi_tit">PLUS会员</p>
                                                     <p class="pt_bi_promo">199减50</p>
                                                     <img src="//img13.360buyimg.com/cms/s100x100_jfs/t5602/153/1315574365/47724/8aeee3df/59252f4aNe8c47528.png!q90.webp" data-lazy-img="done" alt="PLUS会员" title="PLUS会员" class="pt_bi_img"></a>
                                 </div>
@@ -508,25 +627,25 @@
                         <div class="pt_bd pt_bd_col1">
                             <div class="pt_bd_inner">
                                 <div class="pt_cover">
-                                    <a href="//channel.jd.com/beauty.html" class="pt_cover_lk" target="_blank">
+                                    <a href="#" class="pt_cover_lk" target="_blank">
                                         <img src="//img12.360buyimg.com/cms/s193x260_jfs/t5830/153/265547024/51386/b5f7912/591e5da6Nbd28f443.jpg!q90" data-lazy-img="done" alt="美妆商城" title="美妆商城" class="pt_cover_img" data-webp="no"><i class="mod_actmark mod_actmark_portal"></i></a>
                                 </div>
                                 <div class="pt_bi pt_bi_4">
                                     <span class="pt_bi_split pt_bi_split_h"></span>
                                     <span class="pt_bi_split pt_bi_split_v"></span>
-                                    <a href="//beauty.jd.com/" class="pt_bi_item" target="_blank">
+                                    <a href="#" class="pt_bi_item" target="_blank">
                                         <p class="pt_bi_tit">美妆馆</p>
                                         <p class="pt_bi_promo">尖货买二免一</p>
                                         <img src="//img12.360buyimg.com/cms/s100x100_jfs/t4696/114/2737301948/14622/2de4a74d/591e5dcdN2587cab6.jpg!q90.webp" data-lazy-img="done" alt="美妆馆" title="美妆馆" class="pt_bi_img"></a>
-                                    <a href="//channel.jd.com/1316-1381.html" class="pt_bi_item" target="_blank">
+                                    <a href="#" class="pt_bi_item" target="_blank">
                                         <p class="pt_bi_tit">面部护肤</p>
                                         <p class="pt_bi_promo">尖货买二免一</p>
                                         <img src="//img12.360buyimg.com/cms/s100x100_jfs/t5644/141/247071032/14404/7aaf9539/591e5e08N17a068d6.jpg!q90.webp" data-lazy-img="done" alt="面部护肤" title="面部护肤" class="pt_bi_img"></a>
-                                    <a href="//channel.jd.com/1316-1387.html" class="pt_bi_item" target="_blank">
+                                    <a href="#" class="pt_bi_item" target="_blank">
                                         <p class="pt_bi_tit">香水彩妆</p>
                                         <p class="pt_bi_promo">低至199减80</p>
                                         <img src="//img11.360buyimg.com/cms/s100x100_jfs/t5704/294/250787583/11670/3f00929d/591e5e3eN8e971144.jpg!q90.webp" data-lazy-img="done" alt="香水彩妆" title="香水彩妆" class="pt_bi_img"></a>
-                                    <a href="//hbc.jd.com/" class="pt_bi_item" target="_blank">
+                                    <a href="#" class="pt_bi_item" target="_blank">
                                         <p class="pt_bi_tit">个护馆</p>
                                         <p class="pt_bi_promo">第二件0元</p>
                                         <img src="//img13.360buyimg.com/cms/s100x100_jfs/t5674/187/254913436/23414/51fcc92c/591e5d31N85268154.jpg!q90.webp" data-lazy-img="done" alt="个护馆" title="个护馆" class="pt_bi_img"></a>
@@ -574,7 +693,7 @@
             <div class="jdm-toolbar J-toolbar">
                 <div class="jdm-toolbar-tabs J-tab">
                     <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-jdvip" data-name="jdvip" data-login="true" data-iframe="//vip.jd.com/sideBar/index.html">
-                        <i class="tab-ico"></i><em class="tab-text">京东会员</em><span class="tab-sub J-count hide">0</span>
+                        <i class="tab-ico"></i><em class="tab-text">东京会员</em><span class="tab-sub J-count hide">0</span>
                     </div>
                     <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-cart" data-name="cart">
                         <i class="tab-ico"></i><em class="tab-text">购物车</em><span class="tab-sub J-count hide" style="display: none;">0</span>
@@ -587,7 +706,7 @@
                         <i class="tab-ico"></i><em class="tab-text">我的足迹</em><span class="tab-sub J-count hide">0</span>
                     </div>
                     <div class="J-trigger jdm-toolbar-tab jdm-tbar-tab-message" data-name="message">
-                        <a target="_blank" href="//joycenter.jd.com/msgCenter/queryHistoryMessage.action">
+                        <a target="_blank" href="#">
                             <i class="tab-ico"></i><em class="tab-text">我的消息</em></a><span class="tab-sub J-count hide">0</span>
                     </div>
                 </div>

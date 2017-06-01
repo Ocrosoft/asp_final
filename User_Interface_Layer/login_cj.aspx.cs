@@ -16,22 +16,38 @@ namespace User_Interface_Layer
             string pwd = Request.Form["nloginpwd"];
             string returnUrl = Request.QueryString["returnUrl"];
             pwd = BLL_Safety.DecodeBase64(pwd);
+            int result = 0;
             try
             {
                 if (BLL_Customer.Login(name, pwd))
                 {
                     Session["name"] = name;
-                    if (returnUrl != null && returnUrl != "") Response.Redirect(returnUrl);
-                    else Response.Redirect("index.aspx");
+                    result = 1;
                 }
                 else
                 {
-                    Response.Redirect("login.aspx?name=" + name + "&errorID=entry&errorMsg=账户名与密码不匹配，请重新输入");
+                    result = 2;
                 }
             }
             catch
             {
-                Response.Redirect("login.aspx?name=" + name + "&errorID=entry&errorMsg=服务器错误");
+                result = 3;
+            }
+            finally
+            {
+                if (result == 1)
+                {
+                    if (returnUrl != null && returnUrl != "") Response.Redirect(returnUrl);
+                    else Response.Redirect("index.aspx");
+                }
+                else if(result==2)
+                {
+                    Response.Redirect("login.aspx?name=" + name + "&errorID=entry&errorMsg=账户名与密码不匹配，请重新输入");
+                }
+                else if(result==3)
+                {
+                    Response.Redirect("login.aspx?name=" + name + "&errorID=entry&errorMsg=服务器错误");
+                }
             }
         }
     }

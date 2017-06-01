@@ -19,6 +19,12 @@ namespace User_Interface_Layer
             string price_u = Request.QueryString["priceu"], price_t = Request.QueryString["pricet"]; // 价格区间
             string page = Request.QueryString["page"]; // 页数
 
+            if(IsNullorEmpty(key)&&IsNullorEmpty(typeID)&&IsNullorEmpty(typeName)&&IsNullorEmpty(typeName))
+            {
+                J_searchWrap.InnerHtml = "<div class=\"notice-search\"><div class=\"ns-wrap clearfix info\"><span class=\"ns-icon\"></span><div class=\"ns-content\"><span>抱歉，没有找到与“<em></em>”相关的商品</span></div></div></div>";
+                return;
+            }
+
             try
             {
                 if (key != null && key != "") server_qbjg.Text = key;
@@ -79,6 +85,12 @@ namespace User_Interface_Layer
             {
                 server_goods.Text = "ERROR" + ex.Message;
             }
+        }
+
+        bool IsNullorEmpty(string input)
+        {
+            if (input != null && input != "") return false;
+            else return true;
         }
     }
 }
