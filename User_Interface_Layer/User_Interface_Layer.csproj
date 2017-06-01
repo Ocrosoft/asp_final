@@ -68,8 +68,12 @@
     <Content Include="ajax\Index-ypzj.aspx" />
     <Content Include="ajax\Index_fxhh.aspx" />
     <Content Include="ajax\search-spjx.aspx" />
+    <Content Include="cart.aspx" />
     <Content Include="CheckCode.aspx" />
     <Content Include="ajax\CheckUserExits.aspx" />
+    <Content Include="css\cart-cross.css" />
+    <Content Include="css\cart-no-login.css" />
+    <Content Include="css\cart.css" />
     <Content Include="css\index-tpl.css" />
     <Content Include="css\index-common.css" />
     <Content Include="css\index.css" />
@@ -91,6 +95,7 @@
     <Content Include="Images\sprite_userinfo%401x.png" />
     <Content Include="Images\vip.png" />
     <Content Include="index.aspx" />
+    <Content Include="js\cart-base.js" />
     <Content Include="js\index-head.js" />
     <Content Include="js\index.js" />
     <Content Include="js\jbase64.js" />
@@ -187,6 +192,13 @@
     </Compile>
     <Compile Include="ajax\search-spjx.aspx.designer.cs">
       <DependentUpon>search-spjx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="CheckCode.aspx.cs">
       <DependentUpon>CheckCode.aspx</DependentUpon>
