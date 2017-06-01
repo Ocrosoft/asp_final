@@ -67,6 +67,7 @@
     <Content Include="ajax\Index-phb.aspx" />
     <Content Include="ajax\Index-ypzj.aspx" />
     <Content Include="ajax\Index_fxhh.aspx" />
+    <Content Include="ajax\search-spjx.aspx" />
     <Content Include="CheckCode.aspx" />
     <Content Include="ajax\CheckUserExits.aspx" />
     <Content Include="css\index-tpl.css" />
@@ -83,17 +84,20 @@
     <Content Include="Images\l-icon.png" />
     <Content Include="Images\loading.gif" />
     <Content Include="Images\logo-201305-b.png" />
+    <Content Include="Images\logo.v2.png" />
+    <Content Include="Images\no_login.jpg" />
     <Content Include="Images\pwd-icons.png" />
     <Content Include="Images\q-icon.png" />
+    <Content Include="Images\sprite_userinfo%401x.png" />
     <Content Include="Images\vip.png" />
     <Content Include="index.aspx" />
-    <Content Include="js\index-cate.js" />
     <Content Include="js\index-head.js" />
     <Content Include="js\index.js" />
     <Content Include="js\jbase64.js" />
     <Content Include="js\login.js" />
     <Content Include="js\reg.js" />
     <Content Include="js\sea.js" />
+    <Content Include="js\search.js" />
     <Content Include="js\toolbar.js" />
     <Content Include="login.aspx" />
     <Content Include="login_cj.aspx" />
@@ -104,6 +108,7 @@
     <Content Include="css\bootstrap.min.css.map" />
     <Content Include="reg.aspx" />
     <Content Include="reg_cq.aspx" />
+    <Content Include="search.aspx" />
     <Content Include="UIL.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -175,6 +180,13 @@
     <Compile Include="ajax\Index_fxhh.aspx.designer.cs">
       <DependentUpon>Index_fxhh.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ajax\search-spjx.aspx.cs">
+      <DependentUpon>search-spjx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\search-spjx.aspx.designer.cs">
+      <DependentUpon>search-spjx.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CheckCode.aspx.cs">
       <DependentUpon>CheckCode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -224,6 +236,13 @@
     </Compile>
     <Compile Include="reg_cq.aspx.designer.cs">
       <DependentUpon>reg_cq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="search.aspx.cs">
+      <DependentUpon>search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="search.aspx.designer.cs">
+      <DependentUpon>search.aspx</DependentUpon>
     </Compile>
     <Compile Include="UIL.Master.cs">
       <DependentUpon>UIL.Master</DependentUpon>

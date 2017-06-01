@@ -1,6 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reg.aspx.cs" Inherits="User_Interface_Layer.reg" %>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,7 +15,7 @@
 <body>
     <div id="form-header" class="header">
         <div class="logo-con w clearfix">
-            <a href="#" class="logo"></a>
+            <a href="/index.aspx" class="logo"></a>
             <div class="logo-title">欢迎注册</div>
             <div class="have-account">已有账号？ <a href="/login.aspx">请登录</a></div>
         </div>
@@ -604,19 +603,19 @@
     </div>
     <div id="form-footer" class="footer w">
         <div class="links">
-            <a rel="nofollow" target="_blank" href="//www.jd.com/intro/about.aspx">关于我们</a>|
-        <a rel="nofollow" target="_blank" href="//www.jd.com/contact/">联系我们</a>|
-        <a rel="nofollow" target="_blank" href="//zhaopin.jd.com/">人才招聘</a>|
-        <a rel="nofollow" target="_blank" href="//www.jd.com/contact/joinin.aspx">商家入驻</a>|
-        <a rel="nofollow" target="_blank" href="//www.jd.com/intro/service.aspx">广告服务</a>|
-        <a rel="nofollow" target="_blank" href="//app.jd.com/">手机东京</a>|
-        <a target="_blank" href="//club.jd.com/links.aspx">友情链接</a>|
-        <a target="_blank" href="//media.jd.com">销售联盟</a>|
-        <a href="//club.jd.com/" target="_blank">东京社区</a>|
-        <a href="//gongyi.jd.com" target="_blank">东京公益</a>|
+            <a rel="nofollow" target="_blank" href="#">关于我们</a>|
+        <a rel="nofollow" target="_blank" href="#">联系我们</a>|
+        <a rel="nofollow" target="_blank" href="#">人才招聘</a>|
+        <a rel="nofollow" target="_blank" href="#">商家入驻</a>|
+        <a rel="nofollow" target="_blank" href="#">广告服务</a>|
+        <a rel="nofollow" target="_blank" href="#">手机东京</a>|
+        <a target="_blank" href="#">友情链接</a>|
+        <a target="_blank" href="#">销售联盟</a>|
+        <a href="#" target="_blank">东京社区</a>|
+        <a href="#" target="_blank">东京公益</a>
         </div>
         <div class="copyright">
-            Copyright&copy;2004-2016&nbsp;&nbsp;东京JD.com&nbsp;版权所有
+            Copyright&copy;2004-2016&nbsp;&nbsp;东京DJ.com&nbsp;版权所有
         </div>
     </div>
     <script src="/js/reg.js"></script>

@@ -17,7 +17,14 @@ namespace Business_Logic_Layer
         /// <returns></returns>
         public static string DecodeBase64(string result)
         {
-            return DAL_Safety.DecodeBase64(result);
+            try
+            {
+                return DAL_Safety.DecodeBase64(result);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
     }
 }
