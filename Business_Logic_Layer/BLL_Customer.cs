@@ -20,7 +20,8 @@ namespace Business_Logic_Layer
         /// <returns>bool</returns>
         public static bool Register(Customer customer)
         {
-            return DAL_Customer.AddCustomer(customer.Name, customer.Pass, customer.Question, customer.Answer);
+             return DAL_Customer.AddCustomer(customer.Name, customer.Pass, customer.Question, customer.Answer); 
+
         }
 
         /// <summary>

@@ -18,7 +18,7 @@ namespace User_Interface_Layer
             string pwd = Request.Form["pwd"].Substring(1);
             string pwdRe = Request.Form["pwdRepeat"].Substring(1);
             string authCode = Request.Form["authCode"];
-            string checkcode_correct = Session["CheckCodef"].ToString();
+            string checkcode_correct = Session["CheckCode"].ToString();
 
             if (name.Length < 4 || name.Length > 20) { Response.Redirect("reg.aspx"); return; }
             if (pwd.Length < 6 || pwd.Length > 20) { Response.Redirect("reg.aspx"); return; }
