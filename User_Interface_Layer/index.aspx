@@ -522,7 +522,7 @@
                                             var res = xmlhttp.responseText;
                                             res = '<p class="sup_desc">优秀的手机壳，可以让你不可描述</p>' + res;
                                             $('.sup_page_lk')[0].innerHTML = res;
-                                            $($('.sup_page_lk')[0]).attr('href', '/search?key=&type=&typeName=手机壳');
+                                            $($('.sup_page_lk')[0]).attr('href', '/search.aspx?key=&type=&typeName=手机壳');
                                         }
                                         else if (xmlhttp.status == 500) {
                                             console.log('优品专辑加载失败:' + xmlhttp.responseText);
@@ -543,7 +543,7 @@
                                             var res = xmlhttp.responseText;
                                             res = '<p class="sup_desc">进口电器，是不是感觉老贵了</p>' + res;
                                             $('.sup_page_lk')[1].innerHTML = res;
-                                            $($('.sup_page_lk')[1]).attr('href', '/search?key=&type=86&typeName=进口电器');
+                                            $($('.sup_page_lk')[1]).attr('href', '/search.aspx?key=&type=86&typeName=进口电器');
                                         }
                                         else if (xmlhttp.status == 500) {
                                             console.log('优品专辑加载失败:' + xmlhttp.responseText);

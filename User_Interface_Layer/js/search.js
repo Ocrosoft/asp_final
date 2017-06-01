@@ -1,7 +1,8 @@
 ﻿function GetQueryString(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
     var r = window.location.search.substr(1).match(reg);
-    if (r !== null) return unescape(r[2]); return null;
+    if (r !== null) return r[2];
+    return null;
 }
 // 翻页按钮
 $('.fp-prev').click(function () {
@@ -52,3 +53,17 @@ if ($('#server_qbjg')[0])document.title = $('#server_qbjg')[0].innerText + docum
         }
     }
 })();
+// 加入购物车
+$('.addcart').click(function () {
+    var xmlhttp = new XMLHttpRequest();
+    var str = $(this).attr('data-stock');
+    //console.log(str);
+    xmlhttp.open('GET', '/ajax/AddToCart.aspx?id=' + str + '&num=1', true);
+    xmlhttp.send();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            alert('测试，成功');
+        }
+        else if(xmlhttp.readyState == 4) alert('测试，失败');
+    }
+});

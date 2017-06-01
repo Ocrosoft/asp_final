@@ -11,7 +11,7 @@
     <meta name="Keywords" content="#" />
     <meta name="description" content="#" />
     <link type="text/css" rel="stylesheet" href="//misc.360buyimg.com/jdf/1.0.0/??unit/ui-base/1.0.0/ui-base.css,unit/shortcut/2.0.0/shortcut.css,unit/global-header/1.0.0/global-header.css,unit/myjd/2.0.0/myjd.css,unit/nav/2.0.0/nav.css,unit/shoppingcart/2.0.0/shoppingcart.css,unit/global-footer/1.0.0/global-footer.css,unit/service/1.0.0/service.css,unit/basePatch/1.0.0/basePatch.css,ui/area/1.0.0/area.css" />
-    <link type="text/css" rel="stylesheet" href="//misc.360buyimg.com/product/search/1.0.4/css/search.css" />
+    <link type="text/css" rel="stylesheet" href="/css/search.css" />
     <script src="/js/jquery-2.1.4.min.js"></script>
 </head>
 <body>

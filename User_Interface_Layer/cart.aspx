@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="cart.aspx.cs" Inherits="User_Interface_Layer.cart" %>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,9 +80,6 @@
             <span class="clr"></span>
         </div>
     </div>
-    <div id="o-header-2013">
-        <div id="header-2013" style="display: none;"></div>
-    </div>
     <div class="w w1 header clearfix">
         <div id="logo-2014">
             <a href="#" class="logo"></a>
@@ -92,17 +88,129 @@
         <div class="cart-search">
             <div class="form">
                 <input id="key" type="text" class="itxt" autocomplete="off" accesskey="s">
-                <input type="button" class="button" value="搜索" clstag="clickcart|keycount|xincart|cart_search" onclick="javascript: void (0);">
+                <input type="button" class="button" value="搜索" onclick="javascript: void (0);">
             </div>
         </div>
     </div>
-
-    <!-- 分类购物车枚举 -->
-    <!-- main -->
-    <div id="container" class="cart" ecarddg="0" cartalwaysdg="0" t="0">
+    <div id="container" class="cart">
         <div class="w">
-            <div id="chunjie" class="mb10"></div>
-            <div class="cart-empty">
+            <div class="cart-filter-bar" style="display:none;" runat="server" id="server_bar">
+                <div class="cart-filter-bar">
+                    <ul class="switch-cart">
+                        <li class="switch-cart-item curr">
+                            <a href="//cart.jd.com/cart.action">
+                                <em>全部商品</em>
+                                <span class="number" runat="server" id="server_cart_number"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="cart-store">
+                        <div id="jdarea" class="ui-area-wrap">
+                            <div class="ui-area-content-wrap ui-area-w-max">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                    <div class="w-line">
+                        <div class="floater" style="width: 79px; left: 0px;"></div>
+                    </div>
+                    <div class="tab-con ui-switchable-panel-selected" style="display: block;"></div>
+                    <div class="tab-con hide" style="display: none;"></div>
+                </div>
+                <div class="clr"></div>
+                <div class="w-line">
+                    <div class="floater" style="width: 79px; left: 0px;"></div>
+                </div>
+                <div class="tab-con ui-switchable-panel-selected" style="display: block;"></div>
+                <div class="tab-con hide" style="display: none;"></div>
+            </div>
+            <div class="cart-warp" style="display:none;" runat="server" id="server_warp">
+                <div class="w">
+                    <div id="jd-cart">
+                        <div class="cart-main cart-main-new">
+                            <div class="cart-thead">
+                                <div class="column t-checkbox">
+                                    <div class="cart-checkbox">
+                                        <input type="checkbox" id="toggle-checkboxes_up" name="toggle-checkboxes" class="jdcheckbox">
+                                        <label class="checked" for="">勾选全部商品</label>
+                                    </div>
+                                    全选
+                                </div>
+                                <div class="column t-goods">商品</div>
+                                <div class="column t-props"></div>
+                                <div class="column t-price">单价</div>
+                                <div class="column t-quantity">数量</div>
+                                <div class="column t-sum">小计</div>
+                                <div class="column t-action">操作</div>
+                            </div>
+                            <div id="cart-list">
+                                <div class="cart-item-list" id="cart-item-list-01">
+                                    <div class="cart-tbody" id="vender_8888">
+                                        <div class="item-list" runat="server" id="server_list">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cart-floatbar">
+                        <div class="ui-ceilinglamp-1" style="width: 990px; height: 52px;">
+                            <div class="cart-toolbar" style="width: 988px; height: 50px;">
+                                <div class="toolbar-wrap">
+                                    <div class="selected-item-list hide" style="display: none;">
+                                    </div>
+                                    <div class="options-box">
+                                        <div class="select-all">
+                                            <div class="cart-checkbox">
+                                                <input type="checkbox"  id="toggle-checkboxes_down" name="toggle-checkboxes" class="jdcheckbox">
+                                                <label class="checked" for="">勾选全部商品</label>
+                                            </div>
+                                            全选
+                                        </div>
+                                        <div class="operation">
+                                            <a href="#none" class="remove-batch">删除选中的商品</a>
+                                            <a href="#none" class="follow-batch">移到我的关注</a>
+                                        </div>
+                                        <div class="clr"></div>
+                                        <div class="toolbar-right">
+                                            <div class="normal">
+                                                <div class="comm-right">
+                                                    <div class="btn-area">
+                                                        <a href="javascript:void(0);" onclick="return false;" class="submit-btn" data-bind="1">去结算<b></b></a>
+                                                    </div>
+                                                    <div class="price-sum">
+                                                        <div>
+                                                            <span class="txt txt-new">总价：</span>
+                                                            <span class="price sumPrice" runat="server" id="server_sum_price"><em>¥0.00</em></span>
+                                                            <b class="ml5 price-tips"></b>
+                                                            <div class="price-tipsbox" style="display: none; left: 159.85px;">
+                                                                <div class="ui-tips-main">不含运费及送装服务费</div>
+                                                                <span class="price-tipsbox-arrow"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="amount-sum">
+                                                        已选择<em>0</em>件商品<b class="up"></b>
+                                                    </div>
+                                                    <div class="clr"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-warp">
+                        <div class="w">
+                            <div class="cart-removed">
+                                <div class="r-tit">已删除商品，您可以重新购买或加关注：</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-empty" style="display:block;" runat="server" id="server_empty">
                 <div class="message">
                     <ul>
                         <li class="txt">购物车空空的哦~，去看看心仪的商品吧~
@@ -128,9 +236,6 @@
                 </div>
             </div>
         </div>
-        <div class="w">
-        </div>
-
     </div>
     <div id="service-2014">
         <div class="slogen">
@@ -205,7 +310,7 @@
     </div>
     <div class="w">
         <div id="footer-2014">
-            <div class="links"><a rel="nofollow" target="_blank" href="#">关于我们</a>|<a rel="nofollow" target="_blank" href="#">联系我们</a>|<a rel="nofollow" target="_blank" href="#">联系客服</a>|<a rel="nofollow" target="_blank" href="#">合作招商</a>|<a rel="nofollow" target="_blank" href="#">商家帮助</a>|<a rel="nofollow" target="_blank" href="#">营销中心</a>|<a rel="nofollow" target="_blank" href="#">手机东京</a>|<a target="_blank" href="#">友情链接</a>|<a target="_blank" href="#">销售联盟</a>|<a href="#" target="_blank">东京社区</a>|<a href="#" target="_blank">风险监测</a>|<a href="#" target="_blank" clstag="h|keycount|2016|43">隐私政策</a>|<a href="#" target="_blank">东京公益</a>|<a href="#" target="_blank">English Site</a>|<a href="#" target="_blank">Contact Us</a></div>
+            <div class="links"><a rel="nofollow" target="_blank" href="#">关于我们</a>|<a rel="nofollow" target="_blank" href="#">联系我们</a>|<a rel="nofollow" target="_blank" href="#">联系客服</a>|<a rel="nofollow" target="_blank" href="#">合作招商</a>|<a rel="nofollow" target="_blank" href="#">商家帮助</a>|<a rel="nofollow" target="_blank" href="#">营销中心</a>|<a rel="nofollow" target="_blank" href="#">手机东京</a>|<a target="_blank" href="#">友情链接</a>|<a target="_blank" href="#">销售联盟</a>|<a href="#" target="_blank">东京社区</a>|<a href="#" target="_blank">风险监测</a>|<a href="#" target="_blank">隐私政策</a>|<a href="#" target="_blank">东京公益</a>|<a href="#" target="_blank">English Site</a>|<a href="#" target="_blank">Contact Us</a></div>
             <div class="copyright">
                 <a target="_blank" href="#">
                     <img src="//img13.360buyimg.com/cms/jfs/t2293/321/1377257360/19256/c267b386/56a0a994Nf1b662dc.png" />
@@ -220,7 +325,7 @@
                 </a>
                 <script type="text/JavaScript">function CNNIC_change(eleId) { var str = document.getElementById(eleId).href; var str1 = str.substring(0, (str.length - 6)); str1 += CNNIC_RndNum(6); document.getElementById(eleId).href = str1; } function CNNIC_RndNum(k) { var rnd = ""; for (var i = 0; i < k; i++) rnd += Math.floor(Math.random() * 10); return rnd; }</script>
                 <a rel="nofollow" target="_blank" id="urlknet" tabindex="-1" href="#">
-                    <img border="true" width="103" height="32" onclick="CNNIC_change('urlknet')" oncontextmenu="return false;" name="CNNIC_seal" alt="可信网站" src="//img11.360buyimg.com/da/jfs/t643/61/1174624553/2576/4037eb5f/54b8872dNe37a9860.png" class="err-product" />
+                    <img width="103" height="32" onclick="CNNIC_change('urlknet')" oncontextmenu="return false;" alt="可信网站" src="//img11.360buyimg.com/da/jfs/t643/61/1174624553/2576/4037eb5f/54b8872dNe37a9860.png" class="err-product" />
                 </a>
                 <a rel="nofollow" target="_blank" href="#">
                     <img width="103" height="32" alt="网络警察" src="//img12.360buyimg.com/cms/jfs/t2050/256/1470027660/4336/2a2c74bd/56a89b8fNfbaade9a.jpg" class="err-product" />
@@ -235,5 +340,6 @@
             </div>
         </div>
     </div>
+    <script src="/js/cart.js"></script>
 </body>
 </html>

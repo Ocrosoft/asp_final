@@ -52,7 +52,7 @@
                                     <div id="entry" class="item item-fore2">
                                         <label class="login-label pwd-label" for="nloginpwd"></label>
                                         <input type="password" id="nloginpwd" name="nloginpwd" class="itxt itxt-error"
-                                            tabindex="2" autocomplete="off" placeholder="密码" />
+                                            tabindex="2" autocomplete="off" placeholder="密码" onkeyup="javascript:if(event.keyCode==13)$('#loginsubmit').click();" />
                                         <span class="clear-btn"></span>
                                         <span class="capslock"><b></b>大小写锁定已打开</span>
                                     </div>
