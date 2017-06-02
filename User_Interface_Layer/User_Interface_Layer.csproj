@@ -75,6 +75,8 @@
     <Content Include="css\cart-cross.css" />
     <Content Include="css\cart-no-login.css" />
     <Content Include="css\cart.css" />
+    <Content Include="css\detail-popcar.css" />
+    <Content Include="css\detail.css" />
     <Content Include="css\index-tpl.css" />
     <Content Include="css\index-common.css" />
     <Content Include="css\index.css" />
@@ -84,6 +86,7 @@
     <Content Include="css\reg.css" />
     <Content Include="css\search-area.css" />
     <Content Include="css\search.css" />
+    <Content Include="detail.aspx" />
     <Content Include="Images\capslock.png" />
     <Content Include="Images\error-jd.gif" />
     <Content Include="Images\headbg.jpg" />
@@ -224,6 +227,13 @@
     </Compile>
     <Compile Include="ajax\CheckUserExits.aspx.designer.cs">
       <DependentUpon>CheckUserExits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detail.aspx.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detail.aspx.designer.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

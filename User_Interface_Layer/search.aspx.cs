@@ -62,7 +62,7 @@ namespace User_Interface_Layer
                     text += "<li class=\"gl-item\">";
                     text += "<div class=\"gl-i-wrap\">";
                     text += "<div class=\"p-img\">";
-                    text += "<a target=\"_blank\" title=\""+item.Name+"\" href=\"#\" onclick=\"javascript:;\">";
+                    text += "<a target=\"_blank\" title=\"" + item.Name + "\" href=\"/detail.aspx?id=" + item.Id + "\" onclick=\"javascript:;\">";
                     text += "<img width=\"220\" height=\"220\" class=\"err-product\" data-img=\"1\" src=\"" + item.ImageName + "\" />";
                     text += "</a>";
                     text += "</div>";
@@ -70,7 +70,7 @@ namespace User_Interface_Layer
                     text += "<strong class=\"J_2457023\" data-price=\"" + item.UnitPrice + "\"><em>¥</em><i>" + item.UnitPrice + "</i></strong>";
                     text += "</div>";
                     text += "<div class=\"p-name p-name-type-2\">";
-                    text += "<a target=\"_blank\" title=\""+item.Name+"\" href=\"//item.jd.com/2457023.html\" onclick=\"searchlog(1,2457023,1,1,'','flagsClk=1614811784')\">";
+                    text += "<a target=\"_blank\" title=\"" + item.Name + "\" href=\"/detail.aspx?id=\"" + item.Id + "onclick=\"searchlog(1,2457023,1,1,'','flagsClk=1614811784')\">";
                     text += "<em>"+(key!=null&&key!=""?item.Name.Replace(key,"<font class=\"skcolor_ljg\">"+key+"</font>"):item.Name)+"<font class=\"skcolor_ljg\" /></em>";
                     text += "<i class=\"promo-words\" id=\"J_AD_2457023\"></i>";
                     text += "</a>";
