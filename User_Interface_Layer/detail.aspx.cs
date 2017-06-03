@@ -15,6 +15,11 @@ namespace User_Interface_Layer
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["name"] != null)
+            {
+                ttbar_login_server.Text = "欢迎，<a style='color:red;'>" + Session["name"].ToString() + "</a>";
+            }
+
             string id = Request.QueryString["id"];
             if (id == null || id == "")
             {
@@ -30,15 +35,13 @@ namespace User_Interface_Layer
             cate_third.InnerHtml= "<a href='/search?type=" + type.TypeID + "'>" + type.TypeName + "</a>";
             cate_ellipsis.Attributes.Add("title", good.Name);
             cate_ellipsis.InnerHtml = good.Name;
-            spec_img.Attributes.Add("src", good.ImageName);spec_img.Attributes.Add("alt", good.Name);
-            image_hover.InnerHtml = "<img alt='"+good.Name+"' src='"+good.ImageName+"' data-img='1' width='54' height='54'>";
             server_follow.Attributes.Add("data-id", good.Id);
             server_sku_name.InnerText = good.Name;
             server_price.InnerText = Math.Round(good.UnitPrice, 2).ToString();
+            InitCartUrl.Attributes.Add("sku-id", good.Id);
 
             // 从京东获取展示图片、详细信息
             var res = GetHttpWebRequest("http://search.jd.com/Search?keyword=" + good.Name + "&enc=utf-8");
-            var rreess = res;
             var regex = new Regex("<a target=\\\"_blank\\\" title=\\\"[^\"]*\\\" href=\\\"[/.\\w\\d]*\\\" onclick=\\\"searchlog[^\\\"]*\\\">");
             var match = regex.Match(res);
             res = match.Value;
@@ -48,21 +51,21 @@ namespace User_Interface_Layer
             regex = new Regex("\".*\"");
             match = regex.Match(res);
             res = match.Value.Replace("\"", "");
+            var rreess = res;
             regex = new Regex("/\\d*\\.");
             match = regex.Match(res);
             res = match.Value.Substring(1, match.Value.Length - 2);
             res = GetHttpWebRequest("https://cd.jd.com/description/channel?enc=utf-8&skuId=" + res + "&mainSkuId=" + res);
             glofot.Attributes.Add("style", "display:none;");
             glofot.InnerText = res.Replace("data-lazyload", "src");
-            res = rreess;
-            regex = new Regex("<img alt='[^']*' src='[^']*' data-url='[^']*' data-img='[^']*' width='50' height='50'>");
+            //return;
+            res = GetHttpWebRequest("http:" + rreess);
+            regex = new Regex("<img alt='[^']*' src='[^']*' data-url='[^']*' data-img='[^']*' width='\\d*' height='\\d*'>");
             var matches = regex.Matches(res);
-            string txt = "";
-            foreach(var item in matches)
-                txt += item.ToString();
-            glofot2.InnerText = txt;
+            spec_img.Attributes.Add("src", Regex.Match(matches[0].ToString().Replace("/n5/","/n1/"),"src='[^']*'").Value.Replace("src='","").Replace("'","").Replace("s54x54","s450x450")); spec_img.Attributes.Add("alt", good.Name);
+            foreach (var item in matches)
+                server_img_lh.InnerHtml += "<li>" + item.ToString() + "</li>\n";
         }
-
 
         private string GetHttpWebRequest(string url)
         {

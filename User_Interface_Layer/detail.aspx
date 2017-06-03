@@ -15,132 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" type="text/css" href="/css/detail.css">
     <link rel="stylesheet" type="text/css" href="/css/detail-popcar.css" />
-
-    <script charset="gbk">
-        var pageConfig = {
-            compatible: true,
-            product: {
-                modules: [
-                    'address',
-                    'prom',
-                    'colorsize',
-                    'buytype',
-                    'baitiao',
-                    'summary',
-                    'o2o',
-                    'buybtn',
-                    'track',
-                    'suits',
-                    'crumb',
-                    'fittings',
-                    'detail',
-                    'contact',
-                    'popbox',
-                    'preview',
-                    'info',
-                    'imcenter',
-                    'jdservice',
-                    'commitments',
-                    'gift',
-                    'popupCar'
-                ],
-                videoPath: 'd01f9d33cf', skuid: 3419681,
-                name: '\u8363\u8000\u5e73\u677f\u0032\u0020\u6807\u51c6\u7248\u0020\u0038\u82f1\u5bf8\u0020\u0028\u516b\u6838\u0020\u0033\u0047\u002f\u0031\u0036\u0047\u0020\u0031\u0039\u0032\u0030\u0078\u0031\u0032\u0030\u0030\u0020\u0034\u0038\u0030\u0030\u006d\u0041\u0068\u0020\u0057\u0069\u0046\u0069\u0029\u0020\u73cd\u73e0\u767d',
-                skuidkey: '55BBCEC8B58CDF13CF6740F186A52102',
-                href: '//item.jd.com/3419681.html',
-                src: 'jfs/t3613/270/276960050/195172/ebf643d9/5805e012Nb24f60dc.jpg',
-                imageList: ["jfs/t3613/270/276960050/195172/ebf643d9/5805e012Nb24f60dc.jpg", "jfs/t3220/202/5644852334/471652/75828ed8/58847b68Ncb43e135.jpg", "jfs/t3781/73/301724836/79779/ddae5673/5805e019N37806660.jpg", "jfs/t3808/52/48200636/144653/a7e6835/5805e01eNe9f60010.jpg", "jfs/t3709/266/271283591/55340/d420ceb3/5805e027Ndbb4a139.jpg", "jfs/t3331/119/289703569/21028/665ae230/5805e02cN4feb1ca0.jpg", "jfs/t3514/312/257253866/42518/fbb1f91c/5805e02eNc95ec1c9.jpg", "jfs/t3616/178/304301213/27112/e783fe38/5805e03bN5e95a7ed.jpg", "jfs/t4021/28/1665163711/281104/6c9bfb6c/58847b7cN0fae0702.jpg"],
-                cat: [670, 671, 2694],
-                forceAdUpdate: '8285',
-                brand: 8557,
-                pType: 1,
-                isClosePCShow: false,
-                pTag: 423909, isPop: false,
-                venderId: 1000000904,
-                shopId: '1000000904',
-                commentVersion: '27380', specialAttrs: ["isFlashPurchase-0", "isSupportCard", "Bizgd", "IsSXQJ", "isCanVAT", "packType", "isLocalpurchase", "isOverseaPurchase-0", "IsNewGoods", "isCanUseDQ-1", "isCanUseJQ-1"],
-                recommend: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-                easyBuyUrl: "//easybuy.jd.com/skuDetail/newSubmitEasybuyOrder.action",
-                qualityLife: "//c.3.cn/qualification/info?skuId=3419681&pid=3419681&catId=2694",
-                colorSize: [{ "skuId": 3850228, "版本": "高配版（3GB 32GB）" }, { "skuId": 3419681, "版本": "标准版（3GB 16GB）" }, { "skuId": 3428905, "版本": "全网通（3GB 32GB）" }], warestatus: 1, tips: [{ "order": 3, "tip": "支持7天无理由退货" }], desc: '//cd.jd.com/description/channel?skuId=3419681&mainSkuId=3419681&cdn=2',
-                cmsNavigation: [{ "address": "//shuma.jd.com", "corner": "优惠多", "name": "数码首页", "order": 1 }, { "address": "//pingban.jd.com/", "corner": "", "name": "平板电脑", "order": 2 }, { "address": "//yingxiang.jd.com/", "corner": "", "name": "摄影摄像", "order": 3 }, { "address": "//kuwan.jd.com", "corner": "", "name": "智能酷玩", "order": 4 }, { "address": "//luyou.jd.com", "corner": "", "name": "网络路由", "order": 5 }, { "address": "//kong.jd.com/mobile/accyCenter", "corner": "", "name": "3C配件", "order": 6 }],        /*cmsSuit: table: 0x41cebbc8,*/
-                /**/
-                twoColumn: true, isFeeType: true, isBookMvd4Baby: false, addComments: true,
-                foot: '//dx.3.cn/footer?type=common_config2',
-                shangjiazizhi: false
-            }
-        };
-        try {
-            function is_sort_black_list() {
-                var jump_sort_list = { "6881": 3, "1195": 3, "10011": 3, "6980": 3, "12360": 3 };
-                if (jump_sort_list['670'] == 1 || jump_sort_list['671'] == 2 || jump_sort_list['2694'] == 3) {
-                    return true;
-                }
-                return false;
-            }
-
-            function jump_mobile() {
-                if (is_sort_black_list()) {
-                    return;
-                }
-
-                var userAgent = navigator.userAgent || "";
-                userAgent = userAgent.toUpperCase();
-                if (userAgent == "" || userAgent.indexOf("PAD") > -1) {
-                    return;
-                }
-
-                if (window.location.hash == '#m') {
-                    var exp = new Date();
-                    exp.setTime(exp.getTime() + 30 * 24 * 60 * 60 * 1000);
-                    document.cookie = "pcm=1;expires=" + exp.toGMTString() + ";path=/;domain=jd.com";
-                    window.showtouchurl = true;
-                    return;
-                }
-
-                if (/MOBILE/.test(userAgent) && /(MICROMESSENGER|QQ\/)/.test(userAgent)) {
-                    var paramIndex = location.href.indexOf("?");
-                    window.location.href = "//item.m.jd.com/product/3419681.html" + (paramIndex > 0 ? location.href.substring(paramIndex, location.href.length) : '');
-                    return;
-                }
-
-                var jump = true;
-                var cook = document.cookie.match(/(^| )pcm=([^;]*)(;|$)/);
-                if (cook && cook.length > 2 && unescape(cook[2]) == "1") {
-                    jump = false;
-                }
-                var mobilePhoneList = ["IOS", "IPHONE", "ANDROID", "WINDOWS PHONE"];
-                for (var i = 0, len = mobilePhoneList.length; i < len; i++) {
-                    if (userAgent.indexOf(mobilePhoneList[i]) > -1) {
-                        if (jump) {
-                            var paramIndex = location.href.indexOf("?");
-                            window.location.href = "//item.m.jd.com/product/3419681.html" + (paramIndex > 0 ? location.href.substring(paramIndex, location.href.length) : '');
-                        } else {
-                            window.showtouchurl = true;
-                        }
-                        break;
-                    }
-                }
-            }
-            jump_mobile();
-        } catch (e) { }
-        var __FE_Monitor_Config = { sid: 'item', browsers: ['chrome'] };
-    </script>
-    <script src="//misc.360buyimg.com/??jdf/lib/jquery-1.6.4.js,jdf/1.0.0/unit/base/1.0.0/base.js,jdf/1.0.0/ui/ui/1.0.0/ui.js"></script>
-
-    <script>
-        seajs.config({
-            paths: {
-                'MISC': '//misc.360buyimg.com',
-                'MOD_ROOT': '//static.360buyimg.com/item/default/1.0.32/components',
-                'PLG_ROOT': '//static.360buyimg.com/item/default/1.0.32/components/common/plugins',
-                'JDF_UI': '//misc.360buyimg.com/jdf/1.0.0/ui',
-                'JDF_UNIT': '//misc.360buyimg.com/jdf/1.0.0/unit'
-            }
-        });
-    </script>
-    <script src="//static.360buyimg.com/devfe/devfe-monitor/1.0.0/js/log_client.js"></script>
-
+    <script src="/js/detail-header.js"></script>
 </head>
 <body class="cat-1-670 cat-2-671 cat-3-2694 item-3419681 JD JD-1">
     <div id="shortcut-2014">
@@ -150,9 +25,10 @@
             </ul>
             <ul class="fr">
                 <li class="fore1" id="ttbar-login">
-                    <a target="_blank" href="javascript:login();" class="link-login">你好，请登录</a>
-                    &nbsp;&nbsp;
-                <a href="javascript:regist();" class="link-regist style-red">免费注册</a>
+                    <asp:Label ID="ttbar_login_server" runat="server">
+                        <a href="javascript:location.href='login.aspx?returnUrl='+location.href;" class="link-login">你好，请登录</a>&nbsp;&nbsp;
+                        <a href="javascript:location.href='reg.aspx?returnUrl='+location.href;" class="link-regist style-red">免费注册</a>
+                    </asp:Label>
                 </li>
                 <li class="spacer"></li>
                 <li class="fore2">
@@ -327,9 +203,8 @@
                     <div class="spec-list">
                         <a id="spec-forward" href="javascript:;" class="arrow-prev"><i class="sprite-arrow-prev"></i></a>
                         <a id="spec-backward" href="javascript:;" class="arrow-next"><i class="sprite-arrow-next"></i></a>
-                        <div id="spec-list" class="spec-items">
-                            <ul class="lh">
-                                <li class='img-hover' id="image_hover" runat="server"></li>
+                        <div id="spec-list" class="spec-items" style="position: relative; width: 380px; height: 58px; overflow: hidden;">
+                            <ul class="lh" runat="server" id="server_img_lh" style="position: absolute; width: 684px; height: 58px; top: 0px; left: 0px;">
                             </ul>
                         </div>
                     </div>
@@ -405,16 +280,12 @@
                     <div id="choose-btns" class="choose-btns clearfix">
                         <div class="choose-amount">
                             <div class="wrap-input">
-                                <input class="text buy-num" onkeyup="setAmount.modify('#buy-num');" id="buy-num" value="1" data-max="199">
-                                <a class="btn-reduce disabled" onclick="setAmount.reduce('#buy-num')" href="#none" data-disabled="1">-</a>
-                                <a class="btn-add" onclick="setAmount.add('#buy-num')" href="#none" data-disabled="1">+</a>
+                                <input class="text buy-num" id="buy-num" value="1" data-max="99">
+                                <a class="btn-reduce disabled" href="javascript:;" data-disabled="1">-</a>
+                                <a class="btn-add" href="javascript:;" data-disabled="1">+</a>
                             </div>
                         </div>
-                        <a href="#none" id="btn-heyue" class="btn-special1 btn-lg" style="display: none;">选择号码和套餐</a>
-                        <a href="//cart.jd.com/gate.action?pid=4530562&amp;pcount=1&amp;ptype=1" id="InitCartUrl" class="btn-special1 btn-lg" clstag="shangpin|keycount|product|加入购物车_2">加入购物车</a>
-                        <a href="#none" id="btn-baitiao" class="btn-special2 btn-lg" style="display: none;" clstag="shangpin|keycount|product|dabaitiaobutton_1316_1387_1420">打白条</a>
-                        <a href="#none" id="btn-onkeybuy" class="btn-special2 btn-lg" style="display: none;" clstag="shangpin|keycount|product|easybuy_2">一键购</a>
-                        <a href="#none" id="btn-notify" class="J-notify-stock btn-special3 btn-lg notify-stock" style="display: none;" data-type="2" data-sku="4530562" clstag="shangpin|keycount|product|daohuo_1">到货通知</a>
+                        <a href="javascript:;" id="InitCartUrl" sku-id="0" class="btn-special1 btn-lg" runat="server">加入购物车</a>
                     </div>
                 </div>
             </div>
@@ -613,9 +484,6 @@
     </div>
     <div id="glofot" runat="server"></div>
     <div id="glofot2" runat="server"></div>
-    <script>
-        var jsonObj = JSON.parse($('#glofot')[0].innerText);
-        $('#detail')[0].children[1].innerHTML = jsonObj.content;
-    </script>
+    <script src="/js/detail.js"></script>
 </body>
 </html>

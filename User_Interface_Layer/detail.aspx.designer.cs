@@ -13,6 +13,15 @@ namespace User_Interface_Layer {
     public partial class detail {
         
         /// <summary>
+        /// ttbar_login_server 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ttbar_login_server;
+        
+        /// <summary>
         /// cate_first 控件。
         /// </summary>
         /// <remarks>
@@ -58,13 +67,13 @@ namespace User_Interface_Layer {
         protected global::System.Web.UI.HtmlControls.HtmlImage spec_img;
         
         /// <summary>
-        /// image_hover 控件。
+        /// server_img_lh 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl image_hover;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl server_img_lh;
         
         /// <summary>
         /// server_follow 控件。
@@ -92,6 +101,15 @@ namespace User_Interface_Layer {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl server_price;
+        
+        /// <summary>
+        /// InitCartUrl 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor InitCartUrl;
         
         /// <summary>
         /// glofot 控件。

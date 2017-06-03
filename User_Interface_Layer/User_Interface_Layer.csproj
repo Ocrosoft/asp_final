@@ -102,6 +102,8 @@
     <Content Include="Images\vip.png" />
     <Content Include="index.aspx" />
     <Content Include="js\cart.js" />
+    <Content Include="js\detail-header.js" />
+    <Content Include="js\detail.js" />
     <Content Include="js\index-head.js" />
     <Content Include="js\index.js" />
     <Content Include="js\jbase64.js" />

@@ -31,7 +31,15 @@ namespace User_Interface_Layer
                 string text = "";
                 foreach(var item in list)
                 {
-                    var good = BLL_Goods.QueryGood(item.Id);
+                    Goods good = null;
+                    try
+                    {
+                        good = BLL_Goods.QueryGood(item.Id);
+                    }
+                    catch
+                    {
+                        continue;
+                    }
                     text += "<div class=\"item-give item-full\">";
                     text += "<div class=\"item-item\">";
                     text += "<div class=\"item-form\">";

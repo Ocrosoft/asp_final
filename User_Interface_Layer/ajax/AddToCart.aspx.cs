@@ -14,7 +14,12 @@ namespace User_Interface_Layer.ajax
         {
             Response.Clear();
             Response.StatusCode = 200;
-            if (Session["name"] == null) return;
+            if (Session["name"] == null)
+            {
+                Response.StatusCode = 500;
+                Response.End();
+                return;
+            }
             var name = Session["name"].ToString();
             string id = Request.QueryString["id"];
             string over = Request.QueryString["over"];
