@@ -19,7 +19,7 @@ namespace User_Interface_Layer.ajax
                 foreach(var item in list)
                 {
                     Response.Write("<li class=\"top_item top_item_"+(++id).ToString() + "\">");
-                    Response.Write("<a href=\"#\" target=\"_blank\" class=\"top_lk\">");
+                    Response.Write("<a href=\"/detail.aspx?id=" + item.Id + "\" target=\"_blank\" class=\"top_lk\">");
                     Response.Write("<div class=\"top_rank top_rank_"+id.ToString()+ "\">" + id.ToString() + "</div>");
                     Response.Write("<div class=\"top_pic\">");
                     Response.Write("<img src = \""+item.ImageName+"\" data-lazy-img=\"done\" alt=\""+item.Name+ "\" title=\"" + item.Name + "\" class=\"top_img\">");

@@ -72,7 +72,7 @@
                         <div class="viewlist" style="display: none;">
                             <div class="smt">
                                 <h4>我的足迹</h4>
-                                <span class="extra"><a target="_blank" href="//my.jd.com/history/list.html">更多&nbsp;&gt;</a></span></div>
+                                <span class="extra"><a target="_blank" href="#">更多&nbsp;&gt;</a></span></div>
                             <div class="smc"></div>
                         </div>
                     </div>
@@ -184,18 +184,10 @@
                 <li class="spacer"></li>
                 <li class="fore10 mobile" id="J_mobile">
                     <div class="dt mobile_txt">手机东京</div>
-                    <!--<div class="mobile_static">
-                        <div class="mobile_static_qrcode"></div>
-                    </div>
-                    <div id='J_mobile_pop' class='mod_loading mobile_pop'>
-                    </div>-->
                 </li>
             </ul>
         </div>
     </div>
-    <form runat="server">
-        <!-- HiddenFiled -->
-    </form>
     <div id="header">
         <div class="w">
             <div id="logo" class="logo">
@@ -215,18 +207,12 @@
                     </div>
                 </div>
             </div>
-            <div id="settleup" class="dorpdown">
+            <div id="settleup">
                 <div class="cw-icon">
                     <i class="ci-left"></i>
                     <i class="ci-right"></i>
                     <i class="iconfont">&#xe607;</i>
-                    <a target="_blank" href="#">我的购物车</a>
-                </div>
-                <div class="dorpdown-layer">
-                    <div class="spacer"></div>
-                    <div id="settleup-content">
-                        <span class="loading"></span>
-                    </div>
+                    <a target="_blank" href="/cart.aspx">我的购物车</a>
                 </div>
             </div>
             <div id="hotwords">无热词 没有热词 不会有热词 不存在的热词 怎么可能有热词 从来没有什么热词</div>
@@ -322,7 +308,7 @@
                             <i class="slider_indicator_btn"></i>
                             <i class="slider_indicator_btn"></i>
                             <i class="slider_indicator_btn"></i></div>
-                        <a href="javascript:void(0)" class="J_slider_control_prev slider_control_item slider_control_prev"><i class="iconfont"></i></a><a href="javascript:void(0)" class="J_slider_control_next slider_control_item slider_control_next"><i class="iconfont"></i></a>
+                        <a href="javascript:;" class="J_slider_control_prev slider_control_item slider_control_prev"><i class="iconfont"></i></a><a href="javascript:;" class="J_slider_control_next slider_control_item slider_control_next"><i class="iconfont"></i></a>
                     </div>
                     <div class="J_slider_extend slider_extend clearfix">
                         <div class="J_slider_bi slider_bi"><a href="#" class="slider_bi_lk" target="_blank">
@@ -346,7 +332,7 @@
                             <p runat="server" id="server_user_loginreg"><a href="javascript:location.href='login.aspx?returnUrl='+location.href;" class="user_info_login">登录</a> <a href="javascript:location.href='reg.aspx?returnUrl='+location.href;" class="user_info_reg">注册</a></p>
                         </div>
                     </div>
-                    <div class="user_profit"><a class="user_profit_lk" href="javascript:alert('新人福利...啥');" target="_blank">新人福利</a><a class="user_profit_lk" href="javascript:alert('并没有PLUS会员服务');" target="_blank">PLUS会员</a></div>
+                    <div class="user_profit"><a class="user_profit_lk" href="javascript:;" target="_blank">新人福利</a><a class="user_profit_lk" href="javascript:;" target="_blank">PLUS会员</a></div>
                 </div>
                 <!-- 促销和公告 -->
                 <div class="news J_news">
@@ -474,31 +460,8 @@
                         <li class="find_item find_item_1" style="float:left"><a href="#" target="_blank" class="find_item_lk">
                             <p class="find_item_name">COACH撞色牛皮单肩包</p>
                             <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
-                        </li>                     
-                        <li class="find_item find_item_2" style="float:right"><a href="#" target="_blank" class="find_item_lk">
-                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
-                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
                         </li>
-                        <li class="find_item find_item_1" style="float:left"><a href="#" target="_blank" class="find_item_lk">
-                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
-                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
-                        </li>                     
-                        <li class="find_item find_item_2" style="float:right"><a href="#" target="_blank" class="find_item_lk">
-                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
-                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
-                        </li>
-                        <li class="find_item find_item_5" style="float:left"><a href="#" target="_blank" class="find_item_lk">
-                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
-                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
-                        </li>                     
-                        <li class="find_item find_item_6" style="float:right"><a href="#" target="_blank" class="find_item_lk">
-                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
-                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
-                        </li>
-                       
                     </ul>
-                    
-
                 </div>
             </div>
             <div class="box sup fbt_col2 J_sup">
@@ -519,7 +482,7 @@
                                             var res = xmlhttp.responseText;
                                             res = '<p class="sup_desc">优秀的手机壳，可以让你不可描述</p>' + res;
                                             $('.sup_page_lk')[0].innerHTML = res;
-                                            $($('.sup_page_lk')[0]).attr('href', '/search.aspx?key=&type=&typeName=手机壳');
+                                            $($('.sup_page_lk')[0]).attr('href', '/search.aspx?typeName=手机壳');
                                         }
                                         else if (xmlhttp.status == 500) {
                                             console.log('优品专辑加载失败:' + xmlhttp.responseText);
@@ -540,7 +503,7 @@
                                             var res = xmlhttp.responseText;
                                             res = '<p class="sup_desc">进口电器，是不是感觉老贵了</p>' + res;
                                             $('.sup_page_lk')[1].innerHTML = res;
-                                            $($('.sup_page_lk')[1]).attr('href', '/search.aspx?key=&type=86&typeName=进口电器');
+                                            $($('.sup_page_lk')[1]).attr('href', '/search.aspx?type=86');
                                         }
                                         else if (xmlhttp.status == 500) {
                                             console.log('优品专辑加载失败:' + xmlhttp.responseText);
@@ -692,7 +655,7 @@
                     <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-jdvip" data-name="jdvip" data-login="true" data-iframe="//vip.jd.com/sideBar/index.html">
                         <i class="tab-ico"></i><em class="tab-text">东京会员</em><span class="tab-sub J-count hide">0</span>
                     </div>
-                    <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-cart" data-name="cart">
+                    <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-cart" data-name="cart" onclick="javascript:location.href='/cart.aspx';">
                         <i class="tab-ico"></i><em class="tab-text">购物车</em><span class="tab-sub J-count hide" style="display: none;">0</span>
                         <div class="tabs-tip hide"><span class="ico"></span><span class="text">成功加入购物车!</span><b></b></div>
                     </div>

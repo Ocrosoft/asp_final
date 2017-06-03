@@ -12,6 +12,7 @@
     <meta name="description" content="#" />
     <link type="text/css" rel="stylesheet" href="/css/search-area.css" />
     <link type="text/css" rel="stylesheet" href="/css/search.css" />
+    <link type="text/css" rel="stylesheet" href="/css/index-common.css" />
     <script src="/js/jquery-2.1.4.min.js"></script>
 </head>
 <body>
@@ -457,6 +458,36 @@
                 </dd>
             </dl>
             <span class="clr"></span>
+        </div>
+    </div>
+    <div id="J-global-toolbar">
+        <div class="jdm-toolbar-wrap J-wrap">
+            <div class="jdm-toolbar J-toolbar">
+                <div class="jdm-toolbar-tabs J-tab">
+                    <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-jdvip" data-name="jdvip" data-login="true" data-iframe="//vip.jd.com/sideBar/index.html">
+                        <i class="tab-ico"></i><em class="tab-text">东京会员</em><span class="tab-sub J-count hide">0</span>
+                    </div>
+                    <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-cart" data-name="cart" onclick="javascript:location.href='/cart.aspx';">
+                        <i class="tab-ico"></i><em class="tab-text">购物车</em><span class="tab-sub J-count hide" style="display: none;">0</span>
+                        <div class="tabs-tip hide"><span class="ico"></span><span class="text">成功加入购物车!</span><b></b></div>
+                    </div>
+                    <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-follow" data-name="follow" data-login="true">
+                        <i class="tab-ico"></i><em class="tab-text">我的关注</em><span class="tab-sub J-count hide">0</span>
+                    </div>
+                    <div data-type="bar" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-history" data-name="history">
+                        <i class="tab-ico"></i><em class="tab-text">我的足迹</em><span class="tab-sub J-count hide">0</span>
+                    </div>
+                    <div class="J-trigger jdm-toolbar-tab jdm-tbar-tab-message" data-name="message">
+                        <a target="_blank" href="#">
+                            <i class="tab-ico"></i><em class="tab-text">我的消息</em></a><span class="tab-sub J-count hide">0</span>
+                    </div>
+                </div>
+                <div class="jdm-toolbar-footer">
+                    <div data-type="link" class="J-trigger jdm-toolbar-tab jdm-tbar-tab-top"><a href="#"><i class="tab-ico"></i><em class="tab-text">顶部</em>                                </a></div>
+                </div>
+                <div class="jdm-toolbar-mini"></div>
+            </div>
+            <div id="J-toolbar-load-hook"></div>
         </div>
     </div>
     <script src="/js/search.js"></script>

@@ -67,3 +67,10 @@ $('.addcart').click(function () {
         else if(xmlhttp.readyState == 4) alert('测试，失败');
     }
 });
+/* 右侧边栏 */
+$('.jdm-toolbar-tab').mouseover(function () {
+    $(this).addClass('z-jdm-tbar-tab-hover');
+});
+$('.jdm-toolbar-tab').mouseleave(function () {
+    $(this).removeClass('z-jdm-tbar-tab-hover');
+});

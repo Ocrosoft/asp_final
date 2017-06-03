@@ -22,8 +22,10 @@ namespace User_Interface_Layer.ajax
                 Response.StatusCode = 200;
                 typeName = HttpUtility.UrlEncode(typeName);
                 typeName = HttpUtility.UrlDecode(typeName, System.Text.Encoding.GetEncoding("utf-8"));
-                if (typeID == null || typeID == "") typeID = BLL_GoodsType.QueryTypeID(3, typeName).ElementAt(0).TypeID;
-                var list = BLL_Goods.QueryGoods(typeID); /// ！商品量大不能直接获取所有商品，需要先生成随机数，再query取商品！
+                if ((typeID == null || typeID == "") && (typeName != null && typeName != "")) typeID = BLL_GoodsType.QueryTypeID(3, typeName).ElementAt(0).TypeID;
+                List<Entitys.Goods> list = null;
+                if (typeID != null && typeID != "") list = BLL_Goods.QueryGoods(typeID); /// ！商品量大不能直接获取所有商品，需要先生成随机数，再query取商品！
+                else list = BLL_Goods.QueryGoodsKeyList(key, false, 0, 0);
                 Random rd = new Random();
                 for (int i = 0; i < 7; i++)
                 {
