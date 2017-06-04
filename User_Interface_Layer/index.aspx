@@ -457,9 +457,27 @@
                 </div>
                 <div class="box_bd clearfix">
                     <ul class="auto-style1">
-                        <li class="find_item find_item_1" style="float:left"><a href="#" target="_blank" class="find_item_lk">
-                            <p class="find_item_name">COACH撞色牛皮单肩包</p>
-                            <img src="//img13.360buyimg.com/mobilecms/s80x80_jfs/t5809/219/1316500039/323101/cffb66e0/592554c2Nd2a3ffb7.jpg!q90.webp" data-lazy-img="done" alt="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" title="这款单肩包采用牛皮材质打造，表层纹理充满肌理感，配以立体方形造型，增强了视觉效果；包身融入撞色条纹装饰，赋予时尚潮流气质，凸显型男生活品位；内部合理空间格局，满足多样化的存放需求。" class="find_item_img"></a>
+                        <li class="find_item find_item_1" style="float:left">
+                            <a href="#" target="_blank" class="find_item_lk">
+                            <script>
+                                    (function () {
+                                        var xmlhttp = new XMLHttpRequest();
+                                        xmlhttp.open("GET", "/ajax/Index-fxhh.aspx?key=手机壳", true);
+                                        xmlhttp.send();
+                                        xmlhttp.onreadystatechange = function () {
+                                            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                                                var res = xmlhttp.responseText;
+                                                res = '<p class="find_item_name">超棒的手机壳</p>' + res;
+                                                $('.sup_page_lk')[0].innerHTML = res;
+                                                $($('.sup_page_lk')[0]).attr('href', '/search.aspx?typeName=手机壳');
+                                            }
+                                            else if (xmlhttp.status == 500) {
+                                                console.log('发现好货加载失败:' + xmlhttp.responseText);
+                                            }
+                                        }
+                                    })()
+                            </script>
+                            </a>
                         </li>
                     </ul>
                 </div>
