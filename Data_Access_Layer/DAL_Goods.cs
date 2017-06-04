@@ -371,10 +371,11 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "select * from tb_goods limit ?st,?ed;";
-                MySqlParameter[] para = new MySqlParameter[2];
-                para[0] = new MySqlParameter("?st", pos);
-                para[1] = new MySqlParameter("?ed", length);
+                string sql = "select * from tb_goods where goodsTypeID=?typeID limit ?st,?ed;";
+                MySqlParameter[] para = new MySqlParameter[3];
+				para[0] = new MySqlParameter("?typeID", typeID);
+                para[1] = new MySqlParameter("?st", pos);
+                para[2] = new MySqlParameter("?ed", length);
                 List<Entitys.Goods> list = new List<Goods>();
                 DataSet ds = DAL_MysqlHelper.ExecuteDataSet(sql, para);
                 for(int i=0;i<length;i++)
