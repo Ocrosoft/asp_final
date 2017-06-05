@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Data_Access_Layer;
 using Entitys;
+using System.Data;
 
 namespace Business_Logic_Layer
 {
@@ -81,6 +82,29 @@ namespace Business_Logic_Layer
                 throw e;
             }
         }
-
+        /// <summary>
+        /// 查询所有管理员账号(pos,length)
+        /// </summary>
+        /// <param name="pos"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        public static List<string> QueryManagers(int pos,int length)
+        {
+            try
+            {
+                DataSet ds = DAL_Manage.QueryManagers(pos, length);
+                List<string> list = new List<string>();
+                for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                {
+                    var row = ds.Tables[0].Rows[i];
+                    list.Add(row[0].ToString());
+                }
+                return list;
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+        }
     }
 }

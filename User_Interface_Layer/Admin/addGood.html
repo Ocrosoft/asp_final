@@ -233,15 +233,15 @@
                                 <form role="form" action="/Admin/AddGoods.aspx" method="post">
                                     <div class="form-group">
                                         <label for=",">商品名称</label>
-                                        <textarea type="text" name="name" class="form-control" placeholder="200字以内"></textarea>
+                                        <textarea name="name" class="form-control autogrow" placeholder="200字以内"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for=",">促销信息</label>
-                                        <textarea type="password" name="description" class="form-control" placeholder="200字以内"></textarea>
+                                        <textarea type="password" name="description" class="form-control autogrow" placeholder="200字以内"></textarea>
                                     </div>
                                     <div class="form-group ">
                                         <label for=",">商品预览图</label>
-                                        <input type="url" name="imageName" placeholder="必须使用网络地址" class="form-control" />
+                                        <input type="url" id="input_image" name="imageName" placeholder="必须使用网络地址" class="form-control" />
                                     </div>
                                     <div class="form-group ">
                                         <label for=",">商品单价</label>
@@ -324,6 +324,21 @@
                                         else if (location.href.indexOf("ret==1") != -1) {
                                             noty($.parseJSON($('#submitError').attr('data-noty-options')));
                                         }
+                                    });
+                                    $('#input_image').focusin(function () {
+                                        var div = document.createElement('div');
+                                        div.style.right = '25px';
+                                        div.style.top = '45px';
+                                        div.style.position = 'absolute';
+                                        div.id = 'pop_div';
+                                        div.innerHTML = "<img id=\"pop_div_img\" style=\"height:450px;\" onerror=\"javascript:if(this.src.indexOf('ss2.baidu')==-1)this.src='https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3453174611,3489695993&fm=58'\" data-img=\"1\" src=\"" + $(this).val() + "\">";
+                                        $(this.parentNode.parentNode).append(div);
+                                    });
+                                    $('#input_image').focusout(function () {
+                                        $('#pop_div').remove();
+                                    });
+                                    $('#input_image').keyup(function () {
+                                       $('#pop_div_img').attr('src', $(this).val());
                                     });
                                 </script>
                             </div>

@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Data;
 
 namespace Data_Access_Layer
 {
@@ -88,6 +89,23 @@ namespace Data_Access_Layer
                 Object obj = DAL_MysqlHelper.ExecuteScalar(sql, para);
                 if (Equals(obj, null)) return false;
                 else return true;
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
+        }
+
+        public static DataSet QueryManagers(int pos,int length)
+        {
+            try
+            {
+                string sql = "select managerName from tb_manage limit ?st,?ed;";
+                MySqlParameter[] para = new MySqlParameter[2];
+                para[0] = new MySqlParameter("?st", pos);
+                para[1] = new MySqlParameter("?ed", length);
+                var ret = DAL_MysqlHelper.ExecuteDataSet(sql, para);
+                return ret;
             }
             catch(Exception e)
             {
