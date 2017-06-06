@@ -85,7 +85,7 @@
     </div>
     <div class="w w1 header clearfix">
         <div id="logo-2014">
-            <a href="#" class="logo"></a>
+            <a href="/index.aspx" class="logo"></a>
             <a href="#" class="link2"><b></b>购物车</a>
         </div>
         <div class="cart-search">
