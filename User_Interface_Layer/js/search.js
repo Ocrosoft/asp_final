@@ -74,3 +74,6 @@ $('.jdm-toolbar-tab').mouseover(function () {
 $('.jdm-toolbar-tab').mouseleave(function () {
     $(this).removeClass('z-jdm-tbar-tab-hover');
 });
+function search(key) {
+    location.href = '/search.aspx?key=' + $('#key')[0].value;
+}

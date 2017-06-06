@@ -6,7 +6,7 @@
 <html lang="zh-CN">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
-    <title>京东</title>
+    <title>东京</title>
     <meta name="keywords" content="#" />
     <meta name="description" content="#" />
     <meta name="format-detection" content="telephone=no">
@@ -90,26 +90,20 @@
     </div>
     <div class="w">
         <div id="logo-2014">
-            <a href="//www.jd.com/" class="logo">京东</a>
+            <a href="/index.aspx/" class="logo">京东</a>
         </div>
         <div id="search-2014">
             <ul id="shelper" class="hide"></ul>
             <div class="form">
-                <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text" />
-                <button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
+                <input type="text" onkeydown="javascript:if(event.keyCode==13) search();" autocomplete="off" id="key" accesskey="s" class="text" />
+                <button onclick="search();return false;" class="button cw-icon"><i></i>搜索</button>
             </div>
         </div>
         <div id="settleup-2014" class="dorpdown">
             <div class="cw-icon">
                 <i class="ci-left"></i>
                 <i class="ci-right">&gt;</i>
-                <a target="_blank" href="//cart.jd.com/cart.action">我的购物车</a>
-            </div>
-            <div class="dorpdown-layer">
-                <div class="spacer"></div>
-                <div id="settleup-content">
-                    <span class="loading"></span>
-                </div>
+                <a target="_blank" href="/cart.aspx">我的购物车</a>
             </div>
         </div>
         <div id="hotwords"></div>

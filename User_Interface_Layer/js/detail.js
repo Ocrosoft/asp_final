@@ -106,7 +106,7 @@ $('#buy-num').keyup(function () {
 });
 $('#InitCartUrl').click(function () {
     var xmlhttp = new XMLHttpRequest();
-    var str = $(this).prop('sku-id');
+    var str = $(this).attr('sku-id');
     //console.log(str);
     xmlhttp.open('GET', '/ajax/AddToCart.aspx?id=' + str + '&num=' + $('#buy-num')[0].value, true);
     xmlhttp.send();
@@ -117,3 +117,6 @@ $('#InitCartUrl').click(function () {
         else if (xmlhttp.readyState == 4) alert('测试，失败');
     }
 });
+function search(key) {
+    location.href = '/search.aspx?key=' + $('#key')[0].value;
+}

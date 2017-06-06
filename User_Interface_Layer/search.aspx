@@ -178,8 +178,8 @@
         <div id="search-2014">
             <ul id="shelper" class="hide"></ul>
             <div class="form">
-                <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text" clstag="shangpin|keycount|toplist1|b02" />
-                <button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
+                <input type="text" onkeydown="javascript:if(event.keyCode==13) search();" autocomplete="off" id="key" accesskey="s" class="text" clstag="shangpin|keycount|toplist1|b02" />
+                <button onclick="search();return false;" class="button cw-icon"><i></i>搜索</button>
             </div>
         </div>
         <div id="settleup-2014" class="dorpdown">
@@ -379,8 +379,8 @@
                 <div class="fg-line re-search">
                     <div class="fg-line-key"><b>重新搜索：</b></div>
                     <div class="fg-line-value">
-                        <input id="key-re-search" class="input-txt input-XL" type="text" placeholder="搜索" value="" onkeydown="javascript:if(event.keyCode==13){searchlog(1,0,0,60);search('key-re-search');}">
-                        <a class="btn btn-primary btn-XL" href="javascript:search('key-re-search')" onclick="searchlog(1,0,0,60)">搜索</a>
+                        <input id="key-re-search" class="input-txt input-XL" type="text" placeholder="搜索" value="" onkeydown="javascript:if(event.keyCode==13){searchlog(1,0,0,60);search();}">
+                        <a class="btn btn-primary btn-XL" href="javascript:search()" onclick="searchlog(1,0,0,60)">搜索</a>
                     </div>
                 </div>
             </div>
