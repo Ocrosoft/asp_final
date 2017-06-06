@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reg.aspx.cs" Inherits="User_Interface_Layer.reg" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="reg.aspx.cs" Inherits="User_Interface_Layer.reg" %>
 
 <!DOCTYPE html>
 <html>

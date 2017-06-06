@@ -1051,6 +1051,7 @@
     <Content Include="Admin\ui.html" />
     <Content Include="CheckCode.aspx" />
     <Content Include="ajax\CheckUserExits.aspx" />
+    <Content Include="checkOrder.aspx" />
     <Content Include="css\cart-cross.css" />
     <Content Include="css\cart-no-login.css" />
     <Content Include="css\cart.css" />
@@ -1431,6 +1432,13 @@
     </Compile>
     <Compile Include="ajax\CheckUserExits.aspx.designer.cs">
       <DependentUpon>CheckUserExits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkOrder.aspx.cs">
+      <DependentUpon>checkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkOrder.aspx.designer.cs">
+      <DependentUpon>checkOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="detail.aspx.cs">
       <DependentUpon>detail.aspx</DependentUpon>
