@@ -20,13 +20,13 @@ namespace Entitys
 
         public override string ToString()
         {
-            return _id + "," + _num;
+            return _id + ":" + _num;
         }
         public static  CartItem parse(string s)
         {
             CartItem ret = new CartItem();
-            ret._id = s.Split(',')[0];
-            ret._num = Int32.Parse(s.Split(',')[1]);
+            ret._id = s.Split(':')[0];
+            ret._num = Int32.Parse(s.Split(':')[1]);
             return ret;
         }
     }

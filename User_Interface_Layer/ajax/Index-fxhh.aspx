@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index_fxhh.aspx.cs" Inherits="User_Interface_Layer.ajax.Index_fxhh" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index-fxhh.aspx.cs" Inherits="User_Interface_Layer.ajax.Index_fxhh" %>
 
 <!DOCTYPE html>
 

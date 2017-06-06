@@ -74,7 +74,7 @@
     <Content Include="ajax\GetCate-First.aspx" />
     <Content Include="ajax\Index-phb.aspx" />
     <Content Include="ajax\Index-ypzj.aspx" />
-    <Content Include="ajax\Index_fxhh.aspx" />
+    <Content Include="ajax\Index-fxhh.aspx" />
     <Content Include="ajax\search-spjx.aspx" />
     <Content Include="cart.aspx" />
     <Content Include="Admin\blank.html" />
@@ -1397,12 +1397,12 @@
     <Compile Include="ajax\Index-ypzj.aspx.designer.cs">
       <DependentUpon>Index-ypzj.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ajax\Index_fxhh.aspx.cs">
-      <DependentUpon>Index_fxhh.aspx</DependentUpon>
+    <Compile Include="ajax\Index-fxhh.aspx.cs">
+      <DependentUpon>Index-fxhh.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ajax\Index_fxhh.aspx.designer.cs">
-      <DependentUpon>Index_fxhh.aspx</DependentUpon>
+    <Compile Include="ajax\Index-fxhh.aspx.designer.cs">
+      <DependentUpon>Index-fxhh.aspx</DependentUpon>
     </Compile>
     <Compile Include="ajax\search-spjx.aspx.cs">
       <DependentUpon>search-spjx.aspx</DependentUpon>

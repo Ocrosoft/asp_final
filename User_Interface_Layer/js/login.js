@@ -1,17 +1,5 @@
 ﻿//随机生成广告
-var data = [{
-    src: "/Images/5923a768Nfb878b9e.jpg",
-    bgColor: "#4890fc",
-    weight: "#4890fc"
-}, {
-    src: "/Images/591eae9fN2041b3b7.jpg",
-    bgColor: "#2d7cf1",
-    weight: "4"
-}, {
-    src: "/Images/5922b035N0b46060a.jpg",
-    bgColor: "#0c8afa",
-    weight: "4"
-}];
+var data = [{ src: "//img14.360buyimg.com/da/jfs/t5884/122/2349462473/90181/fda9b438/592f8c35N1c2a38f2.jpg", bgColor: "#e8390d", weight: "4" }, { src: "//img13.360buyimg.com/da/jfs/t5998/245/1039108660/290364/6dca0b42/592f91efNcc3ee723.jpg", bgColor: "651da3 ", weight: "" }, { src: "//img10.360buyimg.com/da/jfs/t5590/188/2954512837/73880/637cfd7c/59350dd4Nef174f78.jpg", bgColor: "#fe3057", weight: "" }, { src: "//img11.360buyimg.com/da/jfs/t5650/210/2908527046/177433/89e9f82a/5934cc9cNe9f85e13.jpg", bgColor: "#020202", weight: "" }, { src: "//img13.360buyimg.com/da/jfs/t5887/33/2473228158/129435/aa2136aa/5930de18Nede0029b.jpg", bgColor: "#f63353", weight: "4" }, { src: "//img20.360buyimg.com/da/jfs/t5584/265/2343801236/63165/f78d0142/592fe45dN0bee9ebe.jpg", bgColor: "#1e1e1e", weight: "" }, { src: "//img12.360buyimg.com/da/jfs/t5941/9/1706654396/177433/89e9f82a/5934cc6eN1e93ce50.jpg", bgColor: "#020202", weight: "" }];
 var getRandom = function (arr) {
     var _temp = 0,
         _random = 0,

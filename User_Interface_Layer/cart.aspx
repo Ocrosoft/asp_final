@@ -97,6 +97,7 @@
     </div>
     <div id="container" class="cart">
         <div class="w">
+            <div runat="server" id="no_login"></div>
             <div class="cart-filter-bar" style="display:none;" runat="server" id="server_bar">
                 <div class="cart-filter-bar">
                     <ul class="switch-cart">

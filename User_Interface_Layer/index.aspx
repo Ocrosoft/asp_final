@@ -455,84 +455,22 @@
                     <i class="box_hd_arrow"></i><i class="box_hd_dec"></i>
                     <h3 class="box_tit">发现好货</h3>
                 </div>
-                <div class="box_bd clearfix">
-                    <ul class="auto-style1">
-                        <li class="find_item find_item_1" style="float:left">
-                            <a href="#" target="_blank" class="find_item_lk">
-                            <script>
-                                    (function () {
-                                        var xmlhttp = new XMLHttpRequest();
-                                        xmlhttp.open("GET", "/ajax/Index-fxhh.aspx?key=手机壳", true);
-                                        xmlhttp.send();
-                                        xmlhttp.onreadystatechange = function () {
-                                            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                                                var res = xmlhttp.responseText;
-                                                res = '<p class="find_item_name">超棒的手机壳</p>' + res;
-                                                $('.sup_page_lk')[0].innerHTML = res;
-                                                $($('.sup_page_lk')[0]).attr('href', '/search.aspx?typeName=手机壳');
-                                            }
-                                            else if (xmlhttp.status == 500) {
-                                                console.log('发现好货加载失败:' + xmlhttp.responseText);
-                                            }
-                                        }
-                                    })()
-                            </script>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="box_bd clearfix mod_loading">
+                    <ul id="fxhh" class="auto-style1"></ul>
                 </div>
             </div>
             <div class="box sup fbt_col2 J_sup">
-                <div class="box_hd clearfix">
+                <div class="box_hd clearfix mod_loading">
                     <i class="box_hd_arrow"></i><i class="box_hd_dec"></i>
                     <h3 class="box_tit">优品专辑</h3>
                 </div>
-                <div class="box_bd sup_tab J_sup_tab">
+                <div class="box_bd sup_tab J_sup_tab mod_loading">
                     <div class="sup_page J_sup_page active" style="opacity: 1; z-index: 1; position: absolute;">
-                        <a class="sup_page_lk" href="#" target="_blank">
-                            <script>
-                                (function () {
-                                    var xmlhttp = new XMLHttpRequest();
-                                    xmlhttp.open("GET", "/ajax/Index-ypzj.aspx?key=手机壳", true);
-                                    xmlhttp.send();
-                                    xmlhttp.onreadystatechange = function () {
-                                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                                            var res = xmlhttp.responseText;
-                                            res = '<p class="sup_desc">优秀的手机壳，可以让你不可描述</p>' + res;
-                                            $('.sup_page_lk')[0].innerHTML = res;
-                                            $($('.sup_page_lk')[0]).attr('href', '/search.aspx?typeName=手机壳');
-                                        }
-                                        else if (xmlhttp.status == 500) {
-                                            console.log('优品专辑加载失败:' + xmlhttp.responseText);
-                                        }
-                                    }
-                                })()
-                            </script>
-                        </a>
-                        <div class="sup_sep"></div>
-                        <a class="sup_page_lk" href="#" target="_blank">
-                            <script>
-                                (function () {
-                                    var xmlhttp = new XMLHttpRequest();
-                                    xmlhttp.open("GET", "/ajax/Index-ypzj.aspx?key=进口电器", true);
-                                    xmlhttp.send();
-                                    xmlhttp.onreadystatechange = function () {
-                                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                                            var res = xmlhttp.responseText;
-                                            res = '<p class="sup_desc">进口电器，是不是感觉老贵了</p>' + res;
-                                            $('.sup_page_lk')[1].innerHTML = res;
-                                            $($('.sup_page_lk')[1]).attr('href', '/search.aspx?type=86');
-                                        }
-                                        else if (xmlhttp.status == 500) {
-                                            console.log('优品专辑加载失败:' + xmlhttp.responseText);
-                                        }
-                                    }
-                                })();
-                            </script>
-                         </a>
+                        <a class="sup_page_lk" href="#" target="_blank"></a>
+                        <div class="sup_sep hide"></div>
+                        <a class="sup_page_lk" href="#" target="_blank"></a>
                     </div>
-                    <ul class="sup_ind">
-                    </ul>
+                    <ul class="sup_ind"></ul>
                 </div>
             </div>
             <div class="box top fbt_col3 J_top">
@@ -540,7 +478,7 @@
                     <i class="box_hd_arrow"></i><i class="box_hd_dec"></i>
                     <h3 class="box_tit">排行榜</h3>
                 </div>
-                <div class="box_bd top_tab J_top_tab">
+                <div class="box_bd top_tab J_top_tab mod_loading">
                     <div class="top_tab_content J_tab_content">
                         <div class="J_tab_content_item top_tab_content_item top_tab_content_item_on" data-inlazyqueue="true" style="display: block;">
                             <ul class="top_list clearfix">

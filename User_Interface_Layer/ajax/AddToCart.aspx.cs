@@ -14,13 +14,14 @@ namespace User_Interface_Layer.ajax
         {
             Response.Clear();
             Response.StatusCode = 200;
+            string name = "cache";
             if (Session["name"] == null)
             {
-                Response.StatusCode = 500;
-                Response.End();
-                return;
+                //Response.StatusCode = 401; // 需要登录
+                //Response.End();
+                //return;
             }
-            var name = Session["name"].ToString();
+            if (Session["name"] != null) name = Session["name"].ToString();
             string id = Request.QueryString["id"];
             string over = Request.QueryString["over"];
             if (over == null || over == "") over = "0";

@@ -196,7 +196,7 @@ namespace Business_Logic_Layer
         /// <param name="pos">起始位置</param>
         /// <param name="length">商品数量</param>
         /// <returns>List<Entitys.Goods></returns>
-        public List<Goods> QueryGoodsAt(int pos, int length)
+        public static List<Goods> QueryGoodsAt(int pos, int length)
         {
             try
             {

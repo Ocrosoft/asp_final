@@ -255,7 +255,7 @@ namespace Data_Access_Layer
             try
             {
                 string sql = "select count(*) from tb_goods;";
-                int ret = (int)DAL_MysqlHelper.ExecuteScalar(sql);
+                int ret = Int32.Parse(DAL_MysqlHelper.ExecuteScalar(sql).ToString());
                 return ret;
             }
             catch (Exception e)
@@ -332,7 +332,7 @@ namespace Data_Access_Layer
         /// </summary>
         /// <param name="typeID"></param>
         /// <returns></returns>
-        public static List<Entitys.Goods> QueryGoods(string typeID)
+        public static List<Goods> QueryGoods(string typeID)
         {
             try
             {
@@ -367,7 +367,7 @@ namespace Data_Access_Layer
         /// <param name="pos"></param>
         /// <param name="length"></param>
         /// <returns></returns>
-        public static List<Entitys.Goods> QueryGoods(string typeID,int pos,int length)
+        public static List<Goods> QueryGoods(string typeID,int pos,int length)
         {
             try
             {
@@ -455,7 +455,19 @@ namespace Data_Access_Layer
                 throw e;
             }
         }
-
+        /// <summary>
+        /// 根据关键词查询商品（高级版）
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="part"></param>
+        /// <param name="pos"></param>
+        /// <param name="length"></param>
+        /// <param name="typed"></param>
+        /// <param name="type"></param>
+        /// <param name="priceLimit"></param>
+        /// <param name="price_u"></param>
+        /// <param name="price_t"></param>
+        /// <returns></returns>
         public static DataSet QueryGoodsKey(string key,bool part=false,int pos=0,int length=0,bool typed=false,string type="",int priceLimit=0,int price_u=0,int price_t=0)
         {
             try
@@ -479,6 +491,16 @@ namespace Data_Access_Layer
                 throw e;
             }
         }
+        /// <summary>
+        /// 根据关键词查询查询出的商品数量
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="typed"></param>
+        /// <param name="type"></param>
+        /// <param name="priceLimit"></param>
+        /// <param name="price_u"></param>
+        /// <param name="price_t"></param>
+        /// <returns></returns>
         public static int QueryGoodsKeyCount(string key, bool typed = false, string type = "", int priceLimit = 0, int price_u = 0, int price_t = 0)
         {
             try

@@ -1,6 +1,9 @@
 ﻿// 解析json
-var jsonObj = JSON.parse($('#glofot')[0].innerText);
-$('#detail')[0].children[1].innerHTML = jsonObj.content;
+try {
+    var jsonObj = JSON.parse($('#glofot')[0].innerText);
+    $('#detail')[0].children[1].innerHTML = jsonObj.content;
+}
+catch (e) { }
 // 缩略图
 $($('.lh li')[0]).addClass('img-hover');
 $('.lh img').mouseenter(function () {

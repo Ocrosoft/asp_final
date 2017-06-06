@@ -29,10 +29,13 @@ $('.increment').click(function () {
     xmlhttp.send();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            alert('测试，成功');
+            //alert('测试，成功');
             location.href = location.href;
         }
-        else if (xmlhttp.readyState == 4) alert('测试，失败');
+        else if (xmlhttp.readyState == 4) {
+            if (xmlhttp.status == 403) alert('请先登录');
+            else console.log('AddToCart:error:' + xmlhttp.status);
+        }
     }
 });
 $('.decrement').click(function () {
@@ -53,7 +56,10 @@ $('.decrement').click(function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             location.href = location.href;
         }
-        else if (xmlhttp.readyState == 4) alert('测试，失败');
+        else if (xmlhttp.readyState == 4) {
+            if (xmlhttp.status == 403) alert('请先登录');
+            else console.log('AddToCart:error:' + xmlhttp.status);
+        }
     }
 });
 $('.quantity-form input').keyup(function () {
@@ -100,4 +106,21 @@ $('.cart-checkbox input[class="jdcheckbox"]').change(function () {
     else
         $('#toggle-checkboxes_up,#toggle-checkboxes_down').prop('checked', false);
     reSum();
+});
+// 删除购物车商品
+$('.cart-remove').click(function () {
+    var id = this.id.split('_')[1];
+    var xmlhttp = new XMLHttpRequest();
+    //console.log(str);
+    xmlhttp.open('GET', '/ajax/DeleteFromCart.aspx?id=' + id, true);
+    xmlhttp.send();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            location.href = location.href;
+        }
+        else if (xmlhttp.readyState == 4) {
+            if (xmlhttp.status == 403) alert('请先登录');
+            else console.log('AddToCart:error:' + xmlhttp.status);
+        }
+    }
 });

@@ -18,18 +18,36 @@ namespace User_Interface_Layer
                 ttbar_login_server.Text = "欢迎，<a style='color:red;'>" + Session["name"].ToString() + "</a>";
             }
 
-            if (Session["name"] == null) return; // 未登录
-            var cartItems = Request.Cookies["cartItems" + Session["name"].ToString()];
+            //if (Session["name"] == null) return; // 未登录
+            var name = "cache";
+            if (Session["name"] != null)
+            {
+                name = Session["name"].ToString();
+                combineCart(name);
+            }
+            else
+            {
+                no_login.InnerHtml = "<div class=\"nologin-tip\"><span class=\"wicon\"></span>您还没有登录！登录后购物车的商品将保存到您账号中<a class=\"btn-1 ml10\" href=\"/login.aspx\">立即登录</a></div>";
+            }
+            var cartItems = Request.Cookies["cartItems" + name];
             if (cartItems == null) return; // 无信息
             List<CartItem> list = new List<CartItem>();
-            foreach(string item in cartItems.Values)
-                list.Add(CartItem.parse(cartItems[item]));
+            foreach (string item in cartItems.Values)
+            {
+                try
+                {
+                    list.Add(CartItem.parse(cartItems[item]));
+                }
+                catch
+                {
+                }
+            }
             if (list.Count == 0) return;
             else
             {
                 server_cart_number.InnerText = list.Count.ToString();
                 string text = "";
-                foreach(var item in list)
+                foreach (var item in list)
                 {
                     Goods good = null;
                     try
@@ -54,7 +72,7 @@ namespace User_Interface_Layer
                     text += "<div class=\"goods-item\">";
                     text += "<div class=\"p-img\">";
                     text += "<a href=\"//item.jd.com/3419681.html\" target=\"_blank\" class=\"J_zyyhq_3419681\">";
-                    text += "<img style=\"width:100%;\" alt=\""+good.Name+"\" clstag=\"clickcart|keycount|xincart|cart_sku_pic\" src=\""+good.ImageName+"\"></a>";
+                    text += "<img style=\"width:100%;\" alt=\"" + good.Name + "\" clstag=\"clickcart|keycount|xincart|cart_sku_pic\" src=\"" + good.ImageName + "\"></a>";
                     text += "</div>";
                     text += "<div class=\"item-msg\">";
                     text += "<div class=\"p-name\">";
@@ -73,7 +91,7 @@ namespace User_Interface_Layer
                     text += "<div class=\"cell p-quantity\">";
                     text += "<div class=\"quantity-form\">";
                     text += "<a href=\"javascript:void(0);\" class=\"decrement\">-</a>";
-                    text += "<input autocomplete=\"off\" type=\"text\" class=\"itxt\" value=\""+item.Num+"\">";
+                    text += "<input autocomplete=\"off\" type=\"text\" class=\"itxt\" value=\"" + item.Num + "\">";
                     text += "<a href=\"javascript:void(0);\" class=\"increment\">+</a>";
                     text += "</div>";
                     text += "</div>";
@@ -81,7 +99,7 @@ namespace User_Interface_Layer
                     text += "<strong>¥" + Math.Round(good.UnitPrice * item.Num, 2) + "</strong>";
                     text += "</div>";
                     text += "<div class=\"cell p-ops\">";
-                    text += "<a id=\"remove_8888_3419681_13_199127640\" data-name=\"" + good.Name + "\" data-more=\"removed_" + good.Id + "\" class=\"cart-remove\" href=\"javascript:void(0);\">删除</a>";
+                    text += "<a id=\"remove_" + good.Id + "\" data-name=\"" + good.Name + "\" data-more=\"removed_" + good.Id + "\" class=\"cart-remove\" href=\"javascript:void(0);\">删除</a>";
                     text += "<a href=\"javascript:void(0);\" class=\"cart-follow\" id=\"follow_" + good.Id + "\">移到我的关注</a>";
                     text += "<a href=\"javascript:void(0);\" class=\"add-follow\" id=\"add-follow_" + good.Id + "\">加到我的关注</a>";
                     text += "</div>";
@@ -94,6 +112,23 @@ namespace User_Interface_Layer
                 server_warp.Attributes.Add("style", "display:block");
                 server_empty.Attributes.Add("style", "display:none");
             }
+        }
+
+        private void combineCart(string name)
+        {
+            var cache_ck = Request.Cookies["cartItemscache"];
+            var user_ck = Request.Cookies["cartItems" + name];
+            if (cache_ck == null) return;
+            if (user_ck == null)user_ck = new HttpCookie("cartItems" + name);
+            foreach(string item in cache_ck.Values)
+            {
+                var _item = CartItem.parse(cache_ck[item]);
+                user_ck.Values[_item.Id] = _item.ToString();
+            }
+            user_ck.Expires = DateTime.Now.AddMonths(1);
+            cache_ck.Expires = DateTime.Now.AddMonths(-1);
+            Response.Cookies.Set(user_ck);
+            Response.Cookies.Set(cache_ck);
         }
     }
 }

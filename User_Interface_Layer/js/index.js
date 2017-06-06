@@ -120,10 +120,64 @@ setInterval(next_slider, 4000);
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             var res = xmlhttp.responseText;
+            $($('.top_list')[0].parentElement.parentElement.parentElement).removeClass('mod_loading');
             $('.top_list')[0].innerHTML = res;
         }
     }
 })();
+// 搜索
 function search(key) {
     location.href = '/search.aspx?key=' + $('#key')[0].value;
 }
+// 优品专辑
+(function () {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "/ajax/Index-ypzj.aspx?key=手机壳", true);
+    xmlhttp.send();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var res = xmlhttp.responseText;
+            res = '<p class="sup_desc">优秀的手机壳，可以让你不可描述</p>' + res;
+            $('.sup_page_lk')[0].innerHTML = res;
+            $($('.sup_page_lk')[0].parentElement.parentElement).removeClass('mod_loading');
+            $($('.sup_page_lk')[0].nextElementSibling).removeClass('hide');
+            $($('.sup_page_lk')[0]).attr('href', '/search.aspx?typeName=手机壳');
+        }
+        else if (xmlhttp.status == 500) {
+            console.log('优品专辑加载失败:' + xmlhttp.responseText);
+        }
+    }
+})();
+(function () {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "/ajax/Index-ypzj.aspx?key=进口电器", true);
+    xmlhttp.send();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var res = xmlhttp.responseText;
+            res = '<p class="sup_desc">进口电器，是不是感觉老贵了</p>' + res;
+            $('.sup_page_lk')[1].innerHTML = res;
+            $($('.sup_page_lk')[1].parentElement.parentElement).removeClass('mod_loading');
+            $($('.sup_page_lk')[1]).attr('href', '/search.aspx?type=86');
+        }
+        else if (xmlhttp.status == 500) {
+            console.log('优品专辑加载失败:' + xmlhttp.responseText);
+        }
+    }
+})();
+// 发现好货
+(function () {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "/ajax/Index-fxhh.aspx", true);
+    xmlhttp.send();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var res = xmlhttp.responseText;
+            $('#fxhh')[0].innerHTML = res;
+            $($('#fxhh')[0].parentElement).removeClass('mod_loading');
+        }
+        else if (xmlhttp.status == 500) {
+            console.log('发现好货加载失败:' + xmlhttp.responseText);
+        }
+    }
+})();

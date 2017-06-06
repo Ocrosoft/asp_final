@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entitys;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,18 +14,28 @@ namespace User_Interface_Layer.ajax
         {
             Response.Clear();
             Response.StatusCode = 200;
+            string name = "cache";
             if (Session["name"] == null)
             {
-                Response.StatusCode = 500;
-                Response.End();
-                return;
+                //Response.StatusCode = 401; // 需要登录
+                //Response.End();
+                //return;
             }
-            var name = Session["name"].ToString();
+            if (Session["name"] != null) name = Session["name"].ToString();
             string id = Request.QueryString["id"];
             HttpCookie ck = null;
             if (Request.Cookies["cartItems" + name] == null)
                 ck = new HttpCookie("cartItems" + name);
             else ck = Request.Cookies["cartItems" + name];
+
+            if (ck.Values[id] != null)
+            {
+                ck.Values.Remove(id);
+            }
+
+            ck.Expires = DateTime.Now.AddMonths(1);
+            Response.Cookies.Set(ck);
+            Response.End();
         }
     }
 }
