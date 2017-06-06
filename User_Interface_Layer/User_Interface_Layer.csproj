@@ -1082,6 +1082,7 @@
     <Content Include="Images\vip.png" />
     <Content Include="index.aspx" />
     <Content Include="js\cart.js" />
+    <Content Include="js\checkOrder.js" />
     <Content Include="js\detail-header.js" />
     <Content Include="js\detail.js" />
     <Content Include="js\index-head.js" />
