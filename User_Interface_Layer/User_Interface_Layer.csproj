@@ -1326,6 +1326,8 @@
     <Content Include="js\tooltips\tip-yellow\tip-yellow.css" />
     <Content Include="js\tooltips\tip-yellow\tip-yellow.png" />
     <Content Include="js\tooltips\tip-yellow\tip-yellow_arrows.png" />
+    <Content Include="updatePostInfo.aspx" />
+    <Content Include="updatePostInfoPost.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -1504,6 +1506,20 @@
     </Compile>
     <Compile Include="UIL.Master.designer.cs">
       <DependentUpon>UIL.Master</DependentUpon>
+    </Compile>
+    <Compile Include="updatePostInfo.aspx.cs">
+      <DependentUpon>updatePostInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updatePostInfo.aspx.designer.cs">
+      <DependentUpon>updatePostInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updatePostInfoPost.aspx.cs">
+      <DependentUpon>updatePostInfoPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updatePostInfoPost.aspx.designer.cs">
+      <DependentUpon>updatePostInfoPost.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

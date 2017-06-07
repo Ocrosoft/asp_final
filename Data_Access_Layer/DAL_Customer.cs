@@ -1,6 +1,7 @@
 ﻿using Entitys;
 using MySql.Data.MySqlClient;
 using System;
+using System.Collections.Generic;
 using System.Data;
 
 namespace Data_Access_Layer
@@ -116,13 +117,13 @@ namespace Data_Access_Layer
         {
             try
             {
-                string sql = "update tb_customer set customerBirthday=?birthday,customerPhone=?phone,customerEmail=?email) where customerName=?name;";
-                MySqlParameter[] para = new MySqlParameter[4];
-                para[0] = new MySqlParameter("?trueName", birthday);
-                para[1] = new MySqlParameter("?address", phone);
-                para[2] = new MySqlParameter("?postCode", email);
-                para[3] = new MySqlParameter("?name", name);
-                int ret = DAL_MysqlHelper.ExecuteNonQuery(sql, para);
+                string sql = "update tb_customer set "+(birthday==""?"": "customerBirthday=?birthday,") + "customerPhone=?phone,customerEmail=?email where customerName=?name;";
+                List<MySqlParameter> paras = new List<MySqlParameter>();
+                if (birthday != "") paras.Add(new MySqlParameter("?birthday", birthday));
+                paras.Add(new MySqlParameter("?phone", phone));
+                paras.Add(new MySqlParameter("?email", email));
+                paras.Add(new MySqlParameter("?name", name));
+                int ret = DAL_MysqlHelper.ExecuteNonQuery(sql, paras.ToArray());
                 if (ret == 1) return true;
                 else return false;
             }

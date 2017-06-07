@@ -11,7 +11,10 @@ namespace User_Interface_Layer
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["name"] == null)
+            {
+                Response.Write("<script>location.href='/login.aspx';</script>");
+            }
         }
     }
 }
