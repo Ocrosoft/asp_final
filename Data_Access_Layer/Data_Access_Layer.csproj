@@ -83,6 +83,7 @@
     <Compile Include="DAL_GoodsType.cs" />
     <Compile Include="DAL_Manage.cs" />
     <Compile Include="DAL_MysqlHelper.cs" />
+    <Compile Include="DAL_Order.cs" />
     <Compile Include="DAL_Safety.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

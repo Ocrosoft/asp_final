@@ -180,7 +180,7 @@
                                             <div class="normal">
                                                 <div class="comm-right">
                                                     <div class="btn-area">
-                                                        <a href="javascript:void(0);" onclick="return false;" class="submit-btn" data-bind="1">去结算<b></b></a>
+                                                        <a href="javascript:void(0);" class="submit-btn" data-bind="1">去结算<b></b></a>
                                                     </div>
                                                     <div class="price-sum">
                                                         <div>

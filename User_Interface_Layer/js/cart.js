@@ -57,7 +57,7 @@ $('.decrement').click(function () {
             location.href = location.href;
         }
         else if (xmlhttp.readyState == 4) {
-            if (xmlhttp.status == 403) alert('请先登录');
+            if (xmlhttp.status == 403) alert('请先登录'); // 已经无效
             else console.log('AddToCart:error:' + xmlhttp.status);
         }
     }
@@ -122,5 +122,34 @@ $('.cart-remove').click(function () {
             if (xmlhttp.status == 403) alert('请先登录');
             else console.log('AddToCart:error:' + xmlhttp.status);
         }
+    }
+});
+// 结算
+$('.submit-btn').click(function () {
+    if ($('.item-form input:checked').length == 0) {
+        alert('没有选择任何商品');
+    }
+    else {
+        var selected_goods = '';
+        $('.item-form input:checked').each(function (i, d) {
+            selected_goods += ',';
+            selected_goods += $(d).parent().parent().parent().children('.p-ops').children()[0].id.split('_')[1];
+            selected_goods += ':';
+            selected_goods += $(d).parent().parent().parent().find('input[class="itxt"]').val();
+        });
+        selected_goods = selected_goods.substr(1);
+        console.log(selected_goods);
+
+        var temp = document.createElement("form");
+        temp.action = '/checkOrder.aspx';
+        temp.method = "post";
+        temp.style.display = "none";
+        var opt = document.createElement('input');
+        opt.type = 'text';
+        opt.name = 'str';
+        opt.value = selected_goods;
+        temp.appendChild(opt);
+        document.body.appendChild(temp);
+        temp.submit();
     }
 });

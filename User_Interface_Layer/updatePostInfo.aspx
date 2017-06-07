@@ -51,7 +51,7 @@
             <!-- 手机号码end -->
 
             <!-- 邮政编码start -->
-            <div class="item" id="postcode_div" style="display: none">
+            <div class="item" id="postcode_div">
                 <span class="label"><em>*</em>邮政编码</span>
                 <div class="fl">
                     <input runat="server" type="text" class="itxt" id="consignee_postcode" name="consigneeParam.postcode" value="" placeholder="" />

@@ -1,8 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="checkOrder.aspx.cs" Inherits="User_Interface_Layer.checkOrder" %>
 
-
-
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -111,10 +108,6 @@
                 <dt class="s-num">2</dt>
                 <dd class="s-text">2.填写核对订单信息<s></s><b></b></dd>
             </dl>
-            <dl class="normal last">
-                <dt class="s-num">3</dt>
-                <dd class="s-text">3.成功提交订单<s></s><b></b></dd>
-            </dl>
         </div>
     </div>
 
@@ -130,7 +123,7 @@
                 <div class="step-tit">
                     <h3>收货人信息</h3>
                     <div class="extra-r">
-                        <a href="#none" class="ftx-05 J_consignee_global" onclick=";">修改收货地址</a>
+                        <a href="#none" class="ftx-05 J_consignee_global">修改收货地址</a>
                     </div>
                 </div>
                 <div class="step-cont">
@@ -142,12 +135,12 @@
                                         <ul id="consignee-list">
                                             <li class="ui-switchable-panel ui-switchable-panel-selected" style="display: list-item;" id="consignee_index_138669292">
                                                 <div class="consignee-item item-selected" id="consignee_index_div_138669292">
-                                                    <span title="...">...</span><b></b>
+                                                    <span runat="server" id="trueName" title="...">...</span><b></b>
                                                 </div>
                                                 <div class="addr-detail">
-                                                    <span class="addr-name">...</span>
-                                                    <span class="addr-info">...</span>
-                                                    <span class="addr-tel">****</span>
+                                                    <span runat="server" id="addr_name" class="addr-name">...</span>
+                                                    <!--<span runat="server" id="addr_info" class="addr-info">...</span>-->
+                                                    <span runat="server" id="addr_tel" class="addr-tel">****</span>
                                                 </div>
                                             </li>
                                         </ul>
@@ -165,7 +158,6 @@
                         <div class="step-tit">
                             <h3>支付方式</h3>
                         </div>
-                        <div type="hide"></div>
                         <input type="hidden" id="totalPriceVender" value="0" />
                         <input type="hidden" id="totalNumVender" value="0" />
                         <div class="plusProductListVender hide">[]</div>
@@ -194,39 +186,10 @@
                             <!--添加商品清单  zhuqingjie -->
                             <div class="shopping-lists" id="shopping-lists">
                                 <!--定义大商品清单LIST-->
-                                <div class="shopping-list ABTest">
-                                    <div class="goods-list">
-                                        <!--满返套装开始-->
-                                        <div class="goods-items 200030650">
-                                            <div class="goods-suit goods-last">
-                                                <div class="goods-item goods-item-extra" goods-id="3790199" sx-type="0">
-                                                    <div class="p-img">
-                                                        <a target="_blank" href="http://item.jd.com/3790199.html?dist=">
-                                                            <img src="//img14.360buyimg.com/N4/jfs/t5059/302/2455068799/478187/daa16abd/590013abNfa467366.jpg" alt="" /></a>
-                                                    </div>
-                                                    <div class="goods-msg">
-                                                        <div class="goods-msg-gel">
-                                                            <div class="p-name">
-                                                                <a href="http://item.jd.com/3790199.html?dist=" target="_blank">微软（Microsoft）Surface Pro4 二合一平板电脑 12.3英寸（Intel i5 8G内存 256G存储 触控笔 ） CR3-00008					     
-                                                                </a>
-                                                            </div>
-                                                            <div class="p-price">
-                                                                <strong class="jd-price">￥ 7288.00
-                                                                </strong>
-                                                                <!--增加预售金额显示 end-->
-                                                                <span class="p-num">x1
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--满返套装结束-->
-                                    </div>
+                                <div class="shopping-list ABTest" runat="server" id="shopping_list">
+                                    <!--goods-list 开始-->
                                     <!--goods-list 结束-->
                                     <div class="dis-modes">
-
                                         <!-- 实物商品搭售虚拟商品 -->
                                         <div class="mode-item mode-tab">
                                             <div class="mode-item-tit">
@@ -275,13 +238,16 @@
                 <!--  预售 计算支付展现方式 begin -->
                 <div class="statistic fr">
                     <div class="list">
-                        <span><em class="ftx-01">2</em> 件商品，总商品金额：</span>
-                        <em class="price" id="warePriceId"
-                            v="8237.00">￥8237.00</em>
+                        <span><em class="ftx-01" runat="server" id="goods_count">0</em> 件商品，总商品金额：</span>
+                        <em runat="server" class="price" id="warePriceId">￥0.00</em>
                     </div>
                     <div class="list">
                         <span>运费：</span>
                         <em class="price" id="freightPriceId">￥0.00</em>
+                    </div>
+                    <div class="list">
+                        <span>礼品卡：</span>
+                        <em runat="server" class="price" id="cardId">￥0.00</em>
                     </div>
                 </div>
                 <div class="clr"></div>
@@ -290,16 +256,11 @@
                 <div class="trade-foot-detail-com">
                     <div class="fc-price-info">
                         <span class="price-tit">应付总额：</span>
-                        <span class="price-num" id="sumPayPriceId">￥7937.00</span>
-                    </div>
-                    <div class="giftbuy-info">
-                        <label class="noShowMoney hide" id="giftBuyHidePriceDiv">
-                            <input type="checkbox" id="giftBuyHidePrice" checked>包装内不显示礼品价格
-                        </label>
+                        <span class="price-num" id="sumPayPriceId">￥0.00</span>
                     </div>
                     <div class="fc-consignee-info">
-                        <span class="mr20" id="sendAddr">寄送至： 浙江 杭州市 江干区 九堡镇  高教园区学源街18号浙江财经大学（下沙校区）</span>
-                        <span id="sendMobile">收货人：李达也 158****1870</span>
+                        <span runat="server" class="mr20" id="sendAddr">寄送至： </span>
+                        <span runat="server" id="sendMobile">收货人：</span>
                     </div>
                 </div>
             </div>
@@ -307,7 +268,7 @@
                 <div class="ui-ceilinglamp checkout-buttons">
                     <div class="sticky-wrap">
                         <div class="inner">
-                            <button type="submit" class="checkout-submit" id="order-submit" onclick="javascript:submit_Order();">
+                            <button type="submit" class="checkout-submit" id="order-submit">
                                 提交订单<b></b>
                             </button>
                         </div>
@@ -317,10 +278,24 @@
         </div>
     </div>
     <div class="ui-dialog" style="width: 690px; position: absolute; z-index: 10000; display: none; overflow: hidden; top: 189.5px; left: 602.5px;">
-        <div class="ui-dialog-title" style="width: 670px;"><span>编辑收货人信息</span>     </div>
+        <div class="ui-dialog-title" style="width: 670px;"><span id="shrxx">编辑收货人信息</span>     </div>
         <div class="ui-dialog-content" style="height: 458px; width: 670px; overflow: hidden;">
 
-            <iframe src="/updatePostInfo.aspx" style="width:100%;height:100%;"></iframe>
+            <iframe src="/updatePostInfo.aspx" style="width: 100%; height: 100%;"></iframe>
+            <div class="form-new hide" id="success_form" style="text-align: center;">
+                <img src="http://www.easyicon.net/api/resizeApi.php?id=11792&amp;size=72" style="padding-top: 100px;" />
+                <div class="group" style="padding-top: 25px; width:100%;">
+                    <div class="ui-ceilinglamp checkout-buttons" style="width:100%;">
+                        <div class="sticky-wrap" style="width:100%;">
+                            <div class="inner">
+                                <button type="submit" class="checkout-submit" onclick="javascript:;" style="float:none;">
+                                    <b style="background:url(//);">查看订单</b>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <a class="ui-dialog-close" title="关闭"><span class="ui-icon ui-icon-delete"></span></a>
@@ -432,5 +407,8 @@
         </div>
     </div>
     <script src="/js/checkOrder.js"></script>
+    <div runat="server" id="fd">
+
+    </div>
 </body>
 </html>

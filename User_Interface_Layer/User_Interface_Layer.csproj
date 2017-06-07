@@ -67,6 +67,7 @@
     <Content Include="Admin\AddGoods.aspx" />
     <Content Include="Admin\ajax\GetUsers.aspx" />
     <Content Include="ajax\AddToCart.aspx" />
+    <Content Include="ajax\CheckOrder-IsInfoComplete.aspx" />
     <Content Include="ajax\DeleteFromCart.aspx" />
     <Content Include="ajax\GetCate-Second.aspx" />
     <Content Include="ajax\GetCate-Third.aspx" />
@@ -1351,6 +1352,13 @@
     </Compile>
     <Compile Include="ajax\AddToCart.aspx.designer.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\CheckOrder-IsInfoComplete.aspx.cs">
+      <DependentUpon>CheckOrder-IsInfoComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\CheckOrder-IsInfoComplete.aspx.designer.cs">
+      <DependentUpon>CheckOrder-IsInfoComplete.aspx</DependentUpon>
     </Compile>
     <Compile Include="ajax\DeleteFromCart.aspx.cs">
       <DependentUpon>DeleteFromCart.aspx</DependentUpon>
